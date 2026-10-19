@@ -1,0 +1,258 @@
+/* Check 3: the supplied illustrated Clay & Sage reference, scoped to students. */
+.jonah-brand{font:700 27px/1.05 'Kalam',var(--font-body);letter-spacing:-.04em;color:var(--ink);text-decoration:none;display:block;flex-shrink:0}
+.jonah-brand b{color:var(--clay-action)}
+.jonah-brand span{white-space:nowrap}
+.app-frame{min-height:100svh}
+.student-frame{--paper:#faf6ed;--surface:#fffcf6;--line:#e9e1d5;--sage-dark:#526547;--sage-light:#e9edde;--clay-action:#ae5634;--clay-dark:#91472d;background:var(--paper);color:var(--ink)}
+.student-frame .site-shell{width:100%;max-width:1180px;padding:0 38px;margin-inline:auto;min-width:0}
+.student-frame .site-header{border:0;min-height:90px;padding:18px 0;gap:16px;flex-direction:row;align-items:center}
+.student-frame footer{margin-top:32px;border-color:var(--line);padding:22px 0;font-size:12px}
+.student-frame h1,.student-frame h2,.student-frame h3{letter-spacing:-.035em}
+.student-frame .button,.entry-frame .button{border-radius:30px;gap:12px}
+.student-frame .button--secondary{border-color:#c7bdad;background:var(--surface)}
+.student-frame .button--secondary:hover{background:#f1e9dc}
+.student-frame .button--sage{background:#607450;color:#fff}
+.student-frame .button--sage:hover{background:#4c603f}
+.student-frame .button:disabled{background:#e5dfd3;border-color:#e5dfd3;color:#766e60}
+.student-frame .eyebrow{font-size:11px;font-weight:600;letter-spacing:.11em;margin-bottom:6px}
+.student-sidebar{display:none}
+.header-profile{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);min-width:0;font-size:14px}
+.header-profile>span:last-child{max-width:190px;text-overflow:ellipsis;white-space:nowrap;overflow:hidden}
+.avatar{width:38px;height:38px;display:inline-flex;align-items:center;justify-content:center;border-radius:50%;background:#6c7f5b;color:#fff;font-weight:500;flex-shrink:0}
+.avatar--large{width:76px;height:76px;font-size:30px;background:#a6754e}
+.student-page{padding:4px 0 24px}
+.student-section-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:28px 0 15px;scroll-margin-top:24px}
+.student-section-heading h2{font-size:20px;font-weight:600}
+.student-section-heading>a{display:inline-flex;align-items:center;gap:7px;font-size:13px;text-decoration:none}
+.student-section-heading>.muted{font-size:12px}
+.welcome-banner{position:relative;isolation:isolate;min-height:250px;border-radius:22px;overflow:hidden;background:#f2e5cc;display:flex;align-items:center}
+.welcome-banner>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-1}
+.welcome-banner>div{padding:30px 34px;max-width:55%}
+.welcome-banner .eyebrow{color:#845134;font-size:10px}
+.welcome-banner h1{font:700 clamp(32px,3vw,45px)/1.2 'Kalam',var(--font-body);color:#894524}
+.welcome-banner p:not(.eyebrow){color:#644b34;font-size:15px;line-height:1.55;margin-top:8px;overflow-wrap:anywhere}
+.welcome-banner .button{margin-top:20px;min-height:44px;padding:9px 20px;font-size:13px}
+.progress-overview{display:grid;grid-template-columns:minmax(0,2.2fr) minmax(180px,1fr);gap:18px}
+.progress-card{display:flex;align-items:center;gap:22px;border:1px solid var(--line);border-radius:18px;background:var(--surface);padding:22px}
+.progress-card>div:last-child{min-width:0;flex:1}
+.progress-card h3{font-size:21px;line-height:1.3}
+.progress-ring{position:relative;flex-shrink:0;width:94px;height:94px;display:grid;place-items:center}
+.progress-ring svg{width:100%;height:100%;position:absolute;inset:0;transform:rotate(-90deg);fill:none;stroke-width:8;stroke-linecap:round}
+.ring-track{stroke:#e3e1d5}
+.ring-fill{stroke:#d49a37}
+.progress-ring strong{font-size:22px;font-weight:600}
+.progress-caption{display:flex;justify-content:space-between;gap:12px;font-size:11px;color:var(--muted);margin:14px 0 8px}
+.student-frame progress{appearance:none;height:7px;border:0;border-radius:20px;overflow:hidden;display:block;width:100%;background:#e2e1d5;accent-color:#738365}
+.student-frame progress::-webkit-progress-bar{background:#e2e1d5;border-radius:20px}
+.student-frame progress::-webkit-progress-value{background:#738365;border-radius:20px}
+.student-frame progress::-moz-progress-bar{background:#738365;border-radius:20px}
+.balance-card{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:12px;border-radius:18px;padding:24px;background:#f3e4ce;color:var(--ink);text-decoration:none;border:1px solid #eedcc1;min-width:0}
+.balance-card>span:last-child{display:flex;align-items:center;justify-content:space-between;width:100%;font-size:12px;color:#6d5237}
+.jonah-coins{display:inline-flex;align-items:center;gap:6px;min-width:0;vertical-align:middle;color:#76501d}
+.jonah-coins img{width:26px;height:26px;object-fit:contain;flex-shrink:0}
+.jonah-coins>span{min-width:0;overflow-wrap:anywhere;line-height:1.3}
+.jonah-coins strong{font-size:14px;font-weight:600}
+.coin-label{font-size:11px;font-weight:400}
+.jonah-coins--large{gap:10px}
+.jonah-coins--large img{width:46px;height:46px}
+.jonah-coins--large strong{font-size:27px;letter-spacing:-.04em}
+.jonah-coins--large .coin-label{font-size:13px}
+.unit-card-grid{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:18px}
+.illustrated-unit{min-height:235px;position:relative;isolation:isolate;overflow:hidden;background:#eae8d8;border:1px solid #e4decc;border-radius:18px;padding:24px}
+.illustrated-unit>div{position:relative;z-index:1;max-width:65%}
+.unit-kicker{font-size:20px;font-weight:600;color:#5b704e;letter-spacing:-.03em}
+.illustrated-unit h3{font-size:26px;line-height:1.2;margin:3px 0 8px}
+.illustrated-unit p:not(.unit-kicker){font-size:13px;color:#615948}
+.illustrated-unit .button{margin:21px 0 16px;min-height:42px;font-size:13px;padding:9px 18px}
+.illustrated-unit small{display:flex;align-items:center;gap:7px;font-size:11px;color:#504c3e}
+.illustrated-unit>img{position:absolute;width:53%;height:100%;object-fit:cover;object-position:48% center;right:0;bottom:0;mix-blend-mode:multiply;z-index:0}
+.learning-note{padding:26px;background:#f4e7d7;border-radius:18px;border:1px solid #eedfca;display:flex;flex-direction:column;align-items:start;justify-content:center;color:#6b5036}
+.learning-note svg{color:#73835b;margin-bottom:12px}
+.learning-note h3{font-size:19px;color:#443d2e}
+.learning-note p{font-size:13px;margin-top:8px;max-width:27ch}
+.learning-note>span{font-size:11px;margin-top:18px;color:#6e5e47}
+.designed-lesson-list{padding:0;margin:0;list-style:none;border:1px solid var(--line);border-radius:18px;background:var(--surface);overflow:hidden}
+.designed-lesson-list>li+li{border-top:1px solid var(--line)}
+.designed-lesson{display:flex;align-items:center;gap:16px;padding:17px 20px;text-decoration:none;color:var(--ink)}
+.designed-lesson:hover{background:#f5efe3}
+.lesson-tile{width:68px;height:66px;flex-shrink:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:2px;background:#eee7d7;border-radius:12px;color:#647556}
+.lesson-tile small{font-size:10px;font-weight:600}
+.lesson-tile.exam-tile{background:#f4e4c3;color:#98671f}
+.designed-lesson-name{flex:1;min-width:0}
+.designed-lesson-name strong{font-size:15px;font-weight:600;line-height:1.4;display:block;overflow-wrap:anywhere}
+.designed-lesson-name small{display:block;font-size:12px;margin-top:5px;color:var(--muted)}
+.lesson-state{font-size:10px;display:inline-flex;gap:5px;align-items:center;background:#f3ead7;border:1px solid #d9c6a4;border-radius:20px;padding:5px 9px;color:#7a5828;flex-shrink:0}
+.lesson-state.is-complete{color:#4f643e;background:#eaf0df;border-color:#c5d0b8}
+.row-chevron{color:#847965;flex-shrink:0}
+.lesson-row-footer{padding:0 55px 12px 104px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.lesson-row-footer>a{display:inline-flex;align-items:center;gap:8px;font-size:11px;text-decoration:none}
+.lesson-row-footer .jonah-coins img{width:20px;height:20px}
+.lesson-row-footer .jonah-coins strong{font-size:12px}
+.student-frame .recent-section{margin-top:0}
+.student-frame .recent-list{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:0 20px}
+.student-frame .recent-list li:first-child{border-top:0}
+.page-introduction{margin:12px 0 30px}
+.page-introduction h1{font-size:clamp(30px,3.8vw,42px);line-height:1.15;letter-spacing:-.045em}
+.page-introduction>p:last-child{font-size:14px;color:var(--muted);margin-top:14px;max-width:52ch}
+.profile-identity{display:flex;align-items:center;gap:20px;padding:26px;border:1px solid var(--line);background:var(--surface);border-radius:20px}
+.profile-identity>div{min-width:0;overflow-wrap:anywhere}
+.profile-identity h2{font-size:25px}
+.profile-identity p{color:var(--muted);font-size:13px;margin-top:5px}
+.profile-stats{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:16px;margin:20px 0}
+.profile-stats>div{border:1px solid var(--line);border-radius:18px;padding:24px;background:var(--surface);min-width:0}
+.profile-stats>div>svg{color:#6b7d56}
+.profile-stats>div>strong{display:block;font-size:28px;margin:12px 0 3px}
+.profile-stats p{font-size:12px;color:var(--muted);margin-top:12px}
+.profile-stats .profile-balance{background:#f3e4ce;border-color:#ecdbbd;display:flex;flex-direction:column;justify-content:center}
+.profile-ranking-card{display:flex;gap:20px;align-items:center;border-radius:20px;padding:26px;background:#e9eddf;border:1px solid #d9dfcc;color:var(--ink);text-decoration:none;margin-block:26px}
+.profile-ranking-card>div{flex:1;min-width:0}
+.profile-ranking-card p:last-child{font-size:13px;margin-top:7px;overflow-wrap:anywhere;color:#586346}
+.profile-ranking-card>svg{flex-shrink:0;color:#536846}
+.trophy-mark{background:#f4e6c4;color:#906822;display:grid;place-items:center;border-radius:18px;width:66px;height:66px;flex-shrink:0}
+.student-frame .reward-guide{background:var(--surface);border-color:var(--line);padding:24px;border-radius:18px}
+.reward-guide>h2{font-size:20px}
+.reward-milestones{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin:24px 0}
+.reward-milestones p{font-size:12px;margin-top:8px;color:var(--muted)}
+.reward-guide>p{font-size:12px}
+.profile-switch{margin-top:28px}
+.vocabulary-explainer{display:flex;gap:20px;align-items:center;background:#e9eddf;border:1px solid #dce2cf;border-radius:18px;padding:24px;margin-block:24px 34px}
+.vocabulary-explainer>svg{color:#65784f;flex-shrink:0}
+.vocabulary-explainer p{font-size:13px;flex:1}
+.vocabulary-explainer strong{font-weight:600}
+.vocab-card-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.vocab-set-card{display:flex;flex-direction:column;align-items:start;padding:26px;background:var(--surface);border:1px solid var(--line);border-radius:18px;text-decoration:none;color:var(--ink)}
+.vocab-set-card:hover{border-color:#c1b39c;background:#fcf8ee}
+.vocab-card-icon{color:#677b54;background:#e9edde;padding:12px;border-radius:14px;display:flex;margin-bottom:22px}
+.vocab-set-card:nth-child(2n) .vocab-card-icon{background:#f3e2d4;color:#a65a38}
+.vocab-set-number{font-size:10px;letter-spacing:.1em;color:var(--muted);font-weight:600}
+.vocab-set-card h3{margin-top:6px;font-size:19px;line-height:1.4}
+.vocab-set-status{display:flex;gap:5px;align-items:center;margin:10px 0 20px;font-size:12px;color:#62734f}
+.vocab-card-action{display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--line);padding-top:16px;width:100%;margin-top:auto;font-size:13px;color:var(--clay-dark)}
+.student-frame .ranking-page{padding-top:8px;max-width:850px}
+.student-frame .ranking-page .back-link{display:inline-flex;padding:8px 0;margin:0}
+.student-frame .ranking-list li{background:var(--surface);border-color:var(--line);padding:16px 22px}
+.student-frame .ranking-list .ranking-current{background:#e9eddf;border-color:#c5d0b7}
+.ranking-list .jonah-coins{margin-left:auto;flex-shrink:0;max-width:45%}
+.ranking-list .jonah-coins strong{font-size:18px}
+.student-frame .coin-total{background:#f3e4ce;border-color:#e8d5b6;display:flex;align-items:center;gap:16px;justify-content:space-between;flex-wrap:wrap}
+.student-nav{display:flex}
+.student-nav a{display:flex;align-items:center;gap:15px;text-decoration:none;color:#655d4d;min-height:52px;padding:12px 19px;border-radius:30px;font-size:16px}
+.student-nav a[aria-current]{color:#fff;background:var(--clay-action)}
+.mobile-student-nav{position:fixed;bottom:0;left:0;width:100%;background:#fffcf6f5;backdrop-filter:blur(12px);border-top:1px solid var(--line);z-index:20;padding:8px 16px calc(8px + env(safe-area-inset-bottom))}
+.mobile-student-nav .student-nav{justify-content:space-around;max-width:650px;margin:auto}
+.mobile-student-nav a{flex-direction:column;gap:2px;font-size:10px;min-width:70px;min-height:50px;border-radius:14px;padding:4px 14px}
+.mobile-student-nav a[aria-current]{background:#f4e5d8;color:#a65030}
+.entry-frame .site-header{border:0}
+.entry-frame .entry-panel{border-radius:22px;background:#fffcf6;box-shadow:0 12px 45px #64492e08}
+.entry-frame .entry-intro h1{font:700 clamp(38px,5vw,58px)/1.15 'Kalam',var(--font-body);color:#894524}
+.entry-art{width:100%;height:220px;object-fit:cover;border-radius:22px;margin-top:24px}
+.entry-frame .field input{border-radius:12px;background:#fffdf8}
+@media(min-width:1024px){.student-frame{display:grid;grid-template-columns:220px minmax(0,1fr);max-width:1640px;margin:auto}
+.student-sidebar{display:flex;flex-direction:column;border-right:1px solid var(--line);padding:38px 20px 0;position:sticky;top:0;height:100svh;min-height:640px}
+.student-sidebar .jonah-brand{font-size:32px;margin:0 12px 42px}
+.student-sidebar .student-nav{flex-direction:column;gap:8px}
+.student-frame .site-header{justify-content:flex-end}
+.student-frame .site-header>.jonah-brand{display:none}
+.mobile-student-nav{display:none}
+.sidebar-encouragement{margin-top:auto;padding-top:26px;overflow:hidden}
+.sidebar-encouragement p{font:400 20px/1.4 'Kalam',var(--font-body);text-align:center;color:#756247}
+.sidebar-encouragement p strong{font-weight:700}
+.sidebar-encouragement img{width:calc(100% + 40px);height:240px;object-fit:cover;mix-blend-mode:multiply;display:block;margin:15px -20px 0}
+.student-frame .learning-workspace{grid-template-columns:minmax(0,1fr)}
+.student-frame .lesson-sidebar{display:none}
+.student-frame .mobile-lessons{display:block}
+.student-frame .lesson-main{max-width:none}
+}
+@media(min-width:1450px){.student-frame{grid-template-columns:240px minmax(0,1fr)}
+.student-frame .learning-workspace{grid-template-columns:190px minmax(0,1fr);gap:26px}
+.student-frame .lesson-sidebar{display:block}
+.student-frame .mobile-lessons{display:none}
+.student-frame .lesson-sidebar{border:0;padding-right:0}
+.student-frame .lesson-sidebar nav a{font-size:12px;gap:9px;padding:12px 8px}
+}
+@media(max-width:1023px){.student-frame .site-shell{padding-inline:28px;max-width:920px}
+.student-frame footer{padding-bottom:100px}
+.student-frame .site-header{min-height:88px}
+.student-frame .jonah-brand{font-size:26px}
+.student-frame .header-profile>span:last-child{display:none}
+.welcome-banner{min-height:235px}
+}
+@media(max-width:640px){.student-frame .site-shell{padding-inline:18px}
+.student-frame .site-header{min-height:80px}
+.student-frame .site-header .jonah-brand{font-size:25px;max-width:180px}
+.student-frame .site-header .jonah-brand>span{display:block}
+.student-section-heading{margin-top:24px}
+.student-section-heading h2{font-size:18px}
+.student-section-heading>.muted{display:none}
+.welcome-banner{min-height:225px;border-radius:18px;align-items:start}
+.welcome-banner>img{object-position:60% center}
+.welcome-banner>div{max-width:72%;padding:24px 20px}
+.welcome-banner .eyebrow{display:none}
+.welcome-banner h1{font-size:31px;line-height:1.1}
+.welcome-banner p:not(.eyebrow){font-size:12px;max-width:22ch}
+.welcome-banner .button{font-size:12px;min-height:42px;margin-top:18px;padding:9px 15px}
+.progress-overview{grid-template-columns:minmax(0,1fr);gap:12px}
+.progress-card{padding:18px;gap:18px}
+.progress-ring{width:76px;height:76px}
+.progress-ring strong{font-size:20px}
+.progress-card h3{font-size:20px}
+.balance-card{padding:14px 18px;flex-direction:row;align-items:center;gap:16px}
+.balance-card>.jonah-coins{flex:1}
+.balance-card>span:last-child{width:auto;gap:10px;font-size:11px}
+.balance-card .jonah-coins img{width:33px;height:33px}
+.balance-card .jonah-coins strong{font-size:22px}
+.unit-card-grid{grid-template-columns:minmax(0,1fr)}
+.illustrated-unit{min-height:220px;padding:22px}
+.learning-note{display:none}
+.illustrated-unit>img{width:50%}
+.designed-lesson{gap:12px;padding:16px 14px;flex-wrap:wrap}
+.lesson-tile{width:50px;height:56px}
+.lesson-tile>svg{width:23px}
+.designed-lesson-name{flex-basis:calc(100% - 100px)}
+.designed-lesson-name strong{font-size:14px}
+.designed-lesson-name small{font-size:11px}
+.lesson-state{margin-left:62px;order:4;font-size:10px}
+.row-chevron{width:14px}
+.lesson-row-footer{padding:0 15px 13px 76px;gap:8px}
+.lesson-row-footer>a{font-size:10px}
+.student-frame .recent-list{padding-inline:16px}
+.student-frame .recent-list li{flex-wrap:wrap;gap:7px}
+.student-frame .recent-list strong{font-size:13px}
+.student-frame .recent-list time{font-size:10px}
+.page-introduction{margin:8px 0 24px}
+.page-introduction h1{font-size:32px}
+.profile-identity{padding:22px 18px;gap:15px}
+.profile-identity h2{font-size:23px}
+.avatar--large{width:60px;height:60px;font-size:25px}
+.profile-stats{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.profile-stats .profile-balance{grid-column:1/-1;flex-direction:row;align-items:center;justify-content:space-between;gap:16px}
+.profile-stats>div{padding:20px}
+.profile-stats .profile-balance>p{margin-top:0;max-width:12ch;font-size:11px}
+.profile-ranking-card{padding:22px 18px;gap:14px}
+.trophy-mark{width:48px;height:52px;border-radius:13px}
+.profile-ranking-card h2{font-size:21px}
+.profile-ranking-card .eyebrow{font-size:9px}
+.profile-ranking-card p:last-child{font-size:11px}
+.reward-milestones{grid-template-columns:1fr;gap:16px}
+.reward-milestones>div{display:flex;align-items:center;gap:20px}
+.reward-milestones .jonah-coins{min-width:85px}
+.reward-milestones p{margin:0}
+.vocabulary-explainer{gap:12px;padding:20px 16px;flex-wrap:wrap}
+.vocabulary-explainer>svg{width:26px}
+.vocabulary-explainer p{font-size:12px}
+.vocabulary-explainer>.jonah-coins{margin-left:38px}
+.vocab-card-grid{grid-template-columns:1fr;gap:14px}
+.vocab-set-card{padding:24px}
+.vocab-card-icon{margin-bottom:16px}
+.student-frame .ranking-list li{padding:14px 12px;gap:10px}
+.ranking-list .jonah-coins{gap:3px}
+.ranking-list .jonah-coins img{width:22px;height:22px}
+.ranking-list .jonah-coins strong{font-size:15px}
+.ranking-list .jonah-coins .coin-label{display:none}
+.ranking-place{min-width:36px;min-height:36px}
+.entry-art{height:160px}
+.entry-wrap{gap:28px}
+}
+
+.student-frame .mobile-lessons{display:inline-flex;align-items:center;gap:7px}.student-frame .lesson-title .jonah-coins{margin-top:12px}.student-frame .recent-section .student-section-heading h2{margin-bottom:0}.student-frame main{min-width:0}.student-frame .balance-card:hover,.student-frame .profile-ranking-card:hover{border-color:#b9b69d}.student-frame .lesson-tile,.student-frame .profile-ranking-card{overflow-wrap:anywhere}.entry-frame .entry-intro>p:not(.eyebrow){margin-top:20px;color:var(--muted)}
+@media(min-width:1450px){.student-frame .mobile-lessons{display:none}}

@@ -1,0 +1,58 @@
+/* Teacher pages have an independent night palette, inherited by every child. */
+.teacher-frame{color-scheme:dark;--paper:#111a16;--surface:#1a2620;--ink:#f1eee5;--muted:#b2bbae;--line:#35473c;--clay:#db9470;--clay-action:#ae5634;--clay-dark:#f0b18b;--sage:#93ae83;--sage-dark:#c5dab6;--sage-light:#2b402f;--honey-light:#433b25;--clay-light:#49352c;--error:#ffc0b2;background:var(--paper);color:var(--ink);min-height:100svh}
+.teacher-frame .site-shell{max-width:1320px;width:calc(100% - 64px)}
+.teacher-frame .site-header{border-color:var(--line);min-height:94px}
+.teacher-frame .jonah-brand b{color:#dfa67f}
+.teacher-mode{display:flex;align-items:center;gap:9px;color:#c4cbbd;font-size:12px}
+.teacher-mode svg{color:#d9b96f}
+.teacher-frame :focus-visible{outline-color:#d9bc81}
+.teacher-frame .admin-workspace{padding-top:24px}
+.teacher-frame .admin-top .eyebrow{color:#97b68c}
+.teacher-frame .admin-nav{gap:8px;padding:8px;background:#19251e;border:1px solid var(--line);border-radius:16px;margin-block:18px 34px}
+.teacher-frame .admin-nav a{border:0;border-radius:10px;padding:10px 18px;min-height:44px}
+.teacher-frame .admin-nav a[aria-current]{background:#344838;color:#dfebd7}
+.teacher-frame .admin-nav a:hover{color:#f0b18b;background:#25362b}
+.teacher-frame .admin-panel,.teacher-frame .admin-metrics>div{border-radius:16px;background:var(--surface);border-color:var(--line)}
+.teacher-frame .admin-metrics{gap:16px}
+.teacher-frame .admin-metrics>div{padding:22px}
+.teacher-frame .admin-metrics dd{color:#dce9d2;font-size:34px;margin-top:12px}
+.teacher-frame .admin-panel h2{font-size:20px}
+.teacher-frame .button{border-radius:10px;min-height:46px}
+.teacher-frame .button--primary{color:#fff;background:#a84e30}
+.teacher-frame .button--primary:hover{background:#923f27}
+.teacher-frame .button--secondary{color:#e2e7dc;background:#24342a;border-color:#627461}
+.teacher-frame .button--secondary:hover{background:#334938}
+.teacher-frame .button--quiet{color:#efb995}
+.teacher-frame .button:disabled{background:#303b32;border-color:#3d4a3f;color:#aab0a5}
+.teacher-frame .field input,.teacher-frame .field select,.teacher-frame .field textarea{background:#111b16;color:#f0eee6;border-color:#617260;border-radius:10px}
+.teacher-frame .field input::placeholder,.teacher-frame .field textarea::placeholder{color:#aab3a3}
+.teacher-frame .field input:disabled,.teacher-frame .field textarea:disabled{background:#29362c;color:#abb3a5}
+.teacher-frame .admin-table th{background:#24352a;color:#b7c5ae}
+.teacher-frame .admin-table td{border-color:var(--line)}
+.teacher-frame .admin-empty{border-color:#5b6c56}
+.teacher-frame .stored-response{background:#111b16}
+.teacher-frame .badge{background:#374135;color:#e1e6d8}
+.teacher-frame .badge--sage{background:#304633;color:#d1e9c3}
+.teacher-frame .badge--clay{background:#51352a;color:#ffd3b6}
+.teacher-frame .badge--honey{background:#483d25;color:#ffe0a0}
+.teacher-frame .feedback,.teacher-frame .feedback--success{background:#263d2b;color:#d2eac4;border-color:#74926a}
+.teacher-frame .feedback--error{background:#472c26;color:#ffc6b8;border-color:#976752}
+.teacher-frame .notice{background:#25342a}
+.teacher-frame .response-preview{border-color:#7a986c}
+.teacher-frame .pagination{color:#c1cbba}
+.teacher-frame footer{border-color:var(--line)}
+.teacher-frame .navigation-status{background:#3c3625;color:#ffdfaa}
+.teacher-frame input[type=checkbox]{accent-color:#9ab787}
+.teacher-frame .coin-total{background:#403820;border-color:#776237;color:#ffe4a8}
+@media(max-width:760px){.teacher-frame .site-shell{width:calc(100% - 36px)}
+.teacher-frame .site-header{flex-direction:row;align-items:center;min-height:86px}
+.teacher-frame .site-header .jonah-brand{font-size:22px}
+.teacher-mode{font-size:0;gap:0}
+.teacher-mode svg{width:24px;height:24px}
+.teacher-frame .admin-nav{display:grid;grid-template-columns:1fr 1fr;gap:5px;padding:6px}
+.teacher-frame .admin-nav a{padding:10px 12px;font-size:12px;justify-content:center;text-align:center}
+.teacher-frame .admin-metrics{gap:10px}
+.teacher-frame .admin-metrics>div{padding:16px}
+.teacher-frame .admin-metrics dt{min-height:36px}
+.teacher-frame .admin-table tr{background:var(--surface);border-color:var(--line)}
+}

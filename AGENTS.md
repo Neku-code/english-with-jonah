@@ -89,3 +89,14 @@ and drafts remain intact. The user requested code-only verification for this
 check: do not open the browser, web app or live site. Investigate repeated
 failures with a different method; on a fourth recurrence stop and report.
 The third visual redesign is still separate work.
+
+## Third check — selected visual reference
+
+The selected desktop/mobile reference now authorizes the illustrated student
+redesign; see `docs/check-3.md` and updated `docs/design-guidelines.md`. Student
+nav order is Darslar, Lug‘at, Profil, with ranking within Profil. Use the J coin
+badge and consistent lesson styling. Teacher pages have a separate dark night
+theme. This supersedes the earlier illustration restriction and colour-only
+reference instruction. Preserve checks 1 → 2 → 3 in commit order. The owner
+requested code analysis only for this check as well; do not open the app in a
+browser or claim visual verification.

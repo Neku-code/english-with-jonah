@@ -1,7 +1,10 @@
 <script lang="ts">
  import {onMount,tick,untrack} from 'svelte';
- import {goto,invalidateAll,replaceState} from '$app/navigation';
+ import {beforeNavigate,goto,invalidateAll,replaceState} from '$app/navigation';
  import {page} from '$app/state';
+ import Coin from '#lib/components/Coin.svelte';
+ import List from 'phosphor-svelte/lib/List';
+ import Translate from 'phosphor-svelte/lib/Translate';
  import LessonIllustration from '#lib/components/LessonIllustration.svelte';
  import LessonTask from '#lib/components/LessonTask.svelte';
  import LessonAudio from '#lib/components/LessonAudio.svelte';
@@ -28,7 +31,7 @@
  let saveTimer:ReturnType<typeof setTimeout>,savePromise:Promise<boolean>|null=null;
  let positionQueue:LatestWriteQueue<{sectionId:string;panels:Record<string,string>}>|null=null;
  let pendingCheck:{taskId:string;response:string;revision:number;requestId:string}|null=null;
- let loadedKey='';
+ let loadedKey='',leaving=false;
  const content=$derived(data.content),tasks=$derived(tasksOf(content)),exam=$derived(content.kind==='exam'),submitted=$derived(attempt?.status==='submitted');
  const window=$derived(content.sections[Math.min(windowIndex,content.sections.length-1)]);
  const currentTask=$derived(window.items.find((item):item is Task=>item.kind==='task'));
@@ -79,6 +82,18 @@
   const online=()=>{void flush();void positionQueue?.flush().catch(e=>message=(e as Error).message);};
   addEventListener('online',online);
   return()=>{cache();clearTimeout(saveTimer);positionQueue?.stop();removeEventListener('online',online);};
+ });
+ beforeNavigate(navigation=>{
+  cache();
+  if(!hydrated||!navigation.to||navigation.willUnload||leaving)return;
+  // Shared profile/vocabulary links must preserve the same draft guarantees
+  // as the lesson's own links. Window changes remain entirely local.
+  if(busy||checking){navigation.cancel();message='Amal tugashini kuting.';return;}
+  if(dirty.length||savePromise){
+   navigation.cancel();
+   const url=navigation.to.url;
+   void leaveLesson(url.pathname+url.search+url.hash);
+  }
  });
  $effect(()=>{
   const nextKey=data.lesson.id+':'+data.attempt?.id;
@@ -153,23 +168,24 @@
    await invalidateAll();attempt=data.attempt;review=false;
   }catch(e){message=(e as Error).message;}finally{busy=false;}
  }
- async function switchLesson(event:MouseEvent,href:string){
-  event.preventDefault();if(busy)return;busy=true;
+ async function leaveLesson(href:string){
+  if(busy||checking)return;busy=true;leaving=true;
   try{
    const [saved]=await Promise.all([flush(),positionQueue?.flush()]);if(!saved)return;
    navigationDialog?.close();await goto(href);
-  }catch(e){message=(e as Error).message;}finally{busy=false;}
+  }catch(e){message=(e as Error).message;}finally{busy=false;leaving=false;}
  }
+ async function switchLesson(event:MouseEvent,href:string){event.preventDefault();await leaveLesson(href);}
  async function reviewTask(task:Task){review=false;windowIndex=content.sections.findIndex(s=>s.items.some(i=>i.id===task.id));checkpoint();await tick();heading?.focus();}
 </script>
 
 <svelte:head><title>{content.number} · {content.title} · English with Jonah</title></svelte:head>
 <div class="learning-page compact-learning">
- <div class="learning-top"><a href="/home" onclick={e=>switchLesson(e,'/home')}>← Darslar</a><span>UNIT 1 · TO BE</span><a href="/ranking" onclick={e=>switchLesson(e,'/ranking')}>Ranking</a><button class="mobile-lessons" onclick={()=>navigationDialog.showModal()}>Darslar ☰</button></div>
+ <div class="learning-top"><a href="/home" onclick={e=>switchLesson(e,'/home')}>← Darslar</a><span>UNIT 1 · TO BE</span><a href="/profile" onclick={e=>switchLesson(e,'/profile')}>Profil</a><button class="mobile-lessons" onclick={()=>navigationDialog.showModal()}><List size={16} aria-hidden="true" /> Darslar</button></div>
  <div class="learning-workspace">
   <aside class="lesson-sidebar"><p class="eyebrow">UNIT 1</p><h2>To Be</h2><p class="sidebar-progress">{data.unit.finished+(lessonJustFinished?1:0)} / {data.unit.total} dars tugallangan<br />{data.unit.points+coinDelta} / {data.unit.maximumPoints} coin</p><nav aria-label="Unit 1 darslari">{#each data.unit.lessons as l}<a href={l.href} data-sveltekit-preload-data="hover" aria-current={l.id===data.lesson.id?'page':undefined} onclick={e=>switchLesson(e,l.href)}><span class="sidebar-number">1.{l.position}</span><span>{l.title.split(' · ').at(-1)}<small>{l.mastered?'★ O‘zlashtirilgan':l.completed||l.id===data.lesson.id&&submitted&&!exam?'✓ Tugallangan':l.kind==='final_exam'?'Yakuniy imtihon':`${l.taskCount} ta mashq`}</small></span></a>{/each}</nav></aside>
   <div class="lesson-main">
-   <header class="lesson-title"><div><p class="eyebrow">{exam?'YAKUNIY IMTIHON':'DARS'} {content.number}</p><h1>{content.title}</h1></div>{#if !exam||submitted}<button class="button button--secondary" disabled={busy||!!checking} onclick={()=>vocabDialog.showModal()}>Lug‘at ↗</button>{/if}</header>
+   <header class="lesson-title"><div><p class="eyebrow">{exam?'YAKUNIY IMTIHON':'DARS'} {content.number}</p><h1>{content.title}</h1><Coin amount={data.lesson.coins+coinDelta} /></div>{#if !exam||submitted}<button class="button button--secondary" disabled={busy||!!checking} onclick={()=>vocabDialog.showModal()}><Translate size={17} aria-hidden="true" /> Lug‘at</button>{/if}</header>
    {#if message}<div class="feedback feedback--error save-error" role="alert"><p>{message}</p><button class="button button--secondary" onclick={()=>{void flush();void positionQueue?.flush().catch(e=>message=(e as Error).message);}}>Qayta saqlash</button><a href={page.url.pathname+page.url.search}>Qayta yuklash</a></div>{/if}
    {#if prep}<VocabularyPrep lesson={content} lessonId={data.lesson.id} {ready} hasSession={!!data.vocabularySession} mastered={vocabMastered} onready={coins=>{ready=true;vocabMastered=true;coinDelta+=coins;}} onstart={start} {busy} needsLessons={data.lesson.needsLessons} />
    {:else if attempt}

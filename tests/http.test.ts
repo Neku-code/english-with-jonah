@@ -134,3 +134,31 @@ test('HTTP rankings are student-only and vocabulary review unlocks without manuf
  const teacher = new Browser();await teacher.form('/', { name: process.env.TEACHER_ENTRY_NAME! });
  assert.equal((await teacher.fetch('/ranking')).headers.get('location'), '/');
 });
+
+test('HTTP student navigation, vocabulary library and profile retain access and real saved balances', async () => {
+ const anonymous = new Browser();
+ for (const route of ['/profile', '/vocabulary']) assert.equal((await anonymous.fetch(route)).headers.get('location'), '/');
+ const student = new Browser();
+ await student.form('/', { name: 'Design HTTP learner' });
+ const f = await fixture(store.db, { vocabulary: true });
+ await student.json(`/api/lessons/${f.lesson.id}/vocabulary`, { action: 'review' });
+ const attempt = await (await student.json(`/api/lessons/${f.lesson.id}/attempts`)).json();
+ await student.json(`/api/attempts/${attempt.id}/answers`, { questionId: f.question.id, response: 'token', expectedRevision: 0 }, 'PUT');
+ await student.json(`/api/attempts/${attempt.id}/submit`);
+ const profileResponse = await student.fetch('/profile');
+ assert.equal(profileResponse.status, 200); assert.match(profileResponse.headers.get('cache-control')!, /no-store/);
+ const profile = await profileResponse.text();
+ assert.match(profile, /Design HTTP learner/); assert.match(profile, /Jami yig‘ilgan coin/);
+ assert.match(profile, /Sizning o‘rningiz/); assert.match(profile, /href="\/ranking"/);
+ assert.match(profile, /jonah-coin\.webp/); assert.match(profile, />50<\/strong>/);
+ assert.doesNotMatch(profile, /acceptedTranslations|teacherSessionId|lookupName/);
+ const libraryResponse = await student.fetch('/vocabulary'); assert.equal(libraryResponse.status, 200);
+ const library = await libraryResponse.text();
+ assert.ok(library.includes(`/learn/${f.lesson.id}?vocab`)); assert.match(library, /Ko‘rib chiqilgan/);
+ const navigation = library.match(/<nav class="student-nav"[^>]*>(.*?)<\/nav>/s)?.[1]; assert.ok(navigation);
+ assert.deepEqual([...navigation.matchAll(/href="([^"]+)"/g)].map(m=>m[1]), ['/home','/vocabulary','/profile']);
+ const teacher = new Browser(); await teacher.form('/', { name: process.env.TEACHER_ENTRY_NAME! });
+ for (const route of ['/profile','/vocabulary']) assert.equal((await teacher.fetch(route)).headers.get('location'), '/');
+ const teacherHome = await (await teacher.fetch('/admin')).text();
+ assert.match(teacherHome, /teacher-frame/); assert.doesNotMatch(teacherHome, /<nav class="student-nav"/);
+});

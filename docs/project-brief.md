@@ -8,7 +8,7 @@ Students will use both **phones and laptops**. The application must fit and work
 
 Confirmed application name: **English with Jonah**, confirmed by the user during Box 1 setup.
 
-Box 1 covered technical setup and plain shared-component verification. The Boxes 2–3 request now authorizes a restrained Clay & Sage student entry and home interface; reference images establish colours only, not layouts.
+Box 1 covered technical setup and plain shared-component verification. The third check authorizes the supplied illustrated Clay & Sage dashboard reference across student entry, Darslar, Lug‘at, Profil, ranking and lessons. Ranking lives under Profil. Teacher pages use a separate dark night theme. See `check-3.md`.
 
 ## Learning structure
 
