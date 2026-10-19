@@ -92,12 +92,16 @@ test('HTTP API session ownership, CSRF, validation, safe DTO, revisions and idem
 });
 test('HTTP catalog failures have a recoverable error state, never the empty state', async () => {
   const browser = new Browser(); await browser.form('/', { name: 'Failure state person' });
+  const f = await fixture(store.db);
   await store.pool.query('ALTER TABLE units RENAME TO temporarily_unavailable_units');
   try {
     const response = await browser.fetch('/home'); const html = await response.text();
     assert.match(html, /Darslarni yuklab bo‘lmadi/); assert.match(html, /Qayta urinish/); assert.doesNotMatch(html, /Darslar hali qo‘shilmagan/);
   } finally { await store.pool.query('ALTER TABLE temporarily_unavailable_units RENAME TO units'); }
-  assert.match(await (await browser.fetch('/home')).text(), /Darslaringiz/);
+  const recovered = await browser.fetch('/home'); assert.equal(recovered.status, 200);
+  const recoveredHtml = await recovered.text();
+  assert.ok(recoveredHtml.includes(`/learn/${f.lesson.id}`));
+  assert.doesNotMatch(recoveredHtml, /Darslarni yuklab bo‘lmadi|Darslar hali qo‘shilmagan/);
 });
 test('HTTP reserved administrator entry stays separate from automatic student profiles', async () => {
   const teacher = new Browser();
