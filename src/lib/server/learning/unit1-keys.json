@@ -8,21 +8,6 @@
     ],
     "notes": "2–3: I am; you are.\n5–8: He/she/it va bitta ism bilan is ishlatiladi.\n9: Emma o‘zi ham shu guruhda: we.\n10: Maya boshqa guruh haqida gapiryapti: they.\n12, 16: a student — bitta; students — ko‘plik.\n24: Birikma an app, chunki app unli tovush bilan boshlanadi.\n\nYozma javoblarda ma’nosi va grammatikasi to‘g‘ri boshqa shakllar ham qabul qilinadi. Shaxsiy javoblar namunaga aynan teng bo‘lishi shart emas.",
     "tasks": {
-      "u1-l1.1-q1": {
-        "mode": "authored",
-        "accepted": [
-          "B"
-        ],
-        "feedback": "B — Emma is a student.",
-        "notes": "2–3: I am; you are.\n5–8: He/she/it va bitta ism bilan is ishlatiladi.\n9: Emma o‘zi ham shu guruhda: we.\n10: Maya boshqa guruh haqida gapiryapti: they.\n12, 16: a student — bitta; students — ko‘plik.\n24: Birikma an app, chunki app unli tovush bilan boshlanadi.\n\nYozma javoblarda ma’nosi va grammatikasi to‘g‘ri boshqa shakllar ham qabul qilinadi. Shaxsiy javoblar namunaga aynan teng bo‘lishi shart emas.",
-        "kind": "choice",
-        "partIds": [
-          "u1-l1.1-q1-part1"
-        ],
-        "rubric": null,
-        "listening": false,
-        "strict": false
-      },
       "u1-l1.1-q2": {
         "mode": "authored",
         "accepted": [
@@ -36,7 +21,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.1-q3": {
         "mode": "authored",
@@ -51,7 +37,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.1-q4": {
         "mode": "authored",
@@ -66,7 +53,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.1-q5": {
         "mode": "authored",
@@ -81,7 +69,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.1-q6": {
         "mode": "authored",
@@ -96,7 +85,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.1-q7": {
         "mode": "authored",
@@ -111,22 +101,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
-      },
-      "u1-l1.1-q8": {
-        "mode": "authored",
-        "accepted": [
-          "B"
-        ],
-        "feedback": "is",
-        "notes": "2–3: I am; you are.\n5–8: He/she/it va bitta ism bilan is ishlatiladi.\n9: Emma o‘zi ham shu guruhda: we.\n10: Maya boshqa guruh haqida gapiryapti: they.\n12, 16: a student — bitta; students — ko‘plik.\n24: Birikma an app, chunki app unli tovush bilan boshlanadi.\n\nYozma javoblarda ma’nosi va grammatikasi to‘g‘ri boshqa shakllar ham qabul qilinadi. Shaxsiy javoblar namunaga aynan teng bo‘lishi shart emas.",
-        "kind": "choice",
-        "partIds": [
-          "u1-l1.1-q8-part1"
-        ],
-        "rubric": null,
-        "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.1-q9": {
         "mode": "authored",
@@ -141,7 +117,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.1-q10": {
         "mode": "authored",
@@ -156,22 +133,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
-      },
-      "u1-l1.1-q11": {
-        "mode": "authored",
-        "accepted": [
-          "C"
-        ],
-        "feedback": "are",
-        "notes": "2–3: I am; you are.\n5–8: He/she/it va bitta ism bilan is ishlatiladi.\n9: Emma o‘zi ham shu guruhda: we.\n10: Maya boshqa guruh haqida gapiryapti: they.\n12, 16: a student — bitta; students — ko‘plik.\n24: Birikma an app, chunki app unli tovush bilan boshlanadi.\n\nYozma javoblarda ma’nosi va grammatikasi to‘g‘ri boshqa shakllar ham qabul qilinadi. Shaxsiy javoblar namunaga aynan teng bo‘lishi shart emas.",
-        "kind": "choice",
-        "partIds": [
-          "u1-l1.1-q11-part1"
-        ],
-        "rubric": null,
-        "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.1-q12": {
         "mode": "authored",
@@ -186,37 +149,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
-      },
-      "u1-l1.1-q13": {
-        "mode": "authored",
-        "accepted": [
-          "C"
-        ],
-        "feedback": "Ben",
-        "notes": "2–3: I am; you are.\n5–8: He/she/it va bitta ism bilan is ishlatiladi.\n9: Emma o‘zi ham shu guruhda: we.\n10: Maya boshqa guruh haqida gapiryapti: they.\n12, 16: a student — bitta; students — ko‘plik.\n24: Birikma an app, chunki app unli tovush bilan boshlanadi.\n\nYozma javoblarda ma’nosi va grammatikasi to‘g‘ri boshqa shakllar ham qabul qilinadi. Shaxsiy javoblar namunaga aynan teng bo‘lishi shart emas.",
-        "kind": "choice",
-        "partIds": [
-          "u1-l1.1-q13-part1"
-        ],
-        "rubric": null,
-        "listening": false,
-        "strict": false
-      },
-      "u1-l1.1-q14": {
-        "mode": "authored",
-        "accepted": [
-          "B"
-        ],
-        "feedback": "Ben va Emma",
-        "notes": "2–3: I am; you are.\n5–8: He/she/it va bitta ism bilan is ishlatiladi.\n9: Emma o‘zi ham shu guruhda: we.\n10: Maya boshqa guruh haqida gapiryapti: they.\n12, 16: a student — bitta; students — ko‘plik.\n24: Birikma an app, chunki app unli tovush bilan boshlanadi.\n\nYozma javoblarda ma’nosi va grammatikasi to‘g‘ri boshqa shakllar ham qabul qilinadi. Shaxsiy javoblar namunaga aynan teng bo‘lishi shart emas.",
-        "kind": "choice",
-        "partIds": [
-          "u1-l1.1-q14-part1"
-        ],
-        "rubric": null,
-        "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.1-q15": {
         "mode": "authored",
@@ -231,7 +165,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": true
+        "strict": true,
+        "binary": true
       },
       "u1-l1.1-q16": {
         "mode": "authored",
@@ -247,113 +182,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
-      },
-      "u1-l1.1-q17": {
-        "mode": "authored",
-        "accepted": [
-          "B"
-        ],
-        "feedback": "Emma",
-        "notes": "2–3: I am; you are.\n5–8: He/she/it va bitta ism bilan is ishlatiladi.\n9: Emma o‘zi ham shu guruhda: we.\n10: Maya boshqa guruh haqida gapiryapti: they.\n12, 16: a student — bitta; students — ko‘plik.\n24: Birikma an app, chunki app unli tovush bilan boshlanadi.\n\nYozma javoblarda ma’nosi va grammatikasi to‘g‘ri boshqa shakllar ham qabul qilinadi. Shaxsiy javoblar namunaga aynan teng bo‘lishi shart emas.",
-        "kind": "choice",
-        "partIds": [
-          "u1-l1.1-q17-part1"
-        ],
-        "rubric": null,
-        "listening": true,
-        "strict": false
-      },
-      "u1-l1.1-q18": {
-        "mode": "authored",
-        "accepted": [
-          "C"
-        ],
-        "feedback": "Anna",
-        "notes": "2–3: I am; you are.\n5–8: He/she/it va bitta ism bilan is ishlatiladi.\n9: Emma o‘zi ham shu guruhda: we.\n10: Maya boshqa guruh haqida gapiryapti: they.\n12, 16: a student — bitta; students — ko‘plik.\n24: Birikma an app, chunki app unli tovush bilan boshlanadi.\n\nYozma javoblarda ma’nosi va grammatikasi to‘g‘ri boshqa shakllar ham qabul qilinadi. Shaxsiy javoblar namunaga aynan teng bo‘lishi shart emas.",
-        "kind": "choice",
-        "partIds": [
-          "u1-l1.1-q18-part1"
-        ],
-        "rubric": null,
-        "listening": true,
-        "strict": false
-      },
-      "u1-l1.1-q19": {
-        "mode": "authored",
-        "accepted": [
-          "A"
-        ],
-        "feedback": "A — Emma va Maya",
-        "notes": "2–3: I am; you are.\n5–8: He/she/it va bitta ism bilan is ishlatiladi.\n9: Emma o‘zi ham shu guruhda: we.\n10: Maya boshqa guruh haqida gapiryapti: they.\n12, 16: a student — bitta; students — ko‘plik.\n24: Birikma an app, chunki app unli tovush bilan boshlanadi.\n\nYozma javoblarda ma’nosi va grammatikasi to‘g‘ri boshqa shakllar ham qabul qilinadi. Shaxsiy javoblar namunaga aynan teng bo‘lishi shart emas.",
-        "kind": "choice",
-        "partIds": [
-          "u1-l1.1-q19-part1"
-        ],
-        "rubric": null,
-        "listening": true,
-        "strict": false
-      },
-      "u1-l1.1-q20": {
-        "mode": "authored",
-        "accepted": [
-          "C"
-        ],
-        "feedback": "We're",
-        "notes": "2–3: I am; you are.\n5–8: He/she/it va bitta ism bilan is ishlatiladi.\n9: Emma o‘zi ham shu guruhda: we.\n10: Maya boshqa guruh haqida gapiryapti: they.\n12, 16: a student — bitta; students — ko‘plik.\n24: Birikma an app, chunki app unli tovush bilan boshlanadi.\n\nYozma javoblarda ma’nosi va grammatikasi to‘g‘ri boshqa shakllar ham qabul qilinadi. Shaxsiy javoblar namunaga aynan teng bo‘lishi shart emas.",
-        "kind": "choice",
-        "partIds": [
-          "u1-l1.1-q20-part1"
-        ],
-        "rubric": null,
-        "listening": true,
-        "strict": false
-      },
-      "u1-l1.1-q21": {
-        "mode": "manual",
-        "accepted": [],
-        "feedback": "Namuna: I'm Aziz. I'm a student. O‘quvchining o‘z ismi va to‘liq shakllar qabul qilinadi.",
-        "notes": "2–3: I am; you are.\n5–8: He/she/it va bitta ism bilan is ishlatiladi.\n9: Emma o‘zi ham shu guruhda: we.\n10: Maya boshqa guruh haqida gapiryapti: they.\n12, 16: a student — bitta; students — ko‘plik.\n24: Birikma an app, chunki app unli tovush bilan boshlanadi.\n\nYozma javoblarda ma’nosi va grammatikasi to‘g‘ri boshqa shakllar ham qabul qilinadi. Shaxsiy javoblar namunaga aynan teng bo‘lishi shart emas.",
-        "kind": "written",
-        "partIds": [
-          "u1-l1.1-q21-part1",
-          "u1-l1.1-q21-part2"
-        ],
-        "rubric": null,
-        "listening": false,
-        "strict": false
-      },
-      "u1-l1.1-q22": {
-        "mode": "authored",
-        "accepted": [
-          "She is a teacher.",
-          "She's a teacher."
-        ],
-        "feedback": "She is a teacher. / She's a teacher.",
-        "notes": "2–3: I am; you are.\n5–8: He/she/it va bitta ism bilan is ishlatiladi.\n9: Emma o‘zi ham shu guruhda: we.\n10: Maya boshqa guruh haqida gapiryapti: they.\n12, 16: a student — bitta; students — ko‘plik.\n24: Birikma an app, chunki app unli tovush bilan boshlanadi.\n\nYozma javoblarda ma’nosi va grammatikasi to‘g‘ri boshqa shakllar ham qabul qilinadi. Shaxsiy javoblar namunaga aynan teng bo‘lishi shart emas.",
-        "kind": "text",
-        "partIds": [
-          "u1-l1.1-q22-part1"
-        ],
-        "rubric": null,
-        "listening": false,
-        "strict": false
-      },
-      "u1-l1.1-q23": {
-        "mode": "authored",
-        "accepted": [
-          "They are classmates.",
-          "They're classmates."
-        ],
-        "feedback": "They are classmates. / They're classmates.",
-        "notes": "2–3: I am; you are.\n5–8: He/she/it va bitta ism bilan is ishlatiladi.\n9: Emma o‘zi ham shu guruhda: we.\n10: Maya boshqa guruh haqida gapiryapti: they.\n12, 16: a student — bitta; students — ko‘plik.\n24: Birikma an app, chunki app unli tovush bilan boshlanadi.\n\nYozma javoblarda ma’nosi va grammatikasi to‘g‘ri boshqa shakllar ham qabul qilinadi. Shaxsiy javoblar namunaga aynan teng bo‘lishi shart emas.",
-        "kind": "text",
-        "partIds": [
-          "u1-l1.1-q23-part1"
-        ],
-        "rubric": null,
-        "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.1-q24": {
         "mode": "authored",
@@ -369,7 +199,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       }
     },
     "vocabulary": {
@@ -443,7 +274,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.2-q2": {
         "mode": "authored",
@@ -459,7 +291,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.2-q3": {
         "mode": "authored",
@@ -474,7 +307,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.2-q4": {
         "mode": "authored",
@@ -489,7 +323,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.2-q5": {
         "mode": "authored",
@@ -504,7 +339,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.2-q6": {
         "mode": "authored",
@@ -519,7 +355,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.2-q7": {
         "mode": "authored",
@@ -534,7 +371,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.2-q8": {
         "mode": "authored",
@@ -549,7 +387,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.2-q9": {
         "mode": "authored",
@@ -564,7 +403,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.2-q10": {
         "mode": "authored",
@@ -579,7 +419,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.2-q11": {
         "mode": "authored",
@@ -594,7 +435,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.2-q12": {
         "mode": "authored",
@@ -609,205 +451,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
-      },
-      "u1-l1.2-q13": {
-        "mode": "authored",
-        "accepted": [
-          "B"
-        ],
-        "feedback": "B — She's from Chicago.",
-        "notes": "3, 24: Telefon sirt ustida: on the desk.\n5–8, 13: From — qayerdan ekanlik; in — bu misollarda joylashuv.\n14: Tired sifat; a/an kerak emas.\n15: Busy sifatiga ko‘plik -s qo‘shilmaydi.\n\nYozma javoblarda ma’nosi va grammatikasi to‘g‘ri boshqa shakllar ham qabul qilinadi. Shaxsiy javoblar namunaga aynan teng bo‘lishi shart emas.",
-        "kind": "choice",
-        "partIds": [
-          "u1-l1.2-q13-part1"
-        ],
-        "rubric": null,
-        "listening": false,
-        "strict": false
-      },
-      "u1-l1.2-q14": {
-        "mode": "authored",
-        "accepted": [
-          "I am tired.",
-          "I'm tired."
-        ],
-        "feedback": "I am tired. / I'm tired.",
-        "notes": "3, 24: Telefon sirt ustida: on the desk.\n5–8, 13: From — qayerdan ekanlik; in — bu misollarda joylashuv.\n14: Tired sifat; a/an kerak emas.\n15: Busy sifatiga ko‘plik -s qo‘shilmaydi.\n\nYozma javoblarda ma’nosi va grammatikasi to‘g‘ri boshqa shakllar ham qabul qilinadi. Shaxsiy javoblar namunaga aynan teng bo‘lishi shart emas.",
-        "kind": "text",
-        "partIds": [
-          "u1-l1.2-q14-part1"
-        ],
-        "rubric": null,
-        "listening": false,
-        "strict": false
-      },
-      "u1-l1.2-q15": {
-        "mode": "authored",
-        "accepted": [
-          "They are busy.",
-          "They're busy."
-        ],
-        "feedback": "They are busy. / They're busy.",
-        "notes": "3, 24: Telefon sirt ustida: on the desk.\n5–8, 13: From — qayerdan ekanlik; in — bu misollarda joylashuv.\n14: Tired sifat; a/an kerak emas.\n15: Busy sifatiga ko‘plik -s qo‘shilmaydi.\n\nYozma javoblarda ma’nosi va grammatikasi to‘g‘ri boshqa shakllar ham qabul qilinadi. Shaxsiy javoblar namunaga aynan teng bo‘lishi shart emas.",
-        "kind": "text",
-        "partIds": [
-          "u1-l1.2-q15-part1"
-        ],
-        "rubric": null,
-        "listening": false,
-        "strict": false
-      },
-      "u1-l1.2-q16": {
-        "mode": "authored",
-        "accepted": [
-          [
-            "He is in the classroom.",
-            "He's in the classroom."
-          ],
-          [
-            "He is tired.",
-            "He's tired."
-          ]
-        ],
-        "feedback": "He is in the classroom. He is tired. Qisqa shakllar ham to‘g‘ri.",
-        "notes": "3, 24: Telefon sirt ustida: on the desk.\n5–8, 13: From — qayerdan ekanlik; in — bu misollarda joylashuv.\n14: Tired sifat; a/an kerak emas.\n15: Busy sifatiga ko‘plik -s qo‘shilmaydi.\n\nYozma javoblarda ma’nosi va grammatikasi to‘g‘ri boshqa shakllar ham qabul qilinadi. Shaxsiy javoblar namunaga aynan teng bo‘lishi shart emas.",
-        "kind": "written",
-        "partIds": [
-          "u1-l1.2-q16-part1",
-          "u1-l1.2-q16-part2"
-        ],
-        "rubric": null,
-        "listening": false,
-        "strict": false
-      },
-      "u1-l1.2-q17": {
-        "mode": "authored",
-        "accepted": [
-          "C"
-        ],
-        "feedback": "Boston",
-        "notes": "3, 24: Telefon sirt ustida: on the desk.\n5–8, 13: From — qayerdan ekanlik; in — bu misollarda joylashuv.\n14: Tired sifat; a/an kerak emas.\n15: Busy sifatiga ko‘plik -s qo‘shilmaydi.\n\nYozma javoblarda ma’nosi va grammatikasi to‘g‘ri boshqa shakllar ham qabul qilinadi. Shaxsiy javoblar namunaga aynan teng bo‘lishi shart emas.",
-        "kind": "choice",
-        "partIds": [
-          "u1-l1.2-q17-part1"
-        ],
-        "rubric": null,
-        "listening": true,
-        "strict": false
-      },
-      "u1-l1.2-q18": {
-        "mode": "authored",
-        "accepted": [
-          "A"
-        ],
-        "feedback": "at home",
-        "notes": "3, 24: Telefon sirt ustida: on the desk.\n5–8, 13: From — qayerdan ekanlik; in — bu misollarda joylashuv.\n14: Tired sifat; a/an kerak emas.\n15: Busy sifatiga ko‘plik -s qo‘shilmaydi.\n\nYozma javoblarda ma’nosi va grammatikasi to‘g‘ri boshqa shakllar ham qabul qilinadi. Shaxsiy javoblar namunaga aynan teng bo‘lishi shart emas.",
-        "kind": "choice",
-        "partIds": [
-          "u1-l1.2-q18-part1"
-        ],
-        "rubric": null,
-        "listening": true,
-        "strict": false
-      },
-      "u1-l1.2-q19": {
-        "mode": "authored",
-        "accepted": [
-          "B"
-        ],
-        "feedback": "B — She's busy.",
-        "notes": "3, 24: Telefon sirt ustida: on the desk.\n5–8, 13: From — qayerdan ekanlik; in — bu misollarda joylashuv.\n14: Tired sifat; a/an kerak emas.\n15: Busy sifatiga ko‘plik -s qo‘shilmaydi.\n\nYozma javoblarda ma’nosi va grammatikasi to‘g‘ri boshqa shakllar ham qabul qilinadi. Shaxsiy javoblar namunaga aynan teng bo‘lishi shart emas.",
-        "kind": "choice",
-        "partIds": [
-          "u1-l1.2-q19-part1"
-        ],
-        "rubric": null,
-        "listening": true,
-        "strict": false
-      },
-      "u1-l1.2-q20": {
-        "mode": "authored",
-        "accepted": [
-          "B"
-        ],
-        "feedback": "It's closed.",
-        "notes": "3, 24: Telefon sirt ustida: on the desk.\n5–8, 13: From — qayerdan ekanlik; in — bu misollarda joylashuv.\n14: Tired sifat; a/an kerak emas.\n15: Busy sifatiga ko‘plik -s qo‘shilmaydi.\n\nYozma javoblarda ma’nosi va grammatikasi to‘g‘ri boshqa shakllar ham qabul qilinadi. Shaxsiy javoblar namunaga aynan teng bo‘lishi shart emas.",
-        "kind": "choice",
-        "partIds": [
-          "u1-l1.2-q20-part1"
-        ],
-        "rubric": null,
-        "listening": true,
-        "strict": false
-      },
-      "u1-l1.2-q21": {
-        "mode": "manual",
-        "accepted": [],
-        "feedback": "Shaxsiy javob. Namuna: I'm at home. I'm ready.",
-        "notes": "3, 24: Telefon sirt ustida: on the desk.\n5–8, 13: From — qayerdan ekanlik; in — bu misollarda joylashuv.\n14: Tired sifat; a/an kerak emas.\n15: Busy sifatiga ko‘plik -s qo‘shilmaydi.\n\nYozma javoblarda ma’nosi va grammatikasi to‘g‘ri boshqa shakllar ham qabul qilinadi. Shaxsiy javoblar namunaga aynan teng bo‘lishi shart emas.",
-        "kind": "written",
-        "partIds": [
-          "u1-l1.2-q21-part1",
-          "u1-l1.2-q21-part2"
-        ],
-        "rubric": null,
-        "listening": false,
-        "strict": false
-      },
-      "u1-l1.2-q22": {
-        "mode": "authored",
-        "accepted": [
-          [
-            "She's from New York.",
-            "She is from New York."
-          ],
-          [
-            "She's in the library.",
-            "She is in the library."
-          ]
-        ],
-        "feedback": "She's from New York. She's in the library. To‘liq shakllar ham to‘g‘ri.",
-        "notes": "3, 24: Telefon sirt ustida: on the desk.\n5–8, 13: From — qayerdan ekanlik; in — bu misollarda joylashuv.\n14: Tired sifat; a/an kerak emas.\n15: Busy sifatiga ko‘plik -s qo‘shilmaydi.\n\nYozma javoblarda ma’nosi va grammatikasi to‘g‘ri boshqa shakllar ham qabul qilinadi. Shaxsiy javoblar namunaga aynan teng bo‘lishi shart emas.",
-        "kind": "written",
-        "partIds": [
-          "u1-l1.2-q22-part1",
-          "u1-l1.2-q22-part2"
-        ],
-        "rubric": null,
-        "listening": false,
-        "strict": false
-      },
-      "u1-l1.2-q23": {
-        "mode": "authored",
-        "accepted": [
-          "We are ready.",
-          "We're ready."
-        ],
-        "feedback": "We are ready. / We're ready.",
-        "notes": "3, 24: Telefon sirt ustida: on the desk.\n5–8, 13: From — qayerdan ekanlik; in — bu misollarda joylashuv.\n14: Tired sifat; a/an kerak emas.\n15: Busy sifatiga ko‘plik -s qo‘shilmaydi.\n\nYozma javoblarda ma’nosi va grammatikasi to‘g‘ri boshqa shakllar ham qabul qilinadi. Shaxsiy javoblar namunaga aynan teng bo‘lishi shart emas.",
-        "kind": "text",
-        "partIds": [
-          "u1-l1.2-q23-part1"
-        ],
-        "rubric": null,
-        "listening": false,
-        "strict": false
-      },
-      "u1-l1.2-q24": {
-        "mode": "authored",
-        "accepted": [
-          "The phone is on the desk."
-        ],
-        "feedback": "The phone is on the desk.",
-        "notes": "3, 24: Telefon sirt ustida: on the desk.\n5–8, 13: From — qayerdan ekanlik; in — bu misollarda joylashuv.\n14: Tired sifat; a/an kerak emas.\n15: Busy sifatiga ko‘plik -s qo‘shilmaydi.\n\nYozma javoblarda ma’nosi va grammatikasi to‘g‘ri boshqa shakllar ham qabul qilinadi. Shaxsiy javoblar namunaga aynan teng bo‘lishi shart emas.",
-        "kind": "text",
-        "partIds": [
-          "u1-l1.2-q24-part1"
-        ],
-        "rubric": null,
-        "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       }
     },
     "vocabulary": {
@@ -895,7 +540,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.3-q2": {
         "mode": "authored",
@@ -912,7 +558,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.3-q3": {
         "mode": "authored",
@@ -928,7 +575,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.3-q4": {
         "mode": "authored",
@@ -944,7 +592,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.3-q5": {
         "mode": "authored",
@@ -959,7 +608,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.3-q6": {
         "mode": "authored",
@@ -974,7 +624,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": true
+        "strict": true,
+        "binary": true
       },
       "u1-l1.3-q7": {
         "mode": "authored",
@@ -989,7 +640,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.3-q8": {
         "mode": "authored",
@@ -1005,22 +657,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": true
-      },
-      "u1-l1.3-q9": {
-        "mode": "authored",
-        "accepted": [
-          "A"
-        ],
-        "feedback": "A — She isn't busy.",
-        "notes": "1–4: Rasmda ko‘rsatilgan faktga mos ravishda noto‘g‘ri ma’lumot inkor qilinadi.\n5, 11: I amn't emas, I'm not.\n9: She isn't va she's not bir xil ma’noda.\n12: Not am/is/are dan keyin keladi.\n24: Tired sifat. A/an qo‘yilmaydi.\n\nYozma javoblarda ma’nosi va grammatikasi to‘g‘ri boshqa shakllar ham qabul qilinadi. Shaxsiy javoblar namunaga aynan teng bo‘lishi shart emas.",
-        "kind": "choice",
-        "partIds": [
-          "u1-l1.3-q9-part1"
-        ],
-        "rubric": null,
-        "listening": false,
-        "strict": false
+        "strict": true,
+        "binary": true
       },
       "u1-l1.3-q10": {
         "mode": "authored",
@@ -1035,7 +673,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": true
+        "strict": true,
+        "binary": true
       },
       "u1-l1.3-q11": {
         "mode": "authored",
@@ -1051,7 +690,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.3-q12": {
         "mode": "authored",
@@ -1068,176 +708,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
-      },
-      "u1-l1.3-q13": {
-        "mode": "authored",
-        "accepted": [
-          "B"
-        ],
-        "feedback": "Chicago",
-        "notes": "1–4: Rasmda ko‘rsatilgan faktga mos ravishda noto‘g‘ri ma’lumot inkor qilinadi.\n5, 11: I amn't emas, I'm not.\n9: She isn't va she's not bir xil ma’noda.\n12: Not am/is/are dan keyin keladi.\n24: Tired sifat. A/an qo‘yilmaydi.\n\nYozma javoblarda ma’nosi va grammatikasi to‘g‘ri boshqa shakllar ham qabul qilinadi. Shaxsiy javoblar namunaga aynan teng bo‘lishi shart emas.",
-        "kind": "choice",
-        "partIds": [
-          "u1-l1.3-q13-part1"
-        ],
-        "rubric": null,
-        "listening": false,
-        "strict": false
-      },
-      "u1-l1.3-q14": {
-        "mode": "authored",
-        "accepted": [
-          "C"
-        ],
-        "feedback": "C — He isn't at home.",
-        "notes": "1–4: Rasmda ko‘rsatilgan faktga mos ravishda noto‘g‘ri ma’lumot inkor qilinadi.\n5, 11: I amn't emas, I'm not.\n9: She isn't va she's not bir xil ma’noda.\n12: Not am/is/are dan keyin keladi.\n24: Tired sifat. A/an qo‘yilmaydi.\n\nYozma javoblarda ma’nosi va grammatikasi to‘g‘ri boshqa shakllar ham qabul qilinadi. Shaxsiy javoblar namunaga aynan teng bo‘lishi shart emas.",
-        "kind": "choice",
-        "partIds": [
-          "u1-l1.3-q14-part1"
-        ],
-        "rubric": null,
-        "listening": false,
-        "strict": false
-      },
-      "u1-l1.3-q15": {
-        "mode": "authored",
-        "accepted": [
-          "B"
-        ],
-        "feedback": "B — It isn't open.",
-        "notes": "1–4: Rasmda ko‘rsatilgan faktga mos ravishda noto‘g‘ri ma’lumot inkor qilinadi.\n5, 11: I amn't emas, I'm not.\n9: She isn't va she's not bir xil ma’noda.\n12: Not am/is/are dan keyin keladi.\n24: Tired sifat. A/an qo‘yilmaydi.\n\nYozma javoblarda ma’nosi va grammatikasi to‘g‘ri boshqa shakllar ham qabul qilinadi. Shaxsiy javoblar namunaga aynan teng bo‘lishi shart emas.",
-        "kind": "choice",
-        "partIds": [
-          "u1-l1.3-q15-part1"
-        ],
-        "rubric": null,
-        "listening": false,
-        "strict": false
-      },
-      "u1-l1.3-q16": {
-        "mode": "authored",
-        "accepted": [
-          "A"
-        ],
-        "feedback": "Alex va Emma",
-        "notes": "1–4: Rasmda ko‘rsatilgan faktga mos ravishda noto‘g‘ri ma’lumot inkor qilinadi.\n5, 11: I amn't emas, I'm not.\n9: She isn't va she's not bir xil ma’noda.\n12: Not am/is/are dan keyin keladi.\n24: Tired sifat. A/an qo‘yilmaydi.\n\nYozma javoblarda ma’nosi va grammatikasi to‘g‘ri boshqa shakllar ham qabul qilinadi. Shaxsiy javoblar namunaga aynan teng bo‘lishi shart emas.",
-        "kind": "choice",
-        "partIds": [
-          "u1-l1.3-q16-part1"
-        ],
-        "rubric": null,
-        "listening": false,
-        "strict": false
-      },
-      "u1-l1.3-q17": {
-        "mode": "authored",
-        "accepted": [
-          "B"
-        ],
-        "feedback": "in the library",
-        "notes": "1–4: Rasmda ko‘rsatilgan faktga mos ravishda noto‘g‘ri ma’lumot inkor qilinadi.\n5, 11: I amn't emas, I'm not.\n9: She isn't va she's not bir xil ma’noda.\n12: Not am/is/are dan keyin keladi.\n24: Tired sifat. A/an qo‘yilmaydi.\n\nYozma javoblarda ma’nosi va grammatikasi to‘g‘ri boshqa shakllar ham qabul qilinadi. Shaxsiy javoblar namunaga aynan teng bo‘lishi shart emas.",
-        "kind": "choice",
-        "partIds": [
-          "u1-l1.3-q17-part1"
-        ],
-        "rubric": null,
-        "listening": true,
-        "strict": false
-      },
-      "u1-l1.3-q18": {
-        "mode": "authored",
-        "accepted": [
-          "A"
-        ],
-        "feedback": "A — She isn't tired.",
-        "notes": "1–4: Rasmda ko‘rsatilgan faktga mos ravishda noto‘g‘ri ma’lumot inkor qilinadi.\n5, 11: I amn't emas, I'm not.\n9: She isn't va she's not bir xil ma’noda.\n12: Not am/is/are dan keyin keladi.\n24: Tired sifat. A/an qo‘yilmaydi.\n\nYozma javoblarda ma’nosi va grammatikasi to‘g‘ri boshqa shakllar ham qabul qilinadi. Shaxsiy javoblar namunaga aynan teng bo‘lishi shart emas.",
-        "kind": "choice",
-        "partIds": [
-          "u1-l1.3-q18-part1"
-        ],
-        "rubric": null,
-        "listening": true,
-        "strict": false
-      },
-      "u1-l1.3-q19": {
-        "mode": "authored",
-        "accepted": [
-          "C"
-        ],
-        "feedback": "C — They aren't in the library.",
-        "notes": "1–4: Rasmda ko‘rsatilgan faktga mos ravishda noto‘g‘ri ma’lumot inkor qilinadi.\n5, 11: I amn't emas, I'm not.\n9: She isn't va she's not bir xil ma’noda.\n12: Not am/is/are dan keyin keladi.\n24: Tired sifat. A/an qo‘yilmaydi.\n\nYozma javoblarda ma’nosi va grammatikasi to‘g‘ri boshqa shakllar ham qabul qilinadi. Shaxsiy javoblar namunaga aynan teng bo‘lishi shart emas.",
-        "kind": "choice",
-        "partIds": [
-          "u1-l1.3-q19-part1"
-        ],
-        "rubric": null,
-        "listening": true,
-        "strict": false
-      },
-      "u1-l1.3-q20": {
-        "mode": "authored",
-        "accepted": [
-          "B"
-        ],
-        "feedback": "It isn't open.",
-        "notes": "1–4: Rasmda ko‘rsatilgan faktga mos ravishda noto‘g‘ri ma’lumot inkor qilinadi.\n5, 11: I amn't emas, I'm not.\n9: She isn't va she's not bir xil ma’noda.\n12: Not am/is/are dan keyin keladi.\n24: Tired sifat. A/an qo‘yilmaydi.\n\nYozma javoblarda ma’nosi va grammatikasi to‘g‘ri boshqa shakllar ham qabul qilinadi. Shaxsiy javoblar namunaga aynan teng bo‘lishi shart emas.",
-        "kind": "choice",
-        "partIds": [
-          "u1-l1.3-q20-part1"
-        ],
-        "rubric": null,
-        "listening": true,
-        "strict": false
-      },
-      "u1-l1.3-q21": {
-        "mode": "authored",
-        "accepted": [
-          "You are not a teacher.",
-          "You aren't a teacher.",
-          "You're not a teacher."
-        ],
-        "feedback": "You are not a teacher. / You aren't a teacher. / You're not a teacher.",
-        "notes": "1–4: Rasmda ko‘rsatilgan faktga mos ravishda noto‘g‘ri ma’lumot inkor qilinadi.\n5, 11: I amn't emas, I'm not.\n9: She isn't va she's not bir xil ma’noda.\n12: Not am/is/are dan keyin keladi.\n24: Tired sifat. A/an qo‘yilmaydi.\n\nYozma javoblarda ma’nosi va grammatikasi to‘g‘ri boshqa shakllar ham qabul qilinadi. Shaxsiy javoblar namunaga aynan teng bo‘lishi shart emas.",
-        "kind": "text",
-        "partIds": [
-          "u1-l1.3-q21-part1"
-        ],
-        "rubric": null,
-        "listening": false,
-        "strict": false
-      },
-      "u1-l1.3-q22": {
-        "mode": "authored",
-        "accepted": [
-          "It is not an app.",
-          "It isn't an app.",
-          "It's not an app."
-        ],
-        "feedback": "It is not an app. / It isn't an app. / It's not an app.",
-        "notes": "1–4: Rasmda ko‘rsatilgan faktga mos ravishda noto‘g‘ri ma’lumot inkor qilinadi.\n5, 11: I amn't emas, I'm not.\n9: She isn't va she's not bir xil ma’noda.\n12: Not am/is/are dan keyin keladi.\n24: Tired sifat. A/an qo‘yilmaydi.\n\nYozma javoblarda ma’nosi va grammatikasi to‘g‘ri boshqa shakllar ham qabul qilinadi. Shaxsiy javoblar namunaga aynan teng bo‘lishi shart emas.",
-        "kind": "text",
-        "partIds": [
-          "u1-l1.3-q22-part1"
-        ],
-        "rubric": null,
-        "listening": false,
-        "strict": false
-      },
-      "u1-l1.3-q23": {
-        "mode": "manual",
-        "accepted": [],
-        "feedback": "Shaxsiy javob. Namuna: I'm a student. I'm not a teacher. I'm not at home.",
-        "notes": "1–4: Rasmda ko‘rsatilgan faktga mos ravishda noto‘g‘ri ma’lumot inkor qilinadi.\n5, 11: I amn't emas, I'm not.\n9: She isn't va she's not bir xil ma’noda.\n12: Not am/is/are dan keyin keladi.\n24: Tired sifat. A/an qo‘yilmaydi.\n\nYozma javoblarda ma’nosi va grammatikasi to‘g‘ri boshqa shakllar ham qabul qilinadi. Shaxsiy javoblar namunaga aynan teng bo‘lishi shart emas.",
-        "kind": "written",
-        "partIds": [
-          "u1-l1.3-q23-part1",
-          "u1-l1.3-q23-part2",
-          "u1-l1.3-q23-part3"
-        ],
-        "rubric": null,
-        "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.3-q24": {
         "mode": "authored",
@@ -1254,7 +726,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       }
     },
     "vocabulary": {
@@ -1353,7 +826,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.4-q2": {
         "mode": "authored",
@@ -1368,7 +842,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.4-q3": {
         "mode": "authored",
@@ -1385,22 +860,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
-      },
-      "u1-l1.4-q4": {
-        "mode": "authored",
-        "accepted": [
-          "C"
-        ],
-        "feedback": "telefon",
-        "notes": "1: Are you...? savoliga o‘zingiz haqida I bilan javob berasiz.\n5–8, 21: Am/is/are savol boshiga chiqadi.\n11: Siz ham shu guruhdasiz: we.\n12: Alex o‘zi haqida so‘rayapti. Unga you bilan javob berasiz.\n22: Qisqa tasdiq javobida am qisqartirilmaydi.\n\nQisqa javob so‘ralgan topshiriqda grammatik to‘g‘ri uzun javob ma’nosi to‘g‘ri deb qayd etiladi va qisqa javob namunasi ko‘rsatiladi.",
-        "kind": "choice",
-        "partIds": [
-          "u1-l1.4-q4-part1"
-        ],
-        "rubric": null,
-        "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.4-q5": {
         "mode": "authored",
@@ -1415,7 +876,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.4-q6": {
         "mode": "authored",
@@ -1430,7 +892,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.4-q7": {
         "mode": "authored",
@@ -1445,7 +908,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.4-q8": {
         "mode": "authored",
@@ -1460,7 +924,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.4-q9": {
         "mode": "authored",
@@ -1477,7 +942,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.4-q10": {
         "mode": "authored",
@@ -1492,7 +958,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.4-q11": {
         "mode": "authored",
@@ -1507,7 +974,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.4-q12": {
         "mode": "authored",
@@ -1524,148 +992,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
-      },
-      "u1-l1.4-q13": {
-        "mode": "authored",
-        "accepted": [
-          "No, she isn't.",
-          "No, she's not.",
-          "No, she is not."
-        ],
-        "feedback": "No, she isn't. / No, she's not. / No, she is not.",
-        "notes": "1: Are you...? savoliga o‘zingiz haqida I bilan javob berasiz.\n5–8, 21: Am/is/are savol boshiga chiqadi.\n11: Siz ham shu guruhdasiz: we.\n12: Alex o‘zi haqida so‘rayapti. Unga you bilan javob berasiz.\n22: Qisqa tasdiq javobida am qisqartirilmaydi.\n\nQisqa javob so‘ralgan topshiriqda grammatik to‘g‘ri uzun javob ma’nosi to‘g‘ri deb qayd etiladi va qisqa javob namunasi ko‘rsatiladi.",
-        "kind": "text",
-        "partIds": [
-          "u1-l1.4-q13-part1"
-        ],
-        "rubric": null,
-        "listening": false,
-        "strict": false
-      },
-      "u1-l1.4-q14": {
-        "mode": "authored",
-        "accepted": [
-          "Yes, she is."
-        ],
-        "feedback": "Yes, she is.",
-        "notes": "1: Are you...? savoliga o‘zingiz haqida I bilan javob berasiz.\n5–8, 21: Am/is/are savol boshiga chiqadi.\n11: Siz ham shu guruhdasiz: we.\n12: Alex o‘zi haqida so‘rayapti. Unga you bilan javob berasiz.\n22: Qisqa tasdiq javobida am qisqartirilmaydi.\n\nQisqa javob so‘ralgan topshiriqda grammatik to‘g‘ri uzun javob ma’nosi to‘g‘ri deb qayd etiladi va qisqa javob namunasi ko‘rsatiladi.",
-        "kind": "text",
-        "partIds": [
-          "u1-l1.4-q14-part1"
-        ],
-        "rubric": null,
-        "listening": false,
-        "strict": false
-      },
-      "u1-l1.4-q15": {
-        "mode": "authored",
-        "accepted": [
-          "No, she isn't.",
-          "No, she's not.",
-          "No, she is not."
-        ],
-        "feedback": "No, she isn't. / No, she's not. / No, she is not.",
-        "notes": "1: Are you...? savoliga o‘zingiz haqida I bilan javob berasiz.\n5–8, 21: Am/is/are savol boshiga chiqadi.\n11: Siz ham shu guruhdasiz: we.\n12: Alex o‘zi haqida so‘rayapti. Unga you bilan javob berasiz.\n22: Qisqa tasdiq javobida am qisqartirilmaydi.\n\nQisqa javob so‘ralgan topshiriqda grammatik to‘g‘ri uzun javob ma’nosi to‘g‘ri deb qayd etiladi va qisqa javob namunasi ko‘rsatiladi.",
-        "kind": "text",
-        "partIds": [
-          "u1-l1.4-q15-part1"
-        ],
-        "rubric": null,
-        "listening": false,
-        "strict": false
-      },
-      "u1-l1.4-q16": {
-        "mode": "authored",
-        "accepted": [
-          "No, she isn't.",
-          "No, she's not.",
-          "No, she is not."
-        ],
-        "feedback": "No, she isn't. / No, she's not. / No, she is not.",
-        "notes": "1: Are you...? savoliga o‘zingiz haqida I bilan javob berasiz.\n5–8, 21: Am/is/are savol boshiga chiqadi.\n11: Siz ham shu guruhdasiz: we.\n12: Alex o‘zi haqida so‘rayapti. Unga you bilan javob berasiz.\n22: Qisqa tasdiq javobida am qisqartirilmaydi.\n\nQisqa javob so‘ralgan topshiriqda grammatik to‘g‘ri uzun javob ma’nosi to‘g‘ri deb qayd etiladi va qisqa javob namunasi ko‘rsatiladi.",
-        "kind": "text",
-        "partIds": [
-          "u1-l1.4-q16-part1"
-        ],
-        "rubric": null,
-        "listening": false,
-        "strict": false
-      },
-      "u1-l1.4-q17": {
-        "mode": "authored",
-        "accepted": [
-          "B"
-        ],
-        "feedback": "No, he isn't.",
-        "notes": "1: Are you...? savoliga o‘zingiz haqida I bilan javob berasiz.\n5–8, 21: Am/is/are savol boshiga chiqadi.\n11: Siz ham shu guruhdasiz: we.\n12: Alex o‘zi haqida so‘rayapti. Unga you bilan javob berasiz.\n22: Qisqa tasdiq javobida am qisqartirilmaydi.\n\nQisqa javob so‘ralgan topshiriqda grammatik to‘g‘ri uzun javob ma’nosi to‘g‘ri deb qayd etiladi va qisqa javob namunasi ko‘rsatiladi.",
-        "kind": "choice",
-        "partIds": [
-          "u1-l1.4-q17-part1"
-        ],
-        "rubric": null,
-        "listening": true,
-        "strict": false
-      },
-      "u1-l1.4-q18": {
-        "mode": "authored",
-        "accepted": [
-          "B"
-        ],
-        "feedback": "in the classroom",
-        "notes": "1: Are you...? savoliga o‘zingiz haqida I bilan javob berasiz.\n5–8, 21: Am/is/are savol boshiga chiqadi.\n11: Siz ham shu guruhdasiz: we.\n12: Alex o‘zi haqida so‘rayapti. Unga you bilan javob berasiz.\n22: Qisqa tasdiq javobida am qisqartirilmaydi.\n\nQisqa javob so‘ralgan topshiriqda grammatik to‘g‘ri uzun javob ma’nosi to‘g‘ri deb qayd etiladi va qisqa javob namunasi ko‘rsatiladi.",
-        "kind": "choice",
-        "partIds": [
-          "u1-l1.4-q18-part1"
-        ],
-        "rubric": null,
-        "listening": true,
-        "strict": false
-      },
-      "u1-l1.4-q19": {
-        "mode": "authored",
-        "accepted": [
-          "B"
-        ],
-        "feedback": "No, she isn't.",
-        "notes": "1: Are you...? savoliga o‘zingiz haqida I bilan javob berasiz.\n5–8, 21: Am/is/are savol boshiga chiqadi.\n11: Siz ham shu guruhdasiz: we.\n12: Alex o‘zi haqida so‘rayapti. Unga you bilan javob berasiz.\n22: Qisqa tasdiq javobida am qisqartirilmaydi.\n\nQisqa javob so‘ralgan topshiriqda grammatik to‘g‘ri uzun javob ma’nosi to‘g‘ri deb qayd etiladi va qisqa javob namunasi ko‘rsatiladi.",
-        "kind": "choice",
-        "partIds": [
-          "u1-l1.4-q19-part1"
-        ],
-        "rubric": null,
-        "listening": true,
-        "strict": false
-      },
-      "u1-l1.4-q20": {
-        "mode": "authored",
-        "accepted": [
-          "B"
-        ],
-        "feedback": "Yes, it is.",
-        "notes": "1: Are you...? savoliga o‘zingiz haqida I bilan javob berasiz.\n5–8, 21: Am/is/are savol boshiga chiqadi.\n11: Siz ham shu guruhdasiz: we.\n12: Alex o‘zi haqida so‘rayapti. Unga you bilan javob berasiz.\n22: Qisqa tasdiq javobida am qisqartirilmaydi.\n\nQisqa javob so‘ralgan topshiriqda grammatik to‘g‘ri uzun javob ma’nosi to‘g‘ri deb qayd etiladi va qisqa javob namunasi ko‘rsatiladi.",
-        "kind": "choice",
-        "partIds": [
-          "u1-l1.4-q20-part1"
-        ],
-        "rubric": null,
-        "listening": true,
-        "strict": false
-      },
-      "u1-l1.4-q21": {
-        "mode": "authored",
-        "accepted": [
-          "Is she at home?"
-        ],
-        "feedback": "Is she at home?",
-        "notes": "1: Are you...? savoliga o‘zingiz haqida I bilan javob berasiz.\n5–8, 21: Am/is/are savol boshiga chiqadi.\n11: Siz ham shu guruhdasiz: we.\n12: Alex o‘zi haqida so‘rayapti. Unga you bilan javob berasiz.\n22: Qisqa tasdiq javobida am qisqartirilmaydi.\n\nQisqa javob so‘ralgan topshiriqda grammatik to‘g‘ri uzun javob ma’nosi to‘g‘ri deb qayd etiladi va qisqa javob namunasi ko‘rsatiladi.",
-        "kind": "text",
-        "partIds": [
-          "u1-l1.4-q21-part1"
-        ],
-        "rubric": null,
-        "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.4-q22": {
         "mode": "authored",
@@ -1680,38 +1008,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
-      },
-      "u1-l1.4-q23": {
-        "mode": "manual",
-        "accepted": [],
-        "feedback": "Shaxsiy javoblar: Yes, I am. yoki No, I'm not. To‘liq inkor shakli ham to‘g‘ri.",
-        "notes": "1: Are you...? savoliga o‘zingiz haqida I bilan javob berasiz.\n5–8, 21: Am/is/are savol boshiga chiqadi.\n11: Siz ham shu guruhdasiz: we.\n12: Alex o‘zi haqida so‘rayapti. Unga you bilan javob berasiz.\n22: Qisqa tasdiq javobida am qisqartirilmaydi.\n\nQisqa javob so‘ralgan topshiriqda grammatik to‘g‘ri uzun javob ma’nosi to‘g‘ri deb qayd etiladi va qisqa javob namunasi ko‘rsatiladi.",
-        "kind": "written",
-        "partIds": [
-          "u1-l1.4-q23-part1",
-          "u1-l1.4-q23-part2",
-          "u1-l1.4-q23-part3"
-        ],
-        "rubric": null,
-        "listening": false,
-        "strict": false
-      },
-      "u1-l1.4-q24": {
-        "mode": "manual",
-        "accepted": [],
-        "feedback": "Namuna: Are Emma and Ben at university? — Yes, they are. Are they ready? — Yes, they are.",
-        "notes": "1: Are you...? savoliga o‘zingiz haqida I bilan javob berasiz.\n5–8, 21: Am/is/are savol boshiga chiqadi.\n11: Siz ham shu guruhdasiz: we.\n12: Alex o‘zi haqida so‘rayapti. Unga you bilan javob berasiz.\n22: Qisqa tasdiq javobida am qisqartirilmaydi.\n\nQisqa javob so‘ralgan topshiriqda grammatik to‘g‘ri uzun javob ma’nosi to‘g‘ri deb qayd etiladi va qisqa javob namunasi ko‘rsatiladi.",
-        "kind": "written",
-        "partIds": [
-          "u1-l1.4-q24-part1",
-          "u1-l1.4-q24-part2",
-          "u1-l1.4-q24-part3",
-          "u1-l1.4-q24-part4"
-        ],
-        "rubric": null,
-        "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       }
     },
     "vocabulary": {
@@ -1775,22 +1073,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
-      },
-      "u1-l1.5-q2": {
-        "mode": "authored",
-        "accepted": [
-          "Where"
-        ],
-        "feedback": "Where",
-        "notes": "1–4: Javobning ma’nosiga qarang: kelib chiqish, joy, buyum yoki holat.\n5, 21: From savolning oxirida keladi.\n6, 23: Where dan keyin are, so‘ng olmosh keladi.\n13–14: From Chicago va in the library turli ma’lumotlarni bildiradi.\n\nYozma javoblarda ma’nosi va grammatikasi to‘g‘ri boshqa shakllar ham qabul qilinadi. Shaxsiy javoblar namunaga aynan teng bo‘lishi shart emas.",
-        "kind": "text",
-        "partIds": [
-          "u1-l1.5-q2-part1"
-        ],
-        "rubric": null,
-        "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.5-q3": {
         "mode": "authored",
@@ -1805,7 +1089,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.5-q4": {
         "mode": "authored",
@@ -1820,7 +1105,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.5-q5": {
         "mode": "authored",
@@ -1836,7 +1122,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.5-q6": {
         "mode": "authored",
@@ -1851,7 +1138,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.5-q7": {
         "mode": "authored",
@@ -1867,7 +1155,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.5-q8": {
         "mode": "authored",
@@ -1883,7 +1172,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.5-q9": {
         "mode": "authored",
@@ -1898,20 +1188,24 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.5-q10": {
-        "mode": "manual",
-        "accepted": [],
-        "feedback": "O‘quvchining o‘z ismi.",
-        "notes": "1–4: Javobning ma’nosiga qarang: kelib chiqish, joy, buyum yoki holat.\n5, 21: From savolning oxirida keladi.\n6, 23: Where dan keyin are, so‘ng olmosh keladi.\n13–14: From Chicago va in the library turli ma’lumotlarni bildiradi.\n\nYozma javoblarda ma’nosi va grammatikasi to‘g‘ri boshqa shakllar ham qabul qilinadi. Shaxsiy javoblar namunaga aynan teng bo‘lishi shart emas.",
-        "kind": "written",
+        "mode": "authored",
+        "kind": "text",
         "partIds": [
           "u1-l1.5-q10-part1"
         ],
+        "accepted": [
+          "My name is Emma."
+        ],
+        "feedback": "My name is Emma. — Mening ismim Emma.",
+        "notes": "",
         "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.5-q11": {
         "mode": "authored",
@@ -1926,170 +1220,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
-      },
-      "u1-l1.5-q12": {
-        "mode": "authored",
-        "accepted": [
-          "Who is she?"
-        ],
-        "feedback": "Who is she?",
-        "notes": "1–4: Javobning ma’nosiga qarang: kelib chiqish, joy, buyum yoki holat.\n5, 21: From savolning oxirida keladi.\n6, 23: Where dan keyin are, so‘ng olmosh keladi.\n13–14: From Chicago va in the library turli ma’lumotlarni bildiradi.\n\nYozma javoblarda ma’nosi va grammatikasi to‘g‘ri boshqa shakllar ham qabul qilinadi. Shaxsiy javoblar namunaga aynan teng bo‘lishi shart emas.",
-        "kind": "text",
-        "partIds": [
-          "u1-l1.5-q12-part1"
-        ],
-        "rubric": null,
-        "listening": false,
-        "strict": true
-      },
-      "u1-l1.5-q13": {
-        "mode": "authored",
-        "accepted": [
-          "She's from Chicago.",
-          "She is from Chicago.",
-          "Emma is from Chicago."
-        ],
-        "feedback": "She's from Chicago. / She is from Chicago. / Emma is from Chicago.",
-        "notes": "1–4: Javobning ma’nosiga qarang: kelib chiqish, joy, buyum yoki holat.\n5, 21: From savolning oxirida keladi.\n6, 23: Where dan keyin are, so‘ng olmosh keladi.\n13–14: From Chicago va in the library turli ma’lumotlarni bildiradi.\n\nYozma javoblarda ma’nosi va grammatikasi to‘g‘ri boshqa shakllar ham qabul qilinadi. Shaxsiy javoblar namunaga aynan teng bo‘lishi shart emas.",
-        "kind": "text",
-        "partIds": [
-          "u1-l1.5-q13-part1"
-        ],
-        "rubric": null,
-        "listening": false,
-        "strict": false
-      },
-      "u1-l1.5-q14": {
-        "mode": "authored",
-        "accepted": [
-          "She's in the library.",
-          "She is in the library.",
-          "Emma is in the library."
-        ],
-        "feedback": "She's in the library. / She is in the library. / Emma is in the library.",
-        "notes": "1–4: Javobning ma’nosiga qarang: kelib chiqish, joy, buyum yoki holat.\n5, 21: From savolning oxirida keladi.\n6, 23: Where dan keyin are, so‘ng olmosh keladi.\n13–14: From Chicago va in the library turli ma’lumotlarni bildiradi.\n\nYozma javoblarda ma’nosi va grammatikasi to‘g‘ri boshqa shakllar ham qabul qilinadi. Shaxsiy javoblar namunaga aynan teng bo‘lishi shart emas.",
-        "kind": "text",
-        "partIds": [
-          "u1-l1.5-q14-part1"
-        ],
-        "rubric": null,
-        "listening": false,
-        "strict": false
-      },
-      "u1-l1.5-q15": {
-        "mode": "authored",
-        "accepted": [
-          "She's a teacher.",
-          "She is a teacher.",
-          "Anna is a teacher."
-        ],
-        "feedback": "She's a teacher. / She is a teacher. / Anna is a teacher.",
-        "notes": "1–4: Javobning ma’nosiga qarang: kelib chiqish, joy, buyum yoki holat.\n5, 21: From savolning oxirida keladi.\n6, 23: Where dan keyin are, so‘ng olmosh keladi.\n13–14: From Chicago va in the library turli ma’lumotlarni bildiradi.\n\nYozma javoblarda ma’nosi va grammatikasi to‘g‘ri boshqa shakllar ham qabul qilinadi. Shaxsiy javoblar namunaga aynan teng bo‘lishi shart emas.",
-        "kind": "text",
-        "partIds": [
-          "u1-l1.5-q15-part1"
-        ],
-        "rubric": null,
-        "listening": false,
-        "strict": false
-      },
-      "u1-l1.5-q16": {
-        "mode": "authored",
-        "accepted": [
-          "He's tired, but he's ready.",
-          "He is tired, but he is ready.",
-          "He's tired and he's ready.",
-          "He is tired and he is ready.",
-          "He's tired. He's ready.",
-          "He is tired. He is ready.",
-          "He's tired but ready.",
-          "He is tired but ready."
-        ],
-        "feedback": "He's tired, but he's ready. To‘liq shakllar, and bilan bog‘langan yoki ikkita alohida gap ham to‘g‘ri.",
-        "notes": "1–4: Javobning ma’nosiga qarang: kelib chiqish, joy, buyum yoki holat.\n5, 21: From savolning oxirida keladi.\n6, 23: Where dan keyin are, so‘ng olmosh keladi.\n13–14: From Chicago va in the library turli ma’lumotlarni bildiradi.\n\nYozma javoblarda ma’nosi va grammatikasi to‘g‘ri boshqa shakllar ham qabul qilinadi. Shaxsiy javoblar namunaga aynan teng bo‘lishi shart emas.",
-        "kind": "text",
-        "partIds": [
-          "u1-l1.5-q16-part1"
-        ],
-        "rubric": null,
-        "listening": false,
-        "strict": false
-      },
-      "u1-l1.5-q17": {
-        "mode": "authored",
-        "accepted": [
-          "B"
-        ],
-        "feedback": "Maya",
-        "notes": "1–4: Javobning ma’nosiga qarang: kelib chiqish, joy, buyum yoki holat.\n5, 21: From savolning oxirida keladi.\n6, 23: Where dan keyin are, so‘ng olmosh keladi.\n13–14: From Chicago va in the library turli ma’lumotlarni bildiradi.\n\nYozma javoblarda ma’nosi va grammatikasi to‘g‘ri boshqa shakllar ham qabul qilinadi. Shaxsiy javoblar namunaga aynan teng bo‘lishi shart emas.",
-        "kind": "choice",
-        "partIds": [
-          "u1-l1.5-q17-part1"
-        ],
-        "rubric": null,
-        "listening": true,
-        "strict": false
-      },
-      "u1-l1.5-q18": {
-        "mode": "authored",
-        "accepted": [
-          "C"
-        ],
-        "feedback": "New York",
-        "notes": "1–4: Javobning ma’nosiga qarang: kelib chiqish, joy, buyum yoki holat.\n5, 21: From savolning oxirida keladi.\n6, 23: Where dan keyin are, so‘ng olmosh keladi.\n13–14: From Chicago va in the library turli ma’lumotlarni bildiradi.\n\nYozma javoblarda ma’nosi va grammatikasi to‘g‘ri boshqa shakllar ham qabul qilinadi. Shaxsiy javoblar namunaga aynan teng bo‘lishi shart emas.",
-        "kind": "choice",
-        "partIds": [
-          "u1-l1.5-q18-part1"
-        ],
-        "rubric": null,
-        "listening": true,
-        "strict": false
-      },
-      "u1-l1.5-q19": {
-        "mode": "authored",
-        "accepted": [
-          "A"
-        ],
-        "feedback": "at home",
-        "notes": "1–4: Javobning ma’nosiga qarang: kelib chiqish, joy, buyum yoki holat.\n5, 21: From savolning oxirida keladi.\n6, 23: Where dan keyin are, so‘ng olmosh keladi.\n13–14: From Chicago va in the library turli ma’lumotlarni bildiradi.\n\nYozma javoblarda ma’nosi va grammatikasi to‘g‘ri boshqa shakllar ham qabul qilinadi. Shaxsiy javoblar namunaga aynan teng bo‘lishi shart emas.",
-        "kind": "choice",
-        "partIds": [
-          "u1-l1.5-q19-part1"
-        ],
-        "rubric": null,
-        "listening": true,
-        "strict": false
-      },
-      "u1-l1.5-q20": {
-        "mode": "authored",
-        "accepted": [
-          "C"
-        ],
-        "feedback": "C — She's fine. She isn't tired.",
-        "notes": "1–4: Javobning ma’nosiga qarang: kelib chiqish, joy, buyum yoki holat.\n5, 21: From savolning oxirida keladi.\n6, 23: Where dan keyin are, so‘ng olmosh keladi.\n13–14: From Chicago va in the library turli ma’lumotlarni bildiradi.\n\nYozma javoblarda ma’nosi va grammatikasi to‘g‘ri boshqa shakllar ham qabul qilinadi. Shaxsiy javoblar namunaga aynan teng bo‘lishi shart emas.",
-        "kind": "choice",
-        "partIds": [
-          "u1-l1.5-q20-part1"
-        ],
-        "rubric": null,
-        "listening": true,
-        "strict": false
-      },
-      "u1-l1.5-q21": {
-        "mode": "authored",
-        "accepted": [
-          "Where are you from?"
-        ],
-        "feedback": "Where are you from?",
-        "notes": "1–4: Javobning ma’nosiga qarang: kelib chiqish, joy, buyum yoki holat.\n5, 21: From savolning oxirida keladi.\n6, 23: Where dan keyin are, so‘ng olmosh keladi.\n13–14: From Chicago va in the library turli ma’lumotlarni bildiradi.\n\nYozma javoblarda ma’nosi va grammatikasi to‘g‘ri boshqa shakllar ham qabul qilinadi. Shaxsiy javoblar namunaga aynan teng bo‘lishi shart emas.",
-        "kind": "text",
-        "partIds": [
-          "u1-l1.5-q21-part1"
-        ],
-        "rubric": null,
-        "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.5-q22": {
         "mode": "authored",
@@ -2104,7 +1236,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.5-q23": {
         "mode": "authored",
@@ -2119,23 +1252,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
-      },
-      "u1-l1.5-q24": {
-        "mode": "manual",
-        "accepted": [],
-        "feedback": "Shaxsiy javoblar. Namuna: My name is Aziz. I'm from Tashkent. I'm at home. I'm fine.",
-        "notes": "1–4: Javobning ma’nosiga qarang: kelib chiqish, joy, buyum yoki holat.\n5, 21: From savolning oxirida keladi.\n6, 23: Where dan keyin are, so‘ng olmosh keladi.\n13–14: From Chicago va in the library turli ma’lumotlarni bildiradi.\n\nYozma javoblarda ma’nosi va grammatikasi to‘g‘ri boshqa shakllar ham qabul qilinadi. Shaxsiy javoblar namunaga aynan teng bo‘lishi shart emas.",
-        "kind": "written",
-        "partIds": [
-          "u1-l1.5-q24-part1",
-          "u1-l1.5-q24-part2",
-          "u1-l1.5-q24-part3",
-          "u1-l1.5-q24-part4"
-        ],
-        "rubric": null,
-        "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       }
     },
     "vocabulary": {
@@ -2200,7 +1318,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.6-q2": {
         "mode": "authored",
@@ -2215,7 +1334,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.6-q3": {
         "mode": "authored",
@@ -2230,7 +1350,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.6-q4": {
         "mode": "authored",
@@ -2245,7 +1366,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.6-q5": {
         "mode": "authored",
@@ -2260,7 +1382,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.6-q6": {
         "mode": "authored",
@@ -2277,7 +1400,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.6-q7": {
         "mode": "authored",
@@ -2292,7 +1416,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.6-q8": {
         "mode": "authored",
@@ -2307,7 +1432,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.6-q9": {
         "mode": "authored",
@@ -2322,7 +1448,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.6-q10": {
         "mode": "authored",
@@ -2337,7 +1464,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.6-q11": {
         "mode": "authored",
@@ -2352,7 +1480,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.6-q12": {
         "mode": "authored",
@@ -2367,7 +1496,8 @@
         ],
         "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.6-q13": {
         "mode": "authored",
@@ -2382,7 +1512,8 @@
         ],
         "rubric": null,
         "listening": true,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.6-q14": {
         "mode": "authored",
@@ -2397,7 +1528,8 @@
         ],
         "rubric": null,
         "listening": true,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.6-q15": {
         "mode": "authored",
@@ -2412,7 +1544,8 @@
         ],
         "rubric": null,
         "listening": true,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.6-q16": {
         "mode": "authored",
@@ -2427,7 +1560,8 @@
         ],
         "rubric": null,
         "listening": true,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.6-q17": {
         "mode": "authored",
@@ -2441,9 +1575,10 @@
         "partIds": [
           "u1-l1.6-q17-part1"
         ],
-        "rubric": 17,
+        "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.6-q18": {
         "mode": "authored",
@@ -2456,9 +1591,10 @@
         "partIds": [
           "u1-l1.6-q18-part1"
         ],
-        "rubric": 18,
+        "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.6-q19": {
         "mode": "authored",
@@ -2471,9 +1607,10 @@
         "partIds": [
           "u1-l1.6-q19-part1"
         ],
-        "rubric": 19,
+        "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       },
       "u1-l1.6-q20": {
         "mode": "authored",
@@ -2486,9 +1623,10 @@
         "partIds": [
           "u1-l1.6-q20-part1"
         ],
-        "rubric": 20,
+        "rubric": null,
         "listening": false,
-        "strict": false
+        "strict": false,
+        "binary": true
       }
     },
     "vocabulary": {

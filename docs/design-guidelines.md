@@ -16,11 +16,11 @@ The audience is university freshmen learning English from zero. Present content 
 | Accent | `#E2A845` | Honey mustard; progress and highlights |
 | Text | `#2F2A25` | Warm charcoal, rather than pure black |
 
-Use these colors consistently across student and teacher screens. Box 1's supporting colors, typography, spacing, and component details are documented below as implementation choices.
+Use these colours for student screens. The third-check teacher workspace uses a separate dark night palette, with sage and warm clay accents. Box 1's supporting colors, typography, spacing, and component details are documented below as implementation choices.
 
 ## Box 1 implementation choices
 
-Box 1 includes plain verification specimens at `/foundation`. The Boxes 2–3 brief now authorizes student entry and home design: restrained neutral surfaces, readable spacing, subtle borders, coordinated rounded corners and no childish illustrations or decorative statistics. Reference images establish colours only. **DM Sans** remains the self-hosted reading font. Reusable CSS tokens and Svelte components live in `src/app.css` and `src/lib/components/`. Supporting clay `#AE5634` gives white button text 5.02:1 contrast while the primary brand token remains `#B9603C`. Supporting muted text `#70665B` on paper gives 4.95:1 contrast. Student UI uses natural Uzbek Latin script.
+Box 1 includes plain verification specimens at `/foundation`. The third-check reference now authorizes illustrated student layouts: warm cream surfaces, rounded terracotta actions, sage progress, honey coin accents and mature student/Uzbek architecture artwork. This supersedes the earlier colour-only reference and illustration restriction. Use actual learning data; do not add decorative statistics. **DM Sans** remains the self-hosted reading font. Reusable CSS tokens and Svelte components live in `src/app.css` and `src/lib/components/`. Supporting clay `#AE5634` gives white button text 5.02:1 contrast while the primary brand token remains `#B9603C`. Supporting muted text `#70665B` on paper gives 4.95:1 contrast. Student UI uses natural Uzbek Latin script.
 
 ## Responsive requirements
 
@@ -46,3 +46,27 @@ Phone and laptop support is a core requirement, not a later enhancement.
 - Use labels or symbols alongside color for progress, correctness, and status.
 - Keep forms and exercise instructions clear for complete beginners.
 - Avoid assuming that all students have a large screen or use a mouse.
+
+## Second-check lesson structure
+
+Current lessons use one short explanation/example or one practice per window.
+Use Next/Previous controls and a position indicator, with no sublesson tabs.
+Allow natural reflow for small phones/keyboard use; do not replace the lesson
+with one long page. The third-check visual design is now implemented; see `check-3.md`.
+
+## Third-check navigation and theme
+
+Student navigation contains Darslar, Lug‘at, Profil in that order. Use a desktop
+sidebar and a phone/tablet bottom bar. Ranking lives within Profil. Keep the
+lesson Next/Previous controls in document flow above the shared bottom nav.
+The shared shell reads hook identity without another database query.
+
+Student style is scoped in `src/student.css`, lesson refinements in
+`src/lesson.css`, and independent teacher night colours in `src/teacher.css`.
+DM Sans remains the reading font; self-hosted Kalam is limited to the wordmark
+and welcoming display text. Phosphor icons use individual imports. Three
+optimized WebP illustrations, including the transparent J coin, are in
+`static/images/`; generation prompts are documented beside them.
+
+Verification for this check follows the owner's code-only instruction. Do not
+claim browser or visual comparison when none was performed.

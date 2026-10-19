@@ -266,3 +266,20 @@ audio { display:block; width:min(100%,400px); margin-block:16px; }
   .admin-table td,.admin-table td:first-child,.admin-table td:last-child,.review-table td:nth-child(2) { display:block; width:100%; border:0; padding:7px 0; }
   .admin-table td[data-label]::before { content:attr(data-label); display:block; font-size:12px; color:var(--muted); margin-bottom:3px; }
 }
+/* Rankings share the current Clay & Sage components; the visual redesign is separate. */
+.home-account-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem; }
+.coin-total { padding: 1rem 1.25rem; border: 1px solid #d7cbb8; border-radius: 1rem; background: #fff9eb; overflow-wrap: anywhere; }
+.coin-total strong { font-size: 1.25em; }
+.ranking-page { max-width: 48rem; margin-inline: auto; }
+.ranking-list { padding: 0; list-style: none; display: grid; gap: .65rem; margin-block: 1.5rem; }
+.ranking-list li { display: flex; align-items: center; gap: 1rem; padding: 1rem; border: 1px solid #ded6c9; border-radius: 1rem; background: #fffdf8; }
+.ranking-list .ranking-current { background: #edf1e8; border-color: #8ba383; }
+.ranking-place { display: grid; place-items: center; min-width: 2.75rem; min-height: 2.75rem; border-radius: 50%; background: #f0e5d5; font-weight: 600; }
+.ranking-name { flex: 1; min-width: 0; overflow-wrap: anywhere; }
+.ranking-list small { display: block; color: #70665b; font-size: .8rem; font-weight: 400; }
+.ranking-list strong { text-align: end; }
+.reward-guide { margin-block: 1.5rem; padding: 1rem; border: 1px solid #ded6c9; border-radius: 1rem; }
+.reward-guide summary { cursor: pointer; padding-block: .4rem; }
+.reward-guide li { margin-block: .6rem; }
+
+.lesson-list li .lesson-vocabulary-link { display: block; padding: .5rem 1rem 1rem 4.25rem; font-size: .85rem; color: #8f4328; }

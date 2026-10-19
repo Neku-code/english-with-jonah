@@ -1,4 +1,21 @@
-# Unit 1 implementation
+# Unit 1 implementation — current revision
+
+Content version **2026-10-19.4** implements the owner’s second check.
+Read [check 2](check-2.md) for current behavior and rollout. The earlier
+140-question implementation below records historical decisions and is
+superseded wherever it conflicts with this correction.
+
+- Five teaching lessons, each with 12 automatically marked practices and three
+  short explanation windows; one task per practice window, Next/Previous flow.
+- No sublesson tabs, lesson exam/submission or teacher-review dependency.
+- Every practice must be correct; the last correct check completes the lesson.
+- The only grammar exam is 1.6: 20 questions / 24 marks, binary grading.
+- Eight original illustrations are retained. Archived .3 display/keys preserve
+  authoring inputs and history; `scripts/compact-unit1.py` generates .4.
+- Apply migration 0010, publish with `pnpm unit1:publish`, then deploy.
+
+## Historical original implementation
+
 
 The supplied `Learn_with_Jonah_Unit_1_Complete.zip` is the curriculum source.
 Its extracted originals, notes, answer keys and eight PNGs are retained under
@@ -42,7 +59,7 @@ The desktop sidebar becomes a dialog lesson picker below 1100px; phone controls
 account for safe-area space and move out of the way of focused writing fields.
 
 Vocabulary remains preparation, with a separate quick-reference dialog in
-practice. Matching vocabulary readiness opens each ordinary lesson independently.
+practice. Selecting **Ko‘rib chiqdim** or passing the vocabulary test opens each ordinary lesson independently. Test mastery earns 30 coins once; review alone earns none.
 Sampling uses distinct random words, `ceil(words/3)`, typed Uzbek responses and
 the existing >=75% rule. A passed result remains passed after later failures.
 The exam vocabulary list is review; it introduces no additional gate or threshold.
@@ -60,8 +77,9 @@ self-check; no pronunciation assessment is claimed.
 
 Finishing practice requires all authored parts answered and checked, completed
 listening and resolved teacher reviews, without inventing a score threshold.
-The five finished lessons earn 10 points each. The final exam's >=90% mastery
-rule and non-duplicating 50-point award remain unchanged. A failed or pending
+The five finished lessons earn 50 coins each. The final exam's >=90% mastery
+rule adds 10 coins to each teaching lesson (50 total) once. Vocabulary mastery
+earns another 30 per lesson. Unit 1 offers 450 coins; see `check-1.md`. A failed or pending
 exam never clears previously earned progress.
 
 ## Persistence and teacher integration

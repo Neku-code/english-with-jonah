@@ -5,7 +5,7 @@
 </script>
 <svelte:head><title>Kirish · English with Jonah</title></svelte:head>
 <section class="entry-wrap" aria-labelledby="entry-title">
-  <div class="entry-intro"><p class="eyebrow">ENGLISH WITH JONAH</p><h1 id="entry-title">Xush kelibsiz.</h1><p>Ingliz tilini birgalikda o‘rganamiz.</p></div>
+  <div class="entry-intro"><p class="eyebrow">ENGLISH WITH JONAH</p><h1 id="entry-title">Xush kelibsiz.</h1><p>Ingliz tilini birgalikda o‘rganamiz.</p><img class="entry-art" src="/images/jonah-city.webp" width="1600" height="640" alt="" /></div>
   <div class="entry-panel">
     <h2>Profilingizga kiring</h2>
     <p class="muted">Ismingizni kiriting va o‘rganishni boshlang.</p>

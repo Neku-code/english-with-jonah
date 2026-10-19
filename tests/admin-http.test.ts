@@ -17,7 +17,7 @@ before(async () => {
   const probe = createServer(); await new Promise<void>(done => probe.listen(0, '127.0.0.1', done));
   const port = (probe.address() as { port: number }).port; await new Promise<void>(done => probe.close(() => done()));
   base = `http://127.0.0.1:${port}`;
-  app = spawn(process.execPath, ['node_modules/vite/bin/vite.js', '--host', '127.0.0.1', '--port', String(port), '--strictPort'], { env: { ...process.env, DATABASE_URL: store.url }, stdio: 'ignore', windowsHide: true });
+  app = spawn(process.execPath, ['node_modules/vite/bin/vite.js', '--host', '127.0.0.1', '--port', String(port), '--strictPort'], { env: { ...process.env, DATABASE_URL: store.url, JONAH_TEST_NAMESPACE: `teacher-${port}` }, stdio: 'ignore', windowsHide: true });
   const deadline = Date.now() + 30_000;
   while (Date.now() < deadline) { try { if ((await fetch(base + '/api/health')).ok) return; } catch { /* startup */ } if (app.exitCode !== null) throw new Error('Application exited'); await delay(200); }
   throw new Error('Application startup timed out');
@@ -120,4 +120,16 @@ test('HTTP database failures are recoverable errors, never invented empty result
   const b=await teacherBrowser(); await store.pool.query('ALTER TABLE units RENAME TO unavailable_units');
   try { const result=await b.fetch('/admin/questions'); assert.equal(result.status,503); const html=await result.text(); assert.match(html,/Sahifani ochib bo‘lmadi/); assert.doesNotMatch(html,/Hali savollar bo‘yicha natija yo‘q/); }
   finally { await store.pool.query('ALTER TABLE unavailable_units RENAME TO units'); }
+});
+
+test('HTTP teacher coin controls add/subtract once and reject student or cross-origin mutations',async()=>{
+ const teacher=await teacherBrowser(),s=await createStudent(store.db,'HTTP coin learner'),path=`/admin/students/${s.id}?/coins`;
+ const request={requestId:randomUUID(),operation:'add',amount:'120',reason:'Class practice'};
+ assert.equal((await teacher.form(path,request)).status,200);assert.equal((await teacher.form(path,request)).status,200);
+ const {homeData}=await import('../src/lib/server/learning/catalog');assert.equal((await homeData(store.db,s.id)).totalPoints,120);
+ assert.equal((await teacher.form(path,{...request,requestId:randomUUID(),operation:'subtract',amount:'150'})).status,200);
+ assert.equal((await homeData(store.db,s.id)).totalPoints,-30);
+ const student=new Browser();await student.form('/',{name:s.displayName});assert.equal((await student.form(path,{...request,requestId:randomUUID()})).headers.get('location'),'/');
+ assert.equal((await teacher.form(path,{...request,requestId:randomUUID()},'https://another.invalid')).status,403);
+ assert.equal((await homeData(store.db,s.id)).totalPoints,-30);
 });

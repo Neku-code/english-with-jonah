@@ -14,7 +14,7 @@ before(async () => {
   const port = (probe.address() as { port: number }).port; await new Promise<void>(done => probe.close(() => done()));
   base = `http://127.0.0.1:${port}`;
   app = spawn(process.execPath, ['node_modules/vite/bin/vite.js', '--host', '127.0.0.1', '--port', String(port), '--strictPort'], {
-    env: { ...process.env, DATABASE_URL: store.url }, stdio: 'ignore', windowsHide: true
+    env: { ...process.env, DATABASE_URL: store.url, JONAH_TEST_NAMESPACE: `student-${port}` }, stdio: 'ignore', windowsHide: true
   });
   const deadline = Date.now() + 30_000;
   while (Date.now() < deadline) {
@@ -92,12 +92,16 @@ test('HTTP API session ownership, CSRF, validation, safe DTO, revisions and idem
 });
 test('HTTP catalog failures have a recoverable error state, never the empty state', async () => {
   const browser = new Browser(); await browser.form('/', { name: 'Failure state person' });
+  const f = await fixture(store.db);
   await store.pool.query('ALTER TABLE units RENAME TO temporarily_unavailable_units');
   try {
     const response = await browser.fetch('/home'); const html = await response.text();
     assert.match(html, /Darslarni yuklab bo‘lmadi/); assert.match(html, /Qayta urinish/); assert.doesNotMatch(html, /Darslar hali qo‘shilmagan/);
   } finally { await store.pool.query('ALTER TABLE temporarily_unavailable_units RENAME TO units'); }
-  assert.match(await (await browser.fetch('/home')).text(), /Darslaringiz/);
+  const recovered = await browser.fetch('/home'); assert.equal(recovered.status, 200);
+  const recoveredHtml = await recovered.text();
+  assert.ok(recoveredHtml.includes(`/learn/${f.lesson.id}`));
+  assert.doesNotMatch(recoveredHtml, /Darslarni yuklab bo‘lmadi|Darslar hali qo‘shilmagan/);
 });
 test('HTTP reserved administrator entry stays separate from automatic student profiles', async () => {
   const teacher = new Browser();
@@ -110,4 +114,55 @@ test('HTTP reserved administrator entry stays separate from automatic student pr
   assert.equal((await teacher.fetch('/admin')).status, 200);
   const { rows } = await store.pool.query('SELECT count(*)::int total FROM students WHERE lookup_name=$1', [configured.toLowerCase()]);
   assert.equal(rows[0].total, 0);
+});
+
+test('HTTP rankings are student-only and vocabulary review unlocks without manufacturing a test pass', async () => {
+ const anonymous = new Browser();
+ assert.equal((await anonymous.fetch('/ranking')).headers.get('location'), '/');
+ const a = new Browser(), b = new Browser();
+ await a.form('/', { name: 'Ranking HTTP learner' }); await b.form('/', { name: 'Still locked HTTP learner' });
+ const f = await fixture(store.db, { vocabulary: true });
+ const start = `/api/lessons/${f.lesson.id}/attempts`, vocab = `/api/lessons/${f.lesson.id}/vocabulary`;
+ assert.equal((await a.json(start)).status, 409);
+ assert.equal((await a.json(vocab, { action: 'review', studentId: 'spoof' })).status, 400);
+ assert.equal((await a.json(vocab, { action: 'review' }, 'POST', 'https://another.invalid')).status, 403);
+ assert.equal((await a.json(vocab, { action: 'review' })).status, 200);
+ assert.equal((await a.json(vocab, { action: 'review' })).status, 200);
+ assert.equal((await b.json(start)).status, 409);
+ const before = await (await a.fetch('/ranking')).text();assert.match(before, /Ranking HTTP learner/);assert.match(before, /Sizning o‘rningiz/);
+ const attempt = await (await a.json(start)).json();
+ await a.json(`/api/attempts/${attempt.id}/answers`, { questionId: f.question.id, response: 'token', expectedRevision: 0 }, 'PUT');
+ await a.json(`/api/attempts/${attempt.id}/submit`);
+ const result = await a.fetch('/ranking');assert.equal(result.status, 200);assert.match(result.headers.get('cache-control')!, /no-store/);
+ const html = await result.text();assert.match(html, /50/);assert.doesNotMatch(html, /acceptedTranslations|lookupName|groupLabel/);
+ const teacher = new Browser();await teacher.form('/', { name: process.env.TEACHER_ENTRY_NAME! });
+ assert.equal((await teacher.fetch('/ranking')).headers.get('location'), '/');
+});
+
+test('HTTP student navigation, vocabulary library and profile retain access and real saved balances', async () => {
+ const anonymous = new Browser();
+ for (const route of ['/profile', '/vocabulary']) assert.equal((await anonymous.fetch(route)).headers.get('location'), '/');
+ const student = new Browser();
+ await student.form('/', { name: 'Design HTTP learner' });
+ const f = await fixture(store.db, { vocabulary: true });
+ await student.json(`/api/lessons/${f.lesson.id}/vocabulary`, { action: 'review' });
+ const attempt = await (await student.json(`/api/lessons/${f.lesson.id}/attempts`)).json();
+ await student.json(`/api/attempts/${attempt.id}/answers`, { questionId: f.question.id, response: 'token', expectedRevision: 0 }, 'PUT');
+ await student.json(`/api/attempts/${attempt.id}/submit`);
+ const profileResponse = await student.fetch('/profile');
+ assert.equal(profileResponse.status, 200); assert.match(profileResponse.headers.get('cache-control')!, /no-store/);
+ const profile = await profileResponse.text();
+ assert.match(profile, /Design HTTP learner/); assert.match(profile, /Jami yig‘ilgan coin/);
+ assert.match(profile, /Sizning o‘rningiz/); assert.match(profile, /href="\/ranking"/);
+ assert.match(profile, /jonah-coin\.webp/); assert.match(profile, />50<\/strong>/);
+ assert.doesNotMatch(profile, /acceptedTranslations|teacherSessionId|lookupName/);
+ const libraryResponse = await student.fetch('/vocabulary'); assert.equal(libraryResponse.status, 200);
+ const library = await libraryResponse.text();
+ assert.ok(library.includes(`/learn/${f.lesson.id}?vocab`)); assert.match(library, /Ko‘rib chiqilgan/);
+ const navigation = library.match(/<nav class="student-nav"[^>]*>(.*?)<\/nav>/s)?.[1]; assert.ok(navigation);
+ assert.deepEqual([...navigation.matchAll(/href="([^"]+)"/g)].map(m=>m[1]), ['/home','/vocabulary','/profile']);
+ const teacher = new Browser(); await teacher.form('/', { name: process.env.TEACHER_ENTRY_NAME! });
+ for (const route of ['/profile','/vocabulary']) assert.equal((await teacher.fetch(route)).headers.get('location'), '/');
+ const teacherHome = await (await teacher.fetch('/admin')).text();
+ assert.match(teacherHome, /teacher-frame/); assert.doesNotMatch(teacherHome, /<nav class="student-nav"/);
 });

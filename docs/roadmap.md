@@ -7,11 +7,11 @@ This is the current implementation target.
 ### Required scope
 
 - English learning content focused on **To Be** for complete beginners.
-- Vocabulary before each lesson, numbered by unit and lesson, with typed English-to-Uzbek flashcard exams on one-third of each set's words, feedback after each answer, and a 75% pass threshold. See [Vocabulary](vocabulary.md) for lesson unlocking and sampling assumptions.
+- Vocabulary before each lesson, numbered by unit and lesson, with typed English-to-Uzbek flashcard exams on one-third of each set's words, feedback after each answer, and a 75% pass threshold. Reviewing with **Ko‘rib chiqdim** unlocks the matching lesson; passing the test gives 30 coins once. See [Vocabulary](vocabulary.md).
 - Name-only student entry: a new name automatically creates a profile; an existing normalized name opens its saved profile. Server-backed sessions remember the current profile. Anyone knowing a name may enter it, as explicitly confirmed by the user.
 - Student accounts/profiles and persisted learning data.
 - Student answers, grading, scores, and progress.
-- Approximately 5–7 lessons and a final exam per unit, with Finished lesson statuses, 50 lesson points total, and 50 additional points plus mastery for a final exam score of at least 90%. See [Levels and mastery](levels-and-mastery.md).
+- Five teaching lessons with twelve automatic practices each and one final unit exam, with Finished lesson statuses, 50 coins per finished teaching lesson, 30 per passed vocabulary set, and 10 more per teaching lesson plus mastery for a final exam score of at least 90%. Rankings order active students by lifetime coins. See [Levels and mastery](levels-and-mastery.md).
 - Exact server-configured teacher entry with separate protected server-backed sessions, implemented in Box 6.
 - Teacher abilities to add and remove students, monitor students, and view their progress.
 - Responsive student and teacher experiences for phones and laptops.
@@ -20,9 +20,9 @@ This is the current implementation target.
 ### Details still to define
 
 - To Be lesson sequence and learning objectives.
-- Vocabulary lists, accepted Uzbek answers, sampling details, retry rules, and confirmation of the vocabulary-based lesson unlock.
-- Exercise types, questions, and feedback.
-- Detailed exercise grading, lesson completion criteria, and exam retry rules. The 90% mastery threshold and 50/50 point split are already confirmed.
+- Vocabulary lists, accepted translations and sampling are authored. The first check confirms review-based unlocking; see `vocabulary.md`.
+- Exercise types, concise windows and automatic feedback are authored in content .4.
+- All practices must be correct to finish automatically; the unit exam alone is submitted. The 90% mastery threshold and 30/50/10 coin rewards are confirmed.
 - Language used for explanations and instructions.
 - Any additional administrator protections would require a new instruction; exact server-side entry and separate teacher sessions are settled by Box 6.
 - Additional dashboard summaries and student removal behavior; core progress measures are defined in the mastery reference.
@@ -33,7 +33,7 @@ This is the current implementation target.
 - A student can study each lesson's vocabulary, take its sampled translation exam, see answer feedback and the pass result, and proceed according to the resolved lesson-access rule.
 - The teacher can add and remove students and inspect their progress.
 - Learning data survives a new visit.
-- All finished lessons together earn exactly 50 points; an exam below 90% preserves progress, and an exam of at least 90% grants the remaining 50 points and mastery without duplicate awards.
+- Each teaching lesson earns 50 coins once, vocabulary mastery earns 30 once, and an exam of at least 90% grants 10 more per teaching lesson and mastery without duplicate awards. Unit 1 offers 450 coins.
 - Core student and teacher tasks work on phones and laptops.
 - The confirmed name-only student flow and separate administrator access are implemented and verified.
 
@@ -46,7 +46,7 @@ Present Simple is outside the current v0.1 content scope.
 ## Current phase
 
 The Unit 1 follow-up now implements the authored five lessons, vocabulary
-preparation, separate final exam and real teacher-review integration. See
+preparation, separate final unit exam and automatic correct/incorrect grading. See
 [implementation](unit-1-implementation.md) and [validation](unit-1-validation.md).
 The earlier Box 1/2/3/6 descriptions below describe their original handoffs.
 
@@ -55,3 +55,5 @@ Box 1 established the SvelteKit project and component verification. Boxes 2–3 
 ## Box 6 follow-up
 
 [Box 6](box-6.md) implements protected teacher sessions, the teacher workspace, student management, versioned attempt inspection, transactional written review and real question statistics. The owner explicitly chose exact server-configured entry through the existing name field, without another authentication step. This supersedes the earlier administrator-authorization open decision. Student automatic creation and same-name access follow the later confirmed correction. No lesson content is added by Box 6.
+
+The second check adds compact windows, no teacher-review dependency for new lessons, custom teacher coin adjustments and navigation/read-path performance fixes; see `check-2.md`.

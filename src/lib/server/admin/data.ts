@@ -1,7 +1,7 @@
 import { sql, eq, and, desc, ne } from 'drizzle-orm';
 import { randomUUID } from 'node:crypto';
 import type { Connection, Database } from '../db/connect';
-import { students, lessonAttempts, lessonProgress, lessonVersions, lessons, teacherReviews, studentMutations } from '../db/schema';
+import { students, lessonAttempts, lessonProgress, lessonVersions, lessons, teacherReviews, studentMutations, coinAdjustments } from '../db/schema';
 import { displayName, normalizeName, reject, uuid } from '../validation';
 import { createStudent, renameStudent, archiveStudent, reactivateStudent } from '../students';
 import { hashToken } from '../sessions';
@@ -91,7 +91,8 @@ export async function studentDetail(db: Connection, id: string, url: URL) {
     WHERE r.student_id=${id} ORDER BY r.created_at DESC,r.id LIMIT ${PAGE_SIZE} OFFSET ${(page - 1) * PAGE_SIZE}`);
   const { rows: vocabCount } = await db.execute<{ total: number }>(sql`SELECT count(*)::int total FROM vocabulary_results WHERE student_id=${id}`);
   const { rows: lessonStates } = await db.execute<{ lessonId: string; submitted: boolean }>(sql`SELECT lesson_id AS "lessonId",bool_or(status='submitted') submitted FROM lesson_attempts WHERE student_id=${id} GROUP BY lesson_id`);
-  return { student, attempts, completed, vocab, lessonStates, vocabTotal: vocabCount[0].total, page, ...counts[0], home: await homeData(db, id) };
+  const adjustments = await db.select().from(coinAdjustments).where(eq(coinAdjustments.studentId, id)).orderBy(desc(coinAdjustments.createdAt)).limit(20);
+  return { student, attempts, completed, vocab, lessonStates, adjustments, coinRequestId: randomUUID(), vocabTotal: vocabCount[0].total, page, ...counts[0], home: await homeData(db, id) };
 }
 export async function filterOptions(db: Connection) {
   const { rows: lessonOptions } = await db.execute<{ id: string; title: string }>(sql`

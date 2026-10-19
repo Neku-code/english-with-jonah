@@ -6,12 +6,40 @@ Built with SvelteKit, TypeScript, responsive CSS, Neon PostgreSQL, and Drizzle O
 Live app: [English with Jonah](https://english-with-jonah.vercel.app).
 See [deployment status and verification](docs/vercel-setup.md).
 
+## Second check — short lessons and automatic practice
+
+Unit 1 now has **five lessons × 12 practices**, one practice or short model per
+Next/Previous window, and **one final exam** (1.6). All answers are automatically
+correct/incorrect. Fix errors in the same lesson; the final correct check
+completes it and awards 50 coins. No lesson-level exam or teacher review is
+required for the new content. Teacher student details include custom coin
+addition/deduction and immutable history.
+
+Apply migrations through **0010**, run **`pnpm unit1:publish`**, then deploy.
+New content is immutable revision **2026-10-19.4**; earlier work is preserved.
+Window navigation no longer waits for network saves; answer batches and atomic
+checks reduce round trips, and home/attempt reads each use two DB requests.
+See [code analysis, implementation and rollout](docs/check-2.md).
+
+## First check — rankings and coins
+
+Students unlock each lesson with **Ko‘rib chiqdim** and can separately choose
+**Test topshirish** to master its vocabulary. Rewards: 30 coins per passed
+vocabulary set, 50 per finished teaching lesson, and 10 more per teaching lesson
+when final exam 1.6 reaches 90%. Unit 1 offers 450 coins. `/ranking` orders active
+students by real lifetime coins, with shared ranks for ties. Retries cannot pay
+again. Teacher reviews award eligible coins atomically.
+
+**Apply migration 0009 with `pnpm db:migrate` before deploying this feature.**
+It preserves existing learning records and backfills genuine earlier milestones.
+See [first-check handoff and validation](docs/check-1.md).
+
 ## Unit 1 — Authored lessons and final test
 
-The supplied Unit 1 curriculum is implemented: five lessons with 24 numbered
-tasks each, vocabulary preparation, and a separate 20-task/24-point final exam.
+The supplied Unit 1 curriculum has been condensed to five lessons with 12
+practices each, vocabulary preparation, and a separate 20-task/24-point final exam.
 The player saves real answers, checks, retries, sections and support usage through
-the existing student backend. Written answers connect to teacher review. Eight
+the existing student backend. Current practices and exam answers are automatically marked; original written-answer history remains accessible to the teacher. Eight
 original illustrations have responsive derivatives, full-sheet views and 28
 verified panels. Listening uses browser English TTS from the supplied scripts.
 

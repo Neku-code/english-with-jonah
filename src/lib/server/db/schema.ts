@@ -1,5 +1,5 @@
 import { sql } from 'drizzle-orm';
-import { pgTable, text, timestamp, uuid, integer, boolean, jsonb, customType, unique, index, check, foreignKey, primaryKey, uniqueIndex } from 'drizzle-orm/pg-core';
+import { pgTable, text, timestamp, uuid, integer, bigint, boolean, jsonb, customType, unique, index, check, foreignKey, primaryKey, uniqueIndex } from 'drizzle-orm/pg-core';
 import type { CompletionPolicy, GradingRule, QuestionContent } from '../learning/contracts';
 
 const time = (name: string) => timestamp(name, { withTimezone: true }).notNull().defaultNow();
@@ -78,7 +78,7 @@ export const lessonAttempts = pgTable('lesson_attempts', {
 }, t => [foreignKey({ columns: [t.versionId, t.lessonId], foreignColumns: [lessonVersions.id, lessonVersions.lessonId] }),
   unique('attempt_owner_version').on(t.id, t.studentId, t.versionId), unique('attempt_owner_lesson').on(t.id, t.studentId, t.lessonId),
   index('attempt_student_recent_idx').on(t.studentId, t.updatedAt), index('attempt_revision_idx').on(t.versionId),
-  uniqueIndex('one_unfinished_attempt').on(t.studentId, t.lessonId).where(sql`${t.status} = 'in_progress'`),
+  uniqueIndex('one_unfinished_attempt').on(t.studentId, t.lessonId, t.versionId).where(sql`${t.status} = 'in_progress'`),
   check('attempt_state', sql`(${t.status} = 'in_progress' and ${t.submittedAt} is null and ${t.earnedPoints} is null and ${t.maxPoints} is null) or (${t.status} = 'submitted' and ${t.submittedAt} is not null and ${t.earnedPoints} >= 0 and ${t.maxPoints} > 0 and ${t.earnedPoints} <= ${t.maxPoints})`)]);
 export const answers = pgTable('answers', {
   attemptId: uuid('attempt_id').notNull(), studentId: uuid('student_id').notNull(), versionId: uuid('version_id').notNull(), questionId: uuid('question_id').notNull(),
@@ -150,3 +150,27 @@ export const vocabularySessions = pgTable('vocabulary_sessions', {
   submitted:boolean('submitted').notNull().default(false),createdAt:time('created_at'),updatedAt:time('updated_at')
 },t=>[foreignKey({columns:[t.versionId,t.lessonId],foreignColumns:[lessonVersions.id,lessonVersions.lessonId]}),
   uniqueIndex('one_vocab_session').on(t.studentId,t.versionId).where(sql`${t.submitted}=false`)]);
+
+// Reading unlocks a revision; passing its test is a separate mastery milestone.
+export const vocabularyStudy = pgTable('vocabulary_study', {
+  studentId: uuid('student_id').notNull().references(() => students.id),
+  lessonId: uuid('lesson_id').notNull(), versionId: uuid('version_id').notNull(), reviewedAt: time('reviewed_at')
+}, t => [primaryKey({ columns: [t.studentId, t.lessonId, t.versionId] }),
+  foreignKey({ columns: [t.versionId, t.lessonId], foreignColumns: [lessonVersions.id, lessonVersions.lessonId] })]);
+
+// The stable lesson identity prevents repeat rewards, including new revisions.
+export const learningRewards = pgTable('learning_rewards', {
+  studentId: uuid('student_id').notNull().references(() => students.id),
+  lessonId: uuid('lesson_id').notNull().references(() => lessons.id),
+  kind: text('kind', { enum: ['vocabulary', 'lesson', 'mastery'] }).notNull(),
+  coins: integer('coins').notNull(), awardedAt: time('awarded_at')
+}, t => [primaryKey({ columns: [t.studentId, t.lessonId, t.kind] }),
+  check('reward_amount', sql`(${t.kind} = 'vocabulary' AND ${t.coins} = 30) OR (${t.kind} = 'lesson' AND ${t.coins} = 50) OR (${t.kind} = 'mastery' AND ${t.coins} = 10)`)]);
+
+export const coinAdjustments = pgTable('coin_adjustments', {
+  requestId: uuid('request_id').primaryKey(), studentId: uuid('student_id').notNull().references(() => students.id),
+  teacherSessionId: uuid('teacher_session_id').notNull().references(() => teacherSessions.id),
+  delta: bigint('delta', { mode: 'number' }).notNull(), reason: text('reason').notNull().default(''), createdAt: time('created_at')
+}, t => [index('coin_adjustments_student_idx').on(t.studentId, t.createdAt),
+  check('adjustment_nonzero', sql`${t.delta} <> 0 AND ${t.delta} BETWEEN -9007199254740991 AND 9007199254740991`),
+  check('adjustment_reason', sql`length(${t.reason}) <= 500`)]);

@@ -51,3 +51,12 @@ Grading remains revision-specific. Box 6 adds separate teacher sessions and an
 append-only review overlay on the existing answer/attempt/progress tables; see
 [Box 6](box-6.md). Numeric reviews use the question's existing maximum and the
 revision's existing completion policy. No new default threshold is introduced.
+
+## Second-check performance contracts
+
+Home and attempt DTOs each use two database requests. Reads do not take the
+student's mutation lock. Batches, checks, completion and teacher coin changes
+retain transactional ownership/revision checks. Window navigation updates
+client state before an asynchronous coalescing checkpoint, and starting can
+return player bootstrap data directly. No shared student-data cache is added.
+See `docs/check-2.md` for the diagnosis and rollout.

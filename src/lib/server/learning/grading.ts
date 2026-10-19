@@ -3,7 +3,7 @@ import { apostrophes, reject } from '../validation';
 import { authoredGrade, answered,responseParts } from './authored-grading';
 
 export function validatePolicy(policy: CompletionPolicy) {
-  if (!policy || !['manual', 'all_answered', 'score'].includes(policy.mode) ||
+  if (!policy || !['manual', 'all_answered', 'practice', 'score'].includes(policy.mode) ||
     (policy.mode === 'score' && (!Number.isFinite(policy.minimumPercent) || policy.minimumPercent < 0 || policy.minimumPercent > 100))) {
     reject(409, 'INVALID_CONTENT', 'Dars sozlamalarini o‘qituvchi tekshirishi kerak.');
   }
@@ -40,6 +40,7 @@ export function isCompleted(policy: CompletionPolicy, earned: number, maximum: n
   validatePolicy(policy);
   if (pending || !maximum) return false;
   if (policy.mode === 'manual') return false;
+  if (policy.mode === 'practice') return allAnswered && earned === maximum;
   if (policy.mode === 'all_answered') return allAnswered;
   return 100 * earned >= policy.minimumPercent * maximum;
 }

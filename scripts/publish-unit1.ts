@@ -22,7 +22,7 @@ export async function publishUnit1(db: ReturnType<typeof connectDatabase>['db'])
       }
       await tx.insert(lessons).values({ id: lessonId, unitId: unit1Id, position: Number(lesson.number.split('.')[1]), kind: lesson.kind === 'exam' ? 'final_exam' : 'lesson', status: 'published' }).onConflictDoNothing();
       const [previous]=await tx.select({version:lessonVersions.version}).from(lessonVersions).where(eq(lessonVersions.lessonId,lessonId)).orderBy(desc(lessonVersions.version)).limit(1);
-      await tx.insert(lessonVersions).values({ id: versionId, lessonId, version: (previous?.version??0)+1, title: lesson.number + ' · ' + lesson.title, content: lesson as unknown as Record<string,unknown>, completionPolicy: { mode: 'all_answered' }, vocabularyRequired: lesson.kind !== 'exam' });
+      await tx.insert(lessonVersions).values({ id: versionId, lessonId, version: (previous?.version??0)+1, title: lesson.number + ' · ' + lesson.title, content: lesson as unknown as Record<string,unknown>, completionPolicy: lesson.kind === 'exam' ? { mode: 'all_answered' } : { mode: 'practice' }, vocabularyRequired: lesson.kind !== 'exam' });
       for (const task of tasksOf(lesson)) {
         const key = unit1Keys[lesson.id as keyof typeof unit1Keys].tasks;
         const grading = key[task.id as keyof typeof key] as unknown as GradingRule;
@@ -37,7 +37,7 @@ export async function publishUnit1(db: ReturnType<typeof connectDatabase>['db'])
 if (process.argv[1]?.replaceAll('\\','/').endsWith('/publish-unit1.ts')) {
   await import('./env.mjs');
   const {db,pool}=connectDatabase(process.env.DATABASE_URL_UNPOOLED || process.env.DATABASE_URL || '');
-  try { await publishUnit1(db); console.log('Published Unit 1: 6 revisions, 140 tasks, final exam 24 points.'); }
+  try { await publishUnit1(db); console.log('Published compact Unit 1: 5 lessons with 12 practices each, one 20-question final exam (24 points).'); }
   catch { console.error('Unit 1 publication failed. Check private DB configuration and content version.'); process.exitCode=1; }
   finally { await pool.end(); }
 }
