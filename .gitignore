@@ -1,0 +1,15 @@
+node_modules/
+.svelte-kit/
+.vercel/
+build/
+dist/
+.env
+.env.*
+!.env.example
+*.local
+.DS_Store
+Thumbs.db
+playwright-report/
+test-results/
+.superdesign/tmp/
+.artifacts/
