@@ -8,11 +8,11 @@ This is the current implementation target.
 
 - English learning content focused on **To Be** for complete beginners.
 - Vocabulary before each lesson, numbered by unit and lesson, with typed English-to-Uzbek flashcard exams on one-third of each set's words, feedback after each answer, and a 75% pass threshold. See [Vocabulary](vocabulary.md) for lesson unlocking and sampling assumptions.
-- Name-based student entry and self-starting student access, as described in the project brief.
+- Name-only student entry: a new name automatically creates a profile; an existing normalized name opens its saved profile. Server-backed sessions remember the current profile. Anyone knowing a name may enter it, as explicitly confirmed by the user.
 - Student accounts/profiles and persisted learning data.
 - Student answers, grading, scores, and progress.
 - Approximately 5–7 lessons and a final exam per unit, with Finished lesson statuses, 50 lesson points total, and 50 additional points plus mastery for a final exam score of at least 90%. See [Levels and mastery](levels-and-mastery.md).
-- Administrator entry using the requested name `Jonah2009tdiu`, with real-data authorization details to be resolved before launch.
+- Exact server-configured teacher entry with separate protected server-backed sessions, implemented in Box 6.
 - Teacher abilities to add and remove students, monitor students, and view their progress.
 - Responsive student and teacher experiences for phones and laptops.
 - The confirmed stack and Clay & Sage palette.
@@ -24,7 +24,7 @@ This is the current implementation target.
 - Exercise types, questions, and feedback.
 - Detailed exercise grading, lesson completion criteria, and exam retry rules. The 90% mastery threshold and 50/50 point split are already confirmed.
 - Language used for explanations and instructions.
-- Returning-student identity, session behavior, and administrator protection.
+- Any additional administrator protections would require a new instruction; exact server-side entry and separate teacher sessions are settled by Box 6.
 - Additional dashboard summaries and student removal behavior; core progress measures are defined in the mastery reference.
 
 ### Completion criteria
@@ -35,7 +35,7 @@ This is the current implementation target.
 - Learning data survives a new visit.
 - All finished lessons together earn exactly 50 points; an exam below 90% preserves progress, and an exam of at least 90% grants the remaining 50 points and mastery without duplicate awards.
 - Core student and teacher tasks work on phones and laptops.
-- Identity and administrator access decisions are implemented and verified before real student data is used.
+- The confirmed name-only student flow and separate administrator access are implemented and verified.
 
 ## v0.2 — Unit 2: Present Simple
 
@@ -45,4 +45,13 @@ Present Simple is outside the current v0.1 content scope.
 
 ## Current phase
 
-The documentation-first phase is complete. Box 1 establishes the SvelteKit project, plain component verification, database connection scaffolding, repository integration, and deployment configuration. The user will supply the application design later; application screen design has not begun. Live database/hosting verification remains dependent on account connection. See [Box 1 setup](box-1-setup.md) for current status. Student identity, learning flows, and administration are later boxes.
+The Unit 1 follow-up now implements the authored five lessons, vocabulary
+preparation, separate final exam and real teacher-review integration. See
+[implementation](unit-1-implementation.md) and [validation](unit-1-validation.md).
+The earlier Box 1/2/3/6 descriptions below describe their original handoffs.
+
+Box 1 established the SvelteKit project and component verification. Boxes 2–3 implement the relational schema, backend contracts, student entry and home; see [implementation notes](boxes-2-3.md). Box 6 implements protected teacher administration; see [teacher workspace](box-6.md). Neon production is connected and migrated, with isolated learning checks and a production-connected teacher smoke check; see [Neon verification](neon-setup.md). Box 6 adds no production content. Vercel hosting and successful adapter packaging remain unverified.
+
+## Box 6 follow-up
+
+[Box 6](box-6.md) implements protected teacher sessions, the teacher workspace, student management, versioned attempt inspection, transactional written review and real question statistics. The owner explicitly chose exact server-configured entry through the existing name field, without another authentication step. This supersedes the earlier administrator-authorization open decision. Student automatic creation and same-name access follow the later confirmed correction. No lesson content is added by Box 6.

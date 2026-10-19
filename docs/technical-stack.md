@@ -12,6 +12,12 @@
 
 ## Architectural direction
 
+- Unit 1 display JSON is authored offline and persisted in immutable lesson
+  revisions; grading keys remain under server-only modules. Source TXT files
+  are never parsed by the student browser. Versioned original/optimized images
+  are served as static assets. Browser speechSynthesis provides the current
+  English audio fallback; no new service, ORM or hosting provider is introduced.
+
 - Use SvelteKit for the frontend and backend within one application.
 - Use TypeScript for application and backend code.
 - Build responsive layouts with CSS.
@@ -25,7 +31,9 @@
 - Administrator actions need server-side authorization when implemented.
 - Student data must persist across visits and deployments.
 - Box 1 selects and pins application package versions, adds a minimal metadata schema and Vercel build configuration. See [Box 1 setup](box-1-setup.md) and `package.json`.
-- Student/session schemas and the identity mechanism remain open.
+- Boxes 2–3 add student/session schemas and opaque sessions. The follow-up [name-entry requirement](name-entry.md) creates new profiles automatically and reopens one existing profile per normalized name.
+- Drizzle uses `pg` against Neon's native PostgreSQL protocol for row locks and interactive transactions, with Vercel's `attachDatabasePool` lifecycle helper. Connection URLs remain private and lazy-loaded; builds need no database.
+- Neon project `still-violet-49747793`, branch `production`, is connected and migrated. `.env.local` contains pooled runtime and direct migration URLs; scripts load it before `.env`. See [Neon setup](neon-setup.md) for live verification and remaining deployment work.
 - The user created `Neku-code/english-with-jonah`. Neon and Vercel provisioning and live verification are tracked in the Box 1 handoff.
 
 ## Data requirements
@@ -39,4 +47,7 @@ The selected database must support the following information. This list describe
 - Scores and grading results.
 - Student learning progress.
 
-The exact grading rules and progress calculations remain open.
+Grading remains revision-specific. Box 6 adds separate teacher sessions and an
+append-only review overlay on the existing answer/attempt/progress tables; see
+[Box 6](box-6.md). Numeric reviews use the question's existing maximum and the
+revision's existing completion policy. No new default threshold is introduced.

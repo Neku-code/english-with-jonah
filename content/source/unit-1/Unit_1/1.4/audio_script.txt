@@ -1,0 +1,15 @@
+AUDIO — 1.4
+
+Bitta yozuv. Maya va Ben ovozlari. Ismlar ovoz chiqarib o‘qilmaydi.
+Matn savollardan oldin ko‘rsatilmaydi.
+
+Maya: Are you in the library?
+Ben: No, I'm not. I'm in the classroom.
+Maya: Is Anna at university?
+Ben: Yes, she is.
+Maya: Is she tired?
+Ben: No, she isn't. She's busy.
+Maya: Is the cafe open?
+Ben: Yes, it is.
+
+Ravshan, tabiiy sur’atda o‘qing. Replikalar orasida qisqa pauza. Fon musiqasi yo‘q.

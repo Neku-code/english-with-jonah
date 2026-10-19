@@ -1,0 +1,37 @@
+JAVOBLAR — 1.1
+
+1. B — Emma is a student.
+2. I
+3. You
+4. I am a student.
+5. He
+6. She
+7. It
+8. is
+9. We
+10. They
+11. are
+12. students
+13. Ben
+14. Ben va Emma
+15. They're students.
+16. He is a student. / He's a student.
+17. Emma
+18. Anna
+19. A — Emma va Maya
+20. We're
+21. Namuna: I'm Aziz. I'm a student. O‘quvchining o‘z ismi va to‘liq shakllar qabul qilinadi.
+22. She is a teacher. / She's a teacher.
+23. They are classmates. / They're classmates.
+24. It's an app. / It is an app.
+
+QISQA IZOH
+
+2–3: I am; you are.
+5–8: He/she/it va bitta ism bilan is ishlatiladi.
+9: Emma o‘zi ham shu guruhda: we.
+10: Maya boshqa guruh haqida gapiryapti: they.
+12, 16: a student — bitta; students — ko‘plik.
+24: Birikma an app, chunki app unli tovush bilan boshlanadi.
+
+Yozma javoblarda ma’nosi va grammatikasi to‘g‘ri boshqa shakllar ham qabul qilinadi. Shaxsiy javoblar namunaga aynan teng bo‘lishi shart emas.

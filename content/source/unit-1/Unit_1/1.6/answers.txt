@@ -1,0 +1,54 @@
+JAVOBLAR — 1.6
+
+1. B — is
+2. C — Alex is in the classroom.
+3. A — No, it isn't.
+4. B — They're phones.
+5. am
+6. We are not ready. / We aren't ready. / We're not ready.
+7. Is she from Boston?
+8. Yes, she is.
+9. New York
+10. in the classroom
+11. C — She's a teacher.
+12. B — busy and fine
+13. Chicago
+14. at home
+15. Yes, they are.
+16. No, she isn't.
+17. I am not tired. / I'm not tired.
+18. The phone is on the desk.
+19. Where are you from?
+20. Yes, we are.
+
+BALL
+
+1–16: to‘g‘ri javobga 1 ball, noto‘g‘ri yoki javobsiz topshiriqqa 0 ball.
+
+17: I bilan charchamaganlik ma’nosi — 1 ball. Am not yoki 'm not to‘g‘ri ishlatilishi — 1 ball.
+18: Telefonning stol ustidaligi ma’nosi — 1 ball. The phone is on the desk. tuzilishi — 1 ball.
+19: You bilan kelib chiqishni so‘rash ma’nosi — 1 ball. Where are you from? tartibi — 1 ball.
+20: Yes va we — 1 ball. Yes, we are. shakli — 1 ball.
+
+Jami: 16 + 8 = 24 ball.
+
+Nuqta, vergul yoki bosh harfdagi xato uchun ball kamaytirilmaydi. To‘g‘ri apostrof variantlari bir xil qabul qilinadi: I'm / I’m.
+Qisqa shakl alohida so‘ralmagan yozma topshiriqlarda to‘liq va qisqa shakllar teng qabul qilinadi.
+Avtomatik tekshirishda grammatik to‘g‘ri muqobil javoblar rad qilinmasin. Baholash qoidasiga sig‘magan javob tekshirish uchun saqlansin.
+
+NATIJA
+
+20–24 ball: yaxshi natija; xatolarni ko‘rib chiqing.
+16–19 ball: xato qilingan mavzularni takrorlang.
+0–15 ball: kerakli darslarga qaytib, yana mashq qiling.
+
+TAKRORLASH UCHUN
+
+1.1: 1, 4, 5
+1.2: 2, 10, 12, 18
+1.3: 6, 17
+1.4: 3, 7, 8, 15, 16, 20
+1.5: 9, 11, 13, 14, 19
+
+Tinglashdagi xatolar uchun audioni matn bilan, keyin yana matnsiz tinglang.
+Natija keyingi darslarni avtomatik qulflamaydi.

@@ -30,7 +30,7 @@ This is a typed-answer flashcard exam, not a self-rated card flip or a multiple-
 
 ## Lesson access
 
-**Working interpretation:** passing the matching vocabulary exam at 75% or above unlocks its lesson. Viewing the vocabulary list alone does not unlock it.
+The Boxes 2–3 backend supports a revision-specific `vocabularyRequired` flag. When enabled, passing the matching vocabulary exam at 75% or above opens that lesson. Viewing the list alone does not grant readiness. Ordinary published lessons have no sequential prerequisite. Content-specific flags will be set when actual content is authored.
 
 For example, passing Vocab 1.1 opens Lesson 1.1; passing Vocab 1.2 opens Lesson 1.2. Do not assume that passing one set unlocks every lesson in the unit.
 
@@ -93,6 +93,16 @@ Save vocabulary attempts and pass results so the vocabulary step can be resumed 
 The teacher should be able to inspect vocabulary results as part of student progress. Keep vocabulary scores separately labeled from lesson completion, unit points, and final exam scores.
 
 ## Remaining decisions
+
+For the supplied Unit 1 content, the existing readiness interpretation is used:
+each ordinary lesson opens after its own vocabulary pass, independently of other
+lessons. Lists and translations come from the ZIP; headers are not words. The
+sample is `ceil(words/3)` distinct random entries, with one scored submission per
+card, >=75% passing, unlimited new attempts and retained readiness after later
+failures. Case, whitespace, punctuation and Uzbek apostrophe variants normalize;
+no spelling tolerance or extra vocabulary points are added. The exam's vocabulary
+list is review and adds no further prerequisite. Earlier open planning items below
+remain applicable only where not settled by this implementation.
 
 - Confirm that passing the vocabulary exam is required to unlock the corresponding lesson.
 - Confirm random sampling and rounding up when the word count is not divisible by three.

@@ -1,5 +1,8 @@
 # Box 1 — Setup and verification
 
+Historical Box 1 handoff. Its design/identity deferrals were superseded by the
+user's Boxes 2–3 request; current scope and setup are in [Boxes 2–3](boxes-2-3.md).
+
 ## Confirmed scope and clarification
 
 Set up English with Jonah, its GitHub repository, Neon connection and Vercel deployment. Verify shared colours, typography, buttons, inputs and responsive phone/PC layouts. The user confirmed the name **English with Jonah** and selected their existing `Neku-code/english-with-jonah` repository.

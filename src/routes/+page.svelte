@@ -1,21 +1,28 @@
 <script lang="ts">
-  import Button from '#lib/components/Button.svelte';
-  import Badge from '#lib/components/Badge.svelte';
+  import { enhance } from '$app/forms';
+  let { data, form } = $props();
+  let busy = $state(false);
 </script>
-<svelte:head><title>Box 1 setup — English with Jonah</title><meta name="robots" content="noindex" /></svelte:head>
-<section class="page-section">
-  <p class="eyebrow">BOX 1 · PROJECT SETUP</p>
-  <h1>English with Jonah</h1>
-  <p class="intro">Technical setup and shared component verification. Application screens will follow your supplied design.</p>
-  <div class="notice">Setup preview only. Student accounts, lessons and teacher tools have not been built yet.</div>
-  <h2>Setup status</h2>
-  <dl class="setup-list">
-    <div><dt>Application</dt><dd>SvelteKit + TypeScript <Badge tone="sage">Verified locally</Badge></dd></div>
-    <div><dt>GitHub</dt><dd><a href="https://github.com/Neku-code/english-with-jonah">Neku-code/english-with-jonah</a><span>Repository identified; upload status is in the setup notes.</span></dd></div>
-    <div><dt>Database</dt><dd>Neon PostgreSQL + Drizzle <Badge tone="honey">Connection pending</Badge><span>Connection code and initial migration are prepared.</span></dd></div>
-    <div><dt>Hosting</dt><dd>Vercel <Badge tone="honey">Deployment pending</Badge><span>Adapter and GitHub build checks are configured.</span></dd></div>
-    <div><dt>Release scope</dt><dd>v0.1 · Unit 1: To Be</dd></div>
-    <div><dt>Application design</dt><dd><Badge>Awaiting your design</Badge></dd></div>
-  </dl>
-  <div class="actions"><Button href="/foundation">Open component checks</Button><a href="/api/health">View app health</a></div>
+<svelte:head><title>Kirish · English with Jonah</title></svelte:head>
+<section class="entry-wrap" aria-labelledby="entry-title">
+  <div class="entry-intro"><p class="eyebrow">ENGLISH WITH JONAH</p><h1 id="entry-title">Xush kelibsiz.</h1><p>Ingliz tilini birgalikda o‘rganamiz.</p></div>
+  <div class="entry-panel">
+    <h2>Profilingizga kiring</h2>
+    <p class="muted">Ismingizni kiriting va o‘rganishni boshlang.</p>
+    {#if data.unavailable}<p class="feedback feedback--error" role="alert">Profilni yuklab bo‘lmadi. Birozdan so‘ng qayta urinib ko‘ring.</p>{/if}
+    <form method="POST" aria-busy={busy} use:enhance={() => {
+      busy = true;
+      return async ({ update }) => { try { await update({ reset: false }); } finally { busy = false; } };
+    }}>
+      <div class="field"><label for="student-name">Ismingiz</label>
+        <input id="student-name" name="name" type="text" autocomplete="name" maxlength="120" required value={form?.name ?? ''} disabled={busy}
+          aria-invalid={form?.error ? 'true' : undefined} aria-describedby={form?.error ? 'entry-help entry-error' : 'entry-help'} />
+        <p id="entry-help" class="field__help">Keyingi safar ham shu ism bilan kiring.</p>
+      </div>
+      {#if form?.error}<p id="entry-error" class="feedback feedback--error" role="alert">{form.error}</p>{/if}
+      <button class="button button--primary entry-submit" type="submit" disabled={busy}>{busy ? 'Kirilmoqda…' : 'Kirish'}<span aria-hidden="true">→</span></button>
+      <p class="visually-hidden" role="status">{busy ? 'Profil ochilmoqda. Iltimos, kuting.' : ''}</p>
+    </form>
+    <p class="entry-help">Yangi ism bilan yangi profil ochiladi. Bu ism bilan profil bo‘lsa, o‘sha profilga kirasiz.</p>
+  </div>
 </section>

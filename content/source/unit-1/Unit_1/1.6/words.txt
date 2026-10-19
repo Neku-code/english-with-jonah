@@ -1,0 +1,45 @@
+TAKRORLASH — 1.6
+
+Testda yangi so‘zlar yo‘q.
+
+I — men
+you — sen/siz/sizlar
+he — u (erkak)
+she — u (ayol)
+it — u/bu (narsa)
+we — biz
+they — ular
+student — talaba
+teacher — o‘qituvchi
+classmate — guruhdosh
+phone — telefon
+app — ilova
+university — universitet
+library — kutubxona
+classroom — auditoriya
+cafe — qahvaxona
+home — uy
+desk — yozuv stoli
+tired — charchagan
+busy — band
+ready — tayyor
+late — kechikkan
+open — ochiq
+closed — yopiq
+fine — yaxshi (holat)
+in — ichida; -da
+on — ustida
+at — -da (joy)
+from — -dan
+not — emas; inkor ma’nosi
+but — lekin
+and — va
+yes — ha
+no — yo‘q
+who — kim
+what — nima
+where — qayerda
+how — qanday
+name — ism
+my — mening
+your — sening/sizning

@@ -1,0 +1,17 @@
+RASMLAR — 1.1
+
+01_meet_the_students.png
+Joy: 1-bo‘lim boshida.
+Vazifa: I bilan o‘zini tanishtirish; student va teacher farqi; it bilan telefon.
+Tavsif: Amerika universitetida Emma va Ben o‘zini talaba deb, Anna o‘qituvchi deb tanishtiryapti. Stol ustida telefon bor. Har bir gap o‘z egasining nutq pufagida.
+Matn: Hi. I'm Emma. I'm a student. / I'm Ben. I'm a student. / I'm Anna. I'm a teacher. / It's a phone.
+
+02_speakers_and_groups.png
+Joy: 3-bo‘lim boshida.
+Vazifa: I/you va we/they gapiruvchiga qarab o‘zgarishini ko‘rsatish.
+A: Emma o‘zini ko‘rsatadi: I'm a student.
+B: Emma Benga gapiradi: You're a student.
+C: Emma o‘zi va Benni nazarda tutadi: We're classmates.
+D: Maya o‘zi kirmagan Emma va Ben guruhini ko‘rsatadi: They're students.
+Odamlarni almashtirib yubormang: we/they faqat odamlar soniga qarab tanlanmaydi.
+

@@ -17,8 +17,8 @@ Read these reference documents before planning or changing the application:
 - Use SvelteKit and TypeScript for the application and backend, responsive CSS for styling, Neon PostgreSQL for storage, Drizzle ORM for database access and migrations, and Vercel for hosting with GitHub deployments.
 - The current release is **v0.1**, covering **Unit 1: To Be** only.
 - **Unit 2: Present Simple** belongs to **v0.2**. Do not add it to v0.1 without a new user instruction.
-- Students enter their names to get started. The teacher can also add students.
-- The requested administrator entry name is exactly `Jonah2009tdiu`. See the project brief for the access model and unresolved identity details.
+- Students enter any name: a new name creates a profile, and an existing normalized name opens that saved profile. No pre-registration is required. The teacher can optionally add students.
+- Teacher entry compares the original submitted value against private `TEACHER_ENTRY_NAME` exactly, before student normalization. Use separate teacher sessions; never grant roles from student names. The owner requested no additional authentication step. See `docs/box-6.md`.
 - The administrator can add and remove students, monitor students, and view their progress.
 - Use the Clay & Sage palette from the design guidelines.
 - Treat phone and laptop usability as equally important throughout implementation and verification.
@@ -29,11 +29,34 @@ Read these reference documents before planning or changing the application:
 
 - Keep confirmed requirements separate from implementation suggestions and unresolved decisions.
 - Do not silently change the selected stack, release scope, palette, or requested entry flow.
-- Resolve returning-student identity and administrator authorization before treating a deployment as ready for real student data. A name supplied by a browser is not proof of identity.
+- The user explicitly accepts that anyone knowing a student's name can open that profile. Preserve this name-only classroom access model; do not add passwords or require a registered roster. Keep administrator authorization separate.
 - Store database credentials in server-side environment variables; never expose them to browser code or commit them.
 - Update the reference documents when the user changes a requirement or settles an open decision.
 - Keep beginner-facing language and navigation simple.
 
 ## Current repository state
 
-Box 1 has scaffolded SvelteKit and plain shared-component verification. The user will supply the application design later; do not begin application screen design yet. Read `docs/box-1-setup.md` and the README for setup, verification, and external provisioning status. Student identity and learning/admin features remain later work; do not treat the foundation preview as a real-data launch.
+Boxes 2–3 implement the PostgreSQL schema, reusable backend services, student entry and home. The latest user correction supersedes registered-only entry and duplicate selection: one normalized name identifies one profile, automatically created on first entry. See `docs/name-entry.md`. Preserve the existing teacher-session work and reserved administrator name. Read `docs/boxes-2-3.md` and the README for setup and contracts. Do not add curriculum, the lesson player or vocabulary UI without a new instruction. Preserve immutable published content and attempt history. The student CLI is optional. Vercel hosting remains unverified.
+
+Neon follow-up: project `still-violet-49747793`, branch `production`, is connected
+and migrated; see `docs/neon-setup.md`. `.env.local` contains private production
+credentials. Never print them or run synthetic fixtures against production. Test
+migrations and learning fixtures on an isolated temporary Neon branch. Neon
+skills are installed under `.agents/skills/`; the Neon plugin includes its MCP
+server. Vercel hosting remains unverified and Windows adapter packaging still
+requires OS permission for symbolic links.
+
+## Box 6 follow-up
+
+[Box 6](docs/box-6.md) implements protected teacher sessions, the teacher workspace, student management, versioned attempt inspection, transactional written review and real question statistics. The owner explicitly chose exact server-configured entry through the existing name field, without another authentication step. This supersedes the earlier administrator-authorization open decision. Student automatic creation and same-name access follow the later confirmed correction. No lesson content is added by Box 6.
+
+## Unit 1 follow-up
+
+The user has now authorized the curriculum, lesson player, vocabulary UI and
+teacher integration using `Learn_with_Jonah_Unit_1_Complete.zip`. These are
+implemented; read `docs/unit-1-implementation.md` and `docs/unit-1-validation.md`.
+Preserve all 140 numbered parents, authored subparts, sequence, eight originals
+and explicit panel metadata. Display content and grading keys are separate;
+published revisions and asset URLs are versioned. Publish with
+`pnpm unit1:publish`, never synthetic fixtures against production. Browser TTS
+is the current audio fallback. Unit 2 remains outside scope.

@@ -1,0 +1,11 @@
+RASM — 1.3
+
+01_negative_statements.png
+Joy: 1-bo‘lim boshida.
+Vazifa: noto‘g‘ri ma’lumotni inkor qilib, to‘g‘ri ma’lumotni aytish.
+A: Alex kutubxonada: I'm not at home. I'm in the library.
+B: Anna doska yonida dars beryapti: I'm not a student. I'm a teacher.
+C: qahvaxona yopiq: It isn't open. It's closed.
+D: Emma va Ben talaba: We aren't teachers. We're students.
+Faqat nutq pufaklari va asosiy belgilar talab qilinadi; fon yozuvlari topshiriq yoki qo‘shimcha lug‘at emas.
+

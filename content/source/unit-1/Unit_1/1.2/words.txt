@@ -1,0 +1,23 @@
+LUG‘AT — 1.2
+
+university — universitet
+library — kutubxona
+classroom — auditoriya
+cafe — qahvaxona
+home — uy
+desk — yozuv stoli
+tired — charchagan
+busy — band
+ready — tayyor
+late — kechikkan
+open — ochiq
+closed — yopiq
+in — ichida; -da
+on — ustida
+at — -da (joy)
+from — -dan
+
+Joy nomlari:
+Boston — Boston
+Chicago — Chikago
+New York — Nyu-York

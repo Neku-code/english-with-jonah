@@ -20,9 +20,15 @@ Use these colors consistently across student and teacher screens. Box 1's suppor
 
 ## Box 1 implementation choices
 
-The user clarified that application design will be supplied later. Box 1 includes plain verification specimens only, not a homepage, branding, or application screen design. **DM Sans** is a provisional self-hosted reading font for these checks. Reusable CSS tokens and Svelte components live in `src/app.css` and `src/lib/components/`; `/foundation` is the verification page. Supporting clay `#AE5634` gives white button text 5.02:1 contrast while the confirmed primary brand token remains `#B9603C`. Supporting muted text `#70665B` on the confirmed paper background gives 4.95:1 contrast. These provisional choices do not settle the final design.
+Box 1 includes plain verification specimens at `/foundation`. The Boxes 2–3 brief now authorizes student entry and home design: restrained neutral surfaces, readable spacing, subtle borders, coordinated rounded corners and no childish illustrations or decorative statistics. Reference images establish colours only. **DM Sans** remains the self-hosted reading font. Reusable CSS tokens and Svelte components live in `src/app.css` and `src/lib/components/`. Supporting clay `#AE5634` gives white button text 5.02:1 contrast while the primary brand token remains `#B9603C`. Supporting muted text `#70665B` on paper gives 4.95:1 contrast. Student UI uses natural Uzbek Latin script.
 
 ## Responsive requirements
+
+The Unit 1 player uses a 1360px workspace and 220px lesson sidebar at >=1100px.
+Tablet navigation uses a lesson dialog; phones below 768px use one column with
+18px side padding, 17px writing controls, safe-area bottom navigation and
+independent panel controls. Reading surfaces use `#FFFDF8`; diagrams retain the
+supplied artwork. See Unit 1 screenshots and validation for observed breakpoints.
 
 Phone and laptop support is a core requirement, not a later enhancement.
 

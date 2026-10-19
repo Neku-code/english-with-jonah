@@ -96,6 +96,24 @@ Persist lesson completion and exam results so progress survives a new visit. A f
 
 ## Remaining decisions
 
+Unit 1 implementation settles its authored lesson/exam details: five regular
+lessons (10 points each), 24 task groups per lesson, and a 20-task final test with
+16 one-point questions and four two-point questions. Completion requires all
+parts answered and checked, completed listening and resolved written review;
+there is no new practice score threshold. The exam has no compulsory countdown.
+Retakes remain available, with two audio plays per exam attempt. Latest results
+are displayed, while a past qualifying mastery result is retained. Unknown
+written alternatives and unavailable audio remain pending, so totals are clearly
+provisional. See [Unit 1](unit-1-implementation.md) for the supplied rubrics.
+The open items below describe the earlier general planning stage.
+
+Box 6 review implementation: effective teacher-reviewed scores update the existing
+attempt totals transactionally. An amended review reconsiders completion using
+all submitted attempts, retaining another qualifying attempt if one exists.
+Original responses and automatic grades remain immutable. Correcting the only
+qualifying result can change completion/mastery; this differs from a later failed
+retry, which preserves a valid earlier pass. See [review rules](box-6.md).
+
 - The exact action or exercise result that marks an individual lesson Finished.
 - Final exam questions, question weights, partial credit, and how exam percentages are calculated.
 - Retry availability, attempt limits, and any waiting period between attempts.

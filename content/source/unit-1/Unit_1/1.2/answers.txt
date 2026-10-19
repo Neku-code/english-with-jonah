@@ -1,0 +1,35 @@
+JAVOBLAR — 1.2
+
+1. He is in the classroom. / He's in the classroom.
+2. She is at home. / She's at home.
+3. on
+4. We are at university.
+5. from
+6. Emma is from Chicago.
+7. in
+8. B
+9. tired
+10. is
+11. The cafe is open.
+12. The cafe is closed.
+13. B — She's from Chicago.
+14. I am tired. / I'm tired.
+15. They are busy. / They're busy.
+16. He is in the classroom. He is tired. Qisqa shakllar ham to‘g‘ri.
+17. Boston
+18. at home
+19. B — She's busy.
+20. It's closed.
+21. Shaxsiy javob. Namuna: I'm at home. I'm ready.
+22. She's from New York. She's in the library. To‘liq shakllar ham to‘g‘ri.
+23. We are ready. / We're ready.
+24. The phone is on the desk.
+
+QISQA IZOH
+
+3, 24: Telefon sirt ustida: on the desk.
+5–8, 13: From — qayerdan ekanlik; in — bu misollarda joylashuv.
+14: Tired sifat; a/an kerak emas.
+15: Busy sifatiga ko‘plik -s qo‘shilmaydi.
+
+Yozma javoblarda ma’nosi va grammatikasi to‘g‘ri boshqa shakllar ham qabul qilinadi. Shaxsiy javoblar namunaga aynan teng bo‘lishi shart emas.

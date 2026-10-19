@@ -1,0 +1,200 @@
+{
+  "2026-10-19.3": {
+    "u1-l1.1": [
+      {
+        "speaker": "Emma",
+        "text": "Hi. I'm Emma. I'm a student. Maya is a student. We're classmates. Ben is a student. Anna is a teacher. It's a phone."
+      }
+    ],
+    "u1-l1.2": [
+      {
+        "speaker": "Ben",
+        "text": "Hi. I'm Ben. I'm from Boston. I'm at home. I'm tired. Emma is at university. She's in the library. Anna is in the classroom. She's busy. The cafe is closed."
+      }
+    ],
+    "u1-l1.3": [
+      {
+        "speaker": "Maya",
+        "text": "Hi. I'm Maya. I'm not at home. I'm in the library. I'm not tired. I'm ready. Ben and Emma aren't in the library. They're in the classroom. They're tired, but they're ready. The cafe isn't open."
+      }
+    ],
+    "u1-l1.4": [
+      {
+        "speaker": "Maya",
+        "text": "Are you in the library?"
+      },
+      {
+        "speaker": "Ben",
+        "text": "No, I'm not. I'm in the classroom."
+      },
+      {
+        "speaker": "Maya",
+        "text": "Is Anna at university?"
+      },
+      {
+        "speaker": "Ben",
+        "text": "Yes, she is."
+      },
+      {
+        "speaker": "Maya",
+        "text": "Is she tired?"
+      },
+      {
+        "speaker": "Ben",
+        "text": "No, she isn't. She's busy."
+      },
+      {
+        "speaker": "Maya",
+        "text": "Is the cafe open?"
+      },
+      {
+        "speaker": "Ben",
+        "text": "Yes, it is."
+      }
+    ],
+    "u1-l1.5": [
+      {
+        "speaker": "Maya",
+        "text": "Hi. My name is Maya. I'm from New York. I'm at home. I'm fine. I'm not tired. Emma is at university. She's in the library. Ben is in the classroom. He's busy, but he's ready."
+      }
+    ],
+    "u1-l1.6": [
+      {
+        "speaker": "Emma",
+        "text": "Hi. I'm Emma. I'm from Chicago. I'm at university. I'm in the library. Ben isn't in the library. He's at home. Ben and I are classmates. He's tired, but I'm not tired. I'm ready."
+      }
+    ]
+  },
+  "2026-10-19.1": {
+    "u1-l1.1": [
+      {
+        "speaker": "Emma",
+        "text": "Hi. I'm Emma. I'm a student. Maya is a student. We're classmates. Ben is a student. Anna is a teacher. It's a phone."
+      }
+    ],
+    "u1-l1.2": [
+      {
+        "speaker": "Ben",
+        "text": "Hi. I'm Ben. I'm from Boston. I'm at home. I'm tired. Emma is at university. She's in the library. Anna is in the classroom. She's busy. The cafe is closed."
+      }
+    ],
+    "u1-l1.3": [
+      {
+        "speaker": "Maya",
+        "text": "Hi. I'm Maya. I'm not at home. I'm in the library. I'm not tired. I'm ready. Ben and Emma aren't in the library. They're in the classroom. They're tired, but they're ready. The cafe isn't open."
+      }
+    ],
+    "u1-l1.4": [
+      {
+        "speaker": "Maya",
+        "text": "Are you in the library?"
+      },
+      {
+        "speaker": "Ben",
+        "text": "No, I'm not. I'm in the classroom."
+      },
+      {
+        "speaker": "Maya",
+        "text": "Is Anna at university?"
+      },
+      {
+        "speaker": "Ben",
+        "text": "Yes, she is."
+      },
+      {
+        "speaker": "Maya",
+        "text": "Is she tired?"
+      },
+      {
+        "speaker": "Ben",
+        "text": "No, she isn't. She's busy."
+      },
+      {
+        "speaker": "Maya",
+        "text": "Is the cafe open?"
+      },
+      {
+        "speaker": "Ben",
+        "text": "Yes, it is."
+      }
+    ],
+    "u1-l1.5": [
+      {
+        "speaker": "Maya",
+        "text": "Hi. My name is Maya. I'm from New York. I'm at home. I'm fine. I'm not tired. Emma is at university. She's in the library. Ben is in the classroom. He's busy, but he's ready."
+      }
+    ],
+    "u1-l1.6": [
+      {
+        "speaker": "Emma",
+        "text": "Hi. I'm Emma. I'm from Chicago. I'm at university. I'm in the library. Ben isn't in the library. He's at home. Ben and I are classmates. He's tired, but I'm not tired. I'm ready."
+      }
+    ]
+  },
+  "2026-10-19.2": {
+    "u1-l1.1": [
+      {
+        "speaker": "Emma",
+        "text": "Hi. I'm Emma. I'm a student. Maya is a student. We're classmates. Ben is a student. Anna is a teacher. It's a phone."
+      }
+    ],
+    "u1-l1.2": [
+      {
+        "speaker": "Ben",
+        "text": "Hi. I'm Ben. I'm from Boston. I'm at home. I'm tired. Emma is at university. She's in the library. Anna is in the classroom. She's busy. The cafe is closed."
+      }
+    ],
+    "u1-l1.3": [
+      {
+        "speaker": "Maya",
+        "text": "Hi. I'm Maya. I'm not at home. I'm in the library. I'm not tired. I'm ready. Ben and Emma aren't in the library. They're in the classroom. They're tired, but they're ready. The cafe isn't open."
+      }
+    ],
+    "u1-l1.4": [
+      {
+        "speaker": "Maya",
+        "text": "Are you in the library?"
+      },
+      {
+        "speaker": "Ben",
+        "text": "No, I'm not. I'm in the classroom."
+      },
+      {
+        "speaker": "Maya",
+        "text": "Is Anna at university?"
+      },
+      {
+        "speaker": "Ben",
+        "text": "Yes, she is."
+      },
+      {
+        "speaker": "Maya",
+        "text": "Is she tired?"
+      },
+      {
+        "speaker": "Ben",
+        "text": "No, she isn't. She's busy."
+      },
+      {
+        "speaker": "Maya",
+        "text": "Is the cafe open?"
+      },
+      {
+        "speaker": "Ben",
+        "text": "Yes, it is."
+      }
+    ],
+    "u1-l1.5": [
+      {
+        "speaker": "Maya",
+        "text": "Hi. My name is Maya. I'm from New York. I'm at home. I'm fine. I'm not tired. Emma is at university. She's in the library. Ben is in the classroom. He's busy, but he's ready."
+      }
+    ],
+    "u1-l1.6": [
+      {
+        "speaker": "Emma",
+        "text": "Hi. I'm Emma. I'm from Chicago. I'm at university. I'm in the library. Ben isn't in the library. He's at home. Ben and I are classmates. He's tired, but I'm not tired. I'm ready."
+      }
+    ]
+  }
+}

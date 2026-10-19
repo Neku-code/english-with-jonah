@@ -8,6 +8,62 @@
       "when": 1792367748427,
       "tag": "0000_wide_firedrake",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1792368764963,
+      "tag": "0001_amazing_arclight",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1792368919140,
+      "tag": "0002_integrity",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1792371199133,
+      "tag": "0003_sloppy_inertia",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1792371199134,
+      "tag": "0004_teacher_integrity",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1792371601583,
+      "tag": "0005_unique_student_names",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1792371829298,
+      "tag": "0006_lonely_doctor_spectrum",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1792371829299,
+      "tag": "0007_teacher_response_compatibility",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "7",
+      "when": 1792371829300,
+      "tag": "0008_unit1_history",
+      "breakpoints": true
     }
   ]
 }

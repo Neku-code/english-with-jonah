@@ -1,0 +1,16 @@
+LUG‘AT — 1.4
+
+yes — ha
+no — yo‘q
+
+Takrorlash:
+student — talaba
+teacher — o‘qituvchi
+classmate — guruhdosh
+phone — telefon
+app — ilova
+ready — tayyor
+tired — charchagan
+busy — band
+late — kechikkan
+open — ochiq

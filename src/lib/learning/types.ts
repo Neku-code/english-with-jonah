@@ -1,0 +1,11 @@
+export type ImageVariant = { url: string; width: number; height: number };
+export type Illustration = ImageVariant & { id: string; alt: string; variants: ImageVariant[] };
+export type Panel = Illustration & { label: string; bounds: number[]; model: string | null };
+export type LessonImage = Illustration & { original: string; models: string[]; panels: Panel[] };
+export type Task = { kind: 'task'; id: string; number: number; prompt: string; control: 'choice' | 'multi' | 'order' | 'text' | 'written';
+  parts: { id: string; label: string }[]; maxPoints: number; options?: { id: string; label: string }[]; tokens?: { id: string; label: string }[];
+  imageId?: string; panelId?: string; listening: boolean };
+export type Section = { id: string; title: string; imageId?: string; items: (Task | { kind: 'text'; id: string; text: string } | { kind: 'audio'; id: string })[] };
+export type LessonContent = { id: string; number: string; title: string; version: string; kind: 'practice' | 'exam'; sections: Section[]; images: LessonImage[];
+  vocabulary: { id: string; english: string; uzbek: string }[]; audioId: string };
+export const tasksOf = (lesson: LessonContent) => lesson.sections.flatMap(s => s.items.filter((i): i is Task => i.kind === 'task'));

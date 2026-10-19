@@ -1,0 +1,16 @@
+LUG‘AT — 1.5
+
+who — kim
+what — nima
+where — qayerda
+how — qanday
+name — ism
+my — mening
+your — sening/sizning
+fine — yaxshi (holat)
+
+Birikmalar:
+where ... from? — qayerdan?
+What's your name? — Ismingiz nima?
+My name is ... — Mening ismim ...
+How are you? — Qalaysiz?

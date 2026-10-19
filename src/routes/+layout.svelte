@@ -3,13 +3,14 @@
   import '@fontsource/dm-sans/500.css';
   import '@fontsource/dm-sans/600.css';
   import '../app.css';
-  import { page } from '$app/state';
+  import { navigating, page } from '$app/state';
   let { children } = $props();
 </script>
-<svelte:head><meta name="description" content="English with Jonah — Box 1 project setup verification." /></svelte:head>
-<a class="skip-link" href="#main">Skip to content</a>
-<div class="site-shell container">
-  <header class="site-header"><a class="site-name" href="/">English with Jonah</a><nav aria-label="Setup navigation"><a href="/" aria-current={page.url.pathname === '/' ? 'page' : undefined}>Setup</a><a href="/foundation" aria-current={page.url.pathname === '/foundation' ? 'page' : undefined}>Component checks</a></nav></header>
+<svelte:head><meta name="description" content="English with Jonah — ingliz tilini birgalikda o‘rganamiz." /></svelte:head>
+<a class="skip-link" href="#main">Asosiy qismga o‘tish</a>
+<div class="site-shell container" class:learning-shell={page.url.pathname.startsWith('/learn/')}>
+  <header class="site-header"><a class="site-name" href="/">English with Jonah<span class="brand-dot" aria-hidden="true"></span></a><span class="header-note">Ingliz tili · Boshlang‘ich bosqich</span></header>
+  <div class="navigation-status" role="status">{navigating.to ? 'Yuklanmoqda…' : ''}</div>
   <main id="main" tabindex="-1">{@render children()}</main>
-  <footer>Box 1 verification preview · Application design pending</footer>
+  <footer>English with Jonah <span>Birgalikda o‘rganamiz.</span></footer>
 </div>

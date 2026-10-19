@@ -1,0 +1,11 @@
+RASM — 1.4
+
+01_questions_and_answers.png
+Joy: 1-bo‘lim boshida.
+Vazifa: savol beruvchi va javob beruvchini bog‘lash; you savoliga I bilan javob.
+A: Ben Emmadan so‘raydi: Are you a student? Emma: Yes, I am.
+B: Maya Alexdan so‘raydi: Are you tired? Alex: Yes, I am.
+C: Ben Anna haqida so‘raydi: Is Anna a student? Emma: No, she isn't. She's a teacher.
+D: Maya telefonga qarab so‘raydi: Is it an app? Ben: No, it isn't. It's a phone.
+Nutq pufagining dumini tegishli gapiruvchida saqlang.
+

@@ -1,0 +1,21 @@
+RASMLAR — 1.2
+
+01_places.png
+Joy: 1-bo‘lim boshida.
+Vazifa: in the library, in the classroom, at home, on the desk.
+A: Maya kutubxonada: I'm in the library.
+B: Ben auditoriyada: I'm in the classroom.
+C: Emma uyda: I'm at home.
+D: Telefon stol ustida: It's on the desk.
+Rasmlar alohida vaziyatlarni ko‘rsatadi.
+
+02_states_and_conditions.png
+Joy: 3-bo‘lim boshida.
+Vazifa: tired, busy, open va closed ma’nolarini ko‘rsatish.
+Bu rasmda A–D harflari yo‘q; joylashuv yoki personaj bilan murojaat qiling.
+Yuqori chap: Alex esnayapti: I'm tired.
+Yuqori o‘ng: Anna telefon va hujjatlar bilan band: I'm busy.
+Pastki chap: qahvaxona eshigi ochiq, mijozlar bor, OPEN belgisi: It's open.
+Pastki o‘ng: shu qahvaxona eshigi yopiq, stullar yig‘ilgan, CLOSED belgisi: It's closed.
+Ready yoki late holatini ushbu rasmdan taxmin qildirish kerak emas; ular matndagi misollar bilan berilgan.
+

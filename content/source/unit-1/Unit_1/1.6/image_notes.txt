@@ -1,0 +1,12 @@
+RASM — 1.6
+
+01_exam_scenes.png
+Joy: testning 1-bo‘limida, 1–4-savollar bilan.
+Vazifa: yangi rasmdagi ma’lumotga o‘rganilgan grammatikani qo‘llash.
+A: EMMA belgili talaba kutubxonada.
+B: ALEX belgili talaba auditoriyada.
+C: qahvaxona eshigi yopiq, stullar yig‘ilgan va CLOSED belgisi bor.
+D: yozuv stoli ustida yonma-yon ikkita telefon.
+Model javob pufaklari yo‘q. Boshqa darsdagi model matnni shu rasm ustiga qo‘shmang.
+Muqobil matn shu faktlarni yetkazadi; javobdagi am/is/are yoki savol shaklini tayyor qilib bermaydi.
+

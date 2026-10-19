@@ -1,0 +1,12 @@
+RASM — 1.5
+
+01_information_questions.png
+Joy: 1-bo‘lim boshida.
+Vazifa: savol talab qiladigan ma’lumotni ajratish.
+A: Where are you from? Ben: I'm from Boston.
+B: Where are you? Ben kutubxonada: I'm in the library.
+C: What is it? Telefon: It's a phone.
+D: How are you? Alex esnayapti: I'm tired.
+Savollar rasm tepasidagi sarlavhalarda, javoblar nutq pufaklarida.
+A va B kelib chiqish va hozirgi joylashuv farqini ko‘rsatadi. Ular bir xil odam haqida.
+

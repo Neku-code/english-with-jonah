@@ -8,9 +8,16 @@ Students will use both **phones and laptops**. The application must fit and work
 
 Confirmed application name: **English with Jonah**, confirmed by the user during Box 1 setup.
 
-The user will supply the application design later. Box 1 covers technical setup and plain shared-component verification; do not begin application screen design before receiving that reference.
+Box 1 covered technical setup and plain shared-component verification. The Boxes 2–3 request now authorizes a restrained Clay & Sage student entry and home interface; reference images establish colours only, not layouts.
 
 ## Learning structure
+
+Unit 1 is now authored from the owner's complete ZIP: 1.1 Introduction “To Be”,
+1.2 Locations and states, 1.3 Negative statements, 1.4 Yes/No Questions,
+1.5 Complex questions, and 1.6 Final test. Student instructions are Uzbek.
+The five lessons each contain 24 tasks; the exam contains 20 tasks worth 24
+points. Personal answers and unrecognised alternatives use teacher review.
+See [implementation and source-preservation decisions](unit-1-implementation.md).
 
 | Unit | Topic | Release |
 | --- | --- | --- |
@@ -29,7 +36,7 @@ The requested flow is:
 2. The student enters their name.
 3. The student enters their account and starts learning.
 
-Students can get started themselves by entering their names; they do not have to wait for the teacher to add them. The teacher can also add students in advance.
+Updated by the user's entry-flow correction: students may enter any name without pre-registration. If its normalized name exists, open that saved profile. Otherwise, create a new profile and enter it immediately. One normalized name identifies one profile. There are no prefilled student names or seed accounts. Teacher registration and the CLI are optional. See [Name entry](name-entry.md).
 
 The database should save student records, answers, scores, and learning progress.
 
@@ -37,11 +44,12 @@ The database should save student records, answers, scores, and learning progress
 
 The application owner is the administrator and teacher.
 
-The requested administrator entry name is exactly:
-
-`Jonah2009tdiu`
-
-Under the requested flow, a person entering this value in the name field receives administrator abilities.
+Box 6 uses the exact value supplied by the owner in private `TEACHER_ENTRY_NAME`
+configuration. The existing name form checks the original submission on the
+server, before student normalization, and creates a distinct server-backed
+teacher session. Capitalization and whitespace must match exactly. The owner
+explicitly requested no additional authentication step. A student display name
+never grants the teacher role. See [Box 6](box-6.md).
 
 The administrator must be able to:
 
@@ -50,17 +58,25 @@ The administrator must be able to:
 - Monitor students.
 - View each student's progress.
 
-## Identity and access decisions to settle during implementation
+## Identity and access decisions
 
-The name-only entry flow above records the user's requested behavior. It does not yet define a secure identity or session system. The administrator entry name appears in these documents and must not be treated as a protected secret.
+The user explicitly accepts name-only classroom access: anyone knowing another student's name can enter that profile, including from another browser. Names are shared in person or through the teacher, not through a public roster or discovery feature in the app. This is a settled requirement, not an unresolved student-authentication decision. Administrator entry remains separate from student accounts.
 
-The following details are not yet specified:
+Settled requirements:
 
-- How a returning student reliably resumes their own account.
-- How students with the same name are distinguished.
-- How teacher-created student records are matched to students entering their names.
-- How administrator access is protected when the app holds real student data.
-- Whether removing a student archives their record or permanently deletes their answers and progress.
+- Returning browsers use an opaque 30-day server session with an HttpOnly cookie.
+- New names create profiles; exact normalized existing names reopen them with saved answers and progress.
+- Normalize case, surrounding/repeated whitespace and Uzbek apostrophe variants consistently; never fuzzy-match a different name.
+- A database unique index prevents duplicate profiles for one normalized name, including simultaneous first visits. Teacher add/rename operations follow the same rule.
+- Archived names remain reserved and blocked until the teacher restores or renames the profile; entry never silently replaces their history.
+- Removing a student archives records and revokes sessions; learning history is retained.
+
+The following details remain unresolved for a real-data launch:
+
 - Additional teacher dashboard summaries beyond the lesson completion, points, exam results, and mastery measures specified in the mastery reference.
 
-Preserve the requested simple entry experience while resolving these details with the user before a real-data launch.
+Preserve the confirmed name-only student entry experience. Do not reintroduce a registered-student requirement or stronger student identity checks without a new instruction.
+
+## Box 6 follow-up
+
+[Box 6](box-6.md) implements protected teacher sessions, the teacher workspace, student management, versioned attempt inspection, transactional written review and real question statistics. The owner explicitly chose exact server-configured entry through the existing name field, without another authentication step. This supersedes the earlier administrator-authorization open decision. Student automatic creation and same-name access follow the later confirmed correction. No lesson content is added by Box 6.
