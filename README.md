@@ -2,7 +2,9 @@
 
 A responsive English learning web application for a university group of approximately 20 first-year students who are learning English from complete beginner level.
 
-Built with SvelteKit, TypeScript, responsive CSS, Neon PostgreSQL, and Drizzle ORM. Hosting target: Vercel with deployments from this GitHub repository.
+Built with SvelteKit, TypeScript, responsive CSS, Neon PostgreSQL, and Drizzle ORM.
+Live app: [English with Jonah](https://english-with-jonah.vercel.app).
+See [deployment status and verification](docs/vercel-setup.md).
 
 ## Unit 1 — Authored lessons and final test
 
@@ -16,8 +18,9 @@ verified panels. Listening uses browser English TTS from the supplied scripts.
 Apply migrations with `pnpm db:migrate`, then publish the immutable curriculum
 with `pnpm unit1:publish`. Publication is repeatable and creates no students or
 attempts. See [Unit 1 implementation](docs/unit-1-implementation.md) and
-[validation/screenshots](docs/unit-1-validation.md). Vercel hosting remains a
-separate setup; Windows adapter symlink packaging is still restricted.
+[validation/screenshots](docs/unit-1-validation.md). The complete production
+build passes on Vercel's Linux machine; local Windows adapter symlink packaging
+is still restricted.
 
 ## Box 6 — Teacher workspace
 

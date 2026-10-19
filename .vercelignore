@@ -1,0 +1,16 @@
+.env
+.env.*
+!.env.example
+.artifacts/
+.agents/
+.codex/
+.git/
+.neon/
+node_modules/
+.svelte-kit/
+.vercel/
+playwright-report/
+test-results/
+static/unit1/*.png
+static/unit1/*.webp
+static/unit1/2026-10-19.2/

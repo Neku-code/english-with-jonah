@@ -48,6 +48,14 @@ requires OS permission for symbolic links.
 
 ## Box 6 follow-up
 
+Vercel deployment follow-up: project `english-with-jonah` under team
+`yunusneku-6545` now holds private Production Secrets `DATABASE_URL` and
+`TEACHER_ENTRY_NAME`. The complete app is deployed and publicly verified at
+`https://english-with-jonah.vercel.app`. Remote production build, teacher-session
+flow and phone/desktop checks pass. This supersedes earlier hosting-unverified
+notes. See `docs/vercel-setup.md`. Automatic GitHub deployment still requires
+the owner's GitHub Login Connection in Vercel; direct CLI deployment works.
+
 [Box 6](docs/box-6.md) implements protected teacher sessions, the teacher workspace, student management, versioned attempt inspection, transactional written review and real question statistics. The owner explicitly chose exact server-configured entry through the existing name field, without another authentication step. This supersedes the earlier administrator-authorization open decision. Student automatic creation and same-name access follow the later confirmed correction. No lesson content is added by Box 6.
 
 ## Unit 1 follow-up
