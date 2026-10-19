@@ -19,8 +19,11 @@ The user clarified that the application design will be provided later. Do not be
 
 ## Verification and limitations
 
-- Svelte/TypeScript compiler checks are run before upload.
-- Local setup and component pages, responsive reflow, empty-input feedback, keyboard submission, disabled controls and the app health endpoint are checked during implementation.
+- Source uploaded to [Neku-code/english-with-jonah](https://github.com/Neku-code/english-with-jonah), preserving its initial commit. Implementation commit: `92d383f5c05a10c371f1dc8504a70c1c555ef46a`.
+- Svelte/TypeScript checks passed with zero errors and warnings. [GitHub Linux checks passed](https://github.com/Neku-code/english-with-jonah/actions/runs/39179193552), including frozen dependency install and the complete Vercel adapter build.
+- Plain setup/component pages work locally. Form checks passed: empty-input alert, Enter-key submission, success status, and disabled controls. No browser console errors were observed.
+- Phone width 320px and laptop width 1366px: content width equals available client width, with no horizontal overflow. Component columns stack on phones and show two columns on laptops. Keyboard focus is visible.
+- `/api/health` returns HTTP 200 and app-only JSON. Missing pages return HTTP 404. The component form does not store the supplied name.
 - Vercel's Windows packaging initially fails because the OS denies a required symbolic link after app bundles compile. Linux CI verifies the complete packaging step; local `dev` and `check` remain usable. Do not modify dependency code to bypass OS restrictions.
 - `db:check` correctly reports missing configuration without printing credentials. Live Neon migrations/queries await connection.
 - `vercel.json` and the adapter configure builds; they do not provision a Vercel project or establish GitHub deployment integration by themselves.
