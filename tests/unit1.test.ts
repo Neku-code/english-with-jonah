@@ -94,8 +94,8 @@ test('real PostgreSQL: vocabulary readiness, retries, ownership, saved place, re
   const hidden=await loadAttempt(db,s.id,a.id);assert(hidden.questions.every(q=>q.feedback===null));assert(hidden.answers.every(a=>a.earnedPoints===null));
   await assert.rejects(checkPractice(db,s.id,a.id,{questionId:qs[0].id,revision:1,requestId:randomUUID()}));
   const result=await submitAttempt(db,s.id,a.id);assert.equal(result.earnedPoints,24);assert.equal(result.maxPoints,24);assert.equal(result.pendingReview,false);
-  assert((await homeData(db,s.id)).units[0].mastered);
-  const failed=await startAttempt(db,s.id,examId);await studyAction(db,s.id,failed.id,{action:'audio-failed',requestId:randomUUID()});const provisional=await submitAttempt(db,s.id,failed.id);assert(provisional.pendingReview);assert.equal(provisional.maxPoints,24);assert((await homeData(db,s.id)).units[0].mastered);
+  assert((await homeData(db,s.id)).units[0].mastered);assert.equal((await homeData(db,s.id)).totalPoints,450);
+  const failed=await startAttempt(db,s.id,examId);await studyAction(db,s.id,failed.id,{action:'audio-failed',requestId:randomUUID()});const provisional=await submitAttempt(db,s.id,failed.id);assert(provisional.pendingReview);assert.equal(provisional.maxPoints,24);assert((await homeData(db,s.id)).units[0].mastered);assert.equal((await homeData(db,s.id)).totalPoints,450);
   await assert.rejects(db.delete(practiceChecks).where(eq(practiceChecks.attemptId,attempts[0])));
  }finally{await cluster.close();}
 });

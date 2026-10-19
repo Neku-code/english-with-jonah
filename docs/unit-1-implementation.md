@@ -42,7 +42,7 @@ The desktop sidebar becomes a dialog lesson picker below 1100px; phone controls
 account for safe-area space and move out of the way of focused writing fields.
 
 Vocabulary remains preparation, with a separate quick-reference dialog in
-practice. Matching vocabulary readiness opens each ordinary lesson independently.
+practice. Selecting **Ko‘rib chiqdim** or passing the vocabulary test opens each ordinary lesson independently. Test mastery earns 30 coins once; review alone earns none.
 Sampling uses distinct random words, `ceil(words/3)`, typed Uzbek responses and
 the existing >=75% rule. A passed result remains passed after later failures.
 The exam vocabulary list is review; it introduces no additional gate or threshold.
@@ -60,8 +60,9 @@ self-check; no pronunciation assessment is claimed.
 
 Finishing practice requires all authored parts answered and checked, completed
 listening and resolved teacher reviews, without inventing a score threshold.
-The five finished lessons earn 10 points each. The final exam's >=90% mastery
-rule and non-duplicating 50-point award remain unchanged. A failed or pending
+The five finished lessons earn 50 coins each. The final exam's >=90% mastery
+rule adds 10 coins to each teaching lesson (50 total) once. Vocabulary mastery
+earns another 30 per lesson. Unit 1 offers 450 coins; see `check-1.md`. A failed or pending
 exam never clears previously earned progress.
 
 ## Persistence and teacher integration

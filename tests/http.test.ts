@@ -111,3 +111,26 @@ test('HTTP reserved administrator entry stays separate from automatic student pr
   const { rows } = await store.pool.query('SELECT count(*)::int total FROM students WHERE lookup_name=$1', [configured.toLowerCase()]);
   assert.equal(rows[0].total, 0);
 });
+
+test('HTTP rankings are student-only and vocabulary review unlocks without manufacturing a test pass', async () => {
+ const anonymous = new Browser();
+ assert.equal((await anonymous.fetch('/ranking')).headers.get('location'), '/');
+ const a = new Browser(), b = new Browser();
+ await a.form('/', { name: 'Ranking HTTP learner' }); await b.form('/', { name: 'Still locked HTTP learner' });
+ const f = await fixture(store.db, { vocabulary: true });
+ const start = `/api/lessons/${f.lesson.id}/attempts`, vocab = `/api/lessons/${f.lesson.id}/vocabulary`;
+ assert.equal((await a.json(start)).status, 409);
+ assert.equal((await a.json(vocab, { action: 'review', studentId: 'spoof' })).status, 400);
+ assert.equal((await a.json(vocab, { action: 'review' }, 'POST', 'https://another.invalid')).status, 403);
+ assert.equal((await a.json(vocab, { action: 'review' })).status, 200);
+ assert.equal((await a.json(vocab, { action: 'review' })).status, 200);
+ assert.equal((await b.json(start)).status, 409);
+ const before = await (await a.fetch('/ranking')).text();assert.match(before, /Ranking HTTP learner/);assert.match(before, /Sizning o‘rningiz/);
+ const attempt = await (await a.json(start)).json();
+ await a.json(`/api/attempts/${attempt.id}/answers`, { questionId: f.question.id, response: 'token', expectedRevision: 0 }, 'PUT');
+ await a.json(`/api/attempts/${attempt.id}/submit`);
+ const result = await a.fetch('/ranking');assert.equal(result.status, 200);assert.match(result.headers.get('cache-control')!, /no-store/);
+ const html = await result.text();assert.match(html, /50/);assert.doesNotMatch(html, /acceptedTranslations|lookupName|groupLabel/);
+ const teacher = new Browser();await teacher.form('/', { name: process.env.TEACHER_ENTRY_NAME! });
+ assert.equal((await teacher.fetch('/ranking')).headers.get('location'), '/');
+});

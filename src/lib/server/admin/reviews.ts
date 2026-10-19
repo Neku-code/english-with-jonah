@@ -4,6 +4,7 @@ import { answers, lessonAttempts, lessonProgress, lessons, lessonVersions, quest
 import { lockTeacherSession } from '../teacher-sessions';
 import { isCompleted } from '../learning/grading';
 import { answered } from '../learning/authored-grading';
+import { awardLearningCoins } from '../learning/rewards';
 import { reject, responseText, uuid } from '../validation';
 
 export async function saveReview(db: Database, teacherId: string, attemptId: string, questionId: string, input: {
@@ -66,7 +67,8 @@ export async function saveReview(db: Database, teacherId: string, attemptId: str
         if (eligible[0]) await tx.insert(lessonProgress).values({ studentId: attempt.studentId, lessonId: attempt.lessonId, completedAttemptId: eligible[0].id });
       }
     }
-    // Final-exam mastery is derived by homeData from all effective submitted results.
+    // Award only after effective review totals and completion have been saved.
+    await awardLearningCoins(tx, attempt.studentId);
     return review;
   });
 }

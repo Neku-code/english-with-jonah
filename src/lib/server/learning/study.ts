@@ -1,6 +1,7 @@
 import {and,eq,sql} from 'drizzle-orm';
 import type {Database} from '../db/connect';
-import {answers,lessonVersions,lessons,questions,studyWorkspaces,practiceChecks,studyEvents,vocabularySessions,vocabularyItems,vocabularyResults,vocabularyReadiness} from '../db/schema';
+import {answers,lessonVersions,lessons,questions,studyWorkspaces,practiceChecks,studyEvents,vocabularySessions,vocabularyItems,vocabularyResults,vocabularyReadiness,vocabularyStudy,students} from '../db/schema';
+import {awardLearningCoins} from './rewards';
 import {lockStudent} from '../students';
 import {uuid,reject,responseText} from '../validation';
 import {available,ownedAttempt} from './attempts';
@@ -74,6 +75,13 @@ export async function vocabularyState(db:Database,studentId:string,lessonId:stri
 export async function vocabularyAction(db:Database,studentId:string,lessonId:string,input:Record<string,unknown>) {
  return db.transaction(async tx=>{
   await lockStudent(tx,studentId);const {lesson}=await available(tx,lessonId);
+  if(!['review','start','answer'].includes(String(input.action))) reject(400,'INVALID_ACTION','Amal noto‘g‘ri.');
+  if(lesson.kind==='final_exam') reject(409,'EXAM_VOCAB_REVIEW','Yakuniy test lug‘ati faqat takrorlash uchun.');
+  if(input.action==='review') {
+   await tx.insert(vocabularyStudy).values({studentId,lessonId,versionId:lesson.versionId}).onConflictDoNothing();
+   await tx.update(students).set({lastLearningAt:new Date()}).where(eq(students.id,studentId));
+   return {reviewed:true};
+  }
   const words=await tx.select().from(vocabularyItems).where(eq(vocabularyItems.versionId,lesson.versionId));
   if(!words.length) reject(409,'NO_WORDS','Lug‘at hali tayyor emas.');
   let [session]=await tx.select().from(vocabularySessions).where(and(eq(vocabularySessions.studentId,studentId),eq(vocabularySessions.versionId,lesson.versionId),eq(vocabularySessions.submitted,false))).for('update');
@@ -95,13 +103,16 @@ export async function vocabularyAction(db:Database,studentId:string,lessonId:str
   const correct=previous?.correct??word.acceptedTranslations.some(a=>normalizeAuthored(a)===normalizeAuthored(response));
   const responses=previous?requested.responses:[...requested.responses,{id:wordId,response,correct}];
   const done=responses.length===requested.wordIds.length,score=responses.filter(r=>r.correct).length,passed=100*score>=75*responses.length;
+  let coinsAwarded=0;
   if(!previous) {
    await tx.update(vocabularySessions).set({responses,submitted:done,updatedAt:new Date()}).where(eq(vocabularySessions.id,requested.id));
    if(done) {
     const [result]=await tx.insert(vocabularyResults).values({studentId,lessonId,versionId:lesson.versionId,sourceKey:'unit1-vocab:'+requested.id,correct:score,total:responses.length}).returning();
     if(passed) await tx.insert(vocabularyReadiness).values({studentId,lessonId,versionId:lesson.versionId,resultId:result.id}).onConflictDoNothing();
+    coinsAwarded=await awardLearningCoins(tx,studentId);
    }
   }
-  return {correct,expected:word.acceptedTranslations.join(' / '),responses,done,passed:done&&passed,score,total:requested.wordIds.length};
+  await tx.update(students).set({lastLearningAt:new Date()}).where(eq(students.id,studentId));
+  return {correct,expected:word.acceptedTranslations.join(' / '),responses,done,passed:done&&passed,score,total:requested.wordIds.length,coinsAwarded};
  });
 }

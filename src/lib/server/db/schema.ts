@@ -150,3 +150,19 @@ export const vocabularySessions = pgTable('vocabulary_sessions', {
   submitted:boolean('submitted').notNull().default(false),createdAt:time('created_at'),updatedAt:time('updated_at')
 },t=>[foreignKey({columns:[t.versionId,t.lessonId],foreignColumns:[lessonVersions.id,lessonVersions.lessonId]}),
   uniqueIndex('one_vocab_session').on(t.studentId,t.versionId).where(sql`${t.submitted}=false`)]);
+
+// Reading unlocks a revision; passing its test is a separate mastery milestone.
+export const vocabularyStudy = pgTable('vocabulary_study', {
+  studentId: uuid('student_id').notNull().references(() => students.id),
+  lessonId: uuid('lesson_id').notNull(), versionId: uuid('version_id').notNull(), reviewedAt: time('reviewed_at')
+}, t => [primaryKey({ columns: [t.studentId, t.lessonId, t.versionId] }),
+  foreignKey({ columns: [t.versionId, t.lessonId], foreignColumns: [lessonVersions.id, lessonVersions.lessonId] })]);
+
+// The stable lesson identity prevents repeat rewards, including new revisions.
+export const learningRewards = pgTable('learning_rewards', {
+  studentId: uuid('student_id').notNull().references(() => students.id),
+  lessonId: uuid('lesson_id').notNull().references(() => lessons.id),
+  kind: text('kind', { enum: ['vocabulary', 'lesson', 'mastery'] }).notNull(),
+  coins: integer('coins').notNull(), awardedAt: time('awarded_at')
+}, t => [primaryKey({ columns: [t.studentId, t.lessonId, t.kind] }),
+  check('reward_amount', sql`(${t.kind} = 'vocabulary' AND ${t.coins} = 30) OR (${t.kind} = 'lesson' AND ${t.coins} = 50) OR (${t.kind} = 'mastery' AND ${t.coins} = 10)`)]);

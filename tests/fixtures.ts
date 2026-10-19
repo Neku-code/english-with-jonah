@@ -16,8 +16,8 @@ export async function fixture(db: Database, options: { published?: boolean; unit
   if (options.published !== false) await db.update(lessonVersions).set({ publishedAt: new Date() }).where(eq(lessonVersions.id, version.id));
   return { unit, lesson, version, question };
 }
-export async function newRevision(db: Database, lessonId: string, rule: GradingRule = { mode: 'exact', accepted: ['new-token'], caseSensitive: true, normalizeApostrophes: false }) {
-  const [version] = await db.insert(lessonVersions).values({ lessonId, version: 2, title: 'Synthetic revision 2', completionPolicy: { mode: 'all_answered' } }).returning();
+export async function newRevision(db: Database, lessonId: string, rule: GradingRule = { mode: 'exact', accepted: ['new-token'], caseSensitive: true, normalizeApostrophes: false }, vocabularyRequired = false) {
+  const [version] = await db.insert(lessonVersions).values({ lessonId, version: 2, title: 'Synthetic revision 2', vocabularyRequired, completionPolicy: { mode: 'all_answered' } }).returning();
   const [question] = await db.insert(questions).values({ versionId: version.id, exerciseType: 'text', content: { prompt: 'Synthetic revision token' }, grading: rule, maxPoints: 10, position: 1 }).returning();
   await db.update(lessonVersions).set({ publishedAt: new Date() }).where(eq(lessonVersions.id, version.id));
   return { version, question };

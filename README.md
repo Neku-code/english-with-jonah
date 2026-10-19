@@ -6,6 +6,19 @@ Built with SvelteKit, TypeScript, responsive CSS, Neon PostgreSQL, and Drizzle O
 Live app: [English with Jonah](https://english-with-jonah.vercel.app).
 See [deployment status and verification](docs/vercel-setup.md).
 
+## First check — rankings and coins
+
+Students unlock each lesson with **Ko‘rib chiqdim** and can separately choose
+**Test topshirish** to master its vocabulary. Rewards: 30 coins per passed
+vocabulary set, 50 per finished teaching lesson, and 10 more per teaching lesson
+when final exam 1.6 reaches 90%. Unit 1 offers 450 coins. `/ranking` orders active
+students by real lifetime coins, with shared ranks for ties. Retries cannot pay
+again. Teacher reviews award eligible coins atomically.
+
+**Apply migration 0009 with `pnpm db:migrate` before deploying this feature.**
+It preserves existing learning records and backfills genuine earlier milestones.
+See [first-check handoff and validation](docs/check-1.md).
+
 ## Unit 1 — Authored lessons and final test
 
 The supplied Unit 1 curriculum is implemented: five lessons with 24 numbered

@@ -94,12 +94,14 @@ test('reviewed final exams use existing 90 percent mastery rules and retries nev
   const exam = await fixture(db, { kind: 'final_exam', unitId: f.unit.id, manual: true });
   const a = await submitted(s.id, exam, 'Exam response');
   await saveReview(db, teacher.id, a.id, exam.question.id, input(0, '9'));
-  assert.equal((await homeData(db, s.id)).units.find(u => u.id === f.unit.id)?.points, 100);
+  assert.equal((await homeData(db, s.id)).units.find(u => u.id === f.unit.id)?.points, 60);
   const retry = await submitted(s.id, exam, 'Retry response');
   await saveReview(db, teacher.id, retry.id, exam.question.id, input(0, '8'));
-  assert.equal((await homeData(db, s.id)).units.find(u => u.id === f.unit.id)?.points, 100);
+  assert.equal((await homeData(db, s.id)).units.find(u => u.id === f.unit.id)?.points, 60);
   await saveReview(db, teacher.id, a.id, exam.question.id, input(1, '8'));
-  assert.equal((await homeData(db, s.id)).units.find(u => u.id === f.unit.id)?.points, 50);
+  const corrected = (await homeData(db, s.id)).units.find(u => u.id === f.unit.id)!;
+  assert.equal(corrected.points, 60); // Coin receipts remain; the corrected mastery status changes.
+  assert.equal(corrected.mastered, false);
 });
 test('question statistics use first submitted attempt per student/version, separate blank/pending and preserve version prompts', async () => {
   const { db } = store, teacher = await createTeacherSession(db);

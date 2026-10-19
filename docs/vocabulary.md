@@ -1,113 +1,51 @@
 # Vocabulary before each lesson
 
-## Purpose and naming
+The owner's first check on 19 October 2026 replaces test-required unlocking.
+Vocabulary review and vocabulary mastery are now separate milestones.
 
-Each unit includes vocabulary sets linked to its individual lessons. Students learn the vocabulary before opening the corresponding lesson.
+## Student flow
 
-Use the unit and lesson numbers to identify each set:
+1. Choose a teaching lesson and read its matching list (Vocab 1.1, Vocab 1.2, etc.).
+2. **Ko‘rib chiqdim** saves review and opens that lesson, without giving coins.
+3. **Test topshirish** starts or resumes the typed English-to-Uzbek test.
+4. At **75% or above**, the vocabulary becomes mastered and awards **30 coins once**.
 
-| Vocabulary set | Associated lesson |
-| --- | --- |
-| Vocab 1.1 | Unit 1, Lesson 1 |
-| Vocab 1.2 | Unit 1, Lesson 2 |
-| Vocab 1.3 | Unit 1, Lesson 3 |
+Students can open the lesson after reviewing, then return to master vocabulary
+later using its vocabulary preparation link. Passing the test also satisfies
+review readiness. A failed test never removes existing review or a past pass.
+The current revision must be reviewed or passed; another student's review or
+another lesson's review cannot unlock it. Passed historical revisions retain
+their original results and rewards. New revisions do not pay another 30 coins.
 
-Continue the same naming pattern for the remaining lessons and future units. Unit 1: To Be and its vocabulary belong to v0.1; Unit 2: Present Simple remains v0.2.
+Vocabulary preparation offers the two actions above. Once unlocked, the first
+button becomes **Darsni ochish**. A separate quick-reference vocabulary dialog
+remains available during practice. The preparation route is
+`/learn/:lessonId?vocab`; it remains accessible after an attempt has started.
+Unit 1 exam 1.6 has no vocabulary reward or vocabulary gate; its list is review.
 
-## Confirmed student flow
+## Test format and scoring
 
-1. Open the vocabulary set for the upcoming lesson, such as **Vocab 1.1**.
-2. View the vocabulary and learn it by heart.
-3. Select **Take an exam**.
-4. Complete a flashcard-style vocabulary exam: see an English word and type its translation into **Uzbek**.
-5. After submitting each answer, see whether it is correct.
-6. Receive an overall exam result. A score of **at least 75%** passes that vocabulary level.
-7. Proceed to the corresponding lesson after the vocabulary step.
+- Sample `ceil(total_words / 3)` distinct random words from that lesson's set.
+- Show an English word and require a typed Uzbek translation.
+- Save one scored submission per card and provide immediate answer feedback.
+- Pass from the unrounded result: `100 × correct >= 75 × sample_size`.
+- Show expected translations after an incorrect answer.
+- Permit unlimited attempts; retain a passing result after later failures.
+- Normalize case, whitespace, punctuation and Uzbek apostrophe variants, using
+  the existing accepted translations. Do not add AI checking or spelling tolerance.
+- Resume unfinished sessions with saved answers across visits/devices.
 
-The exam tests **one-third of the words in that vocabulary set**. It does not test one-third of all words across the unit.
+Vocabulary lists and translations remain the authored ZIP's content. Headers
+are not words. The one-third vocabulary sample is separate from the 90% final
+exam mastery rule. Passing vocabulary does not finish the lesson.
 
-This is a typed-answer flashcard exam, not a self-rated card flip or a multiple-choice quiz.
+## Persistence and rewards
 
-## Lesson access
+`vocabulary_study` stores revision-specific **Ko‘rib chiqdim** confirmations.
+`vocabulary_results` and `vocabulary_readiness` continue storing test results
+and genuine passes; review never fabricates a passing test. The immutable coin
+ledger awards 30 once per student and stable lesson ID. All changes are
+session-owned and transactional. Teacher details retain actual vocabulary test
+results and show the student's real coin totals.
 
-The Boxes 2–3 backend supports a revision-specific `vocabularyRequired` flag. When enabled, passing the matching vocabulary exam at 75% or above opens that lesson. Viewing the list alone does not grant readiness. Ordinary published lessons have no sequential prerequisite. Content-specific flags will be set when actual content is authored.
-
-For example, passing Vocab 1.1 opens Lesson 1.1; passing Vocab 1.2 opens Lesson 1.2. Do not assume that passing one set unlocks every lesson in the unit.
-
-The user specified vocabulary before lessons and a 75% vocabulary pass threshold. The exact unlocking behavior above makes that sequence concrete and remains an implementation assumption until confirmed.
-
-## Vocabulary study view
-
-Show each English word with its Uzbek translation so the student can study before taking the exam. The exact word lists and accepted translations still need to be supplied or authored.
-
-Keep the study list and typed-answer cards readable on both phones and laptops. On phones, the answer field and submit control must remain usable with the on-screen keyboard open.
-
-## Exam sampling and scoring
-
-### Confirmed rules
-
-- Ask one-third of the set's words.
-- Present one English word at a time and accept a typed Uzbek translation.
-- Give correct/incorrect feedback after each submitted answer.
-- Pass at **75% or above**, including exactly 75%.
-
-### Proposed implementation defaults
-
-The following details resolve gaps in the requirements; they are not additional user-confirmed rules:
-
-- Randomly select distinct words for each attempt, with no repeated word within an attempt.
-- When the word count is not divisible by three, round the sample size **up**: `question_count = ceil(total_words / 3)`.
-- Require a nonempty vocabulary set before enabling its exam.
-- Give each sampled word equal weight, with one scored submission per card.
-- Calculate `exam_percent = 100 × correct_answers / question_count` and pass when `exam_percent >= 75`.
-- Decide passing from the unrounded result, not a rounded display percentage.
-- Show the expected translation after an incorrect answer to support learning.
-
-Examples under these defaults:
-
-| Words in set | Questions asked | Minimum correct answers to pass |
-| --- | --- | --- |
-| 12 | 4 | 3 — exactly 75% |
-| 15 | 5 | 4 — 80% |
-| 20 | 7 | 6 — approximately 85.7% |
-
-For small samples, the lowest achievable passing score may be higher than 75% because answers are counted in whole numbers.
-
-## Relationship to unit mastery and points
-
-Vocabulary passing and unit mastery are different milestones:
-
-| Assessment | Passing threshold | Result |
-| --- | --- | --- |
-| Vocabulary exam before a lesson | At least 75% | Vocabulary level passed; matching lesson unlocks under the working interpretation. |
-| Final exam at the end of a unit | At least 90% | Unit mastery and the final 50 unit points. |
-
-Passing vocabulary does not itself mark the associated lesson Finished or grant full unit mastery. The existing unit budget remains **50 points from finished lessons + 50 points from the qualifying final exam**. No separate vocabulary point award has been specified; do not add extra points without a new decision.
-
-See [Levels and mastery](levels-and-mastery.md) for unit scoring.
-
-## Progress records
-
-Save vocabulary attempts and pass results so the vocabulary step can be resumed across visits and devices once student identity is resolved. Associate each result with the student and the correct unit/lesson vocabulary set.
-
-The teacher should be able to inspect vocabulary results as part of student progress. Keep vocabulary scores separately labeled from lesson completion, unit points, and final exam scores.
-
-## Remaining decisions
-
-For the supplied Unit 1 content, the existing readiness interpretation is used:
-each ordinary lesson opens after its own vocabulary pass, independently of other
-lessons. Lists and translations come from the ZIP; headers are not words. The
-sample is `ceil(words/3)` distinct random entries, with one scored submission per
-card, >=75% passing, unlimited new attempts and retained readiness after later
-failures. Case, whitespace, punctuation and Uzbek apostrophe variants normalize;
-no spelling tolerance or extra vocabulary points are added. The exam's vocabulary
-list is review and adds no further prerequisite. Earlier open planning items below
-remain applicable only where not settled by this implementation.
-
-- Confirm that passing the vocabulary exam is required to unlock the corresponding lesson.
-- Confirm random sampling and rounding up when the word count is not divisible by three.
-- Exact English word lists, Uzbek translations, and accepted alternative translations.
-- Answer normalization: capitalization, surrounding spaces, Uzbek apostrophe variants, and whether to accept Cyrillic alongside Latin Uzbek.
-- Whether spelling mistakes receive any tolerance or partial credit.
-- Retry limits, waiting periods, and behavior of later failed attempts after a set has already been passed.
-- Whether vocabulary contributes points within the existing 50-point lesson allocation; no additional point pool is currently defined.
+See [Progress, coins and mastery](levels-and-mastery.md) for scoring and ranking.

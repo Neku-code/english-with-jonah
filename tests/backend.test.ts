@@ -197,7 +197,7 @@ test('final exam remains distinct from lesson completion; 90% mastery persists a
   await saveAnswer(db, a.id, success.id, { questionId: exam.question.id, response: 'token', expectedRevision: 0 });
   await saveAnswer(db, a.id, success.id, { questionId: boundary.id, response: 'token', expectedRevision: 0 });
   assert.equal((await submitAttempt(db, a.id, success.id)).earnedPoints, 900); // Exactly 90%.
-  assert.equal((await homeData(db, a.id)).units.find(u => u.id === f.unit.id)?.points, 100);
+  assert.equal((await homeData(db, a.id)).units.find(u => u.id === f.unit.id)?.points, 60);
   const failure = await startAttempt(db, a.id, exam.lesson.id); await submitAttempt(db, a.id, failure.id);
-  const home = await homeData(db, a.id); assert.equal(home.units.find(u => u.id === f.unit.id)?.points, 100); assert.equal(home.units.find(u => u.id === f.unit.id)?.mastered, true);
+  const home = await homeData(db, a.id); assert.equal(home.units.find(u => u.id === f.unit.id)?.points, 60); assert.equal(home.units.find(u => u.id === f.unit.id)?.mastered, true);
 });

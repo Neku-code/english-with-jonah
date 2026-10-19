@@ -1,12 +1,13 @@
 import { and, eq, sql } from 'drizzle-orm';
 import type { Database, Connection } from '../db/connect';
-import { answers, lessonAttempts, lessonProgress, lessons, lessonVersions, questions, students, vocabularyReadiness, vocabularyResults, studyWorkspaces, practiceChecks } from '../db/schema';
+import { answers, lessonAttempts, lessonProgress, lessons, lessonVersions, questions, students, vocabularyReadiness, vocabularyStudy, vocabularyResults, studyWorkspaces, practiceChecks } from '../db/schema';
 import { lockStudent } from '../students';
 import { reject, responseText, uuid } from '../validation';
 import { publishedCatalog } from './catalog';
 import { grade, isCompleted, validatePolicy, validateQuestion } from './grading';
 import type { AttemptResult } from './contracts';
 import { answered, responseParts } from './authored-grading';
+import { awardLearningCoins } from './rewards';
 
 const result = (a: typeof lessonAttempts.$inferSelect): AttemptResult => ({ id: a.id, status: a.status, earnedPoints: a.earnedPoints, maxPoints: a.maxPoints, pendingReview: a.pendingReview });
 async function touch(tx: Connection, studentId: string) { await tx.update(students).set({ lastLearningAt: new Date() }).where(eq(students.id, studentId)); }
@@ -30,7 +31,8 @@ export async function startAttempt(db: Database, studentId: string, lessonId: st
     if (existing) { await touch(tx, studentId); return result(existing); }
     if (lesson.vocabularyRequired) {
       const [ready] = await tx.select().from(vocabularyReadiness).where(and(eq(vocabularyReadiness.studentId, studentId), eq(vocabularyReadiness.lessonId, lessonId), eq(vocabularyReadiness.versionId, lesson.versionId)));
-      if (!ready) return reject(409, 'VOCABULARY_REQUIRED', 'Avval shu darsning lug‘at bosqichidan o‘ting.');
+      const [reviewed] = await tx.select().from(vocabularyStudy).where(and(eq(vocabularyStudy.studentId, studentId), eq(vocabularyStudy.versionId, lesson.versionId)));
+      if (!ready && !reviewed) return reject(409, 'VOCABULARY_REQUIRED', 'Avval shu darsning lug‘atini ko‘rib chiqing.');
     }
     if (lesson.kind === 'final_exam') {
       const completed = await tx.select().from(lessonProgress).where(eq(lessonProgress.studentId, studentId));
@@ -126,6 +128,7 @@ export async function submitAttempt(db: Database, studentId: string, attemptId: 
     if (lesson.kind === 'lesson' && isCompleted(version.completionPolicy, earned, maximum, pending, allAnswered)) {
       await tx.insert(lessonProgress).values({ studentId, lessonId: lesson.id, completedAttemptId: attempt.id }).onConflictDoNothing();
     }
+    await awardLearningCoins(tx, studentId);
     await touch(tx, studentId);
     return result(submitted);
   });
@@ -144,6 +147,7 @@ export async function recordVocabularyResult(db: Database, studentId: string, le
     if (stored.lessonId !== lessonId || stored.versionId !== versionId || stored.correct !== correct || stored.total !== total) return reject(409, 'RESULT_CONFLICT', 'Natija oldin boshqa ma’lumot bilan saqlangan.');
     const passed = 100 * stored.correct >= 75 * stored.total;
     if (passed) await tx.insert(vocabularyReadiness).values({ studentId, lessonId, versionId, resultId: stored.id }).onConflictDoNothing();
+    await awardLearningCoins(tx, studentId);
     await touch(tx, studentId);
     return { passed };
   });

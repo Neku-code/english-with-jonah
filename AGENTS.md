@@ -22,8 +22,8 @@ Read these reference documents before planning or changing the application:
 - The administrator can add and remove students, monitor students, and view their progress.
 - Use the Clay & Sage palette from the design guidelines.
 - Treat phone and laptop usability as equally important throughout implementation and verification.
-- Each unit has approximately 5–7 lessons and a final exam. Finished lessons collectively earn 50 points; a final exam score of at least 90% grants mastery and the other 50 points. An exam below 90% leaves existing progress unchanged. Follow `docs/levels-and-mastery.md` for details and unresolved rules.
-- Vocabulary precedes each lesson, with sets named Vocab 1.1, Vocab 1.2, and so on. Students study the list, then take a typed English-to-Uzbek flashcard exam on one-third of that set's words, with feedback per answer and a pass threshold of at least 75%. See `docs/vocabulary.md` for the lesson-unlocking interpretation, sampling defaults, and open decisions. Do not confuse vocabulary passing with the 90% unit mastery threshold.
+- Each unit has approximately 5–7 lessons and a final exam. Each teaching lesson earns 50 coins once; passing its vocabulary test earns 30 coins once. A final exam score of at least 90% grants mastery and 10 more coins per teaching lesson. Unit 1 has five teaching lessons plus final exam 1.6 (450 possible coins). Rankings use saved lifetime coins. Repeated tasks/attempts/revisions never pay twice. Follow `docs/levels-and-mastery.md` for details and unresolved rules.
+- Vocabulary precedes each lesson, with sets named Vocab 1.1, Vocab 1.2, and so on. Students study the list, then take a typed English-to-Uzbek flashcard exam on one-third of that set's words, with feedback per answer and a pass threshold of at least 75%. Selecting **Ko‘rib chiqdim** unlocks the matching lesson without coins; **Test topshirish** masters its vocabulary and gives 30 coins once at >=75%. See `docs/vocabulary.md` for sampling and persistence rules. Do not confuse vocabulary passing with the 90% unit mastery threshold.
 
 ## Working conventions
 
@@ -68,3 +68,12 @@ and explicit panel metadata. Display content and grading keys are separate;
 published revisions and asset URLs are versioned. Publish with
 `pnpm unit1:publish`, never synthetic fixtures against production. Browser TTS
 is the current audio fallback. Unit 2 remains outside scope.
+
+## First check — rankings and rewards
+
+The 19 October first-check requirements supersede the earlier 50/50 scoring
+and test-required vocabulary unlock. Read `docs/check-1.md`,
+`docs/levels-and-mastery.md` and `docs/vocabulary.md`. Apply migration 0009
+before deploying this feature. Rewards are append-only and keyed by student,
+stable lesson ID and kind; preserve historical attempts and teacher reviews.
+The second problem/fix check and third visual redesign remain separate work.

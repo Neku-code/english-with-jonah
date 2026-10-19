@@ -24,11 +24,20 @@ See [implementation and source-preservation decisions](unit-1-implementation.md)
 | Unit 1 | To Be | v0.1 — current scope |
 | Unit 2 | Present Simple | v0.2 — future scope |
 
-The application will support lessons, student profiles, answers, grading, scores, and progress, with a teacher dashboard for monitoring students. Each unit will have approximately 5–7 lessons and a final exam. Finished lessons collectively earn 50 points; scoring at least 90% on the final exam grants mastery and the remaining 50 points. Below 90%, existing progress remains unchanged and the unit is not mastered yet. See [Levels and mastery](levels-and-mastery.md) for the full rules. Specific lesson content, exercise formats, and detailed grading rules still need to be defined.
+The application saves lessons, answers, grading and progress for teacher review.
+Each teaching lesson awards 50 coins once; passing its vocabulary test awards
+30 coins once. A final exam score of at least 90% adds 10 coins to each finished
+teaching lesson and grants mastery. Unit 1 has five teaching lessons plus exam
+1.6: 450 possible coins. Rankings use saved lifetime coins; retries cannot pay
+again. See [Progress, coins and mastery](levels-and-mastery.md).
 
 ## Student entry and experience
 
-Before each lesson, students study its matching vocabulary set (for example, Vocab 1.1 or Vocab 1.2), then take a flashcard-style exam covering one-third of that set's words. They see an English word, type its Uzbek translation, and receive feedback after each answer. The vocabulary pass threshold is at least 75%. The working interpretation is that passing opens the matching lesson. See [Vocabulary](vocabulary.md) for confirmed rules and implementation assumptions.
+Before each lesson, students study its matching vocabulary set, then choose
+**Ko‘rib chiqdim** to unlock the lesson or **Test topshirish** to master the
+vocabulary. The typed test covers one-third of the set, with feedback per answer
+and a 75% passing threshold. Passing gives 30 coins once; reviewing gives no
+coins. See [Vocabulary](vocabulary.md).
 
 The requested flow is:
 
@@ -60,7 +69,7 @@ The administrator must be able to:
 
 ## Identity and access decisions
 
-The user explicitly accepts name-only classroom access: anyone knowing another student's name can enter that profile, including from another browser. Names are shared in person or through the teacher, not through a public roster or discovery feature in the app. This is a settled requirement, not an unresolved student-authentication decision. Administrator entry remains separate from student accounts.
+The user explicitly accepts name-only classroom access: anyone knowing another student's name can enter that profile, including from another browser. The signed-in student ranking now lists active students’ display names and coin totals, as authorized by the owner. It exposes no profile links or IDs. This is a settled requirement, not an unresolved student-authentication decision. Administrator entry remains separate from student accounts.
 
 Settled requirements:
 

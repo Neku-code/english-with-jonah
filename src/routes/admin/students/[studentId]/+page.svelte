@@ -30,11 +30,12 @@
   </div>
 </details>
 <h2>O‘qish jarayoni</h2>
+<p><strong>{data.home.totalPoints} coin</strong> · Reyting ballari</p>
 <dl class="admin-metrics"><div><dt>Tugallangan darslar</dt><dd>{data.finished}</dd></div><div><dt>Davom etayotgan darslar</dt><dd>{data.underway}</dd></div><div><dt>Topshirilgan urinishlar</dt><dd>{data.submitted}</dd></div></dl>
 {#if !data.total && !data.vocabTotal}<p class="admin-empty">O‘quvchi hali o‘qishni boshlamagan.</p>{/if}
-{#each data.home.units as unit}<div class="admin-panel"><h3>{unit.title}</h3><p>{unit.finished} / {unit.total} dars tugallangan · {Number(unit.points.toFixed(2))} / 100 ball · {unit.mastered ? 'O‘zlashtirilgan' : 'Hali o‘zlashtirilmagan'}</p>
+{#each data.home.units as unit}<div class="admin-panel"><h3>{unit.title}</h3><p>{unit.finished} / {unit.total} dars tugallangan · {unit.points} / {unit.maximumPoints} coin · {unit.mastered ? 'O‘zlashtirilgan' : 'Hali o‘zlashtirilmagan'}</p>
   {#if unit.examResult}<p>Yakuniy imtihon: {score(unit.examResult.earnedPoints, unit.examResult.maxPoints, unit.examResult.pendingReview)}</p>{/if}
-  <ul class="admin-lesson-list">{#each unit.lessons as lesson}<li><span>{lesson.title}</span><span class="badge">{lesson.completed ? 'Tugallangan' : lesson.inProgress ? 'Boshlangan · topshirilmagan' : data.lessonStates.some(a => a.lessonId === lesson.id && a.submitted) ? 'Urinish topshirilgan' : 'Hali boshlanmagan'}</span></li>{/each}</ul>
+  <ul class="admin-lesson-list">{#each unit.lessons as lesson}<li><span>{lesson.title}</span><span class="badge">{lesson.mastered ? 'O‘zlashtirilgan' : lesson.completed ? 'Tugallangan' : lesson.inProgress ? 'Boshlangan · topshirilmagan' : data.lessonStates.some(a => a.lessonId === lesson.id && a.submitted) ? 'Urinish topshirilgan' : 'Hali boshlanmagan'}</span></li>{/each}</ul>
 </div>{/each}
 {#if data.completed.length}<details class="admin-panel"><summary>Tugallangan darslar tarixi ({data.completed.length})</summary><ul>{#each data.completed as lesson}<li>{lesson.title ?? 'Asl dars mavjud emas'} · {date(lesson.completedAt)}</li>{/each}</ul></details>{/if}
 <section class="admin-section"><h2>Urinishlar tarixi</h2><p class="muted">Har bir urinish alohida saqlanadi. Boshlangan urinish hali topshirilmagan bo‘lishi mumkin.</p>
