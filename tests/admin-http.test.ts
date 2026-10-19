@@ -121,3 +121,15 @@ test('HTTP database failures are recoverable errors, never invented empty result
   try { const result=await b.fetch('/admin/questions'); assert.equal(result.status,503); const html=await result.text(); assert.match(html,/Sahifani ochib bo‘lmadi/); assert.doesNotMatch(html,/Hali savollar bo‘yicha natija yo‘q/); }
   finally { await store.pool.query('ALTER TABLE unavailable_units RENAME TO units'); }
 });
+
+test('HTTP teacher coin controls add/subtract once and reject student or cross-origin mutations',async()=>{
+ const teacher=await teacherBrowser(),s=await createStudent(store.db,'HTTP coin learner'),path=`/admin/students/${s.id}?/coins`;
+ const request={requestId:randomUUID(),operation:'add',amount:'120',reason:'Class practice'};
+ assert.equal((await teacher.form(path,request)).status,200);assert.equal((await teacher.form(path,request)).status,200);
+ const {homeData}=await import('../src/lib/server/learning/catalog');assert.equal((await homeData(store.db,s.id)).totalPoints,120);
+ assert.equal((await teacher.form(path,{...request,requestId:randomUUID(),operation:'subtract',amount:'150'})).status,200);
+ assert.equal((await homeData(store.db,s.id)).totalPoints,-30);
+ const student=new Browser();await student.form('/',{name:s.displayName});assert.equal((await student.form(path,{...request,requestId:randomUUID()})).headers.get('location'),'/');
+ assert.equal((await teacher.form(path,{...request,requestId:randomUUID()},'https://another.invalid')).status,403);
+ assert.equal((await homeData(store.db,s.id)).totalPoints,-30);
+});

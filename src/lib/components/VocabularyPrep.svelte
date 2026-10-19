@@ -2,7 +2,7 @@
  import {onMount} from 'svelte';
  import type {LessonContent} from '#lib/learning/types.ts';
  import {request} from '#lib/learning/client.ts';
- let {lesson,lessonId,ready,mastered=false,hasSession=false,onready,onstart,busy=false,needsLessons=false}:{lesson:LessonContent;lessonId:string;ready:boolean;mastered?:boolean;hasSession?:boolean;onready:()=>void;onstart:()=>Promise<void>;busy?:boolean;needsLessons?:boolean}=$props();
+ let {lesson,lessonId,ready,mastered=false,hasSession=false,onready,onstart,busy=false,needsLessons=false}:{lesson:LessonContent;lessonId:string;ready:boolean;mastered?:boolean;hasSession?:boolean;onready:(coinsAwarded:number)=>void;onstart:(reviewVocabulary?:boolean)=>Promise<void>;busy?:boolean;needsLessons?:boolean}=$props();
  type Session={id:string;words:{id:string;english:string}[];responses:{id:string;response:string;correct:boolean}[]};
  type Feedback={correct:boolean;expected:string;done:boolean;passed:boolean;score:number;total:number;coinsAwarded:number};
  let session=$state<Session|null>(null),answer=$state(''),working=$state(false),message=$state(''),feedback=$state<Feedback|null>(null),showExam=$state(false);
@@ -11,12 +11,12 @@
  onMount(()=>{if(hasSession)void start();});
  async function reviewed(){
   if(working||busy)return;working=true;message='';
-  try{if(!ready&&lesson.kind!=='exam'){await request(`/api/lessons/${lessonId}/vocabulary`,{action:'review'});onready();}await onstart();}
+  try{await onstart(!ready&&lesson.kind!=='exam');}
   catch(e){message=(e as Error).message;}finally{working=false;}
  }
  async function submit(e:SubmitEvent){e.preventDefault();if(!session||!current||working)return;working=true;message='';try{
   const result=await request<Feedback&{responses:Session['responses']}>(`/api/lessons/${lessonId}/vocabulary`,{action:'answer',sessionId:session.id,wordId:current.id,response:answer});
-  session={...session,responses:result.responses};feedback=result;if(result.done&&result.passed)onready();
+  session={...session,responses:result.responses};feedback=result;if(result.done&&result.passed)onready(result.coinsAwarded);
  }catch(e){message=(e as Error).message;}finally{working=false;}}
 </script>
 <section class="vocabulary-prep">

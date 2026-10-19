@@ -71,6 +71,13 @@
       "when": 1792389303793,
       "tag": "0009_learning_rewards",
       "breakpoints": true
+    },
+    {
+      "idx": 10,
+      "version": "7",
+      "when": 1792391006780,
+      "tag": "0010_compact_lessons_and_coin_adjustments",
+      "breakpoints": true
     }
   ]
 }

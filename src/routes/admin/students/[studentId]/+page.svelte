@@ -29,6 +29,15 @@
     {/if}
   </div>
 </details>
+<section class="admin-panel"><h2>Coin qo‘shish yoki ayirish</h2><p>Joriy balans: <strong>{data.home.totalPoints} coin</strong>. Manfiy balansga ham ruxsat beriladi.</p>
+ <AdminForm action="?/coins">{#snippet children(busy)}
+  <input type="hidden" name="requestId" value={data.coinRequestId} />
+  <div class="admin-form-grid"><label class="field">Amal<select name="operation"><option value="add">Qo‘shish (+)</option><option value="subtract">Ayirish (−)</option></select></label><label class="field">Miqdor<input name="amount" type="number" min="1" step="1" required inputmode="numeric" /></label></div>
+  <label class="field">Izoh (ixtiyoriy)<input name="reason" maxlength="500" /></label>
+  <Button type="submit" disabled={busy}>{busy ? 'Saqlanmoqda…' : 'Coinni yangilash'}</Button>
+ {/snippet}</AdminForm>
+ {#if data.adjustments.length}<details><summary>So‘nggi o‘zgarishlar</summary><ul>{#each data.adjustments as adjustment}<li>{adjustment.delta > 0 ? '+' : ''}{adjustment.delta} coin · {date(adjustment.createdAt)}{adjustment.reason ? ` · ${adjustment.reason}` : ''}</li>{/each}</ul></details>{/if}
+</section>
 <h2>O‘qish jarayoni</h2>
 <p><strong>{data.home.totalPoints} coin</strong> · Reyting ballari</p>
 <dl class="admin-metrics"><div><dt>Tugallangan darslar</dt><dd>{data.finished}</dd></div><div><dt>Davom etayotgan darslar</dt><dd>{data.underway}</dd></div><div><dt>Topshirilgan urinishlar</dt><dd>{data.submitted}</dd></div></dl>

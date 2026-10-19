@@ -6,7 +6,7 @@
 <section class="ranking-page">
  <a class="back-link" href="/home">← Darslar</a>
  <div class="section-heading"><div><p class="eyebrow">BIRGALIKDA O‘RGANAMIZ</p><h1>Ranking</h1></div></div>
- <p class="muted">Yig‘ilgan coin — reyting ballaringiz. Bir xil ball olganlar bir xil o‘rinda turadi.</p>
+ <p class="muted">Yig‘ilgan coin va o‘qituvchi qo‘shgan yoki ayirgan coin — reyting ballaringiz. Bir xil ball olganlar bir xil o‘rinda turadi.</p>
  {#if data.unavailable}<div class="home-notice feedback--error" role="alert"><h2>Reytingni yuklab bo‘lmadi.</h2><a class="button button--secondary" href="/ranking" data-sveltekit-reload>Qayta urinish</a></div>
  {:else}
   {#if current}<p class="coin-total"><strong>{current.points}</strong> coin · Sizning o‘rningiz: <strong>{current.rank}</strong></p>{/if}

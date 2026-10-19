@@ -1,3 +1,4 @@
+import {coinBalance} from '../../coins';
 import { sql } from 'drizzle-orm';
 import type { Connection } from '../db/connect';
 
@@ -9,16 +10,16 @@ export async function awardLearningCoins(db: Connection, studentId: string) {
 }
 
 export async function rankings(db: Connection, studentId: string) {
-  const { rows } = await db.execute<{ name: string; points: number; rank: number; isCurrent: boolean }>(sql`
+  const { rows } = await db.execute<{ name: string; points: string; rank: number; isCurrent: boolean }>(sql`
     WITH totals AS (
       SELECT s.id, s.display_name AS name, s.lookup_name,
-        COALESCE(sum(r.coins), 0)::int AS points
-      FROM students s LEFT JOIN learning_rewards r ON r.student_id=s.id
-      WHERE s.status='active' GROUP BY s.id
+        (COALESCE((SELECT sum(r.coins) FROM learning_rewards r WHERE r.student_id=s.id),0) +
+         COALESCE((SELECT sum(a.delta) FROM coin_adjustments a WHERE a.student_id=s.id),0)) AS points
+      FROM students s WHERE s.status='active'
     )
-    SELECT name, points, dense_rank() OVER (ORDER BY points DESC)::int AS rank,
+    SELECT name, points::text AS points, dense_rank() OVER (ORDER BY points DESC)::int AS rank,
       id=${studentId}::uuid AS "isCurrent"
-    FROM totals ORDER BY points DESC, lookup_name, id`);
+    FROM totals ORDER BY totals.points DESC, lookup_name, id`);
   // Never expose student IDs, groups, names used for lookup, or profile links.
-  return rows;
+  return rows.map(row=>({...row,points:coinBalance(row.points)}));
 }

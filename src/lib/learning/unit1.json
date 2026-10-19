@@ -3,77 +3,28 @@
     "id": "u1-l1.1",
     "number": "1.1",
     "title": "Introduction “To Be”",
-    "version": "2026-10-19.3",
+    "version": "2026-10-19.4",
     "kind": "practice",
     "sections": [
       {
-        "id": "u1-l1.1-s1",
-        "title": "TANISHUV",
+        "id": "u1-l1.1-window-model1",
+        "title": "I am · You are",
         "items": [
           {
             "kind": "text",
-            "id": "u1-l1.1-text1",
-            "text": "Rasmga qarang va o‘qing."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.1-text2",
-            "text": "Emma: Hi. I'm Emma. I'm a student.\nBen: I'm Ben. I'm a student.\nAnna: I'm Anna. I'm a teacher."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.1-text3",
-            "text": "I'm Emma. — Men Emmaman.\nI'm a student. — Men talabaman.\nI'm a teacher. — Men o‘qituvchiman."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.1-text4",
-            "text": "I — men. You — sen/siz.\nI am = I'm. You are = You're."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.1-text5",
-            "text": "I am a student. — Men talabaman.\nYou are a student. — Siz talabasisiz."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.1-text6",
-            "text": "Inglizchada am/is/are tushib qolmaydi: I am a student."
-          },
-          {
-            "kind": "task",
-            "id": "u1-l1.1-q1",
-            "number": 1,
-            "prompt": "Rasmga mos gapni tanlang.",
-            "control": "choice",
-            "parts": [
-              {
-                "id": "u1-l1.1-q1-part1",
-                "label": "Javob"
-              }
-            ],
-            "maxPoints": 1,
-            "options": [
-              {
-                "id": "A",
-                "label": "Emma is a teacher."
-              },
-              {
-                "id": "B",
-                "label": "Emma is a student."
-              },
-              {
-                "id": "C",
-                "label": "Emma is Ben."
-              }
-            ],
-            "imageId": "u1-l1.1-img-01_meet_the_students",
-            "listening": false
-          },
+            "id": "u1-l1.1-window-model1-text",
+            "text": "I — men. You — sen/siz.\nI bilan am, you bilan are ishlatiladi.\nI am Ben. — Men Benman.\nYou are a student. — Siz talabasiz.\nGap tartibi: kim + am/is/are + ma’lumot."
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.1-window-practice1",
+        "title": "Mashq 1",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.1-q2",
-            "number": 2,
+            "number": 1,
             "prompt": "Ben o‘zini tanishtiryapti. Gapni tugating: ___ am Ben.",
             "control": "choice",
             "parts": [
@@ -99,11 +50,17 @@
             ],
             "imageId": "u1-l1.1-img-01_meet_the_students",
             "listening": false
-          },
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.1-window-practice2",
+        "title": "Mashq 2",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.1-q3",
-            "number": 3,
+            "number": 2,
             "prompt": "Emma Benga murojaat qilyapti: ___ are a student.",
             "control": "choice",
             "parts": [
@@ -129,11 +86,17 @@
             ],
             "imageId": "u1-l1.1-img-01_meet_the_students",
             "listening": false
-          },
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.1-window-practice3",
+        "title": "Mashq 3",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.1-q4",
-            "number": 4,
+            "number": 3,
             "prompt": "So‘zlardan gap tuzing: student / am / a / I",
             "control": "order",
             "parts": [
@@ -164,37 +127,16 @@
             "imageId": "u1-l1.1-img-01_meet_the_students",
             "listening": false
           }
-        ],
-        "imageId": "u1-l1.1-img-01_meet_the_students"
+        ]
       },
       {
-        "id": "u1-l1.1-s2",
-        "title": "ODAMLAR VA BUYUMLAR",
+        "id": "u1-l1.1-window-practice4",
+        "title": "Mashq 4",
         "items": [
-          {
-            "kind": "text",
-            "id": "u1-l1.1-text7",
-            "text": "He — u (erkak). She — u (ayol). It — u/bu (narsa).\nHe, she, it bilan is ishlatiladi."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.1-text8",
-            "text": "Ben is a student. → He is a student.\nAnna is a teacher. → She is a teacher.\nIt is a phone. — Bu telefon."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.1-text9",
-            "text": "Birikmalarni birga o‘rganing:\na student — talaba\na teacher — o‘qituvchi\na phone — telefon\nan app — ilova"
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.1-text10",
-            "text": "A/an boshidagi tovushga qarab tanlanadi: a phone, an app."
-          },
           {
             "kind": "task",
             "id": "u1-l1.1-q5",
-            "number": 5,
+            "number": 4,
             "prompt": "Ben haqida: ___ is a student.",
             "control": "choice",
             "parts": [
@@ -220,11 +162,28 @@
             ],
             "imageId": "u1-l1.1-img-01_meet_the_students",
             "listening": false
-          },
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.1-window-model2",
+        "title": "He / She / It · We / They",
+        "items": [
+          {
+            "kind": "text",
+            "id": "u1-l1.1-window-model2-text",
+            "text": "He — u (erkak), she — u (ayol), it — u/bu (narsa). Ular bilan is ishlatiladi.\nHe is a student. She is a teacher. It is a phone.\nWe — biz; they — ular. We va they bilan are ishlatiladi.\nWe are classmates. They are students."
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.1-window-practice5",
+        "title": "Mashq 5",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.1-q6",
-            "number": 6,
+            "number": 5,
             "prompt": "Anna haqida: ___ is a teacher.",
             "control": "choice",
             "parts": [
@@ -250,11 +209,17 @@
             ],
             "imageId": "u1-l1.1-img-01_meet_the_students",
             "listening": false
-          },
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.1-window-practice6",
+        "title": "Mashq 6",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.1-q7",
-            "number": 7,
+            "number": 6,
             "prompt": "Rasmda telefon: ___ is a phone.",
             "control": "choice",
             "parts": [
@@ -280,72 +245,17 @@
             ],
             "imageId": "u1-l1.1-img-01_meet_the_students",
             "listening": false
-          },
-          {
-            "kind": "task",
-            "id": "u1-l1.1-q8",
-            "number": 8,
-            "prompt": "Gapni tugating: Anna ___ a teacher.",
-            "control": "choice",
-            "parts": [
-              {
-                "id": "u1-l1.1-q8-part1",
-                "label": "Javob"
-              }
-            ],
-            "maxPoints": 1,
-            "options": [
-              {
-                "id": "A",
-                "label": "are"
-              },
-              {
-                "id": "B",
-                "label": "is"
-              },
-              {
-                "id": "C",
-                "label": "am"
-              }
-            ],
-            "imageId": "u1-l1.1-img-01_meet_the_students",
-            "listening": false
           }
         ]
       },
       {
-        "id": "u1-l1.1-s3",
-        "title": "BIZ VA ULAR",
+        "id": "u1-l1.1-window-practice7",
+        "title": "Mashq 7",
         "items": [
-          {
-            "kind": "text",
-            "id": "u1-l1.1-text11",
-            "text": "A: Emma — I'm a student.\nB: Emma Benga — You're a student.\nC: Emma o‘zi va Ben haqida — We're classmates.\nD: Maya Emma va Ben haqida — They're students."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.1-text12",
-            "text": "We — biz. They — ular. You — siz/sizlar.\nWe, you, they bilan are ishlatiladi."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.1-text13",
-            "text": "We are students. — Biz talabamiz.\nThey are classmates. — Ular guruhdosh.\nYou are students. — Sizlar talabasiz."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.1-text14",
-            "text": "a student → students\na teacher → teachers\na phone → phones\nan app → apps\na classmate → classmates"
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.1-text15",
-            "text": "Ko‘plikda a/an ishlatilmaydi: We are students.\nEmma and Ben are students. And — va."
-          },
           {
             "kind": "task",
             "id": "u1-l1.1-q9",
-            "number": 9,
+            "number": 7,
             "prompt": "C rasmda Emma gapiryapti: ___ are classmates.",
             "control": "choice",
             "parts": [
@@ -368,11 +278,17 @@
             "imageId": "u1-l1.1-img-02_speakers_and_groups",
             "panelId": "u1-l1.1-img-02_speakers_and_groups-panel3",
             "listening": false
-          },
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.1-window-practice8",
+        "title": "Mashq 8",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.1-q10",
-            "number": 10,
+            "number": 8,
             "prompt": "D rasmda Maya Emma va Ben haqida gapiryapti: ___ are students.",
             "control": "choice",
             "parts": [
@@ -395,40 +311,28 @@
             "imageId": "u1-l1.1-img-02_speakers_and_groups",
             "panelId": "u1-l1.1-img-02_speakers_and_groups-panel4",
             "listening": false
-          },
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.1-window-model3",
+        "title": "Qisqa shakl · a / an",
+        "items": [
           {
-            "kind": "task",
-            "id": "u1-l1.1-q11",
-            "number": 11,
-            "prompt": "Ikki talabaga murojaat: You ___ students.",
-            "control": "choice",
-            "parts": [
-              {
-                "id": "u1-l1.1-q11-part1",
-                "label": "Javob"
-              }
-            ],
-            "maxPoints": 1,
-            "options": [
-              {
-                "id": "A",
-                "label": "is"
-              },
-              {
-                "id": "B",
-                "label": "am"
-              },
-              {
-                "id": "C",
-                "label": "are"
-              }
-            ],
-            "listening": false
-          },
+            "kind": "text",
+            "id": "u1-l1.1-window-model3-text",
+            "text": "I am = I’m. You are = you’re. He is = he’s. She is = she’s.\nIt is = it’s. We are = we’re. They are = they’re.\nBitta kasb/narsa: a student, a teacher, a phone. Unli tovush oldidan: an app.\nKo‘plik: students, teachers, phones. They are students. Ko‘plik oldidan a/an qo‘yilmaydi."
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.1-window-practice9",
+        "title": "Mashq 9",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.1-q12",
-            "number": 12,
+            "number": 9,
             "prompt": "Mos shaklni tanlang: We are ___.",
             "control": "choice",
             "parts": [
@@ -450,95 +354,16 @@
             ],
             "listening": false
           }
-        ],
-        "imageId": "u1-l1.1-img-02_speakers_and_groups"
+        ]
       },
       {
-        "id": "u1-l1.1-s4",
-        "title": "TO‘LIQ VA QISQA SHAKLLAR",
+        "id": "u1-l1.1-window-practice10",
+        "title": "Mashq 10",
         "items": [
-          {
-            "kind": "text",
-            "id": "u1-l1.1-text16",
-            "text": "I am = I'm\nYou are = You're\nHe is = He's\nShe is = She's\nIt is = It's\nWe are = We're\nThey are = They're"
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.1-text17",
-            "text": "To‘liq va qisqa shakllarning ma’nosi bir xil."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.1-text18",
-            "text": "Matnni o‘qing."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.1-text19",
-            "text": "Hi. I'm Ben. I'm a student. Emma is a student. We're classmates. Anna is a teacher."
-          },
-          {
-            "kind": "task",
-            "id": "u1-l1.1-q13",
-            "number": 13,
-            "prompt": "O‘zini kim tanishtiryapti?",
-            "control": "choice",
-            "parts": [
-              {
-                "id": "u1-l1.1-q13-part1",
-                "label": "Javob"
-              }
-            ],
-            "maxPoints": 1,
-            "options": [
-              {
-                "id": "A",
-                "label": "Anna"
-              },
-              {
-                "id": "B",
-                "label": "Emma"
-              },
-              {
-                "id": "C",
-                "label": "Ben"
-              }
-            ],
-            "listening": false
-          },
-          {
-            "kind": "task",
-            "id": "u1-l1.1-q14",
-            "number": 14,
-            "prompt": "We're classmates gapida we kimlarni bildiradi?",
-            "control": "choice",
-            "parts": [
-              {
-                "id": "u1-l1.1-q14-part1",
-                "label": "Javob"
-              }
-            ],
-            "maxPoints": 1,
-            "options": [
-              {
-                "id": "A",
-                "label": "Ben va Anna"
-              },
-              {
-                "id": "B",
-                "label": "Ben va Emma"
-              },
-              {
-                "id": "C",
-                "label": "Emma va Anna"
-              }
-            ],
-            "listening": false
-          },
           {
             "kind": "task",
             "id": "u1-l1.1-q15",
-            "number": 15,
+            "number": 10,
             "prompt": "Qisqa shaklda yozing: They are students.",
             "control": "text",
             "parts": [
@@ -549,11 +374,17 @@
             ],
             "maxPoints": 1,
             "listening": false
-          },
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.1-window-practice11",
+        "title": "Mashq 11",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.1-q16",
-            "number": 16,
+            "number": 11,
             "prompt": "Gapni to‘g‘rilang: He is a students.",
             "control": "text",
             "parts": [
@@ -568,193 +399,13 @@
         ]
       },
       {
-        "id": "u1-l1.1-s5",
-        "title": "TINGLASH",
+        "id": "u1-l1.1-window-practice12",
+        "title": "Mashq 12",
         "items": [
-          {
-            "kind": "audio",
-            "id": "u1-l1.1-audio1"
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.1-text20",
-            "text": "Tinglang va 17–20-savollarga javob bering."
-          },
-          {
-            "kind": "task",
-            "id": "u1-l1.1-q17",
-            "number": 17,
-            "prompt": "Kim o‘zini tanishtirdi?",
-            "control": "choice",
-            "parts": [
-              {
-                "id": "u1-l1.1-q17-part1",
-                "label": "Javob"
-              }
-            ],
-            "maxPoints": 1,
-            "options": [
-              {
-                "id": "A",
-                "label": "Maya"
-              },
-              {
-                "id": "B",
-                "label": "Emma"
-              },
-              {
-                "id": "C",
-                "label": "Anna"
-              }
-            ],
-            "listening": true
-          },
-          {
-            "kind": "task",
-            "id": "u1-l1.1-q18",
-            "number": 18,
-            "prompt": "Kim o‘qituvchi?",
-            "control": "choice",
-            "parts": [
-              {
-                "id": "u1-l1.1-q18-part1",
-                "label": "Javob"
-              }
-            ],
-            "maxPoints": 1,
-            "options": [
-              {
-                "id": "A",
-                "label": "Ben"
-              },
-              {
-                "id": "B",
-                "label": "Maya"
-              },
-              {
-                "id": "C",
-                "label": "Anna"
-              }
-            ],
-            "listening": true
-          },
-          {
-            "kind": "task",
-            "id": "u1-l1.1-q19",
-            "number": 19,
-            "prompt": "Kimlar guruhdosh?",
-            "control": "choice",
-            "parts": [
-              {
-                "id": "u1-l1.1-q19-part1",
-                "label": "Javob"
-              }
-            ],
-            "maxPoints": 1,
-            "options": [
-              {
-                "id": "A",
-                "label": "Emma va Maya"
-              },
-              {
-                "id": "B",
-                "label": "Maya va Anna"
-              },
-              {
-                "id": "C",
-                "label": "Emma va Ben"
-              }
-            ],
-            "listening": true
-          },
-          {
-            "kind": "task",
-            "id": "u1-l1.1-q20",
-            "number": 20,
-            "prompt": "Eshitilgan gapni tugating: ___ classmates.",
-            "control": "choice",
-            "parts": [
-              {
-                "id": "u1-l1.1-q20-part1",
-                "label": "Javob"
-              }
-            ],
-            "maxPoints": 1,
-            "options": [
-              {
-                "id": "A",
-                "label": "They're"
-              },
-              {
-                "id": "B",
-                "label": "You're"
-              },
-              {
-                "id": "C",
-                "label": "We're"
-              }
-            ],
-            "listening": true
-          }
-        ]
-      },
-      {
-        "id": "u1-l1.1-s6",
-        "title": "MUSTAQIL MASHQ",
-        "items": [
-          {
-            "kind": "task",
-            "id": "u1-l1.1-q21",
-            "number": 21,
-            "prompt": "O‘z ismingiz va talaba ekaningizni ikkita gapda yozing.",
-            "control": "written",
-            "parts": [
-              {
-                "id": "u1-l1.1-q21-part1",
-                "label": "O‘z ismingiz"
-              },
-              {
-                "id": "u1-l1.1-q21-part2",
-                "label": "Talaba ekaningiz"
-              }
-            ],
-            "maxPoints": 1,
-            "listening": false
-          },
-          {
-            "kind": "task",
-            "id": "u1-l1.1-q22",
-            "number": 22,
-            "prompt": "Anna haqida She bilan bitta gap yozing.\nMa’lumot: Anna — o‘qituvchi.",
-            "control": "text",
-            "parts": [
-              {
-                "id": "u1-l1.1-q22-part1",
-                "label": "Javob"
-              }
-            ],
-            "maxPoints": 1,
-            "listening": false
-          },
-          {
-            "kind": "task",
-            "id": "u1-l1.1-q23",
-            "number": 23,
-            "prompt": "Emma va Ben haqida They bilan bitta gap yozing.\nMa’lumot: Emma va Ben — guruhdoshlar.",
-            "control": "text",
-            "parts": [
-              {
-                "id": "u1-l1.1-q23-part1",
-                "label": "Javob"
-              }
-            ],
-            "maxPoints": 1,
-            "listening": false
-          },
           {
             "kind": "task",
             "id": "u1-l1.1-q24",
-            "number": 24,
+            "number": 12,
             "prompt": "Gapni to‘g‘rilang: It's a app.",
             "control": "text",
             "parts": [
@@ -765,21 +416,6 @@
             ],
             "maxPoints": 1,
             "listening": false
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.1-text21",
-            "text": "21–23 dagi gaplaringizni ovoz chiqarib ayting."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.1-text22",
-            "text": "ESLAB QOLING"
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.1-text23",
-            "text": "I am. He/she/it is. You/we/they are.\nA student, an app. Ko‘plik: students, apps."
           }
         ]
       }
@@ -1031,54 +667,32 @@
         "uzbek": "va"
       }
     ],
-    "audioId": "u1-l1.1-audio1"
+    "audioId": "u1-l1.1-audio1",
+    "flow": "windows",
+    "automatic": true
   },
   {
     "id": "u1-l1.2",
     "number": "1.2",
     "title": "Locations and states",
-    "version": "2026-10-19.3",
+    "version": "2026-10-19.4",
     "kind": "practice",
     "sections": [
       {
-        "id": "u1-l1.2-s1",
-        "title": "UNIVERSITETDA",
+        "id": "u1-l1.2-window-model1",
+        "title": "Joylashuv: at / in / on",
         "items": [
           {
             "kind": "text",
-            "id": "u1-l1.2-text1",
-            "text": "Rasmlarga qarang va o‘qing."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.2-text2",
-            "text": "A. Maya: I'm in the library.\nB. Ben: I'm in the classroom.\nC. Emma: I'm at home.\nD. The phone: It's on the desk."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.2-text3",
-            "text": "I'm in the library. — Men kutubxonadaman.\nI'm in the classroom. — Men auditoriyadaman.\nI'm at home. — Men uydaman.\nIt's on the desk. — U stol ustida."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.2-text4",
-            "text": "Am/is/are dan keyin joyni aytish mumkin."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.2-text5",
-            "text": "in the library — kutubxonada\nin the classroom — auditoriyada\nin the cafe — qahvaxonada\non the desk — stol ustida\nat home — uyda\nat university — universitetda"
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.2-text6",
-            "text": "Bu birikmalarni shu shaklda eslab qoling.\nThe aniq joy yoki buyumni bildiradi: the library, the desk, the phone.\nAt home va at university birikmalarida the yo‘q."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.2-text7",
-            "text": "Namuna: Maya → She is in the library."
-          },
+            "id": "u1-l1.2-window-model1-text",
+            "text": "Am/is/are bilan qayerda ekanimizni ham aytamiz.\nI am at home. — Men uydaman. We are at university. — Biz universitetdamiz.\nHe is in the library. — U kutubxonada. She is in the classroom. — U sinfxonada.\nThe phone is on the desk. — Telefon stol ustida."
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.2-window-practice1",
+        "title": "Mashq 1",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.2-q1",
@@ -1095,7 +709,13 @@
             "imageId": "u1-l1.2-img-01_places",
             "panelId": "u1-l1.2-img-01_places-panel2",
             "listening": false
-          },
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.2-window-practice2",
+        "title": "Mashq 2",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.2-q2",
@@ -1112,7 +732,13 @@
             "imageId": "u1-l1.2-img-01_places",
             "panelId": "u1-l1.2-img-01_places-panel3",
             "listening": false
-          },
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.2-window-practice3",
+        "title": "Mashq 3",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.2-q3",
@@ -1143,7 +769,13 @@
             "imageId": "u1-l1.2-img-01_places",
             "panelId": "u1-l1.2-img-01_places-panel4",
             "listening": false
-          },
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.2-window-practice4",
+        "title": "Mashq 4",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.2-q4",
@@ -1177,28 +809,23 @@
             ],
             "listening": false
           }
-        ],
-        "imageId": "u1-l1.2-img-01_places"
+        ]
       },
       {
-        "id": "u1-l1.2-s2",
-        "title": "QAYERDAN VA QAYERDA",
+        "id": "u1-l1.2-window-model2",
+        "title": "Qayerdan? · Qayerda?",
         "items": [
           {
             "kind": "text",
-            "id": "u1-l1.2-text8",
-            "text": "Ben: I'm from Boston. I'm in Chicago.\nBen: Men Bostondanman. Men Chikagodaman."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.2-text9",
-            "text": "From — -dan. In — bu gapda -da."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.2-text10",
-            "text": "I'm from Boston. — Qayerdan ekanlik.\nI'm in Boston. — Joylashuv."
-          },
+            "id": "u1-l1.2-window-model2-text",
+            "text": "From — qayerdan ekanini bildiradi: I’m from Boston. — Men Bostondanman.\nIn — hozirgi shahar/joyni bildiradi: I’m in Chicago. — Men Chikagodaman.\nShe is from New York. She is in Boston. — U Nyu-Yorkdan. U hozir Bostonda.\nFrom va in bir xil ma’no bermaydi."
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.2-window-practice5",
+        "title": "Mashq 5",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.2-q5",
@@ -1227,7 +854,13 @@
               }
             ],
             "listening": false
-          },
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.2-window-practice6",
+        "title": "Mashq 6",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.2-q6",
@@ -1242,7 +875,13 @@
             ],
             "maxPoints": 1,
             "listening": false
-          },
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.2-window-practice7",
+        "title": "Mashq 7",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.2-q7",
@@ -1271,7 +910,13 @@
               }
             ],
             "listening": false
-          },
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.2-window-practice8",
+        "title": "Mashq 8",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.2-q8",
@@ -1304,29 +949,20 @@
         ]
       },
       {
-        "id": "u1-l1.2-s3",
-        "title": "HOLAT",
+        "id": "u1-l1.2-window-model3",
+        "title": "Holat: tired / busy / open / closed",
         "items": [
           {
             "kind": "text",
-            "id": "u1-l1.2-text11",
-            "text": "Yuqori chap: Alex — I'm tired. — Men charchaganman.\nYuqori o‘ng: Anna — I'm busy. — Men bandman.\nPastki chap: The cafe — It's open. — U ochiq.\nPastki o‘ng: The cafe — It's closed. — U yopiq."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.2-text12",
-            "text": "Yana ikki holat:\nWe are ready. — Biz tayyormiz.\nYou are late. — Siz kechikdingiz."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.2-text13",
-            "text": "Holat bilan a/an ishlatilmaydi:\nI'm a student. Ammo: I'm tired."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.2-text14",
-            "text": "Sifatga ko‘plik -s qo‘shilmaydi:\nHe is busy. They are busy."
-          },
+            "id": "u1-l1.2-window-model3-text",
+            "text": "I am tired. — Men charchaganman. She is busy. — U band.\nWe are ready. — Biz tayyormiz. They are late. — Ular kechikkan.\nThe cafe is open. — Qahvaxona ochiq. The cafe is closed. — Qahvaxona yopiq.\nHolat so‘zidan oldin a/an qo‘yilmaydi; ko‘plikda ham -s qo‘shilmaydi: They are busy."
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.2-window-practice9",
+        "title": "Mashq 9",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.2-q9",
@@ -1357,7 +993,13 @@
             "imageId": "u1-l1.2-img-02_states_and_conditions",
             "panelId": "u1-l1.2-img-02_states_and_conditions-panel1",
             "listening": false
-          },
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.2-window-practice10",
+        "title": "Mashq 10",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.2-q10",
@@ -1388,7 +1030,13 @@
             "imageId": "u1-l1.2-img-02_states_and_conditions",
             "panelId": "u1-l1.2-img-02_states_and_conditions-panel2",
             "listening": false
-          },
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.2-window-practice11",
+        "title": "Mashq 11",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.2-q11",
@@ -1405,7 +1053,13 @@
             "imageId": "u1-l1.2-img-02_states_and_conditions",
             "panelId": "u1-l1.2-img-02_states_and_conditions-panel3",
             "listening": false
-          },
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.2-window-practice12",
+        "title": "Mashq 12",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.2-q12",
@@ -1422,317 +1076,6 @@
             "imageId": "u1-l1.2-img-02_states_and_conditions",
             "panelId": "u1-l1.2-img-02_states_and_conditions-panel4",
             "listening": false
-          }
-        ],
-        "imageId": "u1-l1.2-img-02_states_and_conditions"
-      },
-      {
-        "id": "u1-l1.2-s4",
-        "title": "O‘QING VA TEKSHIRING",
-        "items": [
-          {
-            "kind": "text",
-            "id": "u1-l1.2-text15",
-            "text": "Matnni o‘qing."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.2-text16",
-            "text": "I'm Emma. I'm from Chicago. I'm at university. I'm in the library. I'm ready. Ben is in the classroom. He's tired."
-          },
-          {
-            "kind": "task",
-            "id": "u1-l1.2-q13",
-            "number": 13,
-            "prompt": "Emma haqida qaysi gap matnga mos?",
-            "control": "choice",
-            "parts": [
-              {
-                "id": "u1-l1.2-q13-part1",
-                "label": "Javob"
-              }
-            ],
-            "maxPoints": 1,
-            "options": [
-              {
-                "id": "A",
-                "label": "She's from Boston."
-              },
-              {
-                "id": "B",
-                "label": "She's from Chicago."
-              },
-              {
-                "id": "C",
-                "label": "She's at home."
-              }
-            ],
-            "listening": false
-          },
-          {
-            "kind": "task",
-            "id": "u1-l1.2-q14",
-            "number": 14,
-            "prompt": "Gapni to‘g‘rilang: I am a tired.",
-            "control": "text",
-            "parts": [
-              {
-                "id": "u1-l1.2-q14-part1",
-                "label": "Javob"
-              }
-            ],
-            "maxPoints": 1,
-            "listening": false
-          },
-          {
-            "kind": "task",
-            "id": "u1-l1.2-q15",
-            "number": 15,
-            "prompt": "Gapni to‘g‘rilang: They are busys.",
-            "control": "text",
-            "parts": [
-              {
-                "id": "u1-l1.2-q15-part1",
-                "label": "Javob"
-              }
-            ],
-            "maxPoints": 1,
-            "listening": false
-          },
-          {
-            "kind": "task",
-            "id": "u1-l1.2-q16",
-            "number": 16,
-            "prompt": "Matnga qarab, Benning joylashuvi va holatini ikkita gapda yozing. He dan foydalaning.",
-            "control": "written",
-            "parts": [
-              {
-                "id": "u1-l1.2-q16-part1",
-                "label": "Benning joylashuvi"
-              },
-              {
-                "id": "u1-l1.2-q16-part2",
-                "label": "Benning holati"
-              }
-            ],
-            "maxPoints": 1,
-            "listening": false
-          }
-        ]
-      },
-      {
-        "id": "u1-l1.2-s5",
-        "title": "TINGLASH",
-        "items": [
-          {
-            "kind": "audio",
-            "id": "u1-l1.2-audio1"
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.2-text17",
-            "text": "Tinglang va 17–20-savollarga javob bering."
-          },
-          {
-            "kind": "task",
-            "id": "u1-l1.2-q17",
-            "number": 17,
-            "prompt": "Ben qayerdan?",
-            "control": "choice",
-            "parts": [
-              {
-                "id": "u1-l1.2-q17-part1",
-                "label": "Javob"
-              }
-            ],
-            "maxPoints": 1,
-            "options": [
-              {
-                "id": "A",
-                "label": "Chicago"
-              },
-              {
-                "id": "B",
-                "label": "New York"
-              },
-              {
-                "id": "C",
-                "label": "Boston"
-              }
-            ],
-            "listening": true
-          },
-          {
-            "kind": "task",
-            "id": "u1-l1.2-q18",
-            "number": 18,
-            "prompt": "Ben hozir qayerda?",
-            "control": "choice",
-            "parts": [
-              {
-                "id": "u1-l1.2-q18-part1",
-                "label": "Javob"
-              }
-            ],
-            "maxPoints": 1,
-            "options": [
-              {
-                "id": "A",
-                "label": "at home"
-              },
-              {
-                "id": "B",
-                "label": "in the classroom"
-              },
-              {
-                "id": "C",
-                "label": "in the library"
-              }
-            ],
-            "listening": true
-          },
-          {
-            "kind": "task",
-            "id": "u1-l1.2-q19",
-            "number": 19,
-            "prompt": "Anna haqida nima deyilgan?",
-            "control": "choice",
-            "parts": [
-              {
-                "id": "u1-l1.2-q19-part1",
-                "label": "Javob"
-              }
-            ],
-            "maxPoints": 1,
-            "options": [
-              {
-                "id": "A",
-                "label": "She's tired."
-              },
-              {
-                "id": "B",
-                "label": "She's busy."
-              },
-              {
-                "id": "C",
-                "label": "She's late."
-              }
-            ],
-            "listening": true
-          },
-          {
-            "kind": "task",
-            "id": "u1-l1.2-q20",
-            "number": 20,
-            "prompt": "Qahvaxona haqida qaysi gap aytildi?",
-            "control": "choice",
-            "parts": [
-              {
-                "id": "u1-l1.2-q20-part1",
-                "label": "Javob"
-              }
-            ],
-            "maxPoints": 1,
-            "options": [
-              {
-                "id": "A",
-                "label": "It's open."
-              },
-              {
-                "id": "B",
-                "label": "It's closed."
-              }
-            ],
-            "listening": true
-          }
-        ]
-      },
-      {
-        "id": "u1-l1.2-s6",
-        "title": "MUSTAQIL MASHQ",
-        "items": [
-          {
-            "kind": "task",
-            "id": "u1-l1.2-q21",
-            "number": 21,
-            "prompt": "Hozirgi joylashuvingiz va holatingizni ikkita inglizcha gapda yozing.",
-            "control": "written",
-            "parts": [
-              {
-                "id": "u1-l1.2-q21-part1",
-                "label": "Hozirgi joylashuvingiz"
-              },
-              {
-                "id": "u1-l1.2-q21-part2",
-                "label": "Hozirgi holatingiz"
-              }
-            ],
-            "maxPoints": 1,
-            "listening": false
-          },
-          {
-            "kind": "task",
-            "id": "u1-l1.2-q22",
-            "number": 22,
-            "prompt": "Ma’lumot: Maya — Nyu-Yorkdan. Hozir kutubxonada.\nMaya haqida She bilan ikkita gap yozing.",
-            "control": "written",
-            "parts": [
-              {
-                "id": "u1-l1.2-q22-part1",
-                "label": "Maya qayerdan?"
-              },
-              {
-                "id": "u1-l1.2-q22-part2",
-                "label": "Maya hozir qayerda?"
-              }
-            ],
-            "maxPoints": 1,
-            "listening": false
-          },
-          {
-            "kind": "task",
-            "id": "u1-l1.2-q23",
-            "number": 23,
-            "prompt": "Inglizchaga tarjima qiling: Biz tayyormiz.",
-            "control": "text",
-            "parts": [
-              {
-                "id": "u1-l1.2-q23-part1",
-                "label": "Javob"
-              }
-            ],
-            "maxPoints": 1,
-            "listening": false
-          },
-          {
-            "kind": "task",
-            "id": "u1-l1.2-q24",
-            "number": 24,
-            "prompt": "Telefon stol ustida. Shu ma’noga moslab to‘g‘rilang: The phone is in the desk.",
-            "control": "text",
-            "parts": [
-              {
-                "id": "u1-l1.2-q24-part1",
-                "label": "Javob"
-              }
-            ],
-            "maxPoints": 1,
-            "listening": false
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.2-text18",
-            "text": "21–22 dagi gaplaringizni ovoz chiqarib ayting."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.2-text19",
-            "text": "ESLAB QOLING"
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.2-text20",
-            "text": "At home. In the library. On the desk.\nFrom Boston — Bostondan. In Boston — Bostonda.\nI am tired. They are busy."
           }
         ]
       }
@@ -2118,54 +1461,32 @@
         "uzbek": "Nyu-York"
       }
     ],
-    "audioId": "u1-l1.2-audio1"
+    "audioId": "u1-l1.2-audio1",
+    "flow": "windows",
+    "automatic": true
   },
   {
     "id": "u1-l1.3",
     "number": "1.3",
     "title": "Negative statements",
-    "version": "2026-10-19.3",
+    "version": "2026-10-19.4",
     "kind": "practice",
     "sections": [
       {
-        "id": "u1-l1.3-s1",
-        "title": "FAKTLARNI TEKSHIRING",
+        "id": "u1-l1.3-window-model1",
+        "title": "Inkor: am/is/are + not",
         "items": [
           {
             "kind": "text",
-            "id": "u1-l1.3-text1",
-            "text": "Rasmlarga qarang va o‘qing."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.3-text2",
-            "text": "A. Alex: I'm not at home. I'm in the library.\nB. Anna: I'm not a student. I'm a teacher.\nC. The cafe: It isn't open. It's closed.\nD. Emma and Ben: We aren't teachers. We're students."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.3-text3",
-            "text": "I'm not at home. — Men uyda emasman.\nShe isn't a student. — U talaba emas.\nThey aren't teachers. — Ular o‘qituvchi emas."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.3-text4",
-            "text": "Inkor gapda am/is/are dan keyin not qo‘yiladi."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.3-text5",
-            "text": "I am not tired.\nHe/she/it is not ready.\nYou/we/they are not at home."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.3-text6",
-            "text": "Namuna: Alex is at home. → Alex isn't at home. He's in the library."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.3-text7",
-            "text": "Rasmdagi ma’lumotga qarab yozing."
-          },
+            "id": "u1-l1.3-window-model1-text",
+            "text": "Inkor gapda am/is/are dan keyin not qo‘yiladi.\nI am not tired. — Men charchamaganman.\nShe is not a student. — U talaba emas.\nThey are not teachers. — Ular o‘qituvchi emas.\nNot qo‘shilganda gapning qolgan qismi saqlanadi."
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.3-window-practice1",
+        "title": "Mashq 1",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.3-q1",
@@ -2182,7 +1503,13 @@
             "imageId": "u1-l1.3-img-01_negative_statements",
             "panelId": "u1-l1.3-img-01_negative_statements-panel2",
             "listening": false
-          },
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.3-window-practice2",
+        "title": "Mashq 2",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.3-q2",
@@ -2199,7 +1526,13 @@
             "imageId": "u1-l1.3-img-01_negative_statements",
             "panelId": "u1-l1.3-img-01_negative_statements-panel3",
             "listening": false
-          },
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.3-window-practice3",
+        "title": "Mashq 3",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.3-q3",
@@ -2216,7 +1549,13 @@
             "imageId": "u1-l1.3-img-01_negative_statements",
             "panelId": "u1-l1.3-img-01_negative_statements-panel4",
             "listening": false
-          },
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.3-window-practice4",
+        "title": "Mashq 4",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.3-q4",
@@ -2248,23 +1587,23 @@
             "panelId": "u1-l1.3-img-01_negative_statements-panel1",
             "listening": false
           }
-        ],
-        "imageId": "u1-l1.3-img-01_negative_statements"
+        ]
       },
       {
-        "id": "u1-l1.3-s2",
-        "title": "QISQA SHAKLLAR",
+        "id": "u1-l1.3-window-model2",
+        "title": "Inkorning qisqa shakllari",
         "items": [
           {
             "kind": "text",
-            "id": "u1-l1.3-text8",
-            "text": "I am not = I'm not\nHe is not = He isn't / He's not\nShe is not = She isn't / She's not\nIt is not = It isn't / It's not\nYou are not = You aren't / You're not\nWe are not = We aren't / We're not\nThey are not = They aren't / They're not"
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.3-text9",
-            "text": "I bilan I'm not ishlatiladi. I amn't shakli ishlatilmaydi."
-          },
+            "id": "u1-l1.3-window-model2-text",
+            "text": "I am not = I’m not. I amn’t shakli ishlatilmaydi.\nHe is not = he isn’t / he’s not. She is not = she isn’t / she’s not.\nIt is not = it isn’t / it’s not.\nYou/we/they are not = you/we/they aren’t yoki you’re/we’re/they’re not."
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.3-window-practice5",
+        "title": "Mashq 5",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.3-q5",
@@ -2293,7 +1632,13 @@
               }
             ],
             "listening": false
-          },
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.3-window-practice6",
+        "title": "Mashq 6",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.3-q6",
@@ -2308,7 +1653,13 @@
             ],
             "maxPoints": 1,
             "listening": false
-          },
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.3-window-practice7",
+        "title": "Mashq 7",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.3-q7",
@@ -2337,7 +1688,13 @@
               }
             ],
             "listening": false
-          },
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.3-window-practice8",
+        "title": "Mashq 8",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.3-q8",
@@ -2352,40 +1709,28 @@
             ],
             "maxPoints": 1,
             "listening": false
-          },
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.3-window-model3",
+        "title": "Faktni to‘g‘rilash",
+        "items": [
           {
-            "kind": "task",
-            "id": "u1-l1.3-q9",
-            "number": 9,
-            "prompt": "She's not busy bilan bir xil ma’nodagi gapni tanlang.",
-            "control": "choice",
-            "parts": [
-              {
-                "id": "u1-l1.3-q9-part1",
-                "label": "Javob"
-              }
-            ],
-            "maxPoints": 1,
-            "options": [
-              {
-                "id": "A",
-                "label": "She isn't busy."
-              },
-              {
-                "id": "B",
-                "label": "She is busy."
-              },
-              {
-                "id": "C",
-                "label": "She's a student."
-              }
-            ],
-            "listening": false
-          },
+            "kind": "text",
+            "id": "u1-l1.3-window-model3-text",
+            "text": "Alex isn’t at home. He’s in the library. — Alex uyda emas. U kutubxonada.\nWe aren’t teachers. We’re students. — Biz o‘qituvchi emasmiz. Biz talabamiz.\nTo‘g‘ri tartib: He is not busy. He not is busy deyilmaydi.\nThey aren’t tired. Holat so‘zidan oldin a/an kerak emas."
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.3-window-practice9",
+        "title": "Mashq 9",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.3-q10",
-            "number": 10,
+            "number": 9,
             "prompt": "To‘liq shaklda yozing: We're not from Boston.",
             "control": "text",
             "parts": [
@@ -2396,11 +1741,17 @@
             ],
             "maxPoints": 1,
             "listening": false
-          },
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.3-window-practice10",
+        "title": "Mashq 10",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.3-q11",
-            "number": 11,
+            "number": 10,
             "prompt": "Gapni to‘g‘rilang: I amn't tired.",
             "control": "text",
             "parts": [
@@ -2411,11 +1762,17 @@
             ],
             "maxPoints": 1,
             "listening": false
-          },
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.3-window-practice11",
+        "title": "Mashq 11",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.3-q12",
-            "number": 12,
+            "number": 11,
             "prompt": "Gapni to‘g‘rilang: He not is a teacher.",
             "control": "text",
             "parts": [
@@ -2430,335 +1787,13 @@
         ]
       },
       {
-        "id": "u1-l1.3-s3",
-        "title": "ALEXDAN XABAR",
+        "id": "u1-l1.3-window-practice12",
+        "title": "Mashq 12",
         "items": [
-          {
-            "kind": "text",
-            "id": "u1-l1.3-text10",
-            "text": "Matnni o‘qing."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.3-text11",
-            "text": "Hi. I'm Alex. I'm not from Boston. I'm from Chicago. I'm not at home. I'm in the library. Emma and I are classmates. We're ready. The cafe isn't open. It's closed."
-          },
-          {
-            "kind": "task",
-            "id": "u1-l1.3-q13",
-            "number": 13,
-            "prompt": "Alex qayerdan?",
-            "control": "choice",
-            "parts": [
-              {
-                "id": "u1-l1.3-q13-part1",
-                "label": "Javob"
-              }
-            ],
-            "maxPoints": 1,
-            "options": [
-              {
-                "id": "A",
-                "label": "Boston"
-              },
-              {
-                "id": "B",
-                "label": "Chicago"
-              },
-              {
-                "id": "C",
-                "label": "New York"
-              }
-            ],
-            "listening": false
-          },
-          {
-            "kind": "task",
-            "id": "u1-l1.3-q14",
-            "number": 14,
-            "prompt": "Alex haqida qaysi gap matnga mos?",
-            "control": "choice",
-            "parts": [
-              {
-                "id": "u1-l1.3-q14-part1",
-                "label": "Javob"
-              }
-            ],
-            "maxPoints": 1,
-            "options": [
-              {
-                "id": "A",
-                "label": "He's at home."
-              },
-              {
-                "id": "B",
-                "label": "He isn't in the library."
-              },
-              {
-                "id": "C",
-                "label": "He isn't at home."
-              }
-            ],
-            "listening": false
-          },
-          {
-            "kind": "task",
-            "id": "u1-l1.3-q15",
-            "number": 15,
-            "prompt": "Qahvaxona haqida qaysi gap matnga mos?",
-            "control": "choice",
-            "parts": [
-              {
-                "id": "u1-l1.3-q15-part1",
-                "label": "Javob"
-              }
-            ],
-            "maxPoints": 1,
-            "options": [
-              {
-                "id": "A",
-                "label": "It's open."
-              },
-              {
-                "id": "B",
-                "label": "It isn't open."
-              },
-              {
-                "id": "C",
-                "label": "It isn't closed."
-              }
-            ],
-            "listening": false
-          },
-          {
-            "kind": "task",
-            "id": "u1-l1.3-q16",
-            "number": 16,
-            "prompt": "We're ready gapidagi we kimlarni bildiradi?",
-            "control": "choice",
-            "parts": [
-              {
-                "id": "u1-l1.3-q16-part1",
-                "label": "Javob"
-              }
-            ],
-            "maxPoints": 1,
-            "options": [
-              {
-                "id": "A",
-                "label": "Alex va Emma"
-              },
-              {
-                "id": "B",
-                "label": "Alex va Anna"
-              },
-              {
-                "id": "C",
-                "label": "Emma va Ben"
-              }
-            ],
-            "listening": false
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.3-text12",
-            "text": "But — lekin.\nI'm tired, but I'm ready. — Men charchaganman, lekin tayyorman."
-          }
-        ]
-      },
-      {
-        "id": "u1-l1.3-s4",
-        "title": "TINGLASH",
-        "items": [
-          {
-            "kind": "audio",
-            "id": "u1-l1.3-audio1"
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.3-text13",
-            "text": "Tinglang va 17–20-savollarga javob bering."
-          },
-          {
-            "kind": "task",
-            "id": "u1-l1.3-q17",
-            "number": 17,
-            "prompt": "Maya hozir qayerda?",
-            "control": "choice",
-            "parts": [
-              {
-                "id": "u1-l1.3-q17-part1",
-                "label": "Javob"
-              }
-            ],
-            "maxPoints": 1,
-            "options": [
-              {
-                "id": "A",
-                "label": "at home"
-              },
-              {
-                "id": "B",
-                "label": "in the library"
-              },
-              {
-                "id": "C",
-                "label": "in the classroom"
-              }
-            ],
-            "listening": true
-          },
-          {
-            "kind": "task",
-            "id": "u1-l1.3-q18",
-            "number": 18,
-            "prompt": "Maya haqida qaysi gap audioda aytildi?",
-            "control": "choice",
-            "parts": [
-              {
-                "id": "u1-l1.3-q18-part1",
-                "label": "Javob"
-              }
-            ],
-            "maxPoints": 1,
-            "options": [
-              {
-                "id": "A",
-                "label": "She isn't tired."
-              },
-              {
-                "id": "B",
-                "label": "She isn't ready."
-              },
-              {
-                "id": "C",
-                "label": "She's busy."
-              }
-            ],
-            "listening": true
-          },
-          {
-            "kind": "task",
-            "id": "u1-l1.3-q19",
-            "number": 19,
-            "prompt": "Emma va Ben haqida qaysi gap audioda aytildi?",
-            "control": "choice",
-            "parts": [
-              {
-                "id": "u1-l1.3-q19-part1",
-                "label": "Javob"
-              }
-            ],
-            "maxPoints": 1,
-            "options": [
-              {
-                "id": "A",
-                "label": "They aren't classmates."
-              },
-              {
-                "id": "B",
-                "label": "They're at home."
-              },
-              {
-                "id": "C",
-                "label": "They aren't in the library."
-              }
-            ],
-            "listening": true
-          },
-          {
-            "kind": "task",
-            "id": "u1-l1.3-q20",
-            "number": 20,
-            "prompt": "Qahvaxona haqida qaysi gap audioda aytildi?",
-            "control": "choice",
-            "parts": [
-              {
-                "id": "u1-l1.3-q20-part1",
-                "label": "Javob"
-              }
-            ],
-            "maxPoints": 1,
-            "options": [
-              {
-                "id": "A",
-                "label": "It's open."
-              },
-              {
-                "id": "B",
-                "label": "It isn't open."
-              }
-            ],
-            "listening": true
-          }
-        ]
-      },
-      {
-        "id": "u1-l1.3-s5",
-        "title": "MUSTAQIL MASHQ",
-        "items": [
-          {
-            "kind": "text",
-            "id": "u1-l1.3-text14",
-            "text": "Quyidagi gaplarni inkor shaklga o‘tkazing."
-          },
-          {
-            "kind": "task",
-            "id": "u1-l1.3-q21",
-            "number": 21,
-            "prompt": "You are a teacher.",
-            "control": "text",
-            "parts": [
-              {
-                "id": "u1-l1.3-q21-part1",
-                "label": "Javob"
-              }
-            ],
-            "maxPoints": 1,
-            "listening": false
-          },
-          {
-            "kind": "task",
-            "id": "u1-l1.3-q22",
-            "number": 22,
-            "prompt": "It is an app.",
-            "control": "text",
-            "parts": [
-              {
-                "id": "u1-l1.3-q22-part1",
-                "label": "Javob"
-              }
-            ],
-            "maxPoints": 1,
-            "listening": false
-          },
-          {
-            "kind": "task",
-            "id": "u1-l1.3-q23",
-            "number": 23,
-            "prompt": "O‘zingiz haqingizda uchta gap yozing: bitta tasdiq va ikkita inkor gap. Joy, holat yoki talaba ekaningiz haqida yozing.",
-            "control": "written",
-            "parts": [
-              {
-                "id": "u1-l1.3-q23-part1",
-                "label": "Bitta tasdiq gap"
-              },
-              {
-                "id": "u1-l1.3-q23-part2",
-                "label": "Birinchi inkor gap"
-              },
-              {
-                "id": "u1-l1.3-q23-part3",
-                "label": "Ikkinchi inkor gap"
-              }
-            ],
-            "maxPoints": 1,
-            "listening": false
-          },
           {
             "kind": "task",
             "id": "u1-l1.3-q24",
-            "number": 24,
+            "number": 12,
             "prompt": "Gapni to‘g‘rilang: They aren't a tired.",
             "control": "text",
             "parts": [
@@ -2769,21 +1804,6 @@
             ],
             "maxPoints": 1,
             "listening": false
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.3-text15",
-            "text": "23 dagi gaplaringizni ovoz chiqarib ayting."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.3-text16",
-            "text": "ESLAB QOLING"
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.3-text17",
-            "text": "I am not. He/she/it is not. You/we/they are not.\nNot qo‘shilganda qolgan birikma saqlanadi: not a student, not ready, not at home."
           }
         ]
       }
@@ -3003,59 +2023,32 @@
         "uzbek": "yopiq"
       }
     ],
-    "audioId": "u1-l1.3-audio1"
+    "audioId": "u1-l1.3-audio1",
+    "flow": "windows",
+    "automatic": true
   },
   {
     "id": "u1-l1.4",
     "number": "1.4",
     "title": "Yes/No Questions",
-    "version": "2026-10-19.3",
+    "version": "2026-10-19.4",
     "kind": "practice",
     "sections": [
       {
-        "id": "u1-l1.4-s1",
-        "title": "SAVOL VA JAVOB",
+        "id": "u1-l1.4-window-model1",
+        "title": "Am / Is / Are bilan savol",
         "items": [
           {
             "kind": "text",
-            "id": "u1-l1.4-text1",
-            "text": "Rasmdagi suhbatlarni o‘qing."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.4-text2",
-            "text": "A. Ben: Are you a student?\nEmma: Yes, I am."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.4-text3",
-            "text": "B. Maya: Are you tired?\nAlex: Yes, I am."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.4-text4",
-            "text": "C. Ben: Is Anna a student?\nEmma: No, she isn't. She's a teacher."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.4-text5",
-            "text": "D. Maya: Is it an app?\nBen: No, it isn't. It's a phone."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.4-text6",
-            "text": "Yes — ha. No — yo‘q."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.4-text7",
-            "text": "Savolda am/is/are oldinga chiqadi."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.4-text8",
-            "text": "You are a student. → Are you a student?\nShe is ready. → Is she ready?\nThey are at home. → Are they at home?\nI am late. → Am I late?"
-          },
+            "id": "u1-l1.4-window-model1-text",
+            "text": "Savol tuzishda am/is/are oldinga chiqadi.\nYou are busy. → Are you busy?\nShe is ready. → Is she ready?\nThey are at home. → Are they at home?\nI am late. → Am I late?"
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.4-window-practice1",
+        "title": "Mashq 1",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.4-q1",
@@ -3086,7 +2079,13 @@
             "imageId": "u1-l1.4-img-01_questions_and_answers",
             "panelId": "u1-l1.4-img-01_questions_and_answers-panel1",
             "listening": false
-          },
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.4-window-practice2",
+        "title": "Mashq 2",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.4-q2",
@@ -3103,7 +2102,13 @@
             "imageId": "u1-l1.4-img-01_questions_and_answers",
             "panelId": "u1-l1.4-img-01_questions_and_answers-panel2",
             "listening": false
-          },
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.4-window-practice3",
+        "title": "Mashq 3",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.4-q3",
@@ -3120,64 +2125,17 @@
             "imageId": "u1-l1.4-img-01_questions_and_answers",
             "panelId": "u1-l1.4-img-01_questions_and_answers-panel3",
             "listening": false
-          },
-          {
-            "kind": "task",
-            "id": "u1-l1.4-q4",
-            "number": 4,
-            "prompt": "D rasmda nima haqida so‘ralyapti?",
-            "control": "choice",
-            "parts": [
-              {
-                "id": "u1-l1.4-q4-part1",
-                "label": "Javob"
-              }
-            ],
-            "maxPoints": 1,
-            "options": [
-              {
-                "id": "A",
-                "label": "Ben"
-              },
-              {
-                "id": "B",
-                "label": "Anna"
-              },
-              {
-                "id": "C",
-                "label": "telefon"
-              }
-            ],
-            "imageId": "u1-l1.4-img-01_questions_and_answers",
-            "panelId": "u1-l1.4-img-01_questions_and_answers-panel4",
-            "listening": false
           }
-        ],
-        "imageId": "u1-l1.4-img-01_questions_and_answers"
+        ]
       },
       {
-        "id": "u1-l1.4-s2",
-        "title": "SAVOL TUZING",
+        "id": "u1-l1.4-window-practice4",
+        "title": "Mashq 4",
         "items": [
-          {
-            "kind": "text",
-            "id": "u1-l1.4-text9",
-            "text": "Am I ...?\nIs he/she/it ...?\nAre you/we/they ...?"
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.4-text10",
-            "text": "Is Anna a teacher?\nAre Emma and Ben classmates?"
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.4-text11",
-            "text": "Quyidagi gaplarni savolga aylantiring."
-          },
           {
             "kind": "task",
             "id": "u1-l1.4-q5",
-            "number": 5,
+            "number": 4,
             "prompt": "You are busy.",
             "control": "text",
             "parts": [
@@ -3188,11 +2146,28 @@
             ],
             "maxPoints": 1,
             "listening": false
-          },
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.4-window-model2",
+        "title": "Qisqa javob: Yes / No",
+        "items": [
+          {
+            "kind": "text",
+            "id": "u1-l1.4-window-model2-text",
+            "text": "Are you ready? — Yes, I am. / No, I’m not.\nIs she a teacher? — Yes, she is. / No, she isn’t.\nIs it a phone? — Yes, it is. / No, it isn’t.\nAre they classmates? — Yes, they are. / No, they aren’t.\nTasdiq qisqa javobida qisqartirmang: Yes, I am. Yes, she is. Yes, I’m deyilmaydi."
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.4-window-practice5",
+        "title": "Mashq 5",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.4-q6",
-            "number": 6,
+            "number": 5,
             "prompt": "Emma is from Chicago.",
             "control": "text",
             "parts": [
@@ -3203,11 +2178,17 @@
             ],
             "maxPoints": 1,
             "listening": false
-          },
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.4-window-practice6",
+        "title": "Mashq 6",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.4-q7",
-            "number": 7,
+            "number": 6,
             "prompt": "The phone is on the desk.",
             "control": "text",
             "parts": [
@@ -3218,11 +2199,17 @@
             ],
             "maxPoints": 1,
             "listening": false
-          },
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.4-window-practice7",
+        "title": "Mashq 7",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.4-q8",
-            "number": 8,
+            "number": 7,
             "prompt": "Maya and Ben are in the library.",
             "control": "text",
             "parts": [
@@ -3237,48 +2224,13 @@
         ]
       },
       {
-        "id": "u1-l1.4-s3",
-        "title": "QISQA JAVOBLAR",
+        "id": "u1-l1.4-window-practice8",
+        "title": "Mashq 8",
         "items": [
-          {
-            "kind": "text",
-            "id": "u1-l1.4-text12",
-            "text": "Are you ready? — Yes, I am. / No, I'm not.\nIs he busy? — Yes, he is. / No, he isn't.\nIs she a teacher? — Yes, she is. / No, she isn't.\nIs it a phone? — Yes, it is. / No, it isn't.\nAre they classmates? — Yes, they are. / No, they aren't."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.4-text13",
-            "text": "Ikki kishiga savol:\nAre you students? — Yes, we are."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.4-text14",
-            "text": "Siz ham kirgan guruh haqida:\nAre we late? — No, we aren't."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.4-text15",
-            "text": "Alex sizdan o‘zi haqida so‘rayapti:\nAm I late? — No, you aren't."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.4-text16",
-            "text": "Tasdiq qisqa javobida am/is/are qisqartirilmaydi:\nYes, I am. Yes, she is. Yes, we are.\nYes, I'm. yoki Yes, she's. deb javob berilmaydi."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.4-text17",
-            "text": "Inkor javobda ikkala shakl ham to‘g‘ri:\nNo, she is not. = No, she isn't. = No, she's not."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.4-text18",
-            "text": "Ma’lumotga qarab qisqa javob yozing."
-          },
           {
             "kind": "task",
             "id": "u1-l1.4-q9",
-            "number": 9,
+            "number": 8,
             "prompt": "Is it an app? Ma’lumot: Bu telefon.",
             "control": "text",
             "parts": [
@@ -3289,11 +2241,28 @@
             ],
             "maxPoints": 1,
             "listening": false
-          },
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.4-window-model3",
+        "title": "Kimga savol berilyapti?",
+        "items": [
+          {
+            "kind": "text",
+            "id": "u1-l1.4-window-model3-text",
+            "text": "Ikki kishidan so‘rashdi: Are you classmates? — Yes, we are.\nSiz ham kirgan guruh: Are we late? — No, we aren’t.\nAlex sizdan o‘zi haqida so‘radi: Am I late? — No, you aren’t.\nInkor javobda har ikkisi to‘g‘ri: No, she is not. / No, she isn’t. / No, she’s not."
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.4-window-practice9",
+        "title": "Mashq 9",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.4-q10",
-            "number": 10,
+            "number": 9,
             "prompt": "Is Anna a teacher? Ma’lumot: Anna — o‘qituvchi.",
             "control": "text",
             "parts": [
@@ -3304,11 +2273,17 @@
             ],
             "maxPoints": 1,
             "listening": false
-          },
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.4-window-practice10",
+        "title": "Mashq 10",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.4-q11",
-            "number": 11,
+            "number": 10,
             "prompt": "Are you classmates? Siz va Emmadan so‘rashdi. Sizlar guruhdoshsiz.",
             "control": "text",
             "parts": [
@@ -3319,11 +2294,17 @@
             ],
             "maxPoints": 1,
             "listening": false
-          },
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.4-window-practice11",
+        "title": "Mashq 11",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.4-q12",
-            "number": 12,
+            "number": 11,
             "prompt": "Am I late? Alex sizdan so‘radi. U kechikmagan.",
             "control": "text",
             "parts": [
@@ -3338,228 +2319,13 @@
         ]
       },
       {
-        "id": "u1-l1.4-s4",
-        "title": "SUHBAT",
+        "id": "u1-l1.4-window-practice12",
+        "title": "Mashq 12",
         "items": [
-          {
-            "kind": "text",
-            "id": "u1-l1.4-text19",
-            "text": "Suhbatni o‘qing."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.4-text20",
-            "text": "Maya: Are you at home?\nEmma: No, I'm not. I'm at university.\nMaya: Are you in the library?\nEmma: Yes, I am.\nMaya: Is Anna in the library?\nEmma: No, she isn't. She's in the classroom.\nMaya: Are you busy?\nEmma: No, I'm not."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.4-text21",
-            "text": "Suhbatga qarab qisqa javob yozing."
-          },
-          {
-            "kind": "task",
-            "id": "u1-l1.4-q13",
-            "number": 13,
-            "prompt": "Is Emma at home?",
-            "control": "text",
-            "parts": [
-              {
-                "id": "u1-l1.4-q13-part1",
-                "label": "Javob"
-              }
-            ],
-            "maxPoints": 1,
-            "listening": false
-          },
-          {
-            "kind": "task",
-            "id": "u1-l1.4-q14",
-            "number": 14,
-            "prompt": "Is Emma in the library?",
-            "control": "text",
-            "parts": [
-              {
-                "id": "u1-l1.4-q14-part1",
-                "label": "Javob"
-              }
-            ],
-            "maxPoints": 1,
-            "listening": false
-          },
-          {
-            "kind": "task",
-            "id": "u1-l1.4-q15",
-            "number": 15,
-            "prompt": "Is Anna in the library?",
-            "control": "text",
-            "parts": [
-              {
-                "id": "u1-l1.4-q15-part1",
-                "label": "Javob"
-              }
-            ],
-            "maxPoints": 1,
-            "listening": false
-          },
-          {
-            "kind": "task",
-            "id": "u1-l1.4-q16",
-            "number": 16,
-            "prompt": "Is Emma busy?",
-            "control": "text",
-            "parts": [
-              {
-                "id": "u1-l1.4-q16-part1",
-                "label": "Javob"
-              }
-            ],
-            "maxPoints": 1,
-            "listening": false
-          }
-        ]
-      },
-      {
-        "id": "u1-l1.4-s5",
-        "title": "TINGLASH",
-        "items": [
-          {
-            "kind": "audio",
-            "id": "u1-l1.4-audio1"
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.4-text22",
-            "text": "Tinglang va 17–20-savollarga javob bering."
-          },
-          {
-            "kind": "task",
-            "id": "u1-l1.4-q17",
-            "number": 17,
-            "prompt": "Is Ben in the library?",
-            "control": "choice",
-            "parts": [
-              {
-                "id": "u1-l1.4-q17-part1",
-                "label": "Javob"
-              }
-            ],
-            "maxPoints": 1,
-            "options": [
-              {
-                "id": "A",
-                "label": "Yes, he is."
-              },
-              {
-                "id": "B",
-                "label": "No, he isn't."
-              }
-            ],
-            "listening": true
-          },
-          {
-            "kind": "task",
-            "id": "u1-l1.4-q18",
-            "number": 18,
-            "prompt": "Ben hozir qayerda?",
-            "control": "choice",
-            "parts": [
-              {
-                "id": "u1-l1.4-q18-part1",
-                "label": "Javob"
-              }
-            ],
-            "maxPoints": 1,
-            "options": [
-              {
-                "id": "A",
-                "label": "at home"
-              },
-              {
-                "id": "B",
-                "label": "in the classroom"
-              },
-              {
-                "id": "C",
-                "label": "in the cafe"
-              }
-            ],
-            "listening": true
-          },
-          {
-            "kind": "task",
-            "id": "u1-l1.4-q19",
-            "number": 19,
-            "prompt": "Is Anna tired?",
-            "control": "choice",
-            "parts": [
-              {
-                "id": "u1-l1.4-q19-part1",
-                "label": "Javob"
-              }
-            ],
-            "maxPoints": 1,
-            "options": [
-              {
-                "id": "A",
-                "label": "Yes, she is."
-              },
-              {
-                "id": "B",
-                "label": "No, she isn't."
-              }
-            ],
-            "listening": true
-          },
-          {
-            "kind": "task",
-            "id": "u1-l1.4-q20",
-            "number": 20,
-            "prompt": "Is the cafe open?",
-            "control": "choice",
-            "parts": [
-              {
-                "id": "u1-l1.4-q20-part1",
-                "label": "Javob"
-              }
-            ],
-            "maxPoints": 1,
-            "options": [
-              {
-                "id": "A",
-                "label": "No, it isn't."
-              },
-              {
-                "id": "B",
-                "label": "Yes, it is."
-              }
-            ],
-            "listening": true
-          }
-        ]
-      },
-      {
-        "id": "u1-l1.4-s6",
-        "title": "MUSTAQIL MASHQ",
-        "items": [
-          {
-            "kind": "task",
-            "id": "u1-l1.4-q21",
-            "number": 21,
-            "prompt": "Savolni to‘g‘rilang: Are she at home?",
-            "control": "text",
-            "parts": [
-              {
-                "id": "u1-l1.4-q21-part1",
-                "label": "Javob"
-              }
-            ],
-            "maxPoints": 1,
-            "listening": false
-          },
           {
             "kind": "task",
             "id": "u1-l1.4-q22",
-            "number": 22,
+            "number": 12,
             "prompt": "Qisqa javobni to‘g‘rilang: Are you ready? — Yes, I'm.",
             "control": "text",
             "parts": [
@@ -3570,71 +2336,6 @@
             ],
             "maxPoints": 1,
             "listening": false
-          },
-          {
-            "kind": "task",
-            "id": "u1-l1.4-q23",
-            "number": 23,
-            "prompt": "O‘zingiz haqingizda rost qisqa javob yozing.\nAre you a student?\nAre you at home?\nAre you tired?",
-            "control": "written",
-            "parts": [
-              {
-                "id": "u1-l1.4-q23-part1",
-                "label": "Are you a student?"
-              },
-              {
-                "id": "u1-l1.4-q23-part2",
-                "label": "Are you at home?"
-              },
-              {
-                "id": "u1-l1.4-q23-part3",
-                "label": "Are you tired?"
-              }
-            ],
-            "maxPoints": 1,
-            "listening": false
-          },
-          {
-            "kind": "task",
-            "id": "u1-l1.4-q24",
-            "number": 24,
-            "prompt": "Ma’lumot: Emma va Ben — universitetda, tayyor.\nUlar haqida Are bilan ikkita savol va har biriga qisqa javob yozing.",
-            "control": "written",
-            "parts": [
-              {
-                "id": "u1-l1.4-q24-part1",
-                "label": "Universitetda ekanligi haqida savol"
-              },
-              {
-                "id": "u1-l1.4-q24-part2",
-                "label": "Qisqa javob"
-              },
-              {
-                "id": "u1-l1.4-q24-part3",
-                "label": "Tayyorligi haqida savol"
-              },
-              {
-                "id": "u1-l1.4-q24-part4",
-                "label": "Qisqa javob"
-              }
-            ],
-            "maxPoints": 1,
-            "listening": false
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.4-text23",
-            "text": "23–24 dagi savol-javoblarni ovoz chiqarib ayting."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.4-text24",
-            "text": "ESLAB QOLING"
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.4-text25",
-            "text": "Are you ...? — Yes, I am. / No, I'm not.\nIs she ...? — Yes, she is. / No, she isn't.\nAre they ...? — Yes, they are. / No, they aren't."
           }
         ]
       }
@@ -3844,44 +2545,32 @@
         "uzbek": "ochiq"
       }
     ],
-    "audioId": "u1-l1.4-audio1"
+    "audioId": "u1-l1.4-audio1",
+    "flow": "windows",
+    "automatic": true
   },
   {
     "id": "u1-l1.5",
     "number": "1.5",
     "title": "Complex questions",
-    "version": "2026-10-19.3",
+    "version": "2026-10-19.4",
     "kind": "practice",
     "sections": [
       {
-        "id": "u1-l1.5-s1",
-        "title": "MA’LUMOT SO‘RASH",
+        "id": "u1-l1.5-window-model1",
+        "title": "Where / What / How",
         "items": [
           {
             "kind": "text",
-            "id": "u1-l1.5-text1",
-            "text": "Rasmlarga qarang va o‘qing."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.5-text2",
-            "text": "A. Where are you from? — I'm from Boston.\nB. Where are you? — I'm in the library.\nC. What is it? — It's a phone.\nD. How are you? — I'm tired."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.5-text3",
-            "text": "Where — qayerda. Where ... from? — qayerdan?\nWhat — nima. How — qanday. Who — kim."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.5-text4",
-            "text": "Bu savollarga kerakli ma’lumot bilan javob beriladi.\nIs Ben at home? — No, he isn't.\nWhere is Ben? — He's in the library."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.5-text5",
-            "text": "Mos savol so‘zini yozing."
-          },
+            "id": "u1-l1.5-window-model1-text",
+            "text": "Where — qayerda; where ... from — qayerdan.\nWhere are you? — I’m in the library.\nWhere are you from? — I’m from Boston.\nWhat is it? — It’s a phone. How are you? — I’m fine.\nSavol tartibi: savol so‘zi + am/is/are + kim/nima. From so‘zi oxirida keladi."
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.5-window-practice1",
+        "title": "Mashq 1",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.5-q1",
@@ -3898,28 +2587,17 @@
             "imageId": "u1-l1.5-img-01_information_questions",
             "panelId": "u1-l1.5-img-01_information_questions-panel1",
             "listening": false
-          },
-          {
-            "kind": "task",
-            "id": "u1-l1.5-q2",
-            "number": 2,
-            "prompt": "___ is Ben? — He's in the library.",
-            "control": "text",
-            "parts": [
-              {
-                "id": "u1-l1.5-q2-part1",
-                "label": "Javob"
-              }
-            ],
-            "maxPoints": 1,
-            "imageId": "u1-l1.5-img-01_information_questions",
-            "panelId": "u1-l1.5-img-01_information_questions-panel2",
-            "listening": false
-          },
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.5-window-practice2",
+        "title": "Mashq 2",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.5-q3",
-            "number": 3,
+            "number": 2,
             "prompt": "___ is it? — It's a phone.",
             "control": "text",
             "parts": [
@@ -3932,11 +2610,17 @@
             "imageId": "u1-l1.5-img-01_information_questions",
             "panelId": "u1-l1.5-img-01_information_questions-panel3",
             "listening": false
-          },
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.5-window-practice3",
+        "title": "Mashq 3",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.5-q4",
-            "number": 4,
+            "number": 3,
             "prompt": "___ is Alex? — He's tired.",
             "control": "text",
             "parts": [
@@ -3950,42 +2634,16 @@
             "panelId": "u1-l1.5-img-01_information_questions-panel4",
             "listening": false
           }
-        ],
-        "imageId": "u1-l1.5-img-01_information_questions"
+        ]
       },
       {
-        "id": "u1-l1.5-s2",
-        "title": "WHERE / WHO / WHAT",
+        "id": "u1-l1.5-window-practice4",
+        "title": "Mashq 4",
         "items": [
-          {
-            "kind": "text",
-            "id": "u1-l1.5-text6",
-            "text": "Where is Emma? — She's at home.\nWhere are they? — They're at university.\nWhere is Ben from? — He's from Boston."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.5-text7",
-            "text": "Who is Anna? — She's a teacher.\nWho is he? — He's Ben.\nWho are they? — They're Emma and Ben."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.5-text8",
-            "text": "What is it? — It's an app.\nWhat are they? — They're phones."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.5-text9",
-            "text": "Savol tartibi:\nWhere + am/is/are + kim/nima?\nWho/What + am/is/are + olmosh?"
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.5-text10",
-            "text": "Where ... from? savolida from oxirida keladi."
-          },
           {
             "kind": "task",
             "id": "u1-l1.5-q5",
-            "number": 5,
+            "number": 4,
             "prompt": "So‘zlarni tartiblang: Emma / from / is / Where",
             "control": "order",
             "parts": [
@@ -4014,11 +2672,28 @@
               }
             ],
             "listening": false
-          },
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.5-window-model2",
+        "title": "Who? · Ismingiz nima?",
+        "items": [
+          {
+            "kind": "text",
+            "id": "u1-l1.5-window-model2-text",
+            "text": "Who — kim. Who is she? — She’s Anna. Who are they? — They’re Emma and Ben.\nWhat is your name? — My name is Emma.\nName — ism. My — mening. Your — sening/sizning.\nWhat is = what’s; who is = who’s; where is = where’s; how is = how’s."
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.5-window-practice5",
+        "title": "Mashq 5",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.5-q6",
-            "number": 6,
+            "number": 5,
             "prompt": "Javobga mos savol yozing: They are in the classroom.\nThey va Where dan foydalaning.",
             "control": "text",
             "parts": [
@@ -4029,11 +2704,17 @@
             ],
             "maxPoints": 1,
             "listening": false
-          },
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.5-window-practice6",
+        "title": "Mashq 6",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.5-q7",
-            "number": 7,
+            "number": 6,
             "prompt": "Javobga mos savol yozing: She's Anna.\nShe va Who dan foydalaning.",
             "control": "text",
             "parts": [
@@ -4044,11 +2725,17 @@
             ],
             "maxPoints": 1,
             "listening": false
-          },
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.5-window-practice7",
+        "title": "Mashq 7",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.5-q8",
-            "number": 8,
+            "number": 7,
             "prompt": "Javobga mos savol yozing: It's a phone.\nIt va What dan foydalaning.",
             "control": "text",
             "parts": [
@@ -4063,33 +2750,13 @@
         ]
       },
       {
-        "id": "u1-l1.5-s3",
-        "title": "ISM VA HOLAT",
+        "id": "u1-l1.5-window-practice8",
+        "title": "Mashq 8",
         "items": [
-          {
-            "kind": "text",
-            "id": "u1-l1.5-text11",
-            "text": "Name — ism. My — mening. Your — sening/sizning.\nFine — yaxshi (holat)."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.5-text12",
-            "text": "What is your name? — Ismingiz nima?\nMy name is Emma. — Mening ismim Emma."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.5-text13",
-            "text": "How are you? — Qalaysiz?\nI'm fine. — Yaxshiman.\nI'm tired, but I'm ready. — Charchaganman, lekin tayyorman."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.5-text14",
-            "text": "Qisqa shakllar:\nWhat is = What's\nWho is = Who's\nWhere is = Where's\nHow is = How's"
-          },
           {
             "kind": "task",
             "id": "u1-l1.5-q9",
-            "number": 9,
+            "number": 8,
             "prompt": "Ism so‘rash uchun mos so‘zni tanlang: ___ is your name?",
             "control": "choice",
             "parts": [
@@ -4114,13 +2781,30 @@
               }
             ],
             "listening": false
-          },
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.5-window-model3",
+        "title": "Nima? · Qalaysiz?",
+        "items": [
+          {
+            "kind": "text",
+            "id": "u1-l1.5-window-model3-text",
+            "text": "What is it? — It’s an app. What are they? — They’re phones.\nHow are you? — I’m fine. How is Ben? — He’s tired, but he’s ready.\nFine — yaxshi. But — lekin.\nWhere are you? joylashuvni, Where are you from? kelib chiqishni so‘raydi.\nWhere you are? emas, Where are you? deb so‘raladi."
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.5-window-practice9",
+        "title": "Mashq 9",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.5-q10",
-            "number": 10,
-            "prompt": "O‘z ismingiz bilan gapni tugating: My name is ___.",
-            "control": "written",
+            "number": 9,
+            "prompt": "Emma o‘zini tanishtiryapti. Gapni to‘liq yozing: My name is ___. Ma’lumot: Uning ismi Emma.",
+            "control": "text",
             "parts": [
               {
                 "id": "u1-l1.5-q10-part1",
@@ -4129,11 +2813,17 @@
             ],
             "maxPoints": 1,
             "listening": false
-          },
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.5-window-practice10",
+        "title": "Mashq 10",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.5-q11",
-            "number": 11,
+            "number": 10,
             "prompt": "Mos javobni tanlang: How are you?",
             "control": "choice",
             "parts": [
@@ -4158,259 +2848,17 @@
               }
             ],
             "listening": false
-          },
-          {
-            "kind": "task",
-            "id": "u1-l1.5-q12",
-            "number": 12,
-            "prompt": "To‘liq shaklda yozing: Who's she?",
-            "control": "text",
-            "parts": [
-              {
-                "id": "u1-l1.5-q12-part1",
-                "label": "Javob"
-              }
-            ],
-            "maxPoints": 1,
-            "listening": false
           }
         ]
       },
       {
-        "id": "u1-l1.5-s4",
-        "title": "EMMADAN XABAR",
+        "id": "u1-l1.5-window-practice11",
+        "title": "Mashq 11",
         "items": [
-          {
-            "kind": "text",
-            "id": "u1-l1.5-text15",
-            "text": "Matnni o‘qing."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.5-text16",
-            "text": "Hi. My name is Emma. I'm from Chicago. I'm at university. I'm in the library. Anna is a teacher. She's busy. Ben is in the classroom. He's tired, but he's ready."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.5-text17",
-            "text": "Matnga qarab javob yozing."
-          },
-          {
-            "kind": "task",
-            "id": "u1-l1.5-q13",
-            "number": 13,
-            "prompt": "Where is Emma from?",
-            "control": "text",
-            "parts": [
-              {
-                "id": "u1-l1.5-q13-part1",
-                "label": "Javob"
-              }
-            ],
-            "maxPoints": 1,
-            "listening": false
-          },
-          {
-            "kind": "task",
-            "id": "u1-l1.5-q14",
-            "number": 14,
-            "prompt": "Where is Emma?",
-            "control": "text",
-            "parts": [
-              {
-                "id": "u1-l1.5-q14-part1",
-                "label": "Javob"
-              }
-            ],
-            "maxPoints": 1,
-            "listening": false
-          },
-          {
-            "kind": "task",
-            "id": "u1-l1.5-q15",
-            "number": 15,
-            "prompt": "Who is Anna?",
-            "control": "text",
-            "parts": [
-              {
-                "id": "u1-l1.5-q15-part1",
-                "label": "Javob"
-              }
-            ],
-            "maxPoints": 1,
-            "listening": false
-          },
-          {
-            "kind": "task",
-            "id": "u1-l1.5-q16",
-            "number": 16,
-            "prompt": "How is Ben? Ikkala holatni ayting.",
-            "control": "text",
-            "parts": [
-              {
-                "id": "u1-l1.5-q16-part1",
-                "label": "Javob"
-              }
-            ],
-            "maxPoints": 1,
-            "listening": false
-          }
-        ]
-      },
-      {
-        "id": "u1-l1.5-s5",
-        "title": "TINGLASH",
-        "items": [
-          {
-            "kind": "audio",
-            "id": "u1-l1.5-audio1"
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.5-text18",
-            "text": "Tinglang va 17–20-savollarga javob bering."
-          },
-          {
-            "kind": "task",
-            "id": "u1-l1.5-q17",
-            "number": 17,
-            "prompt": "O‘zini kim tanishtirdi?",
-            "control": "choice",
-            "parts": [
-              {
-                "id": "u1-l1.5-q17-part1",
-                "label": "Javob"
-              }
-            ],
-            "maxPoints": 1,
-            "options": [
-              {
-                "id": "A",
-                "label": "Emma"
-              },
-              {
-                "id": "B",
-                "label": "Maya"
-              },
-              {
-                "id": "C",
-                "label": "Anna"
-              }
-            ],
-            "listening": true
-          },
-          {
-            "kind": "task",
-            "id": "u1-l1.5-q18",
-            "number": 18,
-            "prompt": "Where is Maya from?",
-            "control": "choice",
-            "parts": [
-              {
-                "id": "u1-l1.5-q18-part1",
-                "label": "Javob"
-              }
-            ],
-            "maxPoints": 1,
-            "options": [
-              {
-                "id": "A",
-                "label": "Boston"
-              },
-              {
-                "id": "B",
-                "label": "Chicago"
-              },
-              {
-                "id": "C",
-                "label": "New York"
-              }
-            ],
-            "listening": true
-          },
-          {
-            "kind": "task",
-            "id": "u1-l1.5-q19",
-            "number": 19,
-            "prompt": "Where is Maya?",
-            "control": "choice",
-            "parts": [
-              {
-                "id": "u1-l1.5-q19-part1",
-                "label": "Javob"
-              }
-            ],
-            "maxPoints": 1,
-            "options": [
-              {
-                "id": "A",
-                "label": "at home"
-              },
-              {
-                "id": "B",
-                "label": "in the library"
-              },
-              {
-                "id": "C",
-                "label": "at university"
-              }
-            ],
-            "listening": true
-          },
-          {
-            "kind": "task",
-            "id": "u1-l1.5-q20",
-            "number": 20,
-            "prompt": "How is Maya?",
-            "control": "choice",
-            "parts": [
-              {
-                "id": "u1-l1.5-q20-part1",
-                "label": "Javob"
-              }
-            ],
-            "maxPoints": 1,
-            "options": [
-              {
-                "id": "A",
-                "label": "She's tired."
-              },
-              {
-                "id": "B",
-                "label": "She's busy."
-              },
-              {
-                "id": "C",
-                "label": "She's fine. She isn't tired."
-              }
-            ],
-            "listening": true
-          }
-        ]
-      },
-      {
-        "id": "u1-l1.5-s6",
-        "title": "MUSTAQIL MASHQ",
-        "items": [
-          {
-            "kind": "task",
-            "id": "u1-l1.5-q21",
-            "number": 21,
-            "prompt": "Javobga mos savol yozing: I'm from Boston.\nYou bilan kelib chiqishni so‘rang.",
-            "control": "text",
-            "parts": [
-              {
-                "id": "u1-l1.5-q21-part1",
-                "label": "Javob"
-              }
-            ],
-            "maxPoints": 1,
-            "listening": false
-          },
           {
             "kind": "task",
             "id": "u1-l1.5-q22",
-            "number": 22,
+            "number": 11,
             "prompt": "Javobga mos savol yozing: They're apps.\nWhat va they dan foydalaning.",
             "control": "text",
             "parts": [
@@ -4421,11 +2869,17 @@
             ],
             "maxPoints": 1,
             "listening": false
-          },
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.5-window-practice12",
+        "title": "Mashq 12",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.5-q23",
-            "number": 23,
+            "number": 12,
             "prompt": "Savolni to‘g‘rilang: Where you are?",
             "control": "text",
             "parts": [
@@ -4436,48 +2890,6 @@
             ],
             "maxPoints": 1,
             "listening": false
-          },
-          {
-            "kind": "task",
-            "id": "u1-l1.5-q24",
-            "number": 24,
-            "prompt": "Savollarga o‘zingiz haqingizda to‘liq javob yozing.\nWhat's your name?\nWhere are you from?\nWhere are you?\nHow are you?",
-            "control": "written",
-            "parts": [
-              {
-                "id": "u1-l1.5-q24-part1",
-                "label": "What's your name?"
-              },
-              {
-                "id": "u1-l1.5-q24-part2",
-                "label": "Where are you from?"
-              },
-              {
-                "id": "u1-l1.5-q24-part3",
-                "label": "Where are you?"
-              },
-              {
-                "id": "u1-l1.5-q24-part4",
-                "label": "How are you?"
-              }
-            ],
-            "maxPoints": 1,
-            "listening": false
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.5-text19",
-            "text": "Javoblaringizni ovoz chiqarib ayting."
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.5-text20",
-            "text": "ESLAB QOLING"
-          },
-          {
-            "kind": "text",
-            "id": "u1-l1.5-text21",
-            "text": "Who — kim? What — nima? Where — qayerda? How — qanday?\nWhere are you? va Where are you from? ikki xil ma’lumotni so‘raydi."
           }
         ]
       }
@@ -4687,18 +3099,20 @@
         "uzbek": "Qalaysiz?"
       }
     ],
-    "audioId": "u1-l1.5-audio1"
+    "audioId": "u1-l1.5-audio1",
+    "flow": "windows",
+    "automatic": true
   },
   {
     "id": "u1-l1.6",
     "number": "1.6",
     "title": "Final test",
-    "version": "2026-10-19.3",
+    "version": "2026-10-19.4",
     "kind": "exam",
     "sections": [
       {
-        "id": "u1-l1.6-intro",
-        "title": "Test haqida",
+        "id": "u1-l1.6-window-intro",
+        "title": "Yakuniy imtihon",
         "items": [
           {
             "kind": "text",
@@ -4713,8 +3127,8 @@
         ]
       },
       {
-        "id": "u1-l1.6-s1",
-        "title": "RASMLARGA QARANG",
+        "id": "u1-l1.6-window-question1",
+        "title": "Savol 1",
         "items": [
           {
             "kind": "task",
@@ -4746,7 +3160,13 @@
             "imageId": "u1-l1.6-img-01_exam_scenes",
             "panelId": "u1-l1.6-img-01_exam_scenes-panel1",
             "listening": false
-          },
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.6-window-question2",
+        "title": "Savol 2",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.6-q2",
@@ -4777,7 +3197,13 @@
             "imageId": "u1-l1.6-img-01_exam_scenes",
             "panelId": "u1-l1.6-img-01_exam_scenes-panel2",
             "listening": false
-          },
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.6-window-question3",
+        "title": "Savol 3",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.6-q3",
@@ -4808,7 +3234,13 @@
             "imageId": "u1-l1.6-img-01_exam_scenes",
             "panelId": "u1-l1.6-img-01_exam_scenes-panel3",
             "listening": false
-          },
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.6-window-question4",
+        "title": "Savol 4",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.6-q4",
@@ -4840,12 +3272,11 @@
             "panelId": "u1-l1.6-img-01_exam_scenes-panel4",
             "listening": false
           }
-        ],
-        "imageId": "u1-l1.6-img-01_exam_scenes"
+        ]
       },
       {
-        "id": "u1-l1.6-s2",
-        "title": "GAPLAR VA SAVOLLAR",
+        "id": "u1-l1.6-window-question5",
+        "title": "Savol 5",
         "items": [
           {
             "kind": "task",
@@ -4875,7 +3306,13 @@
               }
             ],
             "listening": false
-          },
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.6-window-question6",
+        "title": "Savol 6",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.6-q6",
@@ -4890,7 +3327,13 @@
             ],
             "maxPoints": 1,
             "listening": false
-          },
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.6-window-question7",
+        "title": "Savol 7",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.6-q7",
@@ -4905,7 +3348,13 @@
             ],
             "maxPoints": 1,
             "listening": false
-          },
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.6-window-question8",
+        "title": "Savol 8",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.6-q8",
@@ -4924,17 +3373,17 @@
         ]
       },
       {
-        "id": "u1-l1.6-s3",
-        "title": "O‘QISH",
+        "id": "u1-l1.6-window-question9",
+        "title": "Savol 9",
         "items": [
           {
             "kind": "text",
-            "id": "u1-l1.6-text3",
+            "id": "u1-l1.6-text3-window9",
             "text": "Matnni o‘qing va 9–12-savollarga javob bering."
           },
           {
             "kind": "text",
-            "id": "u1-l1.6-text4",
+            "id": "u1-l1.6-text4-window9",
             "text": "Hi. I'm Maya. I'm from New York. I'm at university. I'm in the classroom. Ben is from Boston. He's in the library. Anna is a teacher. She's busy, but she's fine."
           },
           {
@@ -4965,6 +3414,22 @@
               }
             ],
             "listening": false
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.6-window-question10",
+        "title": "Savol 10",
+        "items": [
+          {
+            "kind": "text",
+            "id": "u1-l1.6-text3-window10",
+            "text": "Matnni o‘qing va 9–12-savollarga javob bering."
+          },
+          {
+            "kind": "text",
+            "id": "u1-l1.6-text4-window10",
+            "text": "Hi. I'm Maya. I'm from New York. I'm at university. I'm in the classroom. Ben is from Boston. He's in the library. Anna is a teacher. She's busy, but she's fine."
           },
           {
             "kind": "task",
@@ -4994,6 +3459,22 @@
               }
             ],
             "listening": false
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.6-window-question11",
+        "title": "Savol 11",
+        "items": [
+          {
+            "kind": "text",
+            "id": "u1-l1.6-text3-window11",
+            "text": "Matnni o‘qing va 9–12-savollarga javob bering."
+          },
+          {
+            "kind": "text",
+            "id": "u1-l1.6-text4-window11",
+            "text": "Hi. I'm Maya. I'm from New York. I'm at university. I'm in the classroom. Ben is from Boston. He's in the library. Anna is a teacher. She's busy, but she's fine."
           },
           {
             "kind": "task",
@@ -5023,6 +3504,22 @@
               }
             ],
             "listening": false
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.6-window-question12",
+        "title": "Savol 12",
+        "items": [
+          {
+            "kind": "text",
+            "id": "u1-l1.6-text3-window12",
+            "text": "Matnni o‘qing va 9–12-savollarga javob bering."
+          },
+          {
+            "kind": "text",
+            "id": "u1-l1.6-text4-window12",
+            "text": "Hi. I'm Maya. I'm from New York. I'm at university. I'm in the classroom. Ben is from Boston. He's in the library. Anna is a teacher. She's busy, but she's fine."
           },
           {
             "kind": "task",
@@ -5056,13 +3553,24 @@
         ]
       },
       {
-        "id": "u1-l1.6-s4",
-        "title": "TINGLASH",
+        "id": "u1-l1.6-window-audio",
+        "title": "Audioni tinglang",
         "items": [
           {
-            "kind": "audio",
-            "id": "u1-l1.6-audio1"
+            "kind": "text",
+            "id": "u1-l1.6-audio-help",
+            "text": "Audioni ko‘pi bilan ikki marta tinglang. Keyingi to‘rtta savol shu suhbat haqida."
           },
+          {
+            "kind": "audio",
+            "id": "u1-l1.6-audio-player"
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.6-window-question13",
+        "title": "Savol 13",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.6-q13",
@@ -5091,7 +3599,13 @@
               }
             ],
             "listening": true
-          },
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.6-window-question14",
+        "title": "Savol 14",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.6-q14",
@@ -5120,7 +3634,13 @@
               }
             ],
             "listening": true
-          },
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.6-window-question15",
+        "title": "Savol 15",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.6-q15",
@@ -5145,7 +3665,13 @@
               }
             ],
             "listening": true
-          },
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.6-window-question16",
+        "title": "Savol 16",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.6-q16",
@@ -5174,14 +3700,9 @@
         ]
       },
       {
-        "id": "u1-l1.6-s5",
-        "title": "YOZISH",
+        "id": "u1-l1.6-window-question17",
+        "title": "Savol 17",
         "items": [
-          {
-            "kind": "text",
-            "id": "u1-l1.6-text5",
-            "text": "Har bir topshiriqda bitta gap yoki savol yozing. To‘liq va to‘g‘ri qisqa shakllar qabul qilinadi."
-          },
           {
             "kind": "task",
             "id": "u1-l1.6-q17",
@@ -5196,7 +3717,13 @@
             ],
             "maxPoints": 2,
             "listening": false
-          },
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.6-window-question18",
+        "title": "Savol 18",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.6-q18",
@@ -5211,7 +3738,13 @@
             ],
             "maxPoints": 2,
             "listening": false
-          },
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.6-window-question19",
+        "title": "Savol 19",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.6-q19",
@@ -5226,7 +3759,13 @@
             ],
             "maxPoints": 2,
             "listening": false
-          },
+          }
+        ]
+      },
+      {
+        "id": "u1-l1.6-window-question20",
+        "title": "Savol 20",
+        "items": [
           {
             "kind": "task",
             "id": "u1-l1.6-q20",
@@ -5590,6 +4129,8 @@
         "uzbek": "sening/sizning"
       }
     ],
-    "audioId": "u1-l1.6-audio1"
+    "audioId": "u1-l1.6-audio1",
+    "flow": "windows",
+    "automatic": true
   }
 ]

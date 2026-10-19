@@ -18,12 +18,16 @@ The exam is the sixth entry, not an additional teaching lesson with another
 lesson can earn 30 vocabulary + 50 completion + 10 mastery = **90 coins**;
 Unit 1 offers **450 coins**. Its final exam vocabulary is review only.
 
-Finishing lessons still requires their authored parts answered and checked,
-completed listening, and any required teacher reviews resolved. Existing
-revision-specific completion policies and the final exam threshold remain.
-Pending or failed attempts earn no new completion/mastery reward. The exam
-opens after all five teaching lessons are finished. Teaching lessons can be
-chosen independently after reviewing their own vocabulary.
+Finishing a teaching lesson requires all twelve current practices to be answered,
+checked and correct. The final correct check completes it automatically; errors
+can be corrected in the same attempt. There is no lesson exam/submission or
+teacher-review dependency. Only final exam 1.6 is submitted as an exam. A failed
+exam does not remove saved coins. The exam opens after all five lessons finish.
+Teaching lessons can be chosen independently after their vocabulary review.
+
+Teacher adjustments can add/subtract custom amounts independently of automatic
+rewards, including negative balances. Ranking/home totals include these
+append-only adjustments; the unit reward pool remains 450.
 
 ## Exactly-once rewards
 
@@ -31,11 +35,11 @@ chosen independently after reviewing their own vocabulary.
 student, stable lesson ID and reward kind. Neither practice questions, repeated
 submissions, retries, refreshes, concurrent requests nor republished revisions
 create another receipt for the same milestone. The server derives awards from
-saved results, never a client-supplied balance. Submission, teacher review,
+saved results, never a client-supplied balance. Automatic completion,
 progress and coins commit in one transaction under the student's existing lock.
 
 Failed later attempts do not remove earned coins or earlier successful results.
-A teacher's amendment can change the effective completion/mastery status;
+For historical revisions, a teacher's amendment can change effective completion/mastery status;
 previously earned coin receipts remain, so qualifying again never pays twice.
 Migration 0009 backfills real historical passes/completions exactly once.
 
@@ -51,3 +55,5 @@ student IDs, groups, profile links, answers or grading keys are exposed.
 Home, lesson navigation and teacher student details show real coin totals.
 Exercise scores remain labeled **ball**; reward balances are labeled **coin**.
 No extra numbered level or CEFR rank is introduced.
+
+See [second-check implementation](check-2.md) for teacher adjustments and compact automatic practice.

@@ -35,6 +35,7 @@ export function authoredGrade(rule: AuthoredRule, response: string | undefined, 
   }
   const allCorrect = values.every((v,i) => typeof v === 'string' && (Array.isArray(rule.accepted[0]) ? rule.accepted[i] as string[] : rule.accepted as string[]).some(a => matches(v, a, rule.strict)));
   if (allCorrect) return { earnedPoints: maxPoints, reviewStatus: 'graded' as const };
+  if (rule.binary) return { earnedPoints: 0, reviewStatus: 'graded' as const };
   if (rule.rubric) {
     const text = normalizeAuthored(String(values[0] ?? '')), e = expand(text);
     // Credit only the authored semantic criterion; unrecognised paraphrases

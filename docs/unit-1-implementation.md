@@ -1,4 +1,21 @@
-# Unit 1 implementation
+# Unit 1 implementation — current revision
+
+Content version **2026-10-19.4** implements the owner’s second check.
+Read [check 2](check-2.md) for current behavior and rollout. The earlier
+140-question implementation below records historical decisions and is
+superseded wherever it conflicts with this correction.
+
+- Five teaching lessons, each with 12 automatically marked practices and three
+  short explanation windows; one task per practice window, Next/Previous flow.
+- No sublesson tabs, lesson exam/submission or teacher-review dependency.
+- Every practice must be correct; the last correct check completes the lesson.
+- The only grammar exam is 1.6: 20 questions / 24 marks, binary grading.
+- Eight original illustrations are retained. Archived .3 display/keys preserve
+  authoring inputs and history; `scripts/compact-unit1.py` generates .4.
+- Apply migration 0010, publish with `pnpm unit1:publish`, then deploy.
+
+## Historical original implementation
+
 
 The supplied `Learn_with_Jonah_Unit_1_Complete.zip` is the curriculum source.
 Its extracted originals, notes, answer keys and eight PNGs are retained under

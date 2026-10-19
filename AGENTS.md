@@ -22,7 +22,7 @@ Read these reference documents before planning or changing the application:
 - The administrator can add and remove students, monitor students, and view their progress.
 - Use the Clay & Sage palette from the design guidelines.
 - Treat phone and laptop usability as equally important throughout implementation and verification.
-- Each unit has approximately 5–7 lessons and a final exam. Each teaching lesson earns 50 coins once; passing its vocabulary test earns 30 coins once. A final exam score of at least 90% grants mastery and 10 more coins per teaching lesson. Unit 1 has five teaching lessons plus final exam 1.6 (450 possible coins). Rankings use saved lifetime coins. Repeated tasks/attempts/revisions never pay twice. Follow `docs/levels-and-mastery.md` for details and unresolved rules.
+- Each unit has five teaching lessons and its sixth entry is the final exam. Each teaching lesson has short sequential windows, no sublessons and no lesson-level exam. New questions are automatically correct/incorrect, and all practices must be correct to finish without teacher review. The teacher can independently add/subtract coins with history. Each teaching lesson earns 50 coins once; passing its vocabulary test earns 30 coins once. A final exam score of at least 90% grants mastery and 10 more coins per teaching lesson. Unit 1 has five teaching lessons plus final exam 1.6 (450 possible coins). Rankings use saved lifetime coins. Repeated tasks/attempts/revisions never pay twice. Follow `docs/levels-and-mastery.md` for details and unresolved rules.
 - Vocabulary precedes each lesson, with sets named Vocab 1.1, Vocab 1.2, and so on. Students study the list, then take a typed English-to-Uzbek flashcard exam on one-third of that set's words, with feedback per answer and a pass threshold of at least 75%. Selecting **Ko‘rib chiqdim** unlocks the matching lesson without coins; **Test topshirish** masters its vocabulary and gives 30 coins once at >=75%. See `docs/vocabulary.md` for sampling and persistence rules. Do not confuse vocabulary passing with the 90% unit mastery threshold.
 
 ## Working conventions
@@ -63,8 +63,7 @@ the owner's GitHub Login Connection in Vercel; direct CLI deployment works.
 The user has now authorized the curriculum, lesson player, vocabulary UI and
 teacher integration using `Learn_with_Jonah_Unit_1_Complete.zip`. These are
 implemented; read `docs/unit-1-implementation.md` and `docs/unit-1-validation.md`.
-Preserve all 140 numbered parents, authored subparts, sequence, eight originals
-and explicit panel metadata. Display content and grading keys are separate;
+The original 140-question revision is archived; the second check now authorizes a shorter 80-question revision (five lessons × 12 practices plus the 20-question unit exam). Preserve old attempts and original assets, and publish new immutable revisions. Display content and grading keys are separate;
 published revisions and asset URLs are versioned. Publish with
 `pnpm unit1:publish`, never synthetic fixtures against production. Browser TTS
 is the current audio fallback. Unit 2 remains outside scope.
@@ -77,3 +76,16 @@ and test-required vocabulary unlock. Read `docs/check-1.md`,
 before deploying this feature. Rewards are append-only and keyed by student,
 stable lesson ID and kind; preserve historical attempts and teacher reviews.
 The second problem/fix check and third visual redesign remain separate work.
+
+## Second check — current learning flow
+
+Read `docs/check-2.md`. Content .4 uses windows inside one lesson, binary
+automatic grading and a `practice` completion policy requiring every answer
+correct and checked. No teacher review or extra lesson exam is needed.
+The final correct check completes/awards once. Teacher coin adjustments are
+separate append-only receipts, included in ranking balances.
+Apply migration 0010 and `pnpm unit1:publish` before deploying. Old revisions
+and drafts remain intact. The user requested code-only verification for this
+check: do not open the browser, web app or live site. Investigate repeated
+failures with a different method; on a fourth recurrence stop and report.
+The third visual redesign is still separate work.

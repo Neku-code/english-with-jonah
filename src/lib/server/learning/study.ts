@@ -4,28 +4,48 @@ import {answers,lessonVersions,lessons,questions,studyWorkspaces,practiceChecks,
 import {awardLearningCoins} from './rewards';
 import {lockStudent} from '../students';
 import {uuid,reject,responseText} from '../validation';
-import {available,ownedAttempt} from './attempts';
+import {available,ownedAttempt,saveAnswerLocked,submitLockedAttempt} from './attempts';
 import {grade} from './grading';
 import {normalizeAuthored} from './authored-grading';
 import type {LessonContent} from '../../learning/types';
 import audioRegistry from './unit1-audio.json';
 
 export async function checkPractice(db:Database,studentId:string,attemptId:string,input:Record<string,unknown>) {
-  const questionId=uuid(input.questionId),requestId=uuid(input.requestId);
-  return db.transaction(async tx=>{
-    await lockStudent(tx,studentId);const a=await ownedAttempt(tx,studentId,attemptId);await available(tx,a.lessonId);
-    const [lesson]=await tx.select().from(lessons).where(eq(lessons.id,a.lessonId));
-    if(lesson.kind==='final_exam'||a.status!=='in_progress') reject(409,'NO_PRACTICE','Bu urinishda oldindan tekshirish mumkin emas.');
-    const [q]=await tx.select().from(questions).where(and(eq(questions.id,questionId),eq(questions.versionId,a.versionId)));
-    const [answer]=await tx.select().from(answers).where(and(eq(answers.attemptId,a.id),eq(answers.questionId,questionId)));
-    if(!q||!answer||answer.revision!==input.revision) reject(409,'SAVE_FIRST','Avval javobni saqlang, keyin tekshiring.');
-    const [state]=await tx.select().from(studyWorkspaces).where(eq(studyWorkspaces.attemptId,a.id));
-    if(q.content.task?.listening&&state?.audioStatus!=='completed') reject(409,'AUDIO_INCOMPLETE','Avval audioni tinglang. Ovoz ishlamasa, tinglash tugallanmagan holda saqlanadi.');
-    const [existing]=await tx.select().from(practiceChecks).where(and(eq(practiceChecks.attemptId,a.id),eq(practiceChecks.questionId,q.id),eq(practiceChecks.answerRevision,answer.revision)));
-    const graded=grade(q.grading,answer.response,q.maxPoints);
-    const check=existing??(await tx.insert(practiceChecks).values({id:requestId,attemptId:a.id,studentId,versionId:a.versionId,questionId:q.id,answerRevision:answer.revision,response:answer.response,transcriptUsed:state?.transcriptUsed??false,...graded}).returning())[0];
-    return {...check,feedback:'feedback' in q.grading?q.grading.feedback:'',notes:'notes' in q.grading?q.grading.notes:''};
-  });
+ const questionId=uuid(input.questionId),requestId=uuid(input.requestId);
+ return db.transaction(async tx=>{
+  await lockStudent(tx,studentId);const a=await ownedAttempt(tx,studentId,attemptId);
+  const {lesson}=await available(tx,a.lessonId);
+  if(lesson.kind==='final_exam')reject(409,'NO_PRACTICE','Yakuniy imtihonda oldindan tekshirish mumkin emas.');
+  const [q]=await tx.select().from(questions).where(and(eq(questions.id,questionId),eq(questions.versionId,a.versionId)));
+  if(!q)reject(404,'QUESTION_NOT_FOUND','Savol topilmadi.');
+  const [receipt]=await tx.select().from(practiceChecks).where(eq(practiceChecks.id,requestId));
+  if(receipt&&(receipt.attemptId!==a.id||receipt.questionId!==questionId||(input.response!==undefined&&receipt.response!==input.response)))reject(409,'REQUEST_CONFLICT','So‘rov boshqa javob uchun ishlatilgan.');
+  if(receipt){
+   const [current]=await tx.select().from(answers).where(and(eq(answers.attemptId,a.id),eq(answers.questionId,questionId)));
+   if(!current||current.revision!==receipt.answerRevision||current.response!==receipt.response)reject(409,'STALE_ANSWER','Bu tekshiruvdan keyin javob o‘zgargan. Joriy javobni tekshiring.');
+   return {...receipt,feedback:'feedback' in q.grading?q.grading.feedback:'',notes:'notes' in q.grading?q.grading.notes:'',attempt:{id:a.id,status:a.status,earnedPoints:a.earnedPoints,maxPoints:a.maxPoints,pendingReview:a.pendingReview},coinsAwarded:0};
+  }
+  let revision=input.revision;
+  if(input.response!==undefined&&a.status==='in_progress')revision=(await saveAnswerLocked(tx,studentId,a,{questionId,response:input.response,expectedRevision:input.expectedRevision},q)).revision;
+  const [answer]=await tx.select().from(answers).where(and(eq(answers.attemptId,a.id),eq(answers.questionId,questionId)));
+  if(!answer||answer.revision!==revision||(input.response!==undefined&&answer.response!==input.response))reject(409,'SAVE_FIRST','Javob versiyasi o‘zgargan. Sahifani yangilang.');
+  const [existing]=await tx.select().from(practiceChecks).where(and(eq(practiceChecks.attemptId,a.id),eq(practiceChecks.questionId,q.id),eq(practiceChecks.answerRevision,answer.revision)));
+  if(a.status!=='in_progress'&&!existing)reject(409,'NO_PRACTICE','Bu urinish tugallangan.');
+  const [state]=await tx.select().from(studyWorkspaces).where(eq(studyWorkspaces.attemptId,a.id));
+  if(q.content.task?.listening&&state?.audioStatus!=='completed')reject(409,'AUDIO_INCOMPLETE','Avval audioni tinglang.');
+  const graded=grade(q.grading,answer.response,q.maxPoints);
+  const check=existing??(await tx.insert(practiceChecks).values({id:requestId,attemptId:a.id,studentId,versionId:a.versionId,questionId:q.id,answerRevision:answer.revision,response:answer.response,transcriptUsed:state?.transcriptUsed??false,...graded}).returning())[0];
+  let completion={attempt:{id:a.id,status:a.status,earnedPoints:a.earnedPoints,maxPoints:a.maxPoints,pendingReview:a.pendingReview},coinsAwarded:0};
+  if(a.status==='in_progress'&&a.versionId===lesson.versionId&&lesson.completionPolicy.mode==='practice'&&graded.earnedPoints===q.maxPoints){
+   const {rows:[counts]}=await tx.execute<{total:number;correct:number}>(sql`
+    SELECT count(*)::int total,count(c.id) FILTER(WHERE c.earned_points=q.max_points AND c.review_status='graded')::int correct
+    FROM questions q LEFT JOIN answers ans ON ans.attempt_id=${a.id} AND ans.question_id=q.id
+    LEFT JOIN practice_checks c ON c.attempt_id=${a.id} AND c.question_id=q.id AND c.answer_revision=ans.revision
+    WHERE q.version_id=${a.versionId}`);
+   if(counts.total>0&&counts.correct===counts.total)completion=await submitLockedAttempt(tx,studentId,a);
+  }
+  return {...check,feedback:'feedback' in q.grading?q.grading.feedback:'',notes:'notes' in q.grading?q.grading.notes:'',...completion};
+ });
 }
 export async function studyAction(db:Database,studentId:string,attemptId:string,input:Record<string,unknown>) {
  return db.transaction(async tx=>{
@@ -67,9 +87,9 @@ export async function studyAction(db:Database,studentId:string,attemptId:string,
   await tx.insert(studyEvents).values({id:requestId,attemptId:a.id,kind:action,result});return result;
  });
 }
-export async function vocabularyState(db:Database,studentId:string,lessonId:string) {
- const {lesson}=await available(db,lessonId);
- const [session]=await db.select().from(vocabularySessions).where(and(eq(vocabularySessions.studentId,studentId),eq(vocabularySessions.versionId,lesson.versionId),eq(vocabularySessions.submitted,false)));
+export async function vocabularyState(db:Database,studentId:string,lessonId:string,knownVersionId?:string) {
+ const versionId=knownVersionId??(await available(db,lessonId)).lesson.versionId;
+ const [session]=await db.select().from(vocabularySessions).where(and(eq(vocabularySessions.studentId,studentId),eq(vocabularySessions.versionId,versionId),eq(vocabularySessions.submitted,false)));
  return session?{id:session.id,wordIds:session.wordIds,responses:session.responses}:null;
 }
 export async function vocabularyAction(db:Database,studentId:string,lessonId:string,input:Record<string,unknown>) {

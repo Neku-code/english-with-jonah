@@ -15,8 +15,7 @@ Box 1 covered technical setup and plain shared-component verification. The Boxes
 Unit 1 is now authored from the owner's complete ZIP: 1.1 Introduction “To Be”,
 1.2 Locations and states, 1.3 Negative statements, 1.4 Yes/No Questions,
 1.5 Complex questions, and 1.6 Final test. Student instructions are Uzbek.
-The five lessons each contain 24 tasks; the exam contains 20 tasks worth 24
-points. Personal answers and unrecognised alternatives use teacher review.
+The five lessons each contain 12 automatically marked practices and three short explanation/example windows. There are no sublessons or lesson-level exams. Students press Next to move between windows. All practices must be correct to finish. The only unit exam has 20 questions worth 24 marks; all new answers are automatically correct or incorrect without teacher review.
 See [implementation and source-preservation decisions](unit-1-implementation.md).
 
 | Unit | Topic | Release |
@@ -24,7 +23,7 @@ See [implementation and source-preservation decisions](unit-1-implementation.md)
 | Unit 1 | To Be | v0.1 — current scope |
 | Unit 2 | Present Simple | v0.2 — future scope |
 
-The application saves lessons, answers, grading and progress for teacher review.
+The application saves lessons, automatically graded answers and progress for teacher monitoring.
 Each teaching lesson awards 50 coins once; passing its vocabulary test awards
 30 coins once. A final exam score of at least 90% adds 10 coins to each finished
 teaching lesson and grants mastery. Unit 1 has five teaching lessons plus exam
@@ -66,6 +65,7 @@ The administrator must be able to:
 - Remove students.
 - Monitor students.
 - View each student's progress.
+- Add or subtract custom coin amounts, with a saved adjustment history.
 
 ## Identity and access decisions
 

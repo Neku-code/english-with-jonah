@@ -46,3 +46,10 @@ Phone and laptop support is a core requirement, not a later enhancement.
 - Use labels or symbols alongside color for progress, correctness, and status.
 - Keep forms and exercise instructions clear for complete beginners.
 - Avoid assuming that all students have a large screen or use a mouse.
+
+## Second-check lesson structure
+
+Current lessons use one short explanation/example or one practice per window.
+Use Next/Previous controls and a position indicator, with no sublesson tabs.
+Allow natural reflow for small phones/keyboard use; do not replace the lesson
+with one long page. The selected visual redesign is reserved for check 3.

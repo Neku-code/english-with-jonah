@@ -91,7 +91,7 @@ test('rankings use real lifetime coins, share tied ranks, exclude archived stude
  const f=await fixture(db);await finish(a.id,f);await finish(b.id,f);
  let rows=await rankings(db,a.id),ra=rows.find(r=>r.isCurrent)!,rb=rows.find(r=>r.name===b.displayName)!;
  assert.equal(ra.points,50);assert.equal(ra.rank,rb.rank);assert.deepEqual(Object.keys(ra).sort(),['isCurrent','name','points','rank']);
- assert(rows.every((r,i)=>!i||rows[i-1].points>=r.points));
+ assert(rows.every((r,i)=>!i||BigInt(rows[i-1].points)>=BigInt(r.points)));
  await archiveStudent(db,b.id);rows=await rankings(db,a.id);assert(!rows.some(r=>r.name===b.displayName));
  await reactivateStudent(db,b.id);assert.equal((await rankings(db,a.id)).find(r=>r.name===b.displayName)!.points,50);
 });
