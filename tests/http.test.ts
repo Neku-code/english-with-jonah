@@ -14,7 +14,7 @@ before(async () => {
   const port = (probe.address() as { port: number }).port; await new Promise<void>(done => probe.close(() => done()));
   base = `http://127.0.0.1:${port}`;
   app = spawn(process.execPath, ['node_modules/vite/bin/vite.js', '--host', '127.0.0.1', '--port', String(port), '--strictPort'], {
-    env: { ...process.env, DATABASE_URL: store.url }, stdio: 'ignore', windowsHide: true
+    env: { ...process.env, DATABASE_URL: store.url, JONAH_TEST_NAMESPACE: `student-${port}` }, stdio: 'ignore', windowsHide: true
   });
   const deadline = Date.now() + 30_000;
   while (Date.now() < deadline) {

@@ -60,6 +60,10 @@ read DTOs, publication, migration, teacher actions, balance arithmetic and tests
   students and cross-origin requests cannot adjust points. Receipts are immutable.
 - Existing published content/attempts are preserved. Old student attempt links
   redirect to the latest lesson; original work remains available to the teacher.
+- Native CI exposed shared generated runtime/environment files between the two
+  parallel HTTP test servers. Each server now gets its own SvelteKit output and
+  Vite cache namespace, while the suites remain parallel. This addresses the
+  isolation cause rather than weakening assertions or hiding them serially.
 - No fourth recurrence of an unresolved defect was reached. Fixes were checked
   through types, service-level regression cases and independent source review.
 
