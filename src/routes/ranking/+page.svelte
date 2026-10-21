@@ -24,7 +24,7 @@
     <Coin amount={row.points} /><p class="podium-rank">{row.rank}<span>-o‘rin</span></p>
    </article>
   {/each}</div>{/if}
-  {#if current}<section class="rank-challenge" aria-label="Sizning natijangiz"><div class="rank-current-number">#{current.rank}</div><div><p class="eyebrow">SIZNING NATIJANGIZ</p><h2>{#if gap}Yana {gap.coins} coin — {gap.rank}-o‘ringa.{:else}Siz birinchi o‘rindasiz!{/if}</h2><p>{gap?'Bitta dars: +50. Bitta lug‘at testi: +30.':'O‘rganishda davom eting. Har bir tugallangan dars — yangi yutuq.'}</p></div><a href="/home" class="button button--primary">Darslar <ArrowRight size={18} aria-hidden="true" /></a></section>{/if}
+  {#if current}<section class="rank-challenge" aria-label="Sizning natijangiz"><div class="rank-current-number" aria-label={`Sizning o‘rningiz: ${current.rank}`}>#{current.rank}</div><div><p class="eyebrow">SIZNING NATIJANGIZ</p><h2>{#if gap}Yana {gap.coins} coin — {gap.rank}-o‘ringa.{:else}Siz birinchi o‘rindasiz!{/if}</h2><p>{gap?'Bitta dars: +50. Bitta lug‘at testi: +30.':'O‘rganishda davom eting. Har bir tugallangan dars — yangi yutuq.'}</p></div><a href="/home" class="button button--primary">Darslar <ArrowRight size={18} aria-hidden="true" /></a></section>{/if}
   <div class="student-section-heading"><h2>Guruh reytingi</h2><span class="muted">{data.rows.length} o‘quvchi · jami coin</span></div>
   <ol class="ranking-list" aria-label="O‘quvchilar reytingi">{#each data.rows as row}
    <li class:ranking-current={row.isCurrent} aria-current={row.isCurrent?'true':undefined}><span class="ranking-place" aria-label={`${row.rank}-o‘rin`}>{row.rank}</span><span class="ranking-name">{row.name}{#if row.isCurrent}<small>Siz</small>{/if}</span><Coin amount={row.points} /></li>
