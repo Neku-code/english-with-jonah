@@ -11,5 +11,5 @@ const testRoot = testNamespace ? `.artifacts/http-apps/${testNamespace}` : undef
 
 export default defineConfig({
   ...(testRoot ? { cacheDir: `${testRoot}/vite` } : {}),
-  plugins: [sveltekit({ adapter: adapter(), preprocess: vitePreprocess(), ...(testRoot ? { outDir: `${testRoot}/svelte-kit` } : {}) })]
+  plugins: [sveltekit({ adapter: adapter({ regions: ['sin1'] }), preprocess: vitePreprocess(), ...(testRoot ? { outDir: `${testRoot}/svelte-kit` } : {}) })]
 });

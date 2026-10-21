@@ -1,8 +1,8 @@
 <script lang="ts">
-  import '@fontsource/dm-sans/400.css';
-  import '@fontsource/dm-sans/500.css';
-  import '@fontsource/dm-sans/600.css';
-  import '@fontsource/kalam/700.css';
+  import '@fontsource/dm-sans/latin-400.css';
+  import '@fontsource/dm-sans/latin-500.css';
+  import '@fontsource/dm-sans/latin-600.css';
+  import '@fontsource/kalam/latin-700.css';
   import '../app.css';
   import '../student.css';
   import '../teacher.css';
@@ -31,7 +31,7 @@
    {:else if teacher}<span class="header-note teacher-mode"><MoonStars size={20} aria-hidden="true" /> O‘qituvchi xonasi</span>
    {:else}<span class="header-note">Ingliz tilini birgalikda o‘rganamiz.</span>{/if}
   </header>
-  <div class="navigation-status" role="status">{navigating.to ? 'Yuklanmoqda…' : ''}</div>
+  <div class="navigation-status" class:is-loading={!!navigating.to} role="status">{navigating.to ? 'Yuklanmoqda…' : ''}</div>
   <main id="main" tabindex="-1">{@render children()}</main>
   <footer>English with Jonah <span>Har kuni bir qadam oldinga.</span></footer>
  </div>

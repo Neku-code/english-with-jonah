@@ -1,6 +1,6 @@
 <script lang="ts">
  import {onMount,tick,untrack} from 'svelte';
- import {beforeNavigate,goto,invalidateAll,replaceState} from '$app/navigation';
+ import {beforeNavigate,goto,replaceState} from '$app/navigation';
  import {page} from '$app/state';
  import Coin from '#lib/components/Coin.svelte';
  import List from 'phosphor-svelte/lib/List';
@@ -32,6 +32,7 @@
  let positionQueue:LatestWriteQueue<{sectionId:string;panels:Record<string,string>}>|null=null;
  let pendingCheck:{taskId:string;response:string;revision:number;requestId:string}|null=null;
  let loadedKey='',leaving=false;
+ let loadedPrep=false;
  const content=$derived(data.content),tasks=$derived(tasksOf(content)),exam=$derived(content.kind==='exam'),submitted=$derived(attempt?.status==='submitted');
  const window=$derived(content.sections[Math.min(windowIndex,content.sections.length-1)]);
  const currentTask=$derived(window.items.find((item):item is Task=>item.kind==='task'));
@@ -78,7 +79,7 @@
   if(dirty.length)saveTimer=setTimeout(()=>void flush(),650);
  }
  onMount(()=>{
-  loadedKey=data.lesson.id+':'+data.attempt?.id;initialize();
+  loadedKey=data.lesson.id+':'+data.attempt?.id;loadedPrep=page.url.searchParams.has('vocab');initialize();
   const online=()=>{void flush();void positionQueue?.flush().catch(e=>message=(e as Error).message);};
   addEventListener('online',online);
   return()=>{cache();clearTimeout(saveTimer);positionQueue?.stop();removeEventListener('online',online);};
@@ -97,9 +98,11 @@
  });
  $effect(()=>{
   const nextKey=data.lesson.id+':'+data.attempt?.id;
-  if(hydrated&&loadedKey!==nextKey){loadedKey=nextKey;attempt=data.attempt;prep=!data.attempt||page.url.searchParams.has('vocab');ready=!data.lesson.needsVocabulary;vocabMastered=data.lesson.vocabularyMastered;coinDelta=0;initialize();}
+  const nextPrep=page.url.searchParams.has('vocab');
+  if(hydrated&&loadedKey!==nextKey){loadedKey=nextKey;attempt=data.attempt;prep=!data.attempt||page.url.searchParams.has('vocab');ready=!data.lesson.needsVocabulary;vocabMastered=data.lesson.vocabularyMastered;coinDelta=0;loadedPrep=nextPrep;initialize();}
+  else if(hydrated&&loadedPrep!==nextPrep){loadedPrep=nextPrep;prep=nextPrep||!attempt;}
  });
- function change(task:Task,value:string){drafts={...drafts,[task.id]:value};if(!dirty.includes(task.id))dirty=[...dirty,task.id];cache();clearTimeout(saveTimer);saveTimer=setTimeout(()=>void flush(),650);}
+ function change(task:Task,value:string){if(checking)return;drafts={...drafts,[task.id]:value};if(!dirty.includes(task.id))dirty=[...dirty,task.id];cache();clearTimeout(saveTimer);saveTimer=setTimeout(()=>void flush(),650);}
  async function flush():Promise<boolean>{
   if(savePromise)return savePromise;
   if(!attempt||submitted||!dirty.length)return true;
@@ -129,7 +132,7 @@
  }
  function checkpoint(){cache();if(!submitted)positionQueue?.enqueue({sectionId:window.id,panels:{...panels}});}
  async function move(index:number){
-  if(index<0||index>=content.sections.length||(index>windowIndex&&!canAdvance))return;
+  if(checking||busy||index<0||index>=content.sections.length||(index>windowIndex&&!canAdvance))return;
   // The next window is local state. Persistence never delays the transition.
   windowIndex=index;checkpoint();await tick();heading?.focus();heading?.scrollIntoView({block:'start',behavior:'instant'});
  }
@@ -165,7 +168,9 @@
   try{
    if(!await flush())return;
    await request(`/api/attempts/${attempt.id}/submit`,{});try{localStorage.removeItem(storageKey);}catch{}
-   await invalidateAll();attempt=data.attempt;review=false;
+   const response=await fetch(`/api/attempts/${attempt.id}`);
+   if(!response.ok)throw new Error('Natijani yuklab bo‘lmadi. Qayta urinib ko‘ring.');
+   attempt=await response.json();review=false;
   }catch(e){message=(e as Error).message;}finally{busy=false;}
  }
  async function leaveLesson(href:string){
@@ -181,9 +186,9 @@
 
 <svelte:head><title>{content.number} · {content.title} · English with Jonah</title></svelte:head>
 <div class="learning-page compact-learning">
- <div class="learning-top"><a href="/home" onclick={e=>switchLesson(e,'/home')}>← Darslar</a><span>UNIT 1 · TO BE</span><a href="/profile" onclick={e=>switchLesson(e,'/profile')}>Profil</a><button class="mobile-lessons" onclick={()=>navigationDialog.showModal()}><List size={16} aria-hidden="true" /> Darslar</button></div>
+ <div class="learning-top"><a href="/home" onclick={e=>switchLesson(e,'/home')}>← Darslar</a><span>{data.unit.title}</span><a href="/profile" onclick={e=>switchLesson(e,'/profile')}>Profil</a><button class="mobile-lessons" onclick={()=>navigationDialog.showModal()}><List size={16} aria-hidden="true" /> Darslar</button></div>
  <div class="learning-workspace">
-  <aside class="lesson-sidebar"><p class="eyebrow">UNIT 1</p><h2>To Be</h2><p class="sidebar-progress">{data.unit.finished+(lessonJustFinished?1:0)} / {data.unit.total} dars tugallangan<br />{data.unit.points+coinDelta} / {data.unit.maximumPoints} coin</p><nav aria-label="Unit 1 darslari">{#each data.unit.lessons as l}<a href={l.href} data-sveltekit-preload-data="hover" aria-current={l.id===data.lesson.id?'page':undefined} onclick={e=>switchLesson(e,l.href)}><span class="sidebar-number">1.{l.position}</span><span>{l.title.split(' · ').at(-1)}<small>{l.mastered?'★ O‘zlashtirilgan':l.completed||l.id===data.lesson.id&&submitted&&!exam?'✓ Tugallangan':l.kind==='final_exam'?'Yakuniy imtihon':`${l.taskCount} ta mashq`}</small></span></a>{/each}</nav></aside>
+  <aside class="lesson-sidebar"><p class="eyebrow">UNIT {data.unit.position}</p><h2>{data.unit.title.replace(/^Unit\s*\d+\s*[:·—–-]?\s*/i,'')}</h2><p class="sidebar-progress">{data.unit.finished+(lessonJustFinished?1:0)} / {data.unit.total} dars tugallangan<br />{data.unit.points+coinDelta} / {data.unit.maximumPoints} coin</p><nav aria-label={`Unit ${data.unit.position} darslari`}>{#each data.unit.lessons as l}<a href={l.href} data-sveltekit-preload-data="hover" aria-current={l.id===data.lesson.id?'page':undefined} onclick={e=>switchLesson(e,l.href)}><span class="sidebar-number">{data.unit.position}.{l.position}</span><span>{l.title.split(' · ').at(-1)}<small>{l.mastered?'★ O‘zlashtirilgan':l.completed||l.id===data.lesson.id&&submitted&&!exam?'✓ Tugallangan':l.kind==='final_exam'?'Yakuniy imtihon':`${l.taskCount} ta mashq`}</small></span></a>{/each}</nav></aside>
   <div class="lesson-main">
    <header class="lesson-title"><div><p class="eyebrow">{exam?'YAKUNIY IMTIHON':'DARS'} {content.number}</p><h1>{content.title}</h1><Coin amount={data.lesson.coins+coinDelta} /></div>{#if !exam||submitted}<button class="button button--secondary" disabled={busy||!!checking} onclick={()=>vocabDialog.showModal()}><Translate size={17} aria-hidden="true" /> Lug‘at</button>{/if}</header>
    {#if message}<div class="feedback feedback--error save-error" role="alert"><p>{message}</p><button class="button button--secondary" onclick={()=>{void flush();void positionQueue?.flush().catch(e=>message=(e as Error).message);}}>Qayta saqlash</button><a href={page.url.pathname+page.url.search}>Qayta yuklash</a></div>{/if}
@@ -199,7 +204,7 @@
      <div class="section-material">{#each window.items as item}
       {#if item.kind==='text'}<div class="lesson-text" id={item.id}>{#each item.text.split('\n') as line}<p>{line}</p>{/each}</div>
       {:else if item.kind==='audio'}<LessonAudio attemptId={attempt.id} {exam} {submitted} initialPlays={audioPlays} initialStatus={audioStatus} onstate={(plays,status)=>{audioPlays=plays;audioStatus=status;}} />
-      {:else}<LessonTask task={item} value={drafts[item.id]??'{}'} onchange={value=>change(item,value)} oncheck={()=>check(item)} onfocus={()=>focusTask(item)} onimage={async()=>{focusTask(item);await tick();await illustration?.open();}} feedback={feedback(item)} disabled={submitted} busy={checking===item.id} {exam} />{/if}
+      {:else}<LessonTask task={item} value={drafts[item.id]??'{}'} onchange={value=>change(item,value)} oncheck={()=>check(item)} onfocus={()=>focusTask(item)} onimage={async()=>{focusTask(item);await tick();await illustration?.open();}} feedback={feedback(item)} disabled={submitted} inputBusy={!!checking} busy={checking===item.id} {exam} />{/if}
      {/each}</div>
     </section>{/key}
     <div class="lesson-bottom"><button class="button button--secondary" disabled={windowIndex===0} onclick={()=>move(windowIndex-1)}>← Oldingi</button><span>{windowIndex+1} / {content.sections.length}</span>{#if windowIndex<content.sections.length-1}<button class="button button--primary" disabled={!canAdvance} onclick={()=>move(windowIndex+1)}>Keyingi →</button>{:else if exam&&!submitted}<button class="button button--primary" onclick={()=>review=true}>Imtihonni yakunlash</button>{:else if submitted}<a class="button button--primary" href="/home" onclick={e=>switchLesson(e,'/home')}>Darslar →</a>{:else}<span role="status">Mashqni to‘g‘ri bajaring.</span>{/if}</div>
@@ -208,5 +213,5 @@
   </div>
  </div>
 </div>
-<dialog class="lesson-drawer" bind:this={navigationDialog} aria-label="Dars tanlash"><div class="drawer-heading"><h2>Unit 1 · To Be</h2><button class="button button--secondary" onclick={()=>navigationDialog.close()}>Yopish ×</button></div><nav>{#each data.unit.lessons as l}<a href={l.href} onclick={e=>switchLesson(e,l.href)} aria-current={l.id===data.lesson.id?'page':undefined}>{l.title}<small>{l.completed?'✓ Tugallangan':l.kind==='lesson'?`${l.taskCount} ta mashq`:'Yakuniy imtihon'}</small></a>{/each}</nav></dialog>
+<dialog class="lesson-drawer" bind:this={navigationDialog} aria-label="Dars tanlash"><div class="drawer-heading"><h2>{data.unit.title}</h2><button class="button button--secondary" onclick={()=>navigationDialog.close()}>Yopish ×</button></div><nav>{#each data.unit.lessons as l}<a href={l.href} onclick={e=>switchLesson(e,l.href)} aria-current={l.id===data.lesson.id?'page':undefined}>{l.title}<small>{l.completed?'✓ Tugallangan':l.kind==='lesson'?`${l.taskCount} ta mashq`:'Yakuniy imtihon'}</small></a>{/each}</nav></dialog>
 <dialog class="vocab-dialog" bind:this={vocabDialog} aria-label="Lug‘at"><div class="drawer-heading"><h2>Vocab {content.number}</h2><button class="button button--primary" onclick={()=>vocabDialog.close()}>Yopish ×</button></div>{#if !exam}<button class="button button--secondary" onclick={()=>{vocabDialog.close();prep=true;}}>Lug‘at testi · {vocabMastered?'O‘zlashtirilgan':'+30 coin'} →</button>{/if}<dl class="vocabulary-list">{#each content.vocabulary as word}<div><dt lang="en">{word.english}</dt><dd>{word.uzbek}</dd></div>{/each}</dl></dialog>

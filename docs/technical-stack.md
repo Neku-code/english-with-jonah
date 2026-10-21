@@ -60,3 +60,11 @@ retain transactional ownership/revision checks. Window navigation updates
 client state before an asynchronous coalescing checkpoint, and starting can
 return player bootstrap data directly. No shared student-data cache is added.
 See `docs/check-2.md` for the diagnosis and rollout.
+
+## v0.2 authorization — 21 October 2026
+
+The owner now explicitly authorizes Unit 2 Present Simple, matching vocabulary,
+ranking/navigation/asset improvements, performance fixes, and production deployment.
+This supersedes earlier statements limiting scope to Unit 1. See
+[v0.2 details](v0.2-present-simple.md)
+for the five lessons, final exam, 450-coin unit budget, publication and validation.

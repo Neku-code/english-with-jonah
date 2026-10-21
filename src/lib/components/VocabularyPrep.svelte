@@ -26,7 +26,7 @@
   <button class="button button--primary" disabled={busy||working||needsLessons} onclick={reviewed}>{busy||working?'Kutilmoqda…':lesson.kind==='exam'?'Testni boshlash':ready?'Darsni ochish →':'Ko‘rib chiqdim'}</button>
   {#if lesson.kind!=='exam'}<button class="button button--secondary" disabled={working||busy} onclick={start}>{mastered?'Testni qayta topshirish':hasSession?'Testni davom ettirish':'Test topshirish'}</button>{/if}
  </div>
- {#if needsLessons}<p class="notice">Yakuniy testdan oldin 1.1–1.5 darslarning barcha mashqlarini to‘g‘ri bajaring.</p>{/if}
+ {#if needsLessons}<p class="notice">Yakuniy testdan oldin {lesson.number.split('.')[0]}.1–{lesson.number.split('.')[0]}.5 darslarning barcha mashqlarini to‘g‘ri bajaring.</p>{/if}
  {#if message}<p class="feedback feedback--error" role="alert">{message}</p>{/if}
  {#if lesson.kind!=='exam'}
   {#if mastered}<p class="feedback">★ Lug‘at o‘zlashtirilgan · 30 coin olingan. Qayta topshirish qo‘shimcha coin bermaydi.</p>

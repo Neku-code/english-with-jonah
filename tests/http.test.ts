@@ -166,3 +166,22 @@ test('HTTP student navigation, vocabulary library and profile retain access and 
  const teacherHome = await (await teacher.fetch('/admin')).text();
  assert.match(teacherHome, /teacher-frame/); assert.doesNotMatch(teacherHome, /<nav class="student-nav"/);
 });
+
+test('HTTP Present Simple lesson loader owns attempts and returns unit-specific content without grading keys',async()=>{
+ const {publishUnit2}=await import('../scripts/publish-unit2');
+ const {stableUuid}=await import('../src/lib/server/learning/unit1');
+ // Synthetic earlier units occupy positions; this isolated test removes only
+ // that position collision before publishing the real Unit 2 curriculum.
+ await store.pool.query("UPDATE units SET position=position+100 WHERE position>=2");
+ await publishUnit2(store.db);
+ const learner=new Browser(),other=new Browser();
+ await learner.form('/',{name:'Unit Two HTTP learner'});await other.form('/',{name:'Unit Two HTTP peer'});
+ const lesson=stableUuid('u2-l1');
+ const preparation=await learner.fetch(`/learn/${lesson}?vocab`);assert.equal(preparation.status,200);
+ const html=await preparation.text();assert.match(html,/Present Simple/);assert.match(html,/Vocab 2.1|VOCAB 2.1/);assert.doesNotMatch(html,/acceptedTranslations|"accepted"|UNIT 1 · TO BE/);
+ const start=await learner.json(`/api/lessons/${lesson}/attempts`,{reviewVocabulary:true,bootstrap:true});assert.equal(start.status,200);
+ const {attempt}=await start.json();assert.ok(attempt.id);
+ const page=await learner.fetch(`/learn/${lesson}?attempt=${attempt.id}`);assert.equal(page.status,200);assert.match(await page.text(),/Daily routines/);
+ assert.equal((await other.fetch(`/learn/${lesson}?attempt=${attempt.id}`)).status,404);
+ const vocab=await learner.fetch('/vocabulary');assert.equal(vocab.status,200);assert.match(await vocab.text(),/get up/);
+});

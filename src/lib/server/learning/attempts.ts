@@ -9,7 +9,7 @@ import type { AttemptResult } from './contracts';
 import { answered, responseParts } from './authored-grading';
 import { awardLearningCoins } from './rewards';
 
-const result = (a: typeof lessonAttempts.$inferSelect): AttemptResult => ({ id: a.id, status: a.status, earnedPoints: a.earnedPoints, maxPoints: a.maxPoints, pendingReview: a.pendingReview });
+const result = (a: Pick<typeof lessonAttempts.$inferSelect, 'id'|'status'|'earnedPoints'|'maxPoints'|'pendingReview'>): AttemptResult => ({ id: a.id, status: a.status, earnedPoints: a.earnedPoints, maxPoints: a.maxPoints, pendingReview: a.pendingReview });
 async function touch(tx: Connection, studentId: string) { await tx.update(students).set({ lastLearningAt: new Date() }).where(eq(students.id, studentId)); }
 export async function ownedAttempt(tx: Connection, studentId: string, attemptId: string) {
   const [attempt] = await tx.select().from(lessonAttempts).where(and(eq(lessonAttempts.id, uuid(attemptId)), eq(lessonAttempts.studentId, studentId))).for('update');
@@ -62,7 +62,9 @@ export async function loadAttempt(db: Database, studentId: string, attemptId: st
     if(!attempt)return reject(404,'ATTEMPT_NOT_FOUND','Urinish topilmadi.');
     return readAttempt(tx,attempt.attempt,attempt.kind);
 }
-async function readAttempt(tx: Connection, attempt: typeof lessonAttempts.$inferSelect, kind: 'lesson'|'final_exam') {
+export type ReadableAttempt = Pick<typeof lessonAttempts.$inferSelect, 'id'|'studentId'|'lessonId'|'versionId'|'status'|'earnedPoints'|'maxPoints'|'pendingReview'>;
+// Callers must first verify session ownership and publication, as loadAttempt does.
+export async function readAttempt(tx: Connection, attempt: ReadableAttempt, kind: 'lesson'|'final_exam') {
  type ReadQuestion=Pick<typeof questions.$inferSelect,'id'|'exerciseType'|'content'|'grading'|'maxPoints'|'position'>;
  const {rows:[snapshot]}=await tx.execute<{
   questions:ReadQuestion[];
@@ -153,6 +155,7 @@ export async function submitLockedAttempt(tx: Connection, studentId: string, att
     const [workspace]=await tx.select().from(studyWorkspaces).where(eq(studyWorkspaces.attemptId,attempt.id));
     const checked=await tx.select().from(practiceChecks).where(eq(practiceChecks.attemptId,attempt.id));
     let earned = 0, maximum = 0, pending = false, allAnswered = true;
+    const gradedAnswers: (typeof answers.$inferInsert)[] = [];
     for (const q of qs) {
       const answer = saved.find(a => a.questionId === q.id);
       if (!answered(answer?.response,q.content.task?.parts.map(p=>p.id))) allAnswered = false;
@@ -161,10 +164,14 @@ export async function submitLockedAttempt(tx: Connection, studentId: string, att
       if(audioMissing) allAnswered=false;
       const graded = audioMissing && version.content.automatic === true ? {earnedPoints:0,reviewStatus:'graded' as const} : audioMissing ? {earnedPoints:null,reviewStatus:'pending' as const} : grade(q.grading, answer?.response, q.maxPoints);
       earned += graded.earnedPoints ?? 0; maximum += q.maxPoints; pending ||= graded.reviewStatus === 'pending';
-      await tx.insert(answers).values({ attemptId: attempt.id, studentId, versionId: attempt.versionId, questionId: q.id, response: answer?.response ?? '', ...graded })
-        .onConflictDoUpdate({ target: [answers.attemptId, answers.questionId], set: graded });
+      gradedAnswers.push({ attemptId: attempt.id, studentId, versionId: attempt.versionId, questionId: q.id, response: answer?.response ?? '', ...graded });
     }
     if(version.completionPolicy.mode==='practice'&&!isCompleted(version.completionPolicy,earned,maximum,pending,allAnswered))return reject(409,'PRACTICE_INCOMPLETE','Barcha mashqlarni to‘g‘ri bajaring. Xatolarni tuzatishingiz mumkin.');
+    // One write for all marks. Preserve the response/revision on existing rows.
+    await tx.insert(answers).values(gradedAnswers).onConflictDoUpdate({
+      target: [answers.attemptId, answers.questionId],
+      set: { earnedPoints: sql`excluded.earned_points`, reviewStatus: sql`excluded.review_status` }
+    });
     const now = new Date();
     const [submitted] = await tx.update(lessonAttempts).set({ status: 'submitted', submittedAt: now, updatedAt: now, earnedPoints: earned, maxPoints: maximum, pendingReview: pending }).where(eq(lessonAttempts.id, attempt.id)).returning();
     if (lesson.kind === 'lesson' && isCompleted(version.completionPolicy, earned, maximum, pending, allAnswered)) {

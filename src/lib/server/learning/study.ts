@@ -8,7 +8,9 @@ import {available,ownedAttempt,saveAnswerLocked,submitLockedAttempt} from './att
 import {grade} from './grading';
 import {normalizeAuthored} from './authored-grading';
 import type {LessonContent} from '../../learning/types';
-import audioRegistry from './unit1-audio.json';
+import unit1Audio from './unit1-audio.json';
+import unit2Audio from './unit2-audio.json';
+const audioRegistry = { ...unit1Audio, ...unit2Audio };
 
 export async function checkPractice(db:Database,studentId:string,attemptId:string,input:Record<string,unknown>) {
  const questionId=uuid(input.questionId),requestId=uuid(input.requestId);

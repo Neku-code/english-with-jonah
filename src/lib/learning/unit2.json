@@ -1,0 +1,2986 @@
+[
+  {
+    "id": "u2-l1",
+    "number": "2.1",
+    "title": "Daily routines · Kundalik hayot",
+    "version": "2026-10-21.1",
+    "kind": "practice",
+    "flow": "windows",
+    "automatic": true,
+    "sections": [
+      {
+        "id": "u2-l1-explain-1",
+        "title": "Har kuni nima qilasiz?",
+        "items": [
+          {
+            "kind": "text",
+            "id": "u2-l1-explain-1-text",
+            "text": "Maya: I have breakfast every morning. — Men har kuni ertalab nonushta qilaman.\nBen: I read in the library. — Men kutubxonada kitob o‘qiyman.\nPresent Simple odatlar, takrorlanadigan ishlar va umumiy faktlarni bildiradi. Bu ayni hozir bo‘layotgan ishni ifodalash uchun emas.\nRasmni kuzating. Har bir ish uchun bitta oddiy gap ayting."
+          },
+          {
+            "kind": "audio",
+            "id": "u2-l1-audio"
+          }
+        ],
+        "imageId": "u2-l1-routines"
+      },
+      {
+        "id": "u2-l1-q1-window",
+        "title": "Mashq 1",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l1-q1",
+            "number": 1,
+            "prompt": "I ___ English every day.",
+            "control": "choice",
+            "parts": [
+              {
+                "id": "u2-l1-q1-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false,
+            "options": [
+              {
+                "id": "A",
+                "label": "study"
+              },
+              {
+                "id": "B",
+                "label": "studies"
+              },
+              {
+                "id": "C",
+                "label": "am study"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "u2-l1-q2-window",
+        "title": "Mashq 2",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l1-q2",
+            "number": 2,
+            "prompt": "Rasmning yuqori o‘ngida qaysi mashg‘ulot bor?",
+            "control": "choice",
+            "parts": [
+              {
+                "id": "u2-l1-q2-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false,
+            "options": [
+              {
+                "id": "A",
+                "label": "have breakfast"
+              },
+              {
+                "id": "B",
+                "label": "read in the library"
+              },
+              {
+                "id": "C",
+                "label": "play basketball"
+              }
+            ],
+            "imageId": "u2-l1-routines"
+          }
+        ]
+      },
+      {
+        "id": "u2-l1-q3-window",
+        "title": "Mashq 3",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l1-q3",
+            "number": 3,
+            "prompt": "We ___ in Tashkent. (yashamoq)",
+            "control": "text",
+            "parts": [
+              {
+                "id": "u2-l1-q3-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false
+          }
+        ]
+      },
+      {
+        "id": "u2-l1-q4-window",
+        "title": "Mashq 4",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l1-q4",
+            "number": 4,
+            "prompt": "So‘zlarni tartibga qo‘yib, gap tuzing.",
+            "control": "order",
+            "parts": [
+              {
+                "id": "u2-l1-q4-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false,
+            "tokens": [
+              {
+                "id": "u2-l1-q4-t1",
+                "label": "have"
+              },
+              {
+                "id": "u2-l1-q4-t3",
+                "label": "every"
+              },
+              {
+                "id": "u2-l1-q4-t0",
+                "label": "I"
+              },
+              {
+                "id": "u2-l1-q4-t2",
+                "label": "breakfast"
+              },
+              {
+                "id": "u2-l1-q4-t4",
+                "label": "morning"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "u2-l1-explain-2",
+        "title": "I / you / we / they + fe’l",
+        "items": [
+          {
+            "kind": "text",
+            "id": "u2-l1-explain-2-text",
+            "text": "I study English. — Men ingliz tilini o‘rganaman.\nYou study English. — Siz ingliz tilini o‘rganasiz.\nWe work. — Biz ishlaymiz. They live in Tashkent. — Ular Toshkentda yashaydilar.\nI, you, we, they bilan fe’lga -s qo‘shilmaydi. I am study emas, I study."
+          }
+        ]
+      },
+      {
+        "id": "u2-l1-q5-window",
+        "title": "Mashq 5",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l1-q5",
+            "number": 5,
+            "prompt": "Qaysi gap to‘g‘ri?",
+            "control": "choice",
+            "parts": [
+              {
+                "id": "u2-l1-q5-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false,
+            "options": [
+              {
+                "id": "A",
+                "label": "I am work every day."
+              },
+              {
+                "id": "B",
+                "label": "I works every day."
+              },
+              {
+                "id": "C",
+                "label": "I work every day."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "u2-l1-q6-window",
+        "title": "Mashq 6",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l1-q6",
+            "number": 6,
+            "prompt": "They ___ basketball. (o‘ynamoq)",
+            "control": "text",
+            "parts": [
+              {
+                "id": "u2-l1-q6-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false
+          }
+        ]
+      },
+      {
+        "id": "u2-l1-q7-window",
+        "title": "Mashq 7",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l1-q7",
+            "number": 7,
+            "prompt": "You ___ English. (gapirmoq)",
+            "control": "text",
+            "parts": [
+              {
+                "id": "u2-l1-q7-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false
+          }
+        ]
+      },
+      {
+        "id": "u2-l1-q8-window",
+        "title": "Mashq 8",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l1-q8",
+            "number": 8,
+            "prompt": "So‘zlarni tartibga qo‘yib, gap tuzing.",
+            "control": "order",
+            "parts": [
+              {
+                "id": "u2-l1-q8-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false,
+            "tokens": [
+              {
+                "id": "u2-l1-q8-t1",
+                "label": "read"
+              },
+              {
+                "id": "u2-l1-q8-t3",
+                "label": "the"
+              },
+              {
+                "id": "u2-l1-q8-t0",
+                "label": "We"
+              },
+              {
+                "id": "u2-l1-q8-t2",
+                "label": "in"
+              },
+              {
+                "id": "u2-l1-q8-t4",
+                "label": "library"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "u2-l1-explain-3",
+        "title": "Modelni o‘zgartiring",
+        "items": [
+          {
+            "kind": "text",
+            "id": "u2-l1-explain-3-text",
+            "text": "I play basketball every day. → We play basketball every day.\nI read in the library. → They read in the library.\nEvery day — har kuni. In the morning — ertalab.\nTo Be bilan farqi: I am a student — kimman? I study English — nima qilaman?"
+          }
+        ]
+      },
+      {
+        "id": "u2-l1-q9-window",
+        "title": "Mashq 9",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l1-q9",
+            "number": 9,
+            "prompt": "Every day nimani bildiradi?",
+            "control": "choice",
+            "parts": [
+              {
+                "id": "u2-l1-q9-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false,
+            "options": [
+              {
+                "id": "A",
+                "label": "har kuni"
+              },
+              {
+                "id": "B",
+                "label": "hozir"
+              },
+              {
+                "id": "C",
+                "label": "kecha"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "u2-l1-q10-window",
+        "title": "Mashq 10",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l1-q10",
+            "number": 10,
+            "prompt": "Tarjima qiling: Men ingliz tilini o‘rganaman.",
+            "control": "text",
+            "parts": [
+              {
+                "id": "u2-l1-q10-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false
+          }
+        ]
+      },
+      {
+        "id": "u2-l1-q11-window",
+        "title": "Mashq 11",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l1-q11",
+            "number": 11,
+            "prompt": "I work. Gapini We bilan qayta yozing.",
+            "control": "text",
+            "parts": [
+              {
+                "id": "u2-l1-q11-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false
+          }
+        ]
+      },
+      {
+        "id": "u2-l1-q12-window",
+        "title": "Mashq 12",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l1-q12",
+            "number": 12,
+            "prompt": "Qaysi gap odatni bildiradi?",
+            "control": "choice",
+            "parts": [
+              {
+                "id": "u2-l1-q12-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false,
+            "options": [
+              {
+                "id": "A",
+                "label": "I am tired."
+              },
+              {
+                "id": "B",
+                "label": "I read every morning."
+              },
+              {
+                "id": "C",
+                "label": "I am a student."
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "images": [
+      {
+        "id": "u2-l1-routines",
+        "url": "/lessons/unit2/2026-10-21.1/routines-960.webp",
+        "width": 960,
+        "height": 960,
+        "variants": [
+          {
+            "url": "/lessons/unit2/2026-10-21.1/routines-640.webp",
+            "width": 640,
+            "height": 640
+          },
+          {
+            "url": "/lessons/unit2/2026-10-21.1/routines-960.webp",
+            "width": 960,
+            "height": 960
+          },
+          {
+            "url": "/lessons/unit2/2026-10-21.1/routines-1280.webp",
+            "width": 1280,
+            "height": 1280
+          }
+        ],
+        "original": "/lessons/unit2/2026-10-21.1/routines-1280.webp",
+        "alt": "To‘rtta kundalik mashg‘ulot: nonushta, kutubxonada kitob o‘qish, velosiped haydash va basketbol o‘ynash.",
+        "models": [
+          "Maya: I have breakfast every morning.",
+          "Ben: I read in the library.",
+          "Emma: I ride a bike every day.",
+          "Friends: We play basketball."
+        ],
+        "panels": []
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "u2-l1-v1",
+        "english": "get up",
+        "uzbek": "uyg‘onmoq"
+      },
+      {
+        "id": "u2-l1-v2",
+        "english": "have breakfast",
+        "uzbek": "nonushta qilmoq"
+      },
+      {
+        "id": "u2-l1-v3",
+        "english": "study",
+        "uzbek": "o‘qimoq"
+      },
+      {
+        "id": "u2-l1-v4",
+        "english": "work",
+        "uzbek": "ishlamoq"
+      },
+      {
+        "id": "u2-l1-v5",
+        "english": "live",
+        "uzbek": "yashamoq"
+      },
+      {
+        "id": "u2-l1-v6",
+        "english": "read",
+        "uzbek": "o‘qimoq"
+      },
+      {
+        "id": "u2-l1-v7",
+        "english": "play basketball",
+        "uzbek": "basketbol o‘ynamoq"
+      },
+      {
+        "id": "u2-l1-v8",
+        "english": "ride a bike",
+        "uzbek": "velosiped haydamoq"
+      },
+      {
+        "id": "u2-l1-v9",
+        "english": "every day",
+        "uzbek": "har kuni"
+      },
+      {
+        "id": "u2-l1-v10",
+        "english": "in the morning",
+        "uzbek": "ertalab"
+      },
+      {
+        "id": "u2-l1-v11",
+        "english": "library",
+        "uzbek": "kutubxona"
+      },
+      {
+        "id": "u2-l1-v12",
+        "english": "speak",
+        "uzbek": "gapirmoq"
+      }
+    ],
+    "audioId": "u2-l1-audio"
+  },
+  {
+    "id": "u2-l2",
+    "number": "2.2",
+    "title": "He / she / it · -s va -es",
+    "version": "2026-10-21.1",
+    "kind": "practice",
+    "flow": "windows",
+    "automatic": true,
+    "sections": [
+      {
+        "id": "u2-l2-explain-1",
+        "title": "Bitta odam haqida",
+        "items": [
+          {
+            "kind": "text",
+            "id": "u2-l2-explain-1-text",
+            "text": "Ben reads in the library. — Ben kutubxonada o‘qiydi.\nEmma rides a bike. — Emma velosiped haydaydi.\nI read. → He reads. We work. → She works.\nHe, she, it yoki bitta odamning ismi bilan tasdiq gapda fe’lga odatda -s qo‘shiladi."
+          },
+          {
+            "kind": "audio",
+            "id": "u2-l2-audio"
+          }
+        ],
+        "imageId": "u2-l2-routines"
+      },
+      {
+        "id": "u2-l2-q1-window",
+        "title": "Mashq 1",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l2-q1",
+            "number": 1,
+            "prompt": "He ___ in the library.",
+            "control": "choice",
+            "parts": [
+              {
+                "id": "u2-l2-q1-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false,
+            "options": [
+              {
+                "id": "A",
+                "label": "read"
+              },
+              {
+                "id": "B",
+                "label": "reads"
+              },
+              {
+                "id": "C",
+                "label": "reading"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "u2-l2-q2-window",
+        "title": "Mashq 2",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l2-q2",
+            "number": 2,
+            "prompt": "She ___ English. (study)",
+            "control": "text",
+            "parts": [
+              {
+                "id": "u2-l2-q2-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false
+          }
+        ]
+      },
+      {
+        "id": "u2-l2-q3-window",
+        "title": "Mashq 3",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l2-q3",
+            "number": 3,
+            "prompt": "So‘zlarni tartibga qo‘yib, gap tuzing.",
+            "control": "order",
+            "parts": [
+              {
+                "id": "u2-l2-q3-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false,
+            "tokens": [
+              {
+                "id": "u2-l2-q3-t1",
+                "label": "rides"
+              },
+              {
+                "id": "u2-l2-q3-t3",
+                "label": "bike"
+              },
+              {
+                "id": "u2-l2-q3-t0",
+                "label": "Emma"
+              },
+              {
+                "id": "u2-l2-q3-t2",
+                "label": "a"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "u2-l2-q4-window",
+        "title": "Mashq 4",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l2-q4",
+            "number": 4,
+            "prompt": "They ___ basketball.",
+            "control": "choice",
+            "parts": [
+              {
+                "id": "u2-l2-q4-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false,
+            "options": [
+              {
+                "id": "A",
+                "label": "plays"
+              },
+              {
+                "id": "B",
+                "label": "play"
+              },
+              {
+                "id": "C",
+                "label": "is play"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "u2-l2-explain-2",
+        "title": "Imlo: -s / -es / -ies",
+        "items": [
+          {
+            "kind": "text",
+            "id": "u2-l2-explain-2-text",
+            "text": "Ko‘p fe’llar: read → reads, play → plays.\n-s, -sh, -ch, -x bilan tugaganlar: wash → washes, watch → watches, fix → fixes.\nGo → goes; do → does. Undosh + y: study → studies. Unli + y: play → plays.\nHave alohida: I have a book. → She has a book."
+          }
+        ]
+      },
+      {
+        "id": "u2-l2-q5-window",
+        "title": "Mashq 5",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l2-q5",
+            "number": 5,
+            "prompt": "Ben ___ TV after class. (watch)",
+            "control": "text",
+            "parts": [
+              {
+                "id": "u2-l2-q5-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false
+          }
+        ]
+      },
+      {
+        "id": "u2-l2-q6-window",
+        "title": "Mashq 6",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l2-q6",
+            "number": 6,
+            "prompt": "She ___ to school. (go)",
+            "control": "text",
+            "parts": [
+              {
+                "id": "u2-l2-q6-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false
+          }
+        ]
+      },
+      {
+        "id": "u2-l2-q7-window",
+        "title": "Mashq 7",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l2-q7",
+            "number": 7,
+            "prompt": "My brother ___ a book. (have)",
+            "control": "text",
+            "parts": [
+              {
+                "id": "u2-l2-q7-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false
+          }
+        ]
+      },
+      {
+        "id": "u2-l2-q8-window",
+        "title": "Mashq 8",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l2-q8",
+            "number": 8,
+            "prompt": "She ___ her hands.",
+            "control": "choice",
+            "parts": [
+              {
+                "id": "u2-l2-q8-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false,
+            "options": [
+              {
+                "id": "A",
+                "label": "washs"
+              },
+              {
+                "id": "B",
+                "label": "wash"
+              },
+              {
+                "id": "C",
+                "label": "washes"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "u2-l2-explain-3",
+        "title": "Ikki modelni solishtiring",
+        "items": [
+          {
+            "kind": "text",
+            "id": "u2-l2-explain-3-text",
+            "text": "My sister studies English. — Singlim ingliz tilini o‘rganadi.\nMy friends study English. — Do‘stlarim ingliz tilini o‘rganadilar.\nHe goes to school. He does homework after class.\nEga ko‘plikmi yoki birlikmi? Avval egani toping, keyin fe’lni tanlang."
+          }
+        ]
+      },
+      {
+        "id": "u2-l2-q9-window",
+        "title": "Mashq 9",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l2-q9",
+            "number": 9,
+            "prompt": "He ___ homework after class. (do)",
+            "control": "text",
+            "parts": [
+              {
+                "id": "u2-l2-q9-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false
+          }
+        ]
+      },
+      {
+        "id": "u2-l2-q10-window",
+        "title": "Mashq 10",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l2-q10",
+            "number": 10,
+            "prompt": "She ___ basketball. (play)",
+            "control": "text",
+            "parts": [
+              {
+                "id": "u2-l2-q10-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false
+          }
+        ]
+      },
+      {
+        "id": "u2-l2-q11-window",
+        "title": "Mashq 11",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l2-q11",
+            "number": 11,
+            "prompt": "I work in a school. Gapini He bilan yozing.",
+            "control": "text",
+            "parts": [
+              {
+                "id": "u2-l2-q11-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false
+          }
+        ]
+      },
+      {
+        "id": "u2-l2-q12-window",
+        "title": "Mashq 12",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l2-q12",
+            "number": 12,
+            "prompt": "Qaysi gap to‘g‘ri?",
+            "control": "choice",
+            "parts": [
+              {
+                "id": "u2-l2-q12-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false,
+            "options": [
+              {
+                "id": "A",
+                "label": "My friends studies English."
+              },
+              {
+                "id": "B",
+                "label": "My friend study English."
+              },
+              {
+                "id": "C",
+                "label": "My friend studies English."
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "images": [
+      {
+        "id": "u2-l2-routines",
+        "url": "/lessons/unit2/2026-10-21.1/routines-960.webp",
+        "width": 960,
+        "height": 960,
+        "variants": [
+          {
+            "url": "/lessons/unit2/2026-10-21.1/routines-640.webp",
+            "width": 640,
+            "height": 640
+          },
+          {
+            "url": "/lessons/unit2/2026-10-21.1/routines-960.webp",
+            "width": 960,
+            "height": 960
+          },
+          {
+            "url": "/lessons/unit2/2026-10-21.1/routines-1280.webp",
+            "width": 1280,
+            "height": 1280
+          }
+        ],
+        "original": "/lessons/unit2/2026-10-21.1/routines-1280.webp",
+        "alt": "To‘rtta kundalik mashg‘ulot: nonushta, kutubxonada kitob o‘qish, velosiped haydash va basketbol o‘ynash.",
+        "models": [
+          "Maya has breakfast.",
+          "Ben reads a book.",
+          "Emma rides a bike.",
+          "The friends play basketball."
+        ],
+        "panels": []
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "u2-l2-v1",
+        "english": "teach",
+        "uzbek": "o‘qitmoq"
+      },
+      {
+        "id": "u2-l2-v2",
+        "english": "watch",
+        "uzbek": "tomosha qilmoq"
+      },
+      {
+        "id": "u2-l2-v3",
+        "english": "wash",
+        "uzbek": "yuvmoq"
+      },
+      {
+        "id": "u2-l2-v4",
+        "english": "go",
+        "uzbek": "bormoq"
+      },
+      {
+        "id": "u2-l2-v5",
+        "english": "do homework",
+        "uzbek": "uy vazifasini bajarmoq"
+      },
+      {
+        "id": "u2-l2-v6",
+        "english": "have",
+        "uzbek": "ega bo‘lmoq"
+      },
+      {
+        "id": "u2-l2-v7",
+        "english": "cook",
+        "uzbek": "ovqat pishirmoq"
+      },
+      {
+        "id": "u2-l2-v8",
+        "english": "sister",
+        "uzbek": "opa"
+      },
+      {
+        "id": "u2-l2-v9",
+        "english": "brother",
+        "uzbek": "aka"
+      },
+      {
+        "id": "u2-l2-v10",
+        "english": "teacher",
+        "uzbek": "o‘qituvchi"
+      },
+      {
+        "id": "u2-l2-v11",
+        "english": "school",
+        "uzbek": "maktab"
+      },
+      {
+        "id": "u2-l2-v12",
+        "english": "after class",
+        "uzbek": "darsdan keyin"
+      }
+    ],
+    "audioId": "u2-l2-audio"
+  },
+  {
+    "id": "u2-l3",
+    "number": "2.3",
+    "title": "Negatives · Don’t va doesn’t",
+    "version": "2026-10-21.1",
+    "kind": "practice",
+    "flow": "windows",
+    "automatic": true,
+    "sections": [
+      {
+        "id": "u2-l3-explain-1",
+        "title": "Men buni qilmayman",
+        "items": [
+          {
+            "kind": "text",
+            "id": "u2-l3-explain-1-text",
+            "text": "Maya: I drink tea. I do not drink coffee.\nBen: My sister likes tea. She does not like coffee.\nDo not = don’t. Does not = doesn’t. Ikkala shakl ham to‘g‘ri.\nInkor gap biror ish yoki odat mavjud emasligini bildiradi."
+          },
+          {
+            "kind": "audio",
+            "id": "u2-l3-audio"
+          }
+        ]
+      },
+      {
+        "id": "u2-l3-q1-window",
+        "title": "Mashq 1",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l3-q1",
+            "number": 1,
+            "prompt": "I ___ drink coffee.",
+            "control": "choice",
+            "parts": [
+              {
+                "id": "u2-l3-q1-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false,
+            "options": [
+              {
+                "id": "A",
+                "label": "doesn’t"
+              },
+              {
+                "id": "B",
+                "label": "don’t"
+              },
+              {
+                "id": "C",
+                "label": "am not"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "u2-l3-q2-window",
+        "title": "Mashq 2",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l3-q2",
+            "number": 2,
+            "prompt": "She ___ eat meat.",
+            "control": "choice",
+            "parts": [
+              {
+                "id": "u2-l3-q2-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false,
+            "options": [
+              {
+                "id": "A",
+                "label": "don’t"
+              },
+              {
+                "id": "B",
+                "label": "isn’t"
+              },
+              {
+                "id": "C",
+                "label": "doesn’t"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "u2-l3-q3-window",
+        "title": "Mashq 3",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l3-q3",
+            "number": 3,
+            "prompt": "He doesn’t ___ a bus. (drive)",
+            "control": "text",
+            "parts": [
+              {
+                "id": "u2-l3-q3-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false
+          }
+        ]
+      },
+      {
+        "id": "u2-l3-q4-window",
+        "title": "Mashq 4",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l3-q4",
+            "number": 4,
+            "prompt": "So‘zlarni tartibga qo‘yib, gap tuzing.",
+            "control": "order",
+            "parts": [
+              {
+                "id": "u2-l3-q4-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false,
+            "tokens": [
+              {
+                "id": "u2-l3-q4-t1",
+                "label": "do"
+              },
+              {
+                "id": "u2-l3-q4-t3",
+                "label": "work"
+              },
+              {
+                "id": "u2-l3-q4-t5",
+                "label": "Sundays"
+              },
+              {
+                "id": "u2-l3-q4-t0",
+                "label": "We"
+              },
+              {
+                "id": "u2-l3-q4-t2",
+                "label": "not"
+              },
+              {
+                "id": "u2-l3-q4-t4",
+                "label": "on"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "u2-l3-explain-2",
+        "title": "Don’t / doesn’t + asosiy fe’l",
+        "items": [
+          {
+            "kind": "text",
+            "id": "u2-l3-explain-2-text",
+            "text": "I / you / we / they + don’t + fe’l.\nHe / she / it + doesn’t + fe’l.\nShe likes tea. → She doesn’t like tea.\n-s belgisi does ichida bor, shuning uchun doesn’t likes emas, doesn’t like."
+          }
+        ]
+      },
+      {
+        "id": "u2-l3-q5-window",
+        "title": "Mashq 5",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l3-q5",
+            "number": 5,
+            "prompt": "Qaysi gap to‘g‘ri?",
+            "control": "choice",
+            "parts": [
+              {
+                "id": "u2-l3-q5-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false,
+            "options": [
+              {
+                "id": "A",
+                "label": "She doesn’t likes coffee."
+              },
+              {
+                "id": "B",
+                "label": "She doesn’t like coffee."
+              },
+              {
+                "id": "C",
+                "label": "She don’t like coffee."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "u2-l3-q6-window",
+        "title": "Mashq 6",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l3-q6",
+            "number": 6,
+            "prompt": "They like coffee. Inkor gap qiling.",
+            "control": "text",
+            "parts": [
+              {
+                "id": "u2-l3-q6-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false
+          }
+        ]
+      },
+      {
+        "id": "u2-l3-q7-window",
+        "title": "Mashq 7",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l3-q7",
+            "number": 7,
+            "prompt": "Ben works at night. Inkor gap qiling.",
+            "control": "text",
+            "parts": [
+              {
+                "id": "u2-l3-q7-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false
+          }
+        ]
+      },
+      {
+        "id": "u2-l3-q8-window",
+        "title": "Mashq 8",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l3-q8",
+            "number": 8,
+            "prompt": "She doesn’t ___ a bike. (have)",
+            "control": "text",
+            "parts": [
+              {
+                "id": "u2-l3-q8-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false
+          }
+        ]
+      },
+      {
+        "id": "u2-l3-explain-3",
+        "title": "Tasdiq va inkor",
+        "items": [
+          {
+            "kind": "text",
+            "id": "u2-l3-explain-3-text",
+            "text": "We work on Mondays. We don’t work on Sundays.\nHe drives a car. He doesn’t drive a bus.\nShe has a bike. → She doesn’t have a bike.\nI am not tired — holat. I don’t work at night — harakat/odat."
+          }
+        ]
+      },
+      {
+        "id": "u2-l3-q9-window",
+        "title": "Mashq 9",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l3-q9",
+            "number": 9,
+            "prompt": "We ___ basketball on Sundays.",
+            "control": "choice",
+            "parts": [
+              {
+                "id": "u2-l3-q9-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false,
+            "options": [
+              {
+                "id": "A",
+                "label": "don’t play"
+              },
+              {
+                "id": "B",
+                "label": "doesn’t play"
+              },
+              {
+                "id": "C",
+                "label": "don’t plays"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "u2-l3-q10-window",
+        "title": "Mashq 10",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l3-q10",
+            "number": 10,
+            "prompt": "So‘zlarni tartibga qo‘yib, gap tuzing.",
+            "control": "order",
+            "parts": [
+              {
+                "id": "u2-l3-q10-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false,
+            "tokens": [
+              {
+                "id": "u2-l3-q10-t1",
+                "label": "does"
+              },
+              {
+                "id": "u2-l3-q10-t3",
+                "label": "drink"
+              },
+              {
+                "id": "u2-l3-q10-t0",
+                "label": "He"
+              },
+              {
+                "id": "u2-l3-q10-t2",
+                "label": "not"
+              },
+              {
+                "id": "u2-l3-q10-t4",
+                "label": "tea"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "u2-l3-q11-window",
+        "title": "Mashq 11",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l3-q11",
+            "number": 11,
+            "prompt": "Tarjima qiling: Men qahva ichmayman.",
+            "control": "text",
+            "parts": [
+              {
+                "id": "u2-l3-q11-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false
+          }
+        ]
+      },
+      {
+        "id": "u2-l3-q12-window",
+        "title": "Mashq 12",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l3-q12",
+            "number": 12,
+            "prompt": "Xatoni tuzating: She doesn’t watches TV.",
+            "control": "text",
+            "parts": [
+              {
+                "id": "u2-l3-q12-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false
+          }
+        ]
+      }
+    ],
+    "images": [],
+    "vocabulary": [
+      {
+        "id": "u2-l3-v1",
+        "english": "like",
+        "uzbek": "yoqtirmoq"
+      },
+      {
+        "id": "u2-l3-v2",
+        "english": "drink",
+        "uzbek": "ichmoq"
+      },
+      {
+        "id": "u2-l3-v3",
+        "english": "eat",
+        "uzbek": "yemoq"
+      },
+      {
+        "id": "u2-l3-v4",
+        "english": "coffee",
+        "uzbek": "qahva"
+      },
+      {
+        "id": "u2-l3-v5",
+        "english": "tea",
+        "uzbek": "choy"
+      },
+      {
+        "id": "u2-l3-v6",
+        "english": "meat",
+        "uzbek": "go‘sht"
+      },
+      {
+        "id": "u2-l3-v7",
+        "english": "weekend",
+        "uzbek": "dam olish kunlari"
+      },
+      {
+        "id": "u2-l3-v8",
+        "english": "on Sundays",
+        "uzbek": "yakshanba kunlari"
+      },
+      {
+        "id": "u2-l3-v9",
+        "english": "drive",
+        "uzbek": "haydamoq"
+      },
+      {
+        "id": "u2-l3-v10",
+        "english": "bus",
+        "uzbek": "avtobus"
+      },
+      {
+        "id": "u2-l3-v11",
+        "english": "listen to music",
+        "uzbek": "musiqa tinglamoq"
+      },
+      {
+        "id": "u2-l3-v12",
+        "english": "at night",
+        "uzbek": "tunda"
+      }
+    ],
+    "audioId": "u2-l3-audio"
+  },
+  {
+    "id": "u2-l4",
+    "number": "2.4",
+    "title": "Questions · Do you? Does she?",
+    "version": "2026-10-21.1",
+    "kind": "practice",
+    "flow": "windows",
+    "automatic": true,
+    "sections": [
+      {
+        "id": "u2-l4-explain-1",
+        "title": "Savol bering, qisqa javob qaytaring",
+        "items": [
+          {
+            "kind": "text",
+            "id": "u2-l4-explain-1-text",
+            "text": "Maya: Do you study English?\nBen: Yes, I do.\nMaya: Does Emma take the bus?\nBen: No, she doesn’t. She rides a bike.\nDo / does savol boshiga o‘tadi."
+          },
+          {
+            "kind": "audio",
+            "id": "u2-l4-audio"
+          }
+        ]
+      },
+      {
+        "id": "u2-l4-q1-window",
+        "title": "Mashq 1",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l4-q1",
+            "number": 1,
+            "prompt": "___ you study English?",
+            "control": "choice",
+            "parts": [
+              {
+                "id": "u2-l4-q1-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false,
+            "options": [
+              {
+                "id": "A",
+                "label": "Do"
+              },
+              {
+                "id": "B",
+                "label": "Does"
+              },
+              {
+                "id": "C",
+                "label": "Are"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "u2-l4-q2-window",
+        "title": "Mashq 2",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l4-q2",
+            "number": 2,
+            "prompt": "___ Emma ride a bike?",
+            "control": "choice",
+            "parts": [
+              {
+                "id": "u2-l4-q2-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false,
+            "options": [
+              {
+                "id": "A",
+                "label": "Do"
+              },
+              {
+                "id": "B",
+                "label": "Is"
+              },
+              {
+                "id": "C",
+                "label": "Does"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "u2-l4-q3-window",
+        "title": "Mashq 3",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l4-q3",
+            "number": 3,
+            "prompt": "Does he ___ near the school? (live)",
+            "control": "text",
+            "parts": [
+              {
+                "id": "u2-l4-q3-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false
+          }
+        ]
+      },
+      {
+        "id": "u2-l4-q4-window",
+        "title": "Mashq 4",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l4-q4",
+            "number": 4,
+            "prompt": "So‘zlarni tartibga qo‘yib, gap tuzing.",
+            "control": "order",
+            "parts": [
+              {
+                "id": "u2-l4-q4-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false,
+            "tokens": [
+              {
+                "id": "u2-l4-q4-t1",
+                "label": "they"
+              },
+              {
+                "id": "u2-l4-q4-t3",
+                "label": "together"
+              },
+              {
+                "id": "u2-l4-q4-t0",
+                "label": "Do"
+              },
+              {
+                "id": "u2-l4-q4-t2",
+                "label": "work"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "u2-l4-explain-2",
+        "title": "Savol tartibi",
+        "items": [
+          {
+            "kind": "text",
+            "id": "u2-l4-explain-2-text",
+            "text": "Do + I / you / we / they + fe’l?\nDoes + he / she / it + fe’l?\nYou work. → Do you work? She works. → Does she work?\nDoes she works? noto‘g‘ri. Does dan keyin asosiy fe’l."
+          }
+        ]
+      },
+      {
+        "id": "u2-l4-q5-window",
+        "title": "Mashq 5",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l4-q5",
+            "number": 5,
+            "prompt": "Do you like tea? Qisqa tasdiq javob.",
+            "control": "text",
+            "parts": [
+              {
+                "id": "u2-l4-q5-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false
+          }
+        ]
+      },
+      {
+        "id": "u2-l4-q6-window",
+        "title": "Mashq 6",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l4-q6",
+            "number": 6,
+            "prompt": "Does she study at home? Qisqa inkor javob.",
+            "control": "text",
+            "parts": [
+              {
+                "id": "u2-l4-q6-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false
+          }
+        ]
+      },
+      {
+        "id": "u2-l4-q7-window",
+        "title": "Mashq 7",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l4-q7",
+            "number": 7,
+            "prompt": "Do they take the bus? — Yes, ___.",
+            "control": "choice",
+            "parts": [
+              {
+                "id": "u2-l4-q7-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false,
+            "options": [
+              {
+                "id": "A",
+                "label": "they are"
+              },
+              {
+                "id": "B",
+                "label": "they does"
+              },
+              {
+                "id": "C",
+                "label": "they do"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "u2-l4-q8-window",
+        "title": "Mashq 8",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l4-q8",
+            "number": 8,
+            "prompt": "Does Ben work on Mondays? Qisqa tasdiq javob.",
+            "control": "text",
+            "parts": [
+              {
+                "id": "u2-l4-q8-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false
+          }
+        ]
+      },
+      {
+        "id": "u2-l4-explain-3",
+        "title": "Qisqa javoblar",
+        "items": [
+          {
+            "kind": "text",
+            "id": "u2-l4-explain-3-text",
+            "text": "Do you live near the school? — Yes, I do. / No, I don’t.\nDoes he study at home? — Yes, he does. / No, he doesn’t.\nDo they work together? — Yes, they do. / No, they don’t.\nAre you a student? — Yes, I am. Do you study? — Yes, I do. Savoldagi yordamchi fe’lni tekshiring."
+          }
+        ]
+      },
+      {
+        "id": "u2-l4-q9-window",
+        "title": "Mashq 9",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l4-q9",
+            "number": 9,
+            "prompt": "She likes tea. Savol qiling.",
+            "control": "text",
+            "parts": [
+              {
+                "id": "u2-l4-q9-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false
+          }
+        ]
+      },
+      {
+        "id": "u2-l4-q10-window",
+        "title": "Mashq 10",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l4-q10",
+            "number": 10,
+            "prompt": "They live in Tashkent. Savol qiling.",
+            "control": "text",
+            "parts": [
+              {
+                "id": "u2-l4-q10-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false
+          }
+        ]
+      },
+      {
+        "id": "u2-l4-q11-window",
+        "title": "Mashq 11",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l4-q11",
+            "number": 11,
+            "prompt": "Qaysi savol to‘g‘ri?",
+            "control": "choice",
+            "parts": [
+              {
+                "id": "u2-l4-q11-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false,
+            "options": [
+              {
+                "id": "A",
+                "label": "Does she have a bike?"
+              },
+              {
+                "id": "B",
+                "label": "Does she has a bike?"
+              },
+              {
+                "id": "C",
+                "label": "Do she have a bike?"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "u2-l4-q12-window",
+        "title": "Mashq 12",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l4-q12",
+            "number": 12,
+            "prompt": "So‘zlarni tartibga qo‘yib, gap tuzing.",
+            "control": "order",
+            "parts": [
+              {
+                "id": "u2-l4-q12-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false,
+            "tokens": [
+              {
+                "id": "u2-l4-q12-t1",
+                "label": "your"
+              },
+              {
+                "id": "u2-l4-q12-t3",
+                "label": "need"
+              },
+              {
+                "id": "u2-l4-q12-t0",
+                "label": "Does"
+              },
+              {
+                "id": "u2-l4-q12-t2",
+                "label": "classmate"
+              },
+              {
+                "id": "u2-l4-q12-t4",
+                "label": "help"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "images": [],
+    "vocabulary": [
+      {
+        "id": "u2-l4-v1",
+        "english": "walk",
+        "uzbek": "piyoda yurmoq"
+      },
+      {
+        "id": "u2-l4-v2",
+        "english": "take the bus",
+        "uzbek": "avtobusga chiqmoq"
+      },
+      {
+        "id": "u2-l4-v3",
+        "english": "near",
+        "uzbek": "yaqin"
+      },
+      {
+        "id": "u2-l4-v4",
+        "english": "far",
+        "uzbek": "uzoq"
+      },
+      {
+        "id": "u2-l4-v5",
+        "english": "need",
+        "uzbek": "kerak bo‘lmoq"
+      },
+      {
+        "id": "u2-l4-v6",
+        "english": "help",
+        "uzbek": "yordam"
+      },
+      {
+        "id": "u2-l4-v7",
+        "english": "classmate",
+        "uzbek": "sinfdosh"
+      },
+      {
+        "id": "u2-l4-v8",
+        "english": "together",
+        "uzbek": "birga"
+      },
+      {
+        "id": "u2-l4-v9",
+        "english": "at home",
+        "uzbek": "uyda"
+      },
+      {
+        "id": "u2-l4-v10",
+        "english": "on Mondays",
+        "uzbek": "dushanba kunlari"
+      },
+      {
+        "id": "u2-l4-v11",
+        "english": "English",
+        "uzbek": "ingliz tili"
+      },
+      {
+        "id": "u2-l4-v12",
+        "english": "want",
+        "uzbek": "xohlamoq"
+      }
+    ],
+    "audioId": "u2-l4-audio"
+  },
+  {
+    "id": "u2-l5",
+    "number": "2.5",
+    "title": "Wh-questions · Odatlar haqida",
+    "version": "2026-10-21.1",
+    "kind": "practice",
+    "flow": "windows",
+    "automatic": true,
+    "sections": [
+      {
+        "id": "u2-l5-explain-1",
+        "title": "Qayerda? Qachon? Nima?",
+        "items": [
+          {
+            "kind": "text",
+            "id": "u2-l5-explain-1-text",
+            "text": "Maya: Where do you study?\nBen: I study in the library.\nMaya: When does Emma ride her bike?\nBen: She rides her bike before class.\nSavol so‘zi + do / does + ega + asosiy fe’l?"
+          },
+          {
+            "kind": "audio",
+            "id": "u2-l5-audio"
+          }
+        ]
+      },
+      {
+        "id": "u2-l5-q1-window",
+        "title": "Mashq 1",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l5-q1",
+            "number": 1,
+            "prompt": "___ do you study? — In the library.",
+            "control": "choice",
+            "parts": [
+              {
+                "id": "u2-l5-q1-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false,
+            "options": [
+              {
+                "id": "A",
+                "label": "When"
+              },
+              {
+                "id": "B",
+                "label": "Where"
+              },
+              {
+                "id": "C",
+                "label": "How often"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "u2-l5-q2-window",
+        "title": "Mashq 2",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l5-q2",
+            "number": 2,
+            "prompt": "When ___ she ride her bike?",
+            "control": "text",
+            "parts": [
+              {
+                "id": "u2-l5-q2-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false
+          }
+        ]
+      },
+      {
+        "id": "u2-l5-q3-window",
+        "title": "Mashq 3",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l5-q3",
+            "number": 3,
+            "prompt": "So‘zlarni tartibga qo‘yib, gap tuzing.",
+            "control": "order",
+            "parts": [
+              {
+                "id": "u2-l5-q3-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false,
+            "tokens": [
+              {
+                "id": "u2-l5-q3-t1",
+                "label": "do"
+              },
+              {
+                "id": "u2-l5-q3-t3",
+                "label": "study"
+              },
+              {
+                "id": "u2-l5-q3-t0",
+                "label": "What"
+              },
+              {
+                "id": "u2-l5-q3-t2",
+                "label": "they"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "u2-l5-q4-window",
+        "title": "Mashq 4",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l5-q4",
+            "number": 4,
+            "prompt": "How often do you play basketball?",
+            "control": "choice",
+            "parts": [
+              {
+                "id": "u2-l5-q4-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false,
+            "options": [
+              {
+                "id": "A",
+                "label": "In Boston."
+              },
+              {
+                "id": "B",
+                "label": "English."
+              },
+              {
+                "id": "C",
+                "label": "Twice a week."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "u2-l5-explain-2",
+        "title": "How often? — Qanchalik tez-tez?",
+        "items": [
+          {
+            "kind": "text",
+            "id": "u2-l5-explain-2-text",
+            "text": "How often do you play basketball? — I play twice a week.\nAlways — har doim; usually — odatda; sometimes — ba’zan; never — hech qachon.\nI usually read after breakfast. She never drinks coffee.\nBu ravishlar odatda asosiy fe’ldan oldin: usually read. To Be dan keyin: She is always busy. Never o‘zi inkor: don’t never demang."
+          }
+        ]
+      },
+      {
+        "id": "u2-l5-q5-window",
+        "title": "Mashq 5",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l5-q5",
+            "number": 5,
+            "prompt": "Tarjima qiling: Men odatda ertalab o‘qiyman.",
+            "control": "text",
+            "parts": [
+              {
+                "id": "u2-l5-q5-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false
+          }
+        ]
+      },
+      {
+        "id": "u2-l5-q6-window",
+        "title": "Mashq 6",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l5-q6",
+            "number": 6,
+            "prompt": "Qaysi gap to‘g‘ri?",
+            "control": "choice",
+            "parts": [
+              {
+                "id": "u2-l5-q6-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false,
+            "options": [
+              {
+                "id": "A",
+                "label": "She never drinks coffee."
+              },
+              {
+                "id": "B",
+                "label": "She doesn’t never drink coffee."
+              },
+              {
+                "id": "C",
+                "label": "She never drink coffee."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "u2-l5-q7-window",
+        "title": "Mashq 7",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l5-q7",
+            "number": 7,
+            "prompt": "So‘zlarni tartibga qo‘yib, gap tuzing.",
+            "control": "order",
+            "parts": [
+              {
+                "id": "u2-l5-q7-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false,
+            "tokens": [
+              {
+                "id": "u2-l5-q7-t1",
+                "label": "often"
+              },
+              {
+                "id": "u2-l5-q7-t3",
+                "label": "he"
+              },
+              {
+                "id": "u2-l5-q7-t0",
+                "label": "How"
+              },
+              {
+                "id": "u2-l5-q7-t2",
+                "label": "does"
+              },
+              {
+                "id": "u2-l5-q7-t4",
+                "label": "read"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "u2-l5-q8-window",
+        "title": "Mashq 8",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l5-q8",
+            "number": 8,
+            "prompt": "To Be bilan to‘g‘ri tartibni tanlang.",
+            "control": "choice",
+            "parts": [
+              {
+                "id": "u2-l5-q8-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false,
+            "options": [
+              {
+                "id": "A",
+                "label": "She always is busy."
+              },
+              {
+                "id": "B",
+                "label": "She is always busy."
+              },
+              {
+                "id": "C",
+                "label": "She does always busy."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "u2-l5-explain-3",
+        "title": "Emma haqida o‘qing",
+        "items": [
+          {
+            "kind": "text",
+            "id": "u2-l5-explain-3-text",
+            "text": "Emma lives in Boston. She studies English. She usually rides her bike before class.\nShe plays basketball twice a week. She never drinks coffee.\nWhere does Emma live? — In Boston.\nHow often does she play basketball? — Twice a week. What does she study? — English.\nOxirgi to‘rtta mashqda shu matndan foydalaning."
+          }
+        ]
+      },
+      {
+        "id": "u2-l5-q9-window",
+        "title": "Mashq 9",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l5-q9",
+            "number": 9,
+            "prompt": "Emma lives in Boston. Where does Emma live?",
+            "control": "choice",
+            "parts": [
+              {
+                "id": "u2-l5-q9-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false,
+            "options": [
+              {
+                "id": "A",
+                "label": "In Tashkent."
+              },
+              {
+                "id": "B",
+                "label": "In Boston."
+              },
+              {
+                "id": "C",
+                "label": "In London."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "u2-l5-q10-window",
+        "title": "Mashq 10",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l5-q10",
+            "number": 10,
+            "prompt": "Emma studies English. What does she study? Bir so‘z yozing.",
+            "control": "text",
+            "parts": [
+              {
+                "id": "u2-l5-q10-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false
+          }
+        ]
+      },
+      {
+        "id": "u2-l5-q11-window",
+        "title": "Mashq 11",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l5-q11",
+            "number": 11,
+            "prompt": "Emma plays basketball twice a week. How often?",
+            "control": "choice",
+            "parts": [
+              {
+                "id": "u2-l5-q11-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false,
+            "options": [
+              {
+                "id": "A",
+                "label": "Every day."
+              },
+              {
+                "id": "B",
+                "label": "Once a week."
+              },
+              {
+                "id": "C",
+                "label": "Twice a week."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "u2-l5-q12-window",
+        "title": "Mashq 12",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l5-q12",
+            "number": 12,
+            "prompt": "Emma never drinks coffee. Does Emma drink coffee? Qisqa inkor javob.",
+            "control": "text",
+            "parts": [
+              {
+                "id": "u2-l5-q12-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false
+          }
+        ]
+      }
+    ],
+    "images": [],
+    "vocabulary": [
+      {
+        "id": "u2-l5-v1",
+        "english": "where",
+        "uzbek": "qayerda"
+      },
+      {
+        "id": "u2-l5-v2",
+        "english": "when",
+        "uzbek": "qachon"
+      },
+      {
+        "id": "u2-l5-v3",
+        "english": "what",
+        "uzbek": "nima"
+      },
+      {
+        "id": "u2-l5-v4",
+        "english": "how often",
+        "uzbek": "qanchalik tez-tez"
+      },
+      {
+        "id": "u2-l5-v5",
+        "english": "always",
+        "uzbek": "har doim"
+      },
+      {
+        "id": "u2-l5-v6",
+        "english": "usually",
+        "uzbek": "odatda"
+      },
+      {
+        "id": "u2-l5-v7",
+        "english": "sometimes",
+        "uzbek": "ba’zan"
+      },
+      {
+        "id": "u2-l5-v8",
+        "english": "never",
+        "uzbek": "hech qachon"
+      },
+      {
+        "id": "u2-l5-v9",
+        "english": "once a week",
+        "uzbek": "haftasiga bir marta"
+      },
+      {
+        "id": "u2-l5-v10",
+        "english": "twice a week",
+        "uzbek": "haftasiga ikki marta"
+      },
+      {
+        "id": "u2-l5-v11",
+        "english": "after breakfast",
+        "uzbek": "nonushtadan keyin"
+      },
+      {
+        "id": "u2-l5-v12",
+        "english": "before class",
+        "uzbek": "darsdan oldin"
+      }
+    ],
+    "audioId": "u2-l5-audio"
+  },
+  {
+    "id": "u2-l6",
+    "number": "2.6",
+    "title": "Present Simple · Yakuniy imtihon",
+    "version": "2026-10-21.1",
+    "kind": "exam",
+    "flow": "windows",
+    "automatic": true,
+    "sections": [
+      {
+        "id": "u2-l6-explain-1",
+        "title": "Bilimingizni sinab ko‘ring",
+        "items": [
+          {
+            "kind": "text",
+            "id": "u2-l6-explain-1-text",
+            "text": "20 ta savol · 20 ball. Kamida 90% — 18 ta to‘g‘ri javob — bo‘limni o‘zlashtirish uchun kerak.\nBu imtihonda audio shart emas. Javoblar imtihon topshirilgandan keyin ko‘rinadi.\nOxirgi savollarda qisqa matn bo‘ladi. Gap yozishda savol va inkor tartibiga e’tibor bering."
+          }
+        ]
+      },
+      {
+        "id": "u2-l6-q1-window",
+        "title": "Savol 1",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l6-q1",
+            "number": 1,
+            "prompt": "We ___ English every day.",
+            "control": "choice",
+            "parts": [
+              {
+                "id": "u2-l6-q1-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false,
+            "options": [
+              {
+                "id": "A",
+                "label": "study"
+              },
+              {
+                "id": "B",
+                "label": "studies"
+              },
+              {
+                "id": "C",
+                "label": "are study"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "u2-l6-q2-window",
+        "title": "Savol 2",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l6-q2",
+            "number": 2,
+            "prompt": "He ___ in Tashkent. (live)",
+            "control": "text",
+            "parts": [
+              {
+                "id": "u2-l6-q2-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false
+          }
+        ]
+      },
+      {
+        "id": "u2-l6-q3-window",
+        "title": "Savol 3",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l6-q3",
+            "number": 3,
+            "prompt": "She ___ English. (study)",
+            "control": "text",
+            "parts": [
+              {
+                "id": "u2-l6-q3-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false
+          }
+        ]
+      },
+      {
+        "id": "u2-l6-q4-window",
+        "title": "Savol 4",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l6-q4",
+            "number": 4,
+            "prompt": "My sister ___ TV.",
+            "control": "choice",
+            "parts": [
+              {
+                "id": "u2-l6-q4-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false,
+            "options": [
+              {
+                "id": "A",
+                "label": "watch"
+              },
+              {
+                "id": "B",
+                "label": "watchs"
+              },
+              {
+                "id": "C",
+                "label": "watches"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "u2-l6-q5-window",
+        "title": "Savol 5",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l6-q5",
+            "number": 5,
+            "prompt": "Ben ___ a bike. (have)",
+            "control": "text",
+            "parts": [
+              {
+                "id": "u2-l6-q5-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false
+          }
+        ]
+      },
+      {
+        "id": "u2-l6-q6-window",
+        "title": "Savol 6",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l6-q6",
+            "number": 6,
+            "prompt": "They ___ work on Sundays.",
+            "control": "choice",
+            "parts": [
+              {
+                "id": "u2-l6-q6-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false,
+            "options": [
+              {
+                "id": "A",
+                "label": "doesn’t"
+              },
+              {
+                "id": "B",
+                "label": "don’t"
+              },
+              {
+                "id": "C",
+                "label": "aren’t"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "u2-l6-q7-window",
+        "title": "Savol 7",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l6-q7",
+            "number": 7,
+            "prompt": "She doesn’t ___ coffee. (drink)",
+            "control": "text",
+            "parts": [
+              {
+                "id": "u2-l6-q7-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false
+          }
+        ]
+      },
+      {
+        "id": "u2-l6-q8-window",
+        "title": "Savol 8",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l6-q8",
+            "number": 8,
+            "prompt": "He likes tea. Inkor gap qiling.",
+            "control": "text",
+            "parts": [
+              {
+                "id": "u2-l6-q8-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false
+          }
+        ]
+      },
+      {
+        "id": "u2-l6-q9-window",
+        "title": "Savol 9",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l6-q9",
+            "number": 9,
+            "prompt": "So‘zlarni tartibga qo‘yib, gap tuzing.",
+            "control": "order",
+            "parts": [
+              {
+                "id": "u2-l6-q9-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false,
+            "tokens": [
+              {
+                "id": "u2-l6-q9-t1",
+                "label": "do"
+              },
+              {
+                "id": "u2-l6-q9-t3",
+                "label": "play"
+              },
+              {
+                "id": "u2-l6-q9-t0",
+                "label": "We"
+              },
+              {
+                "id": "u2-l6-q9-t2",
+                "label": "not"
+              },
+              {
+                "id": "u2-l6-q9-t4",
+                "label": "basketball"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "u2-l6-q10-window",
+        "title": "Savol 10",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l6-q10",
+            "number": 10,
+            "prompt": "___ she work in a school?",
+            "control": "choice",
+            "parts": [
+              {
+                "id": "u2-l6-q10-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false,
+            "options": [
+              {
+                "id": "A",
+                "label": "Do"
+              },
+              {
+                "id": "B",
+                "label": "Is"
+              },
+              {
+                "id": "C",
+                "label": "Does"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "u2-l6-q11-window",
+        "title": "Savol 11",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l6-q11",
+            "number": 11,
+            "prompt": "Do they study at home? Qisqa tasdiq javob.",
+            "control": "text",
+            "parts": [
+              {
+                "id": "u2-l6-q11-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false
+          }
+        ]
+      },
+      {
+        "id": "u2-l6-q12-window",
+        "title": "Savol 12",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l6-q12",
+            "number": 12,
+            "prompt": "Does he live in Boston? Qisqa inkor javob.",
+            "control": "text",
+            "parts": [
+              {
+                "id": "u2-l6-q12-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false
+          }
+        ]
+      },
+      {
+        "id": "u2-l6-q13-window",
+        "title": "Savol 13",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l6-q13",
+            "number": 13,
+            "prompt": "She goes to school. Savol qiling.",
+            "control": "text",
+            "parts": [
+              {
+                "id": "u2-l6-q13-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false
+          }
+        ]
+      },
+      {
+        "id": "u2-l6-q14-window",
+        "title": "Savol 14",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l6-q14",
+            "number": 14,
+            "prompt": "So‘zlarni tartibga qo‘yib, gap tuzing.",
+            "control": "order",
+            "parts": [
+              {
+                "id": "u2-l6-q14-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false,
+            "tokens": [
+              {
+                "id": "u2-l6-q14-t1",
+                "label": "do"
+              },
+              {
+                "id": "u2-l6-q14-t3",
+                "label": "work"
+              },
+              {
+                "id": "u2-l6-q14-t0",
+                "label": "Where"
+              },
+              {
+                "id": "u2-l6-q14-t2",
+                "label": "you"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "u2-l6-q15-window",
+        "title": "Savol 15",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l6-q15",
+            "number": 15,
+            "prompt": "___ does she play? — Twice a week.",
+            "control": "choice",
+            "parts": [
+              {
+                "id": "u2-l6-q15-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false,
+            "options": [
+              {
+                "id": "A",
+                "label": "Where"
+              },
+              {
+                "id": "B",
+                "label": "How often"
+              },
+              {
+                "id": "C",
+                "label": "What"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "u2-l6-q16-window",
+        "title": "Savol 16",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l6-q16",
+            "number": 16,
+            "prompt": "Qaysi gap odatiy tartibda yozilgan?",
+            "control": "choice",
+            "parts": [
+              {
+                "id": "u2-l6-q16-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false,
+            "options": [
+              {
+                "id": "A",
+                "label": "I read usually at home."
+              },
+              {
+                "id": "B",
+                "label": "I am usually read at home."
+              },
+              {
+                "id": "C",
+                "label": "I usually read at home."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "u2-l6-q17-window",
+        "title": "Savol 17",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l6-q17",
+            "number": 17,
+            "prompt": "Tarjima qiling: U (qiz) hech qachon qahva ichmaydi.",
+            "control": "text",
+            "parts": [
+              {
+                "id": "u2-l6-q17-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false
+          }
+        ]
+      },
+      {
+        "id": "u2-l6-q18-window",
+        "title": "Savol 18",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l6-q18",
+            "number": 18,
+            "prompt": "Ben lives in Boston. He reads every morning. Where does Ben live?",
+            "control": "choice",
+            "parts": [
+              {
+                "id": "u2-l6-q18-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false,
+            "options": [
+              {
+                "id": "A",
+                "label": "In Boston."
+              },
+              {
+                "id": "B",
+                "label": "In Tashkent."
+              },
+              {
+                "id": "C",
+                "label": "In a school."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "u2-l6-q19-window",
+        "title": "Savol 19",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l6-q19",
+            "number": 19,
+            "prompt": "Ben reads every morning. When does he read? Inglizcha ikki so‘z yozing.",
+            "control": "text",
+            "parts": [
+              {
+                "id": "u2-l6-q19-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false
+          }
+        ]
+      },
+      {
+        "id": "u2-l6-q20-window",
+        "title": "Savol 20",
+        "items": [
+          {
+            "kind": "task",
+            "id": "u2-l6-q20",
+            "number": 20,
+            "prompt": "Ben plays basketball twice a week. Does Ben play basketball? Qisqa tasdiq javob.",
+            "control": "text",
+            "parts": [
+              {
+                "id": "u2-l6-q20-answer",
+                "label": "Javobingiz"
+              }
+            ],
+            "maxPoints": 1,
+            "listening": false
+          }
+        ]
+      }
+    ],
+    "images": [],
+    "vocabulary": [],
+    "audioId": "u2-l6-audio"
+  }
+]
