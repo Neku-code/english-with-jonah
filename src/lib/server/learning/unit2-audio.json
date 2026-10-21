@@ -1,0 +1,87 @@
+{
+  "2026-10-21.1": {
+    "u2-l1": [
+      {
+        "speaker": "Maya",
+        "text": "I have breakfast every morning."
+      },
+      {
+        "speaker": "Ben",
+        "text": "I read in the library."
+      },
+      {
+        "speaker": "Emma",
+        "text": "I ride a bike every day."
+      },
+      {
+        "speaker": "Friends",
+        "text": "We play basketball."
+      }
+    ],
+    "u2-l2": [
+      {
+        "speaker": "Maya",
+        "text": "My sister studies English."
+      },
+      {
+        "speaker": "Ben",
+        "text": "My friends study English."
+      },
+      {
+        "speaker": "Emma",
+        "text": "He goes to school. He does homework after class."
+      }
+    ],
+    "u2-l3": [
+      {
+        "speaker": "Maya",
+        "text": "I drink tea. I do not drink coffee."
+      },
+      {
+        "speaker": "Ben",
+        "text": "My sister likes tea. She does not like coffee."
+      },
+      {
+        "speaker": "Emma",
+        "text": "We do not work on Sundays."
+      }
+    ],
+    "u2-l4": [
+      {
+        "speaker": "Maya",
+        "text": "Do you study English?"
+      },
+      {
+        "speaker": "Ben",
+        "text": "Yes, I do."
+      },
+      {
+        "speaker": "Maya",
+        "text": "Does Emma take the bus?"
+      },
+      {
+        "speaker": "Ben",
+        "text": "No, she does not. She rides a bike."
+      }
+    ],
+    "u2-l5": [
+      {
+        "speaker": "Maya",
+        "text": "Where do you study?"
+      },
+      {
+        "speaker": "Ben",
+        "text": "I study in the library."
+      },
+      {
+        "speaker": "Maya",
+        "text": "How often do you play basketball?"
+      },
+      {
+        "speaker": "Ben",
+        "text": "I play twice a week."
+      }
+    ],
+    "u2-l6": []
+  }
+}

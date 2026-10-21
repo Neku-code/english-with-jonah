@@ -256,3 +256,77 @@
 
 .student-frame .mobile-lessons{display:inline-flex;align-items:center;gap:7px}.student-frame .lesson-title .jonah-coins{margin-top:12px}.student-frame .recent-section .student-section-heading h2{margin-bottom:0}.student-frame main{min-width:0}.student-frame .balance-card:hover,.student-frame .profile-ranking-card:hover{border-color:#b9b69d}.student-frame .lesson-tile,.student-frame .profile-ranking-card{overflow-wrap:anywhere}.entry-frame .entry-intro>p:not(.eyebrow){margin-top:20px;color:var(--muted)}
 @media(min-width:1450px){.student-frame .mobile-lessons{display:none}}
+
+/* v0.2: clearer navigation, honest rankings, and searchable vocabulary. */
+.student-nav a{position:relative;transition:background .16s,color .16s,transform .16s;font-weight:500}
+.student-nav a svg{flex-shrink:0;transition:transform .16s}
+.student-nav a:hover{background:#eee8db;color:#71442e}
+.student-nav a[aria-current]{background:var(--clay-action);color:#fff;box-shadow:0 5px 15px #9b4b2520}
+.student-nav a[aria-current] svg{transform:translateY(-1px)}
+.student-nav a:focus-visible{outline:3px solid #876335;outline-offset:4px}
+.mobile-student-nav{width:calc(100% - 24px);left:12px;bottom:10px;bottom:max(10px,env(safe-area-inset-bottom));border:1px solid #e4d9c7;border-radius:24px;padding:7px 8px;box-shadow:0 7px 28px #4b35291c;background:#fffdf8f5}
+.mobile-student-nav .student-nav a{flex:1;max-width:160px;min-height:54px;border-radius:17px;font-size:11px;gap:3px}
+.mobile-student-nav .student-nav a[aria-current]{background:#f0dfcf;color:#91472d;box-shadow:none}
+.mobile-student-nav a[aria-current]::after{content:'';position:absolute;bottom:3px;width:15px;height:3px;background:#ae5634;border-radius:4px}
+.mobile-student-nav a[aria-current]{padding-bottom:9px}
+.student-frame .navigation-status{height:4px;min-height:4px;margin:0 0 16px;font-size:0;border-radius:4px;overflow:hidden}
+.student-frame .navigation-status.is-loading{background:#e8dfd2}
+.student-frame .navigation-status.is-loading::after{content:'';display:block;width:35%;height:100%;background:#b9603c;animation:jonah-loading 1s ease-in-out infinite}
+@keyframes jonah-loading{from{transform:translateX(-110%)}to{transform:translateX(390%)}}
+.present-simple-unit{background:#f4e3d0}
+.illustrated-unit.present-simple-unit>div{max-width:66%}
+.illustrated-unit.present-simple-unit>img{width:39%;height:154px;bottom:18px;right:15px;object-fit:cover;border-radius:18px;mix-blend-mode:normal;opacity:.9}
+.unit-card-grid .learning-note{min-height:170px}
+.ranking-hero{display:flex;align-items:center;justify-content:space-between;gap:24px;margin:22px 0 30px}
+.ranking-hero h1{font-size:clamp(31px,4vw,46px);line-height:1.12;margin:8px 0 15px}
+.ranking-hero p:last-child{max-width:47ch;font-size:14px;color:var(--muted)}
+.ranking-trophy{width:128px;height:128px;flex-shrink:0;display:grid;place-items:center;border-radius:38px;background:#f1dfb8;color:#966b23;transform:rotate(7deg);box-shadow:8px 10px 0 #ede9da}
+.ranking-podium{display:flex;align-items:stretch;gap:14px;padding-top:15px;margin:10px 0 28px}
+.podium-card{order:var(--podium-order);position:relative;flex:1;min-width:0;display:flex;flex-direction:column;align-items:center;gap:9px;text-align:center;padding:24px 14px 0;border:1px solid #e2ddce;background:#f0eee4;border-radius:22px;overflow-wrap:anywhere}
+.podium-card.podium-winner{background:#f5e8c7;border-color:#d9bb76;margin-top:-15px;padding-top:30px}
+.podium-avatar{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;background:#728364;color:#fff;font-size:23px;font-weight:600;border:3px solid #fffaf0}
+.podium-winner .podium-avatar{background:#a7653f}
+.podium-medal{color:#897344;position:absolute;top:12px;right:12px}
+.podium-card h2{font-size:16px;line-height:1.25;margin:0;max-width:100%}
+.podium-card .you-label{font-size:10px;line-height:1;background:#fff9e7;border-radius:12px;padding:4px 10px;color:#76501d}
+.podium-card .jonah-coins{justify-content:center;max-width:100%}
+.podium-rank{margin-top:auto;padding-top:14px;font-size:42px;font-weight:600;color:#817951;line-height:1.2}
+.podium-rank>span{font-size:12px;font-weight:400;margin-left:2px}
+.podium-winner .podium-rank{color:#986b1e}
+.rank-challenge{display:flex;align-items:center;gap:17px;background:#e9edde;border:1px solid #ced8c0;border-radius:20px;padding:24px;margin-block:24px}
+.rank-challenge>div:nth-child(2){flex:1;min-width:0}
+.rank-current-number{background:#647853;color:#fff;min-width:52px;min-height:52px;display:grid;place-items:center;border-radius:16px;font-size:23px;font-weight:600;padding:8px}
+.rank-challenge h2{font-size:19px;line-height:1.4;overflow-wrap:anywhere}
+.rank-challenge p:last-child{font-size:12px;color:#536346;margin-top:6px}
+.rank-challenge .button{font-size:13px;min-height:44px;padding:10px 16px;flex-shrink:0}
+.ranking-fairness{font-size:12px;color:var(--muted);line-height:1.6;margin:18px 0 26px}
+.student-frame .ranking-list li{border-radius:15px}
+.student-frame .ranking-list .ranking-current{box-shadow:inset 4px 0 #6c8056}
+.student-frame .ranking-list .ranking-current .ranking-place{background:#647853;color:white}
+.ranking-name{min-width:0;overflow-wrap:anywhere}
+.vocab-search{display:flex;align-items:center;gap:12px;background:var(--surface);border:1px solid #d5c9b6;border-radius:16px;padding:6px 16px;margin-bottom:18px;color:#75664f}
+.vocab-search input{width:100%;min-width:0;min-height:46px;font:inherit;font-size:16px;border:0;background:transparent;color:var(--ink);outline:none}
+.vocab-search:focus-within{outline:2px solid var(--clay-action);outline-offset:2px}
+.vocab-search button{background:none;border:0;color:var(--clay-action);font-size:13px;min-height:44px;cursor:pointer}
+.dictionary-results{display:grid;gap:10px;margin:18px 0 28px}
+.dictionary-word{display:flex;align-items:center;gap:20px;padding:18px 20px;border:1px solid var(--line);background:var(--surface);border-radius:14px;color:var(--ink);text-decoration:none}
+.dictionary-word>div{flex:1;min-width:0;overflow-wrap:anywhere}
+.dictionary-word strong{font-size:18px}
+.dictionary-word p{font-size:14px;color:var(--muted);margin-top:4px}
+.dictionary-word>span{font-size:11px;color:var(--clay-dark);white-space:nowrap}
+@media(min-width:1024px){.unit-card-grid .learning-note{grid-column:1/-1;min-height:120px}.unit-card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:640px){
+ .ranking-hero{gap:12px;margin-top:20px}.ranking-hero h1{font-size:31px}.ranking-hero .eyebrow{font-size:9px}
+ .ranking-trophy{width:65px;height:75px;border-radius:23px;box-shadow:4px 5px 0 #ede9da}.ranking-trophy svg{width:43px;height:43px}
+ .ranking-hero p:last-child{font-size:12px}
+ .ranking-podium{gap:8px}.podium-card{padding:22px 8px 0;border-radius:17px;gap:8px}.podium-card.podium-winner{padding-top:28px}
+ .podium-medal{top:7px;right:6px}.podium-medal svg{width:18px;height:18px}
+ .podium-avatar{width:42px;height:42px;font-size:19px}.podium-card h2{font-size:12px}
+ .podium-card .coin-label{display:none}.podium-card .jonah-coins{gap:3px}.podium-card .jonah-coins img{width:19px;height:19px}.podium-card .jonah-coins strong{font-size:13px}
+ .podium-rank{font-size:32px}.podium-rank>span{font-size:10px}
+ .rank-challenge{padding:19px 16px;gap:13px;flex-wrap:wrap}.rank-challenge h2{font-size:17px}.rank-current-number{min-width:44px;min-height:46px;font-size:19px}
+ .rank-challenge .button{width:100%;margin-top:4px}.ranking-page .student-section-heading>.muted{display:block;font-size:10px}
+ .dictionary-word{padding:15px;gap:12px}.dictionary-word strong{font-size:16px}
+ .illustrated-unit.present-simple-unit>img{height:140px;right:10px}
+}
+@media(prefers-reduced-motion:reduce){.student-nav a,.student-nav a svg{transition:none}.student-frame .navigation-status.is-loading::after{animation:none;width:100%}}

@@ -49,3 +49,11 @@ session-owned and transactional. Teacher details retain actual vocabulary test
 results and show the student's real coin totals.
 
 See [Progress, coins and mastery](levels-and-mastery.md) for scoring and ranking.
+
+## v0.2 authorization — 21 October 2026
+
+The owner now explicitly authorizes Unit 2 Present Simple, matching vocabulary,
+ranking/navigation/asset improvements, performance fixes, and production deployment.
+This supersedes earlier statements limiting scope to Unit 1. See
+[v0.2 details](v0.2-present-simple.md)
+for the five lessons, final exam, 450-coin unit budget, publication and validation.

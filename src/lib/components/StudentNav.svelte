@@ -15,7 +15,7 @@
     return path === '/profile' || path === '/ranking';
   }
 </script>
-<nav class="student-nav" aria-label="Asosiy bo‘limlar" data-sveltekit-preload-code="hover">
+<nav class="student-nav" aria-label="Asosiy bo‘limlar" data-sveltekit-preload-code="viewport" data-sveltekit-preload-data="tap">
   {#each links as link}
     <a href={link.href} aria-current={active(link.href) ? 'page' : undefined}>
       <link.icon size={25} weight={active(link.href) ? 'fill' : 'regular'} aria-hidden="true" />

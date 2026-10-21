@@ -100,3 +100,11 @@ theme. This supersedes the earlier illustration restriction and colour-only
 reference instruction. Preserve checks 1 → 2 → 3 in commit order. The owner
 requested code analysis only for this check as well; do not open the app in a
 browser or claim visual verification.
+
+## v0.2 authorization — 21 October 2026
+
+The owner now explicitly authorizes Unit 2 Present Simple, matching vocabulary,
+ranking/navigation/asset improvements, performance fixes, and production deployment.
+This supersedes earlier statements limiting scope to Unit 1. See
+[docs/v0.2-present-simple.md](docs/v0.2-present-simple.md)
+for the five lessons, final exam, 450-coin unit budget, publication and validation.

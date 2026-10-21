@@ -57,3 +57,11 @@ Box 1 established the SvelteKit project and component verification. Boxes 2–3 
 [Box 6](box-6.md) implements protected teacher sessions, the teacher workspace, student management, versioned attempt inspection, transactional written review and real question statistics. The owner explicitly chose exact server-configured entry through the existing name field, without another authentication step. This supersedes the earlier administrator-authorization open decision. Student automatic creation and same-name access follow the later confirmed correction. No lesson content is added by Box 6.
 
 The second check adds compact windows, no teacher-review dependency for new lessons, custom teacher coin adjustments and navigation/read-path performance fixes; see `check-2.md`.
+
+## v0.2 authorization — 21 October 2026
+
+The owner now explicitly authorizes Unit 2 Present Simple, matching vocabulary,
+ranking/navigation/asset improvements, performance fixes, and production deployment.
+This supersedes earlier statements limiting scope to Unit 1. See
+[v0.2 details](v0.2-present-simple.md)
+for the five lessons, final exam, 450-coin unit budget, publication and validation.

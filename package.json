@@ -1,6 +1,6 @@
 {
   "name": "english-with-jonah",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "type": "module",
   "engines": {
@@ -23,7 +23,8 @@
     "unit1:publish": "tsx scripts/publish-unit1.ts",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "node scripts/migrate.mjs",
-    "db:check": "node scripts/check-db.mjs"
+    "db:check": "node scripts/check-db.mjs",
+    "unit2:publish": "tsx scripts/publish-unit2.ts"
   },
   "dependencies": {
     "@fontsource/dm-sans": "5.3.0",

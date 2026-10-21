@@ -1,0 +1,1547 @@
+{
+  "u2-l1": {
+    "tasks": {
+      "u2-l1-q1": {
+        "mode": "authored",
+        "kind": "choice",
+        "partIds": [
+          "u2-l1-q1-answer"
+        ],
+        "accepted": [
+          "A"
+        ],
+        "feedback": "study",
+        "notes": "I bilan fe’lning asosiy shakli: study.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l1-q2": {
+        "mode": "authored",
+        "kind": "choice",
+        "partIds": [
+          "u2-l1-q2-answer"
+        ],
+        "accepted": [
+          "B"
+        ],
+        "feedback": "read in the library",
+        "notes": "Kutubxonadagi talaba kitob o‘qiyapti. Odat sifatida: I read in the library.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l1-q3": {
+        "mode": "authored",
+        "kind": "text",
+        "partIds": [
+          "u2-l1-q3-answer"
+        ],
+        "accepted": [
+          "live"
+        ],
+        "feedback": "live",
+        "notes": "We bilan live ishlatiladi.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l1-q4": {
+        "mode": "authored",
+        "kind": "order",
+        "partIds": [
+          "u2-l1-q4-answer"
+        ],
+        "accepted": [
+          "I have breakfast every morning."
+        ],
+        "feedback": "I have breakfast every morning.",
+        "notes": "I + have breakfast + every morning.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l1-q5": {
+        "mode": "authored",
+        "kind": "choice",
+        "partIds": [
+          "u2-l1-q5-answer"
+        ],
+        "accepted": [
+          "C"
+        ],
+        "feedback": "I work every day.",
+        "notes": "Harakat uchun am qo‘shmang. I work.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l1-q6": {
+        "mode": "authored",
+        "kind": "text",
+        "partIds": [
+          "u2-l1-q6-answer"
+        ],
+        "accepted": [
+          "play"
+        ],
+        "feedback": "play",
+        "notes": "They bilan play, plays emas.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l1-q7": {
+        "mode": "authored",
+        "kind": "text",
+        "partIds": [
+          "u2-l1-q7-answer"
+        ],
+        "accepted": [
+          "speak"
+        ],
+        "feedback": "speak",
+        "notes": "You speak English.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l1-q8": {
+        "mode": "authored",
+        "kind": "order",
+        "partIds": [
+          "u2-l1-q8-answer"
+        ],
+        "accepted": [
+          "We read in the library."
+        ],
+        "feedback": "We read in the library.",
+        "notes": "We + read + joy.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l1-q9": {
+        "mode": "authored",
+        "kind": "choice",
+        "partIds": [
+          "u2-l1-q9-answer"
+        ],
+        "accepted": [
+          "A"
+        ],
+        "feedback": "har kuni",
+        "notes": "Bu takrorlanadigan ishni bildiradi.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l1-q10": {
+        "mode": "authored",
+        "kind": "text",
+        "partIds": [
+          "u2-l1-q10-answer"
+        ],
+        "accepted": [
+          "I study English."
+        ],
+        "feedback": "I study English.",
+        "notes": "I study English. Am kerak emas.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l1-q11": {
+        "mode": "authored",
+        "kind": "text",
+        "partIds": [
+          "u2-l1-q11-answer"
+        ],
+        "accepted": [
+          "We work."
+        ],
+        "feedback": "We work.",
+        "notes": "I va we bilan fe’l o‘zgarmaydi.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l1-q12": {
+        "mode": "authored",
+        "kind": "choice",
+        "partIds": [
+          "u2-l1-q12-answer"
+        ],
+        "accepted": [
+          "B"
+        ],
+        "feedback": "I read every morning.",
+        "notes": "Read every morning — takrorlanadigan ish.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      }
+    },
+    "vocabulary": {
+      "u2-l1-v1": [
+        "uyg‘onmoq",
+        "o‘rnidan turmoq",
+        "turmoq"
+      ],
+      "u2-l1-v2": [
+        "nonushta qilmoq"
+      ],
+      "u2-l1-v3": [
+        "o‘qimoq",
+        "o‘rganmoq"
+      ],
+      "u2-l1-v4": [
+        "ishlamoq"
+      ],
+      "u2-l1-v5": [
+        "yashamoq"
+      ],
+      "u2-l1-v6": [
+        "o‘qimoq",
+        "kitob o‘qimoq"
+      ],
+      "u2-l1-v7": [
+        "basketbol o‘ynamoq"
+      ],
+      "u2-l1-v8": [
+        "velosiped haydamoq",
+        "minmoq"
+      ],
+      "u2-l1-v9": [
+        "har kuni"
+      ],
+      "u2-l1-v10": [
+        "ertalab",
+        "tongda"
+      ],
+      "u2-l1-v11": [
+        "kutubxona"
+      ],
+      "u2-l1-v12": [
+        "gapirmoq",
+        "so‘zlamoq"
+      ]
+    }
+  },
+  "u2-l2": {
+    "tasks": {
+      "u2-l2-q1": {
+        "mode": "authored",
+        "kind": "choice",
+        "partIds": [
+          "u2-l2-q1-answer"
+        ],
+        "accepted": [
+          "B"
+        ],
+        "feedback": "reads",
+        "notes": "He + reads.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l2-q2": {
+        "mode": "authored",
+        "kind": "text",
+        "partIds": [
+          "u2-l2-q2-answer"
+        ],
+        "accepted": [
+          "studies"
+        ],
+        "feedback": "studies",
+        "notes": "Undosh + y → ies: studies.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l2-q3": {
+        "mode": "authored",
+        "kind": "order",
+        "partIds": [
+          "u2-l2-q3-answer"
+        ],
+        "accepted": [
+          "Emma rides a bike."
+        ],
+        "feedback": "Emma rides a bike.",
+        "notes": "Emma bitta odam: rides.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l2-q4": {
+        "mode": "authored",
+        "kind": "choice",
+        "partIds": [
+          "u2-l2-q4-answer"
+        ],
+        "accepted": [
+          "B"
+        ],
+        "feedback": "play",
+        "notes": "They bilan -s ishlatilmaydi.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l2-q5": {
+        "mode": "authored",
+        "kind": "text",
+        "partIds": [
+          "u2-l2-q5-answer"
+        ],
+        "accepted": [
+          "watches"
+        ],
+        "feedback": "watches",
+        "notes": "-ch bilan tugagan watch → watches.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l2-q6": {
+        "mode": "authored",
+        "kind": "text",
+        "partIds": [
+          "u2-l2-q6-answer"
+        ],
+        "accepted": [
+          "goes"
+        ],
+        "feedback": "goes",
+        "notes": "Go → goes.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l2-q7": {
+        "mode": "authored",
+        "kind": "text",
+        "partIds": [
+          "u2-l2-q7-answer"
+        ],
+        "accepted": [
+          "has"
+        ],
+        "feedback": "has",
+        "notes": "He / she / it bilan have → has.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l2-q8": {
+        "mode": "authored",
+        "kind": "choice",
+        "partIds": [
+          "u2-l2-q8-answer"
+        ],
+        "accepted": [
+          "C"
+        ],
+        "feedback": "washes",
+        "notes": "-sh bilan tugagan wash → washes.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l2-q9": {
+        "mode": "authored",
+        "kind": "text",
+        "partIds": [
+          "u2-l2-q9-answer"
+        ],
+        "accepted": [
+          "does"
+        ],
+        "feedback": "does",
+        "notes": "Do → does.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l2-q10": {
+        "mode": "authored",
+        "kind": "text",
+        "partIds": [
+          "u2-l2-q10-answer"
+        ],
+        "accepted": [
+          "plays"
+        ],
+        "feedback": "plays",
+        "notes": "Unli + y: play → plays. Plaies emas.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l2-q11": {
+        "mode": "authored",
+        "kind": "text",
+        "partIds": [
+          "u2-l2-q11-answer"
+        ],
+        "accepted": [
+          "He works in a school."
+        ],
+        "feedback": "He works in a school.",
+        "notes": "He bilan works.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l2-q12": {
+        "mode": "authored",
+        "kind": "choice",
+        "partIds": [
+          "u2-l2-q12-answer"
+        ],
+        "accepted": [
+          "C"
+        ],
+        "feedback": "My friend studies English.",
+        "notes": "My friend — bitta odam; studies.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      }
+    },
+    "vocabulary": {
+      "u2-l2-v1": [
+        "o‘qitmoq",
+        "dars bermoq"
+      ],
+      "u2-l2-v2": [
+        "tomosha qilmoq",
+        "ko‘rmoq"
+      ],
+      "u2-l2-v3": [
+        "yuvmoq"
+      ],
+      "u2-l2-v4": [
+        "bormoq"
+      ],
+      "u2-l2-v5": [
+        "uy vazifasini bajarmoq",
+        "uyga vazifa qilmoq"
+      ],
+      "u2-l2-v6": [
+        "ega bo‘lmoq",
+        "bor bo‘lmoq"
+      ],
+      "u2-l2-v7": [
+        "ovqat pishirmoq",
+        "pishirmoq"
+      ],
+      "u2-l2-v8": [
+        "opa",
+        "singil",
+        "opa-singil"
+      ],
+      "u2-l2-v9": [
+        "aka",
+        "uka",
+        "aka-uka"
+      ],
+      "u2-l2-v10": [
+        "o‘qituvchi",
+        "ustoz"
+      ],
+      "u2-l2-v11": [
+        "maktab"
+      ],
+      "u2-l2-v12": [
+        "darsdan keyin"
+      ]
+    }
+  },
+  "u2-l3": {
+    "tasks": {
+      "u2-l3-q1": {
+        "mode": "authored",
+        "kind": "choice",
+        "partIds": [
+          "u2-l3-q1-answer"
+        ],
+        "accepted": [
+          "B"
+        ],
+        "feedback": "don’t",
+        "notes": "I bilan don’t ishlatiladi.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l3-q2": {
+        "mode": "authored",
+        "kind": "choice",
+        "partIds": [
+          "u2-l3-q2-answer"
+        ],
+        "accepted": [
+          "C"
+        ],
+        "feedback": "doesn’t",
+        "notes": "She bilan doesn’t ishlatiladi.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l3-q3": {
+        "mode": "authored",
+        "kind": "text",
+        "partIds": [
+          "u2-l3-q3-answer"
+        ],
+        "accepted": [
+          "drive"
+        ],
+        "feedback": "drive",
+        "notes": "Doesn’t dan keyin asosiy fe’l.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l3-q4": {
+        "mode": "authored",
+        "kind": "order",
+        "partIds": [
+          "u2-l3-q4-answer"
+        ],
+        "accepted": [
+          "We do not work on Sundays."
+        ],
+        "feedback": "We do not work on Sundays.",
+        "notes": "We + do not + work.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l3-q5": {
+        "mode": "authored",
+        "kind": "choice",
+        "partIds": [
+          "u2-l3-q5-answer"
+        ],
+        "accepted": [
+          "B"
+        ],
+        "feedback": "She doesn’t like coffee.",
+        "notes": "Doesn’t like — ikkita -s qo‘ymang.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l3-q6": {
+        "mode": "authored",
+        "kind": "text",
+        "partIds": [
+          "u2-l3-q6-answer"
+        ],
+        "accepted": [
+          "They don't like coffee.",
+          "They do not like coffee."
+        ],
+        "feedback": "They don't like coffee.",
+        "notes": "They + don’t + like.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l3-q7": {
+        "mode": "authored",
+        "kind": "text",
+        "partIds": [
+          "u2-l3-q7-answer"
+        ],
+        "accepted": [
+          "Ben doesn't work at night.",
+          "Ben does not work at night."
+        ],
+        "feedback": "Ben doesn't work at night.",
+        "notes": "Ben + doesn’t + work.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l3-q8": {
+        "mode": "authored",
+        "kind": "text",
+        "partIds": [
+          "u2-l3-q8-answer"
+        ],
+        "accepted": [
+          "have"
+        ],
+        "feedback": "have",
+        "notes": "Doesn’t have; doesn’t has emas.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l3-q9": {
+        "mode": "authored",
+        "kind": "choice",
+        "partIds": [
+          "u2-l3-q9-answer"
+        ],
+        "accepted": [
+          "A"
+        ],
+        "feedback": "don’t play",
+        "notes": "We + don’t + play.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l3-q10": {
+        "mode": "authored",
+        "kind": "order",
+        "partIds": [
+          "u2-l3-q10-answer"
+        ],
+        "accepted": [
+          "He does not drink tea."
+        ],
+        "feedback": "He does not drink tea.",
+        "notes": "He + does not + drink.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l3-q11": {
+        "mode": "authored",
+        "kind": "text",
+        "partIds": [
+          "u2-l3-q11-answer"
+        ],
+        "accepted": [
+          "I don't drink coffee.",
+          "I do not drink coffee."
+        ],
+        "feedback": "I don't drink coffee.",
+        "notes": "I don’t drink coffee.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l3-q12": {
+        "mode": "authored",
+        "kind": "text",
+        "partIds": [
+          "u2-l3-q12-answer"
+        ],
+        "accepted": [
+          "She doesn't watch TV.",
+          "She does not watch TV."
+        ],
+        "feedback": "She doesn't watch TV.",
+        "notes": "Doesn’t dan keyin watch ishlatiladi.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      }
+    },
+    "vocabulary": {
+      "u2-l3-v1": [
+        "yoqtirmoq",
+        "yaxshi ko‘rmoq"
+      ],
+      "u2-l3-v2": [
+        "ichmoq"
+      ],
+      "u2-l3-v3": [
+        "yemoq"
+      ],
+      "u2-l3-v4": [
+        "qahva",
+        "kofe"
+      ],
+      "u2-l3-v5": [
+        "choy"
+      ],
+      "u2-l3-v6": [
+        "go‘sht"
+      ],
+      "u2-l3-v7": [
+        "dam olish kunlari",
+        "hafta oxiri"
+      ],
+      "u2-l3-v8": [
+        "yakshanba kunlari",
+        "yakshanbalarda"
+      ],
+      "u2-l3-v9": [
+        "haydamoq"
+      ],
+      "u2-l3-v10": [
+        "avtobus"
+      ],
+      "u2-l3-v11": [
+        "musiqa tinglamoq",
+        "musiqa eshitmoq"
+      ],
+      "u2-l3-v12": [
+        "tunda",
+        "kechasi"
+      ]
+    }
+  },
+  "u2-l4": {
+    "tasks": {
+      "u2-l4-q1": {
+        "mode": "authored",
+        "kind": "choice",
+        "partIds": [
+          "u2-l4-q1-answer"
+        ],
+        "accepted": [
+          "A"
+        ],
+        "feedback": "Do",
+        "notes": "Study harakati bilan Do you...?",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l4-q2": {
+        "mode": "authored",
+        "kind": "choice",
+        "partIds": [
+          "u2-l4-q2-answer"
+        ],
+        "accepted": [
+          "C"
+        ],
+        "feedback": "Does",
+        "notes": "Emma bitta odam: Does Emma...?",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l4-q3": {
+        "mode": "authored",
+        "kind": "text",
+        "partIds": [
+          "u2-l4-q3-answer"
+        ],
+        "accepted": [
+          "live"
+        ],
+        "feedback": "live",
+        "notes": "Does dan keyin live.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l4-q4": {
+        "mode": "authored",
+        "kind": "order",
+        "partIds": [
+          "u2-l4-q4-answer"
+        ],
+        "accepted": [
+          "Do they work together?"
+        ],
+        "feedback": "Do they work together?",
+        "notes": "Do + they + work + together?",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l4-q5": {
+        "mode": "authored",
+        "kind": "text",
+        "partIds": [
+          "u2-l4-q5-answer"
+        ],
+        "accepted": [
+          "Yes, I do."
+        ],
+        "feedback": "Yes, I do.",
+        "notes": "You haqida so‘ralganda o‘zingiz uchun I bilan javob bering.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l4-q6": {
+        "mode": "authored",
+        "kind": "text",
+        "partIds": [
+          "u2-l4-q6-answer"
+        ],
+        "accepted": [
+          "No, she doesn't.",
+          "No, she does not."
+        ],
+        "feedback": "No, she doesn't.",
+        "notes": "Does → doesn’t.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l4-q7": {
+        "mode": "authored",
+        "kind": "choice",
+        "partIds": [
+          "u2-l4-q7-answer"
+        ],
+        "accepted": [
+          "C"
+        ],
+        "feedback": "they do",
+        "notes": "Do savoliga do bilan javob.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l4-q8": {
+        "mode": "authored",
+        "kind": "text",
+        "partIds": [
+          "u2-l4-q8-answer"
+        ],
+        "accepted": [
+          "Yes, he does."
+        ],
+        "feedback": "Yes, he does.",
+        "notes": "Ben → he; does.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l4-q9": {
+        "mode": "authored",
+        "kind": "text",
+        "partIds": [
+          "u2-l4-q9-answer"
+        ],
+        "accepted": [
+          "Does she like tea?"
+        ],
+        "feedback": "Does she like tea?",
+        "notes": "Does + she + like tea?",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l4-q10": {
+        "mode": "authored",
+        "kind": "text",
+        "partIds": [
+          "u2-l4-q10-answer"
+        ],
+        "accepted": [
+          "Do they live in Tashkent?"
+        ],
+        "feedback": "Do they live in Tashkent?",
+        "notes": "Do + they + live ...?",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l4-q11": {
+        "mode": "authored",
+        "kind": "choice",
+        "partIds": [
+          "u2-l4-q11-answer"
+        ],
+        "accepted": [
+          "A"
+        ],
+        "feedback": "Does she have a bike?",
+        "notes": "Does + she + have.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l4-q12": {
+        "mode": "authored",
+        "kind": "order",
+        "partIds": [
+          "u2-l4-q12-answer"
+        ],
+        "accepted": [
+          "Does your classmate need help?"
+        ],
+        "feedback": "Does your classmate need help?",
+        "notes": "Your classmate — bitta odam. Does ishlating.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      }
+    },
+    "vocabulary": {
+      "u2-l4-v1": [
+        "piyoda yurmoq",
+        "yurmoq"
+      ],
+      "u2-l4-v2": [
+        "avtobusga chiqmoq",
+        "avtobusda bormoq"
+      ],
+      "u2-l4-v3": [
+        "yaqin",
+        "yaqinida"
+      ],
+      "u2-l4-v4": [
+        "uzoq",
+        "uzoqda"
+      ],
+      "u2-l4-v5": [
+        "kerak bo‘lmoq",
+        "muhtoj bo‘lmoq"
+      ],
+      "u2-l4-v6": [
+        "yordam",
+        "yordam bermoq"
+      ],
+      "u2-l4-v7": [
+        "sinfdosh",
+        "guruhdosh"
+      ],
+      "u2-l4-v8": [
+        "birga",
+        "birgalikda"
+      ],
+      "u2-l4-v9": [
+        "uyda"
+      ],
+      "u2-l4-v10": [
+        "dushanba kunlari",
+        "dushanbalarda"
+      ],
+      "u2-l4-v11": [
+        "ingliz tili",
+        "inglizcha"
+      ],
+      "u2-l4-v12": [
+        "xohlamoq",
+        "istamoq"
+      ]
+    }
+  },
+  "u2-l5": {
+    "tasks": {
+      "u2-l5-q1": {
+        "mode": "authored",
+        "kind": "choice",
+        "partIds": [
+          "u2-l5-q1-answer"
+        ],
+        "accepted": [
+          "B"
+        ],
+        "feedback": "Where",
+        "notes": "Joy haqida Where bilan so‘raladi.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l5-q2": {
+        "mode": "authored",
+        "kind": "text",
+        "partIds": [
+          "u2-l5-q2-answer"
+        ],
+        "accepted": [
+          "does"
+        ],
+        "feedback": "does",
+        "notes": "She bilan does; ride o‘zgarmaydi.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l5-q3": {
+        "mode": "authored",
+        "kind": "order",
+        "partIds": [
+          "u2-l5-q3-answer"
+        ],
+        "accepted": [
+          "What do they study?"
+        ],
+        "feedback": "What do they study?",
+        "notes": "What + do + they + study?",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l5-q4": {
+        "mode": "authored",
+        "kind": "choice",
+        "partIds": [
+          "u2-l5-q4-answer"
+        ],
+        "accepted": [
+          "C"
+        ],
+        "feedback": "Twice a week.",
+        "notes": "How often — takrorlanish soni yoki tezligi.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l5-q5": {
+        "mode": "authored",
+        "kind": "text",
+        "partIds": [
+          "u2-l5-q5-answer"
+        ],
+        "accepted": [
+          "I usually read in the morning."
+        ],
+        "feedback": "I usually read in the morning.",
+        "notes": "Usually asosiy fe’ldan oldin keladi.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l5-q6": {
+        "mode": "authored",
+        "kind": "choice",
+        "partIds": [
+          "u2-l5-q6-answer"
+        ],
+        "accepted": [
+          "A"
+        ],
+        "feedback": "She never drinks coffee.",
+        "notes": "Never o‘zi inkor ma’nosida. She bilan drinks.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l5-q7": {
+        "mode": "authored",
+        "kind": "order",
+        "partIds": [
+          "u2-l5-q7-answer"
+        ],
+        "accepted": [
+          "How often does he read?"
+        ],
+        "feedback": "How often does he read?",
+        "notes": "How often + does + he + read?",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l5-q8": {
+        "mode": "authored",
+        "kind": "choice",
+        "partIds": [
+          "u2-l5-q8-answer"
+        ],
+        "accepted": [
+          "B"
+        ],
+        "feedback": "She is always busy.",
+        "notes": "Bu darsdagi odatiy tartib: is always busy.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l5-q9": {
+        "mode": "authored",
+        "kind": "choice",
+        "partIds": [
+          "u2-l5-q9-answer"
+        ],
+        "accepted": [
+          "B"
+        ],
+        "feedback": "In Boston.",
+        "notes": "Matndagi joy — Boston.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l5-q10": {
+        "mode": "authored",
+        "kind": "text",
+        "partIds": [
+          "u2-l5-q10-answer"
+        ],
+        "accepted": [
+          "English"
+        ],
+        "feedback": "English",
+        "notes": "U ingliz tilini o‘rganadi.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l5-q11": {
+        "mode": "authored",
+        "kind": "choice",
+        "partIds": [
+          "u2-l5-q11-answer"
+        ],
+        "accepted": [
+          "C"
+        ],
+        "feedback": "Twice a week.",
+        "notes": "Haftasiga ikki marta — twice a week.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l5-q12": {
+        "mode": "authored",
+        "kind": "text",
+        "partIds": [
+          "u2-l5-q12-answer"
+        ],
+        "accepted": [
+          "No, she doesn't.",
+          "No, she does not."
+        ],
+        "feedback": "No, she doesn't.",
+        "notes": "Does savoliga doesn’t bilan inkor javob bering.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      }
+    },
+    "vocabulary": {
+      "u2-l5-v1": [
+        "qayerda",
+        "qayerga",
+        "qayer"
+      ],
+      "u2-l5-v2": [
+        "qachon"
+      ],
+      "u2-l5-v3": [
+        "nima",
+        "qanday"
+      ],
+      "u2-l5-v4": [
+        "qanchalik tez-tez",
+        "qanchalik tez tez",
+        "necha marta"
+      ],
+      "u2-l5-v5": [
+        "har doim",
+        "doimo"
+      ],
+      "u2-l5-v6": [
+        "odatda"
+      ],
+      "u2-l5-v7": [
+        "ba’zan",
+        "bazida",
+        "ba’zida"
+      ],
+      "u2-l5-v8": [
+        "hech qachon"
+      ],
+      "u2-l5-v9": [
+        "haftasiga bir marta"
+      ],
+      "u2-l5-v10": [
+        "haftasiga ikki marta"
+      ],
+      "u2-l5-v11": [
+        "nonushtadan keyin"
+      ],
+      "u2-l5-v12": [
+        "darsdan oldin"
+      ]
+    }
+  },
+  "u2-l6": {
+    "tasks": {
+      "u2-l6-q1": {
+        "mode": "authored",
+        "kind": "choice",
+        "partIds": [
+          "u2-l6-q1-answer"
+        ],
+        "accepted": [
+          "A"
+        ],
+        "feedback": "study",
+        "notes": "We study.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l6-q2": {
+        "mode": "authored",
+        "kind": "text",
+        "partIds": [
+          "u2-l6-q2-answer"
+        ],
+        "accepted": [
+          "lives"
+        ],
+        "feedback": "lives",
+        "notes": "He lives.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l6-q3": {
+        "mode": "authored",
+        "kind": "text",
+        "partIds": [
+          "u2-l6-q3-answer"
+        ],
+        "accepted": [
+          "studies"
+        ],
+        "feedback": "studies",
+        "notes": "Study → studies.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l6-q4": {
+        "mode": "authored",
+        "kind": "choice",
+        "partIds": [
+          "u2-l6-q4-answer"
+        ],
+        "accepted": [
+          "C"
+        ],
+        "feedback": "watches",
+        "notes": "Watch → watches.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l6-q5": {
+        "mode": "authored",
+        "kind": "text",
+        "partIds": [
+          "u2-l6-q5-answer"
+        ],
+        "accepted": [
+          "has"
+        ],
+        "feedback": "has",
+        "notes": "Have → has.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l6-q6": {
+        "mode": "authored",
+        "kind": "choice",
+        "partIds": [
+          "u2-l6-q6-answer"
+        ],
+        "accepted": [
+          "B"
+        ],
+        "feedback": "don’t",
+        "notes": "They don’t work.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l6-q7": {
+        "mode": "authored",
+        "kind": "text",
+        "partIds": [
+          "u2-l6-q7-answer"
+        ],
+        "accepted": [
+          "drink"
+        ],
+        "feedback": "drink",
+        "notes": "Doesn’t + asosiy fe’l.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l6-q8": {
+        "mode": "authored",
+        "kind": "text",
+        "partIds": [
+          "u2-l6-q8-answer"
+        ],
+        "accepted": [
+          "He doesn't like tea.",
+          "He does not like tea."
+        ],
+        "feedback": "He doesn't like tea.",
+        "notes": "Doesn’t like.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l6-q9": {
+        "mode": "authored",
+        "kind": "order",
+        "partIds": [
+          "u2-l6-q9-answer"
+        ],
+        "accepted": [
+          "We do not play basketball."
+        ],
+        "feedback": "We do not play basketball.",
+        "notes": "We do not + play.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l6-q10": {
+        "mode": "authored",
+        "kind": "choice",
+        "partIds": [
+          "u2-l6-q10-answer"
+        ],
+        "accepted": [
+          "C"
+        ],
+        "feedback": "Does",
+        "notes": "Does she work?",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l6-q11": {
+        "mode": "authored",
+        "kind": "text",
+        "partIds": [
+          "u2-l6-q11-answer"
+        ],
+        "accepted": [
+          "Yes, they do."
+        ],
+        "feedback": "Yes, they do.",
+        "notes": "Yes, they do.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l6-q12": {
+        "mode": "authored",
+        "kind": "text",
+        "partIds": [
+          "u2-l6-q12-answer"
+        ],
+        "accepted": [
+          "No, he doesn't.",
+          "No, he does not."
+        ],
+        "feedback": "No, he doesn't.",
+        "notes": "No, he doesn’t.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l6-q13": {
+        "mode": "authored",
+        "kind": "text",
+        "partIds": [
+          "u2-l6-q13-answer"
+        ],
+        "accepted": [
+          "Does she go to school?"
+        ],
+        "feedback": "Does she go to school?",
+        "notes": "Does she go; goes emas.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l6-q14": {
+        "mode": "authored",
+        "kind": "order",
+        "partIds": [
+          "u2-l6-q14-answer"
+        ],
+        "accepted": [
+          "Where do you work?"
+        ],
+        "feedback": "Where do you work?",
+        "notes": "Where + do + you + work?",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l6-q15": {
+        "mode": "authored",
+        "kind": "choice",
+        "partIds": [
+          "u2-l6-q15-answer"
+        ],
+        "accepted": [
+          "B"
+        ],
+        "feedback": "How often",
+        "notes": "How often — qanchalik tez-tez?",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l6-q16": {
+        "mode": "authored",
+        "kind": "choice",
+        "partIds": [
+          "u2-l6-q16-answer"
+        ],
+        "accepted": [
+          "C"
+        ],
+        "feedback": "I usually read at home.",
+        "notes": "Usually asosiy fe’ldan oldin.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l6-q17": {
+        "mode": "authored",
+        "kind": "text",
+        "partIds": [
+          "u2-l6-q17-answer"
+        ],
+        "accepted": [
+          "She never drinks coffee."
+        ],
+        "feedback": "She never drinks coffee.",
+        "notes": "She + never + drinks.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l6-q18": {
+        "mode": "authored",
+        "kind": "choice",
+        "partIds": [
+          "u2-l6-q18-answer"
+        ],
+        "accepted": [
+          "A"
+        ],
+        "feedback": "In Boston.",
+        "notes": "Matn: Ben lives in Boston.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l6-q19": {
+        "mode": "authored",
+        "kind": "text",
+        "partIds": [
+          "u2-l6-q19-answer"
+        ],
+        "accepted": [
+          "Every morning."
+        ],
+        "feedback": "Every morning.",
+        "notes": "Har kuni ertalab — every morning.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      },
+      "u2-l6-q20": {
+        "mode": "authored",
+        "kind": "text",
+        "partIds": [
+          "u2-l6-q20-answer"
+        ],
+        "accepted": [
+          "Yes, he does."
+        ],
+        "feedback": "Yes, he does.",
+        "notes": "Ben → he. Does savoliga does javobi.",
+        "rubric": null,
+        "listening": false,
+        "strict": false,
+        "binary": true
+      }
+    },
+    "vocabulary": {}
+  }
+}
